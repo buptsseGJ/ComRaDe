@@ -105,7 +105,7 @@ public class MainFrame extends JFrame {
 		runProgram.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Run programs ...");
+//				System.out.println("Run programs ...");
 				try {
 					String command = "java -cp E:\\courseResource\\programResearch\\benchmark相关\\benchmarks汇总\\calfuzzer_calfuzzer\\CalFuzzer_TestRace1\\bin benchmarks.testcases.TestRace1";
 					Process proc = Runtime.getRuntime().exec(command);
@@ -167,7 +167,6 @@ public class MainFrame extends JFrame {
 				EventQueue.invokeLater(new Runnable(){
 					public void run(){			
 						ManageBenchmarkFrame mbf = new ManageBenchmarkFrame(fileAbsolutePath);
-						System.out.println("Manage benchmark ...");
 						mbf.setVisible(true);
 						
 		//				mbf.setSize(1800, 1000);
@@ -184,7 +183,6 @@ public class MainFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				SelectScriptFrame ssf = new SelectScriptFrame();
-				System.out.println("Script operations start ...");
 				ssf.setBounds(750, 150,1160, 1000);
 				ssf.setTextArea(textArea);
 				//ssf.setLocationRelativeTo(null);
@@ -195,7 +193,6 @@ public class MainFrame extends JFrame {
 		readSuites.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Please select file");
 				JFileChooser jfc = new JFileChooser();
 				jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
 				File rootFile = new File(System.getProperty("user.dir").replace('\\', '/')+"/file");
@@ -217,7 +214,7 @@ public class MainFrame extends JFrame {
 						textAreaInfo = convert.startDom(validationResult,textAreaInfo,textArea);										
 
 						textAreaInfo=textAreaInfo+"\nbenchmarks read success ！\n";
-						textArea.setText(textAreaInfo);
+//						textArea.setText(textAreaInfo);
 						textArea.setCaretPosition(textArea.getText().length());
 
 						JOptionPane.showMessageDialog(getContentPane(), "Successfully read the benchmark !");
@@ -227,7 +224,6 @@ public class MainFrame extends JFrame {
 						scriptFile.setEnabled(true);
 						
 					} else {
-						System.out.println("Error");
 						textAreaInfo=textAreaInfo+"\n\nbenchmarks have problem ！\n";
 						textArea.setText(textAreaInfo);
 						textArea.setCaretPosition(textArea.getText().length());

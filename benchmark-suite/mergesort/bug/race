@@ -1,6 +1,8 @@
 Race: <mergesort.MSort: void DecreaseThreadCounter()>|$i0 = <mergesort.MSort: int m_iCurrentThreadsAlive>|41 - <mergesort.MSort: void DecreaseThreadCounter()>|<mergesort.MSort: int m_iCurrentThreadsAlive> = $i1|41
-Race: <mergesort.MSort: void DecreaseThreadCounter()>|<mergesort.MSort: int m_iCurrentThreadsAlive> = $i1|41 - <mergesort.MSort: void DecreaseThreadCounter()>|<mergesort.MSort: int m_iCurrentThreadsAlive> = $i1|41
 Race: <mergesort.MSort: int AvailableThreadsState()>|$i1 = <mergesort.MSort: int m_iCurrentThreadsAlive>|48 - <mergesort.MSort: void DecreaseThreadCounter()>|<mergesort.MSort: int m_iCurrentThreadsAlive> = $i1|41
+Race: MSort.java m_iCurrentThreadsAlive <32,48>
+Race: MSort.java m_iCurrentThreadsAlive <32,41>
+
 Trace Size: 1116
 Total #Threads: 5
 Total #SharedVariables: 68
@@ -11,8 +13,8 @@ Total #Synchronizations: 24
 Total #Branches: 494
 Total #Property Events: 0
 Total #Potential Violations: 3
-Total #Real Violations: 3
-Total Time: 860ms
+Total #Real Violations: 4
+
 java.lang.RuntimeException: BUG
 	at mergesort.MSort.AvailableThreadsState(MSort.java:64)
 	at mergesort.MSort.Sorting(MSort.java:238)

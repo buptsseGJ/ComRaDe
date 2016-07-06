@@ -529,7 +529,6 @@ public class ManageBenchmarkFrame extends JFrame  implements MouseListener,ItemL
 		btnSaveAs.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Please select folder");
 			    JFileChooser chooser = new JFileChooser();  
 			    File file;    
 			    FileNameExtensionFilter filter = new FileNameExtensionFilter("xml file(*.xml)", "xml");  
@@ -685,7 +684,7 @@ public class ManageBenchmarkFrame extends JFrame  implements MouseListener,ItemL
 				break;
 			}else {
 				Set<Race> races = new HashSet<Race>();
-				System.out.println(((DefaultMutableTreeTableNode)  treetable.getPathForRow(pathIndex-1).getLastPathComponent()).getUserObject());
+//				System.out.println(((DefaultMutableTreeTableNode)  treetable.getPathForRow(pathIndex-1).getLastPathComponent()).getUserObject());
 				DefaultMutableTreeTableNode curUseCaseNode = (DefaultMutableTreeTableNode)  treetable.getPathForRow(pathIndex-1).getLastPathComponent();
 				for(int j=0;j<curUseCaseNode.getChildCount();j++) {
 					pathIndex++;
@@ -795,12 +794,10 @@ public class ManageBenchmarkFrame extends JFrame  implements MouseListener,ItemL
 			ParseXml parser = new ParseXml();
 			Document validationResult = parser.validateXml(fileAbsolutePath);
 			if (validationResult != null) {
-				System.out.println("OK");
 				Reports.removeAllBenchmakrs();
 				DomToEntity convert = new DomToEntity();
 				convert.startDom(validationResult);
 			} else {
-				System.out.println("Error");
 			}
 			treetable.updateUI();
 			JOptionPane.showMessageDialog(null, "Successfully save the benchmarks!");

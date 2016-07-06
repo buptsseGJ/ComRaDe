@@ -1,6 +1,9 @@
 Race: <benchmarks.jpf_test_cases.rax.SecondTask: void run()>|$i3 = $r3.<benchmarks.jpf_test_cases.rax.Event: int count>|41 - <benchmarks.jpf_test_cases.rax.Event: void signal_event()>|r0.<benchmarks.jpf_test_cases.rax.Event: int count> = $i1|9
 Race: <benchmarks.jpf_test_cases.rax.FirstTask: void run()>|$i1 = $r1.<benchmarks.jpf_test_cases.rax.Event: int count>|21 - <benchmarks.jpf_test_cases.rax.Event: void signal_event()>|r0.<benchmarks.jpf_test_cases.rax.Event: int count> = $i1|9
 Race: <benchmarks.jpf_test_cases.rax.FirstTask: void run()>|$i3 = $r2.<benchmarks.jpf_test_cases.rax.Event: int count>|23 - <benchmarks.jpf_test_cases.rax.Event: void signal_event()>|r0.<benchmarks.jpf_test_cases.rax.Event: int count> = $i1|9
+Race: benchmarks.jpf_test_cases.rax.START.java count <9,43>
+Race: benchmarks.jpf_test_cases.rax.START.java count <9,25>
+
 Trace Size: 134
 Total #Threads: 3
 Total #SharedVariables: 2
@@ -11,8 +14,7 @@ Total #Synchronizations: 32
 Total #Branches: 30
 Total #Property Events: 0
 Total #Potential Violations: 9
-Total #Real Violations: 3
-Total Time: 1067ms
+Total #Real Violations: 5
 
 real	0m8.209s
 user	0m5.940s

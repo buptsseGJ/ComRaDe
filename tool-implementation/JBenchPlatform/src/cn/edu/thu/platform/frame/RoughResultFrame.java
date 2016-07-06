@@ -253,8 +253,8 @@ public class RoughResultFrame extends JFrame {
 				double testTime = Double.valueOf(newReport.getTime().substring(0, newReport.getTime().length()-1));
 				double origionTime = Double.valueOf(originalReport.getTime().substring(0, originalReport.getTime().length()));
 				data[count-1][11]= df.format((testTime-origionTime)/origionTime).toString();
-				System.out.println("originalTime:"+origionTime+" testTime:" + testTime);
-				System.out.println("rightRaceNum:"+rightRaceNum+"\ntotalRaceNum"+totalRaceNum);
+//				System.out.println("originalTime:"+origionTime+" testTime:" + testTime);
+//				System.out.println("rightRaceNum:"+rightRaceNum+"\ntotalRaceNum"+totalRaceNum);
 				writer.write(",,"+count+","+curCaseResults.getProgramName()+",TRUE,TRUE,"+totalRaceNum+","+rightRaceNum+","+
 						missRaceNum+","+extraRaceNum+","+(100.0*rightRaceNum/totalRaceNum)+"%,"+(100.0*(missRaceNum)/totalRaceNum)+
 						"%,"+(100.0*extraRaceNum/totalRaceNum)+"%,"+df.format((testTime-origionTime)/origionTime)+",\n");

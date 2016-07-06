@@ -3,6 +3,8 @@ Race: <benchmarks.tsp.TspSolver: void visit_nodes(int)>|$i12 = <benchmarks.tsp.T
 Race: <benchmarks.tsp.TspSolver: void visit_nodes(int)>|$i27 = <benchmarks.tsp.TspSolver: int MinTourLen>|544 - <benchmarks.tsp.TspSolver: void set_best(int,int[])>|<benchmarks.tsp.TspSolver: int MinTourLen> = i0|117
 Race: <benchmarks.tsp.TspSolver: int find_solvable_tour()>|$i12 = <benchmarks.tsp.TspSolver: int MinTourLen>|377 - <benchmarks.tsp.TspSolver: void set_best(int,int[])>|<benchmarks.tsp.TspSolver: int MinTourLen> = i0|117
 Race: <benchmarks.tsp.TspSolver: void visit_nodes(int)>|$i22 = <benchmarks.tsp.TspSolver: int MinTourLen>|538 - <benchmarks.tsp.TspSolver: void set_best(int,int[])>|<benchmarks.tsp.TspSolver: int MinTourLen> = i0|117
+Race: TspSolver.java MinTourLen <117,106>
+
 Trace Size: 562891963
 Total #Threads: 6
 Total #SharedVariables: 12
@@ -13,8 +15,7 @@ Total #Synchronizations: 1122
 Total #Branches: 249271486
 Total #Property Events: 0
 Total #Potential Violations: 9
-Total #Real Violations: 5
-Total Time: 2459435ms
+Total #Real Violations: 6
 
 real	130m39.617s
 user	102m48.016s

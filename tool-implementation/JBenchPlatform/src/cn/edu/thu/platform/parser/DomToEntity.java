@@ -48,18 +48,17 @@ public class DomToEntity {
 				if (reportList.item(i).getNodeType() != (Node.TEXT_NODE)) {
 					// get all the race element for each report
 					if(textArea!=null) {
-						textAreaInfo=textAreaInfo+"reportList Length:"+reportList.getLength()+"\n";
-						textArea.setText(textAreaInfo);
+//						textAreaInfo=textAreaInfo+"reportList Length:"+reportList.getLength()+"\n";
+//						textArea.setText(textAreaInfo);
 					}
-					System.out.println("reportList Length:"	+ reportList.getLength());
 					NodeList raceList = reportList.item(i).getChildNodes();
 					Set<Race> races = new HashSet<Race>();
 					Set<Race> compareRaces = new HashSet<Race>();
 					for (int j = 0; j < raceList.getLength(); j++) {
 						// deal with each race
 						if(textArea!=null) {
-							textAreaInfo=textAreaInfo+"raceList Length:"+raceList.getLength()+"\n";
-							textArea.setText(textAreaInfo);
+//							textAreaInfo=textAreaInfo+"raceList Length:"+raceList.getLength()+"\n";
+//							textArea.setText(textAreaInfo);
 						}
 //						System.out.println("raceList length:"+ raceList.getLength());
 						//According to the xml document, the following codes read the element value into object in turn.
@@ -95,10 +94,9 @@ public class DomToEntity {
 								Node tempBug = getNonTextNode(tempNode);
 
 								if(textArea!=null) {
-									textAreaInfo=textAreaInfo+"line1:"+tempLine1.getFirstChild().getNodeValue().toString()+"\n";
-									textArea.setText(textAreaInfo);
+//									textAreaInfo=textAreaInfo+"line1:"+tempLine1.getFirstChild().getNodeValue().toString()+"\n";
+//									textArea.setText(textAreaInfo);
 								}
-								System.out.println("line1:"	+ tempLine1.getFirstChild().getNodeValue().toString());
 								String line1 = tempLine1.getFirstChild() != null ? (tempLine1.getFirstChild().getNodeValue().toString()).trim() : null;
 								String line2 = tempLine2.getFirstChild()!= null ? (tempLine2.getFirstChild().getNodeValue().toString()).trim() : null;
 								String time = tempTime.getFirstChild()!=null?(tempTime.getFirstChild().getNodeValue().toString()).trim() : "";
@@ -123,18 +121,16 @@ public class DomToEntity {
 								if(tempDetail.getFirstChild()!=null) {
 								if(tempDetail.getFirstChild().getNodeType() == Node.TEXT_NODE){
 									detail = tempDetail.getFirstChild().getNextSibling().getNodeValue() != null ? tempDetail.getFirstChild().getNextSibling().getNodeValue().toString(): null;
-									System.out.println("detail:" + tempDetail.getFirstChild().getNextSibling().getNodeValue().toString());
 //									detail.replace("\t", "");
 									if(textArea!=null) {
-										textAreaInfo=textAreaInfo+"detail:"+"      "+tempDetail.getFirstChild().getNextSibling().getNodeValue().toString().replace("\t", "")+"\n";
-										textArea.setText(textAreaInfo);
+//										textAreaInfo=textAreaInfo+"detail:"+"      "+tempDetail.getFirstChild().getNextSibling().getNodeValue().toString().replace("\t", "")+"\n";
+//										textArea.setText(textAreaInfo);
 									}
 								}else{
 									detail = tempDetail.getFirstChild().getNodeValue() != null ? tempDetail.getFirstChild().getNodeValue().toString(): null;
-									System.out.println("detail:" + tempDetail.getFirstChild().getNodeValue().toString());
 									if(textArea!=null) {
-										textAreaInfo=textAreaInfo+"detail:"+"      "+tempDetail.getFirstChild().getNodeValue().toString().replace("\t", "")+"\n";
-										textArea.setText(textAreaInfo);
+//										textAreaInfo=textAreaInfo+"detail:"+"      "+tempDetail.getFirstChild().getNodeValue().toString().replace("\t", "")+"\n";
+//										textArea.setText(textAreaInfo);
 									}
 								}
 								}

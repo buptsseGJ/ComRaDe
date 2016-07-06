@@ -1,4 +1,36 @@
 Race: <XtangoAnimation.AnimatorCanvas: void paint(java.awt.Graphics)>|$r5 = r0.<XtangoAnimation.AnimatorCanvas: java.awt.Graphics offscreenGraphics>|742 - <XtangoAnimation.AnimatorCanvas: void resetBounds()>|r0.<XtangoAnimation.AnimatorCanvas: java.awt.Graphics offscreenGraphics> = $r4|723
+Race: XtangoAnimator.java fillval <1473,1684>
+Race: XtangoAnimator.java colorval <1402,1549>
+Race: XtangoAnimator.java offscreenGraphics <723,743>
+Race: XtangoAnimator.java p3 <1661,1636>
+Race: XtangoAnimator.java p2 <1660,1636>
+Race: XtangoAnimator.java colorval <1394,1549>
+Race: XtangoAnimator.java widthval <1539,1550>
+Race: XtangoAnimator.java widthval <1539,1570>
+Race: XtangoAnimator.java widthval <1539,1554>
+Race: XtangoAnimator.java offscreenGraphics <696,742>
+Race: XtangoAnimator.java widthval <1545,1550>
+Race: XtangoAnimator.java widthval <1545,1570>
+Race: XtangoAnimator.java fillval <1478,1684>
+Race: XtangoAnimator.java widthval <1545,1554>
+Race: XtangoAnimator.java offscreenGraphics <696,743>
+Race: XtangoAnimator.java size <1544,1551>
+Race: XtangoAnimator.java p2 <1655,1636>
+Race: XtangoAnimator.java colorval <1402,1505>
+Race: XtangoAnimator.java radius <1501,1507>
+Race: XtangoAnimator.java fillval <1478,1506>
+Race: XtangoAnimator.java colorval <1402,1739>
+Race: XtangoAnimator.java colorval <1394,1505>
+Race: XtangoAnimator.java raduis <1496,1507>
+Race: XtangoAnimator.java fillval <1473,1506>
+Race: XtangoAnimator.java colorval <1394,1739>
+Race: XtangoAnimator.java string <1728,1751>
+Race: XtangoAnimator.java size <1729,1741>
+Race: XtangoAnimator.java size <1729,1740>
+Race: XtangoAnimator.java size <1722,1740>
+Race: XtangoAnimator.java size <1722,1741>
+Race: XtangoAnimator.java centered <1727,1744>
+
 Trace Size: 8564
 Total #Threads: 7
 Total #SharedVariables: 31
@@ -9,8 +41,8 @@ Total #Synchronizations: 1274
 Total #Branches: 1868
 Total #Property Events: 0
 Total #Potential Violations: 147
-Total #Real Violations: 1
-Total Time: 3975ms
+Total #Real Violations: 32
+
 
 real	0m42.054s
 user	0m31.180s

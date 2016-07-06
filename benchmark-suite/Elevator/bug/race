@@ -1,6 +1,5 @@
 Race: <elevator.Elevator: elevator.ElevatorState getState()>|$i4 = r0.<elevator.Elevator: int motionDirection>|184 - <elevator.Elevator: void run()>|r0.<elevator.Elevator: int motionDirection> = 0|113
 Race: <elevator.Person: void run()>|$i1 = $r1.<elevator.Building: int peopleOutside>|85 - <elevator.Person: void run()>|$r1.<elevator.Building: int peopleOutside> = $i2|85
-Race: <elevator.Person: void run()>|$r1.<elevator.Building: int peopleOutside> = $i2|85 - <elevator.Person: void run()>|$r1.<elevator.Building: int peopleOutside> = $i2|85
 Race: <elevator.Elevator: elevator.ElevatorState getState()>|$z0 = $r8[i0]|189 - <elevator.Elevator: void summonDestination(int)>|$r2[$i2] = 1|71
 Race: <elevator.Floor: void summonElevatorUp(elevator.Person)>|$z2 = r0.<elevator.Floor: boolean summonUp>|40 - <elevator.Floor: void summonElevatorUp(elevator.Person)>|r0.<elevator.Floor: boolean summonUp> = 1|43
 Race: <elevator.Elevator: elevator.ElevatorState getState()>|$i3 = r0.<elevator.Elevator: int motionState>|183 - <elevator.Elevator: boolean isArrived()>|r0.<elevator.Elevator: int motionState> = 0|207
@@ -21,6 +20,19 @@ Race: <elevator.Elevator: void leaveElevator(elevator.Person)>|$i0 = r0.<elevato
 Race: <elevator.Elevator: void requestOpenDoor()>|$i2 = r0.<elevator.Elevator: int motionState>|82 - <elevator.Elevator: void stopElevator()>|r0.<elevator.Elevator: int motionState> = 0|335
 Race: <elevator.Person: void run()>|$z0 = r0.<elevator.Person: boolean keepRunning>|81 - <elevator.Person: void setStopRunning()>|r0.<elevator.Person: boolean keepRunning> = 0|37
 Race: <elevator.Elevator: void run()>|$z1 = r0.<elevator.Elevator: boolean keepRunning>|107 - <elevator.Elevator: void setStopRunning()>|r0.<elevator.Elevator: boolean keepRunning> = 0|56
+Race: Person.java building.peopleWorking <171,177>
+Race: Person.java building.peopleWorking <177,314>
+Race: Person.java building.peopleWorking <314,314>
+Race: Person.java building.peopleWorking <171,314>
+Race: Person.java building.peopleWorking <95,95>
+Race: Person.java building.peopleWorking <95,314>
+Race: Person.java building.peopleWorking <85,146>
+Race: Person.java building.peopleWorking <171,171>
+Race: Person.java building.peopleWorking <95,177>
+Race: Elevator.java doorState <186,268>
+Race；Person.java elevator <49,292>
+Race: Person.java elevator <49,299>
+
 Trace Size: 787246
 Total #Threads: 13
 Total #SharedVariables: 60
@@ -31,8 +43,8 @@ Total #Synchronizations: 56376
 Total #Branches: 351209
 Total #Property Events: 0
 Total #Potential Violations: 39
-Total #Real Violations: 23
-Total Time: 5548ms
+Total #Real Violations: 34
+
 
 real	0m40.280s
 user	0m30.488s

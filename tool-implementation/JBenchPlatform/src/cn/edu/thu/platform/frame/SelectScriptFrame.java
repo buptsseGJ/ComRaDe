@@ -196,7 +196,6 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 		btExample.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Start to see the sample file ...");
 			}
 		});
 
@@ -229,7 +228,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 				if (file != null) {
 					Script.scripts.clear();
 					fileAbsolutePath = file.getAbsolutePath();
-					System.out.println("file path ：" + file.getAbsolutePath());
+//					System.out.println("file path ：" + file.getAbsolutePath());
 					commands = "\n    =====================   COMMANDS IN SCRIPTFILE  =====================\n\n";				
 					commands = commands +  readFileByLines(fileAbsolutePath);
 					jText.setText(commands);
@@ -244,8 +243,8 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 		runScript.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(System.getProperty("user.dir"));
-				System.out.println("writePosition:" + writePosition);
+//				System.out.println(System.getProperty("user.dir"));
+//				System.out.println("writePosition:" + writePosition);
 
 				Reports.userNames.clear();
 				Reports.userReports.clear();
@@ -291,7 +290,6 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 								}
 								// refresh schedule progressing
 								progress.setValue(i + 1);
-								System.out.println("progress value ：" + (progress.getValue()));
 							}
 							writer1.close();
 						} catch (IOException e1) {
@@ -315,8 +313,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 				long startTime=System.currentTimeMillis(); 
 				Process proc = Runtime.getRuntime().exec(scriptFile);
 				long tempTime = System.currentTimeMillis();
-				System.out.println("Time 1;" + (tempTime - startTime)/1000);
-				 BufferedInputStream in = null;
+				BufferedInputStream in = null;
 				// get standard output
 				readStdout = new BufferedReader(new InputStreamReader(proc.getInputStream(),Charset.forName("GBK")));
 				// get error output
@@ -330,7 +327,6 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 						try {
 							while ((tmp1 = readStdout.readLine()) != null) {
 								if (tmp1 != null) {
-									System.out.println(tmp1);
 									textAreaInfo = textAreaInfo +tmp1.toString()+"\n";
 									mStringBuffer.append(tmp1 + "\n");
 								}
@@ -355,7 +351,6 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 						try {
 							while ((tmp2 = readStderr.readLine()) != null) {
 								if (tmp2 != null) {
-									System.out.println(tmp2);
 									textAreaInfo = textAreaInfo +tmp2.toString()+"\n";
 									mStringBuffer.append(tmp2 + "\n");
 								}
@@ -381,7 +376,6 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 //				proc.waitFor();
 				long endTime = System.currentTimeMillis();
 				long timeConsumer = (endTime - startTime) / 1000;
-				System.out.println("Time 2：" + timeConsumer);
 				Reports.userNames.add(programName);
 				writer.write("\n>>>>>start command " + command + " about "+ programName + " on " + df.format(new Date()) + " <<<<<\n");
 				writer.write(mStringBuffer.toString());
@@ -445,7 +439,6 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 			String tempString = null;
 			int line = 1;
 			while ((tempString = reader.readLine()) != null) {
-				System.out.println("line " + line + ": " + tempString);
 				line++;
 				commands += tempString + "\n";
 				Script.scripts.add(tempString);
@@ -469,7 +462,6 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 		if (e.getSource() == progress) {
 			int value = progress.getValue();
 			progress.setString("zhi:" + (value * 1.0) / (Script.scripts.size())* 100 + "%");
-			System.out.println("zhi:" + (value * 1.0) / (Script.scripts.size())* 100 + "%");
 		}
 	}
 	public void setTextArea(TextArea textArea) {

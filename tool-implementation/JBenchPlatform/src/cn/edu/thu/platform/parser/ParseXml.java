@@ -48,12 +48,11 @@ public class ParseXml {
 		builder.setErrorHandler(new MyErrorHandler());
 		try {
 			Document document = builder.parse(fileAbsolutePath);
-			System.out.println("ok,Parse correctly!");
+//			System.out.println("ok,Parse correctly!");
 			return document;
 		} catch (SAXException | IOException e) {
 //			e.printStackTrace();
 		}
-		System.out.println("Error!");
 		return null;
 	}
 	
@@ -178,7 +177,7 @@ public class ParseXml {
 			    StreamResult result = new StreamResult(curFile);
 			    transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			    transformer.transform(source, result);
-			    System.out.println("XML file updated successfully");
+//			    System.out.println("XML file updated successfully");
 			}else{
 		    	curFile.createNewFile();
 			}

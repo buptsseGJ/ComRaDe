@@ -1,6 +1,5 @@
 Race: <testRace.TestRace6: void main(java.lang.String[])>|$i0 = <testRace.TestRace6: int x>|50 - <testRace.TestRace6$1: void run()>|<testRace.TestRace6: int x> = $i1|44
-Race: <testRace.TestRace6: void main(java.lang.String[])>|<testRace.TestRace6: int x> = $i1|50 - <testRace.TestRace6$1: void run()>|<testRace.TestRace6: int x> = $i1|44
-Race: <testRace.TestRace6$1: void run()>|$i0 = <testRace.TestRace6: int x>|44 - <testRace.TestRace6: void main(java.lang.String[])>|<testRace.TestRace6: int x> = $i1|50
+
 Trace Size: 18
 Total #Threads: 2
 Total #SharedVariables: 1
@@ -11,8 +10,7 @@ Total #Synchronizations: 6
 Total #Branches: 2
 Total #Property Events: 0
 Total #Potential Violations: 3
-Total #Real Violations: 3
-Total Time: 842ms
+Total #Real Violations: 1
 
 real	0m7.212s
 user	0m5.020s

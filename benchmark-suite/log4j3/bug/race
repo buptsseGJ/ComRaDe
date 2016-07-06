@@ -54,3 +54,17 @@ Data race on field org.apache.log4j.helpers.AppenderAttachableImpl.appenderList:
         at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
 }}}
 
+Data race on field org.apache.log4j.helpers.Test54325.buggy: {{{
+    Concurrent write in thread T17 (locks held: {})
+ ---->  at org.apache.log4j.helpers.Test54325.access$1(Test54325.java:18)
+        at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:48)
+    T17 is created by T1
+        at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at org.apache.log4j.helpers.Test54325.access$1(Test54325.java:18)
+        at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:48)
+    T15 is created by T1
+        at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
+}}}
+

@@ -1,5 +1,7 @@
 Race: <benchmarks.raytracer.TournamentBarrier: void DoBarrier(int)>|$z4 = $r4[0]|78 - <benchmarks.raytracer.TournamentBarrier: void DoBarrier(int)>|$r3[i0] = z0|76
 Race: <benchmarks.raytracer.TournamentBarrier: void DoBarrier(int)>|$z3 = $r2[$i13]|65 - <benchmarks.raytracer.TournamentBarrier: void DoBarrier(int)>|$r3[i0] = z0|76
+Race: JGFRayTracerBench.java checksum1 <175,175>
+
 Trace Size: 37552
 Total #Threads: 3
 Total #SharedVariables: 3
@@ -10,5 +12,4 @@ Total #Synchronizations: 972
 Total #Branches: 8372
 Total #Property Events: 0
 Total #Potential Violations: 2
-Total #Real Violations: 2
-Total Time: 1061ms
+Total #Real Violations: 3

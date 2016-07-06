@@ -3,16 +3,12 @@ Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i1 = 
 Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i0 = <benchmarks.testcases.TestAtomicity9: int a>|55 - <benchmarks.testcases.TestAtomicity9$1: void run()>|<benchmarks.testcases.TestAtomicity9: int a> = $i1|28
 Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i6 = <benchmarks.testcases.TestAtomicity9: int e>|67 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int e> = $i3|45
 Race: <benchmarks.testcases.TestAtomicity9$1: void run()>|$i6 = <benchmarks.testcases.TestAtomicity9: int g>|31 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int g> = $i5|38
-Race: <benchmarks.testcases.TestAtomicity9$1: void run()>|<benchmarks.testcases.TestAtomicity9: int g> = $i7|31 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int g> = $i5|38
-Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|$i4 = <benchmarks.testcases.TestAtomicity9: int g>|38 - <benchmarks.testcases.TestAtomicity9$1: void run()>|<benchmarks.testcases.TestAtomicity9: int g> = $i7|31
 Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i4 = <benchmarks.testcases.TestAtomicity9: int i>|63 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int i> = $i7|47
 Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|$i6 = <benchmarks.testcases.TestAtomicity9: int h>|39 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int h> = $i5|46
-Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int h> = $i7|39 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int h> = $i5|46
-Race: <benchmarks.testcases.TestAtomicity9$3: void run()>|$i4 = <benchmarks.testcases.TestAtomicity9: int h>|46 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int h> = $i7|39
 Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i3 = <benchmarks.testcases.TestAtomicity9: int f>|62 - <benchmarks.testcases.TestAtomicity9$1: void run()>|<benchmarks.testcases.TestAtomicity9: int f> = $i5|30
 Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|$i2 = <benchmarks.testcases.TestAtomicity9: int d>|37 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int d> = $i1|44
-Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int d> = $i3|37 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int d> = $i1|44
-Race: <benchmarks.testcases.TestAtomicity9$3: void run()>|$i0 = <benchmarks.testcases.TestAtomicity9: int d>|44 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int d> = $i3|37
+Race: TestAtomicity9.java c <36,66>
+
 Trace Size: 67
 Total #Threads: 4
 Total #SharedVariables: 9
@@ -23,8 +19,7 @@ Total #Synchronizations: 12
 Total #Branches: 6
 Total #Property Events: 0
 Total #Potential Violations: 16
-Total #Real Violations: 15
-Total Time: 1121ms
+Total #Real Violations: 10
 
 real	0m10.109s
 user	0m8.100s

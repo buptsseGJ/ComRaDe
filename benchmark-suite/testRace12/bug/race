@@ -1,5 +1,6 @@
 Race: <testRace.TestRace12: float getX()>|$f0 = <testRace.TestRace12: float x>|46 - <testRace.TestRace12: void setX(float)>|<testRace.TestRace12: float x> = f0|50
 Race: <testRace.TestRace12: void setX(float)>|<testRace.TestRace12: float x> = f0|50 - <testRace.TestRace12: void setX(float)>|<testRace.TestRace12: float x> = f0|50
+
 Trace Size: 1009
 Total #Threads: 3
 Total #SharedVariables: 1
@@ -11,7 +12,6 @@ Total #Branches: 200
 Total #Property Events: 0
 Total #Potential Violations: 2
 Total #Real Violations: 2
-Total Time: 1213ms
 
 real	0m9.207s
 user	0m6.460s

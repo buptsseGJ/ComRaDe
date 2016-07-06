@@ -1,9 +1,6 @@
 Race: <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|$i0 = <benchmarks.testcases.TestAtomicity1: int x>|24 - <benchmarks.testcases.TestAtomicity1$1: void run()>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|18
 Race: <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|$i2 = <benchmarks.testcases.TestAtomicity1: int x>|25 - <benchmarks.testcases.TestAtomicity1$1: void run()>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|18
-Race: <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity1: int x> = $i3|25 - <benchmarks.testcases.TestAtomicity1$1: void run()>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|18
-Race: <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|24 - <benchmarks.testcases.TestAtomicity1$1: void run()>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|18
-Race: <benchmarks.testcases.TestAtomicity1$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity1: int x>|18 - <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|24
-Race: <benchmarks.testcases.TestAtomicity1$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity1: int x>|18 - <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity1: int x> = $i3|25
+
 Trace Size: 17
 Total #Threads: 2
 Total #SharedVariables: 1
@@ -14,8 +11,7 @@ Total #Synchronizations: 4
 Total #Branches: 2
 Total #Property Events: 0
 Total #Potential Violations: 6
-Total #Real Violations: 6
-Total Time: 470ms
+Total #Real Violations: 2
 
 real	0m7.417s
 user	0m6.224s
