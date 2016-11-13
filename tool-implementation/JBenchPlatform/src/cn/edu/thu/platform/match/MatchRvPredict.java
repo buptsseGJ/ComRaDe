@@ -12,6 +12,7 @@ import java.util.regex.Pattern;
 import cn.edu.thu.platform.entity.Race;
 import cn.edu.thu.platform.entity.Report;
 import cn.edu.thu.platform.entity.Reports;
+import cn.edu.thu.platform.frame.MainFrame;
 
 public class MatchRvPredict implements MatchInterface {
 
@@ -21,7 +22,7 @@ public class MatchRvPredict implements MatchInterface {
 
 	@Override
 	public void matchFile() {
-		File file = new File("../result.txt");
+		File file = new File(MainFrame.path+"result.txt");
 		BufferedReader reader = null;
 		String info = "";
 		// state: represent the current matching state,

@@ -72,8 +72,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 	public String commands = "";// store text information showed in specified window
 	public int indexPos = System.getProperty("user.dir").replace('\\', '/')
 			.lastIndexOf('/');
-	public String writePosition = System.getProperty("user.dir")
-			.replace('\\', '/').substring(0, indexPos);
+	public String writePosition = MainFrame.path;
 
 	// public int position = writePosition.lastIndexOf('/');
 	// writePosition = writePosition.substring(0, indexPos);
@@ -331,20 +330,22 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 							caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 							jsp.setViewportView(jText);
 							
-							writer1 = new FileWriter(writePosition + "/result.txt", false);
+							writer1 = new FileWriter(writePosition + "result.txt", false);
 							for (int i = 0; i < Script.scripts.size(); i++) {
 								String temp = Script.scripts.get(i);
 								String tempFile = "";
-								FileWriter writer = new FileWriter(tempFile,false);
+								FileWriter writer;
+								System.out.println(os);
 								if (os.startsWith("win")){
-									tempFile = writePosition + "/tempFile.bat";
+									tempFile = writePosition + "tempFile.bat";
+									writer = new FileWriter(tempFile,false);
 									writer.write(deleteName(temp));
-								}else if(os.startsWith("linux")){
-									tempFile = writePosition + "/tempFile.sh";
-									writer.write("");
 								}else{
-																		
-								}								
+									tempFile = writePosition + "tempFile.sh";
+									writer = new FileWriter(tempFile,false);
+									writer.write("#! /bin/bash\n"); 
+									writer.write(deleteName(temp));
+								}						
 								
 								writer.close();
 								
@@ -384,17 +385,30 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 			try {
 				SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				long startTime=System.currentTimeMillis(); 
-				Process proc = Runtime.getRuntime().exec(scriptFile);
+				Process proc;
+				if (os.startsWith("win")){
+					proc = Runtime.getRuntime().exec(scriptFile);
+				}else{
+					//scriptFile = "chmod a+x " + scriptFile;
+					 
+					String shCommand =  "chmod a+x " + scriptFile;
+					System.out.println("scriptFile:"+shCommand);
+					proc = Runtime.getRuntime().exec(shCommand);
+					String runCommand =  "sh " + scriptFile;
+					System.out.println("scriptFile:"+runCommand);
+					proc = Runtime.getRuntime().exec(runCommand);
+				}
 				long tempTime = System.currentTimeMillis();
 				System.out.println("Time 1;" + (tempTime - startTime)/1000);
 				 BufferedInputStream in = null;
 				// get standard output
-				readStdout = new BufferedReader(new InputStreamReader(proc.getInputStream(),Charset.forName("GBK")));
+				readStdout = new BufferedReader(new InputStreamReader(proc.getInputStream(),Charset.forName("UTF-8")));
 				// get error output
-				readStderr = new BufferedReader(new InputStreamReader(proc.getErrorStream(),Charset.forName("GBK")));
+				readStderr = new BufferedReader(new InputStreamReader(proc.getErrorStream(),Charset.forName("UTF-8")));
 //				mStringBuffer.replace(0, mStringBuffer.length(), "");
 				mStringBuffer.delete(0, mStringBuffer.length());
 				mStringBuffer = new StringBuffer();
+				//}
 				Thread execThread = new Thread() {
 					@Override
 					public void run() {

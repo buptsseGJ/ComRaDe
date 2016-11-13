@@ -6,22 +6,24 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import cn.edu.thu.platform.entity.Race;
 import cn.edu.thu.platform.entity.Report;
 import cn.edu.thu.platform.entity.Reports;
 import cn.edu.thu.platform.frame.MainFrame;
 
-public class MatchCalfuzzer implements MatchInterface {
+public class MatchDATE  implements MatchInterface{
 
-	public MatchCalfuzzer() {
-		System.out.println("Start Calfuzzer matching...");
+	public MatchDATE() {
+		System.out.println("Start DATE matching...");
 	}
-
+	
 	@Override
 	public void matchFile() {
-		File file = new File(MainFrame.path+"result.txt");// it is in the parent folder of this project.
+		// TODO Auto-generated method stub
+		File file = new File(MainFrame.path+"result.txt");
 		BufferedReader reader = null;
 		String info = "";
 		// state: represent the current matching state,
@@ -45,17 +47,15 @@ public class MatchCalfuzzer implements MatchInterface {
 					case 1://when the state is 1, it has found the start position of result.txt, wants to find the position containing'>>>>>end<<<<<'.
 						if(tempString.indexOf(">>>>>end<<<<<")!=-1) {//find the end position
 							state=2;
-						}						
+						}					
 						if(tempString.indexOf("[total time:")!=-1) {//find the position recording time spent 
 							costTime=tempString.substring(tempString.indexOf(":")+1, tempString.length()-1);
 						}
 						//stitch the contents of the result.txt into a single line
 						info +=tempString;
-
-						if(state == 1){
+						if(state==1){
 							break;
 						}
-						
 						//start to extract important data race information, such as line number.
 //						System.out.println("\n\n\n"+info+"\n");
 						String caseName = "";
@@ -68,23 +68,24 @@ public class MatchCalfuzzer implements MatchInterface {
 							caseName = nameMatch.group(3).trim();
 							Set<Race> races = new HashSet<Race>();
 							//this pattern is used for extracting line number.
-							String pair = "(.*?\\*+\\s+Real\\s+data\\s+race\\s+detected\\s+between\\s+?)(.*?java)(#)(\\d+?)(\\s*?and\\s+?)(.*?java)(#)(\\d+)(.*)";
+							String pair = "(.*?Race Pair:\\s?.*?\\.java:\\s*)(\\d+?)(\\s+?.*?\\.java:\\s*)(\\d+)(\\s*?)(.*)";
 							Pattern pairPattern = Pattern.compile(pair);
 							info = nameMatch.group(5);
 							Matcher pairMatch = pairPattern.matcher(info);
 							while(pairMatch.find()) {
-								//the first class name 
-								String str1 = pairMatch.group(2);
+								//the first class name
+//								String str1 = pairMatch.group(2);
 								//the first line number
-								String num1 = pairMatch.group(4);
+								String num1 = pairMatch.group(2);
 								//the second class name
-								String str2 = pairMatch.group(6);
+//								String str2 = pairMatch.group(7);
 								//the second line number
-								String num2 = pairMatch.group(8);
-
+								String num2 = pairMatch.group(4);
+								
 								//Place the smaller line number in the first position 
 								int x1 = Integer.parseInt(num1.trim());
 								int x2 = Integer.parseInt(num2.trim());
+								System.out.println("line1 and line2:"+x1+"  "+x2);
 								if(x1<x2) {
 									Race race = new Race(num1.trim(),num2.trim());
 									races.add(race);
@@ -92,8 +93,8 @@ public class MatchCalfuzzer implements MatchInterface {
 									Race race = new Race(num2.trim(),num1.trim());
 									races.add(race);			
 								}
-						        //start to look for the next match of data race in the specified test case
-								pairMatch = pairPattern.matcher(pairMatch.group(9));
+								//start to look for the next match of data race in the specified test case
+								pairMatch = pairPattern.matcher(pairMatch.group(6));
 							}
 							if(!Reports.userNames.contains(caseName)){
 								Reports.userNames.add(caseName);
@@ -120,4 +121,5 @@ public class MatchCalfuzzer implements MatchInterface {
 			}
 		}
 	}
+
 }

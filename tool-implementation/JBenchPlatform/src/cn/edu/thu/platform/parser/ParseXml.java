@@ -21,6 +21,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import cn.edu.thu.platform.entity.Race;
+import cn.edu.thu.platform.frame.MainFrame;
 
 import java.io.*;
 
@@ -41,7 +42,8 @@ public class ParseXml {
             @Override
 			public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException
             {
-                   String dtd_uri = System.getProperty("user.dir").replace('\\', '/')+"/file/standard.dtd";
+                   String dtd_uri = MainFrame.path+"file/standard.dtd";
+                   System.out.println("dtd_uri:"+dtd_uri);
                    return new InputSource(dtd_uri);
             }
 		});
@@ -69,7 +71,7 @@ public class ParseXml {
             @Override
 			public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException
             {
-                   String dtd_uri = System.getProperty("user.dir").replace('\\', '/')+"/file/comparison.dtd";
+                   String dtd_uri = MainFrame.path+"file/comparison.dtd";
                    return new InputSource(dtd_uri);
             }
 		});

@@ -1,1 +1,0 @@
-mvn -f E:\log4j\apache-log4j-2.8.1-src\pom.xml test

@@ -10,7 +10,7 @@ public class Match {
 				match = new MatchCalfuzzer();
 				break;
 			case "DATE":
-//				match = new MatchDATE();
+			match = new MatchDATE();
 				break;
 			case "Rv-Predict":
 				match = new MatchRvPredict();

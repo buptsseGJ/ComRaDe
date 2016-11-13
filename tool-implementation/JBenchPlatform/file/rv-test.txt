@@ -1,0 +1,3 @@
+[testAtomicity1]/home/jiangao/RV-Predict/bin/rv-predict -cp /home/jiangao/github/JBench/benchmark-suite/testAtomicity1/bin benchmarks.testcases.TestAtomicity1
+[testAtomicity4]/home/jiangao/RV-Predict/bin/rv-predict -cp /home/jiangao/github/JBench/benchmark-suite/testAtomicity4/bin benchmarks.testcases.TestAtomicity4
+[testAtomicity6]/home/jiangao/RV-Predict/bin/rv-predict -cp /home/jiangao/github/JBench/benchmark-suite/testAtomicity6/bin benchmarks.testcases.TestAtomicity6

@@ -40,12 +40,13 @@ import java.awt.EventQueue;
 import java.awt.Insets;
 
 /**
- * main functions： 1) read benchmark suite 2) manage benchmark suite 3) run programs
+ * main functions： 1) manage and filter race-related dataset 2) run and log detection process 3) compare and generate detection reports
  * 
  */
 public class MainFrame extends JFrame {
 
 	public String fileAbsolutePath;
+	public static String path;
 	private JButton readSuites = new JButton("Import");
 	private JButton manageSuites = new JButton("Manage");
 	private JButton runProgram = new JButton("About ");
@@ -57,9 +58,14 @@ public class MainFrame extends JFrame {
 	public String textAreaInfo = "";
 
 	public MainFrame() {
-		String os = System.getProperty("os.name");  
+		String os = System.getProperty("os.name").toLowerCase();  
 		SelectScriptFrame.os = os.toLowerCase();
 		System.out.println(os);
+		if (!(os.startsWith("win")||(os.startsWith("lin"))))
+		{
+			JOptionPane.showMessageDialog(getContentPane(), "Only windows and Linux OS are supported!");
+			System.exit(0);  			
+		}
 		setResizable(false);
 		getContentPane().setFont(new Font("Century Gothic", Font.PLAIN, 22));
 		JPanel p1 = new ButtonPanel();
@@ -203,6 +209,11 @@ public class MainFrame extends JFrame {
 				JFileChooser jfc = new JFileChooser();
 				jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
 				File rootFile = new File(System.getProperty("user.dir").replace('\\', '/')+"/file");
+				System.out.println("rootFile:"+rootFile);
+				int index = rootFile.toString().indexOf("JBenchPlatform");
+				int length = "JBenchPlatform".length();
+				path = rootFile.toString().substring(0, index+length+1).replace('\\','/');
+				System.out.println("path:"+path);
 				jfc.setCurrentDirectory(rootFile);
 			    FileNameExtensionFilter filter = new FileNameExtensionFilter(
 			              "XML file(*.xml)", "xml");
@@ -214,6 +225,7 @@ public class MainFrame extends JFrame {
 					textAreaInfo="";
 					textArea.setText(textAreaInfo);
 					fileAbsolutePath = file.getAbsolutePath();
+					System.out.println("fileAbsolutePath:"+fileAbsolutePath);
 					ParseXml parser = new ParseXml();
 					Document validationResult = parser.validateXml(fileAbsolutePath);
 					if (validationResult != null) {

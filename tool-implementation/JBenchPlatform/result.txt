@@ -1,0 +1,384 @@
+
+>>>>>start command [testRace1]/home/jiangao/confu-master/date-script/confu -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace1/bin -tool=FT2 -noxml testRace.TestRace1 about testRace1 on 2016-11-13 23:10:18 <<<<<
+java version "1.8.0_111"
+
+Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+[premain: Installling RoadRunner Agent...]
+[main: RoadRunner Agent Loaded.]
+[main: Running in FAST Mode]
+[RR: Creating Fresh Meta Data]
+[RR: Creating Tool Chain]
+  [RR: Creating tool loader with path [file:/home/jiangao/confu-master/classes/rr/simple/, file:/home/jiangao/confu-master/classes/tools/]]
+  [RR: file:/home/jiangao/confu-master/classes/rr/simple/rrtools.properties]
+    [RR: [C, T, FPTest, S, PCT, TL, SFPTool, P, N, PPT, LOG]]
+  [RR: 0.00100 sec]
+  [RR: file:/home/jiangao/confu-master/classes/tools/rrtools.properties]
+    [RR: [BE, DL, HB, NPD, A, FT2L, COV, FT2, PL, RS, LS]]
+  [RR: 0.00 sec]
+  [RR: Extending States for tools/fasttrack/FastTrackTool]
+  [RR: 0.00200 sec]
+  [RR: Transforming rr/state/ShadowThread]
+  [RR: Adding field E to rr/state/ShadowThread (tools/fasttrack/FastTrackTool)]
+  [RR: Adding field V to rr/state/ShadowThread (tools/fasttrack/FastTrackTool)]
+  [RR: Adding field badVarState to rr/state/ShadowThread (tools/fasttrack/FastTrackTool)]
+  [RR: done]
+  [RR: Transforming tools/fasttrack/FastTrackTool]
+  [RR: done]
+  [RR: Epoch will use 5 bits for tids]
+  [RR: Turning off Instrumentation for all classes match .*Barrier.*: see -nobarrier]
+  [RR:     complete chain: tools.fasttrack.FastTrackTool -> Last]
+  [RR:        enter chain: [Last]]
+  [RR:         exit chain: [Last]]
+  [RR:      acquire chain: [tools.fasttrack.FastTrackTool, Last]]
+  [RR:      release chain: [tools.fasttrack.FastTrackTool, Last]]
+  [RR:       access chain: [tools.fasttrack.FastTrackTool, Last]]
+  [RR: Read Fastpath code found in [tools.fasttrack.FastTrackTool, Last]]
+  [RR: Write Fastpath code found in [tools.fasttrack.FastTrackTool, Last]]
+  [RR: Array Read Fastpath code found in []]
+  [RR: Array Write Fastpath code found in []]
+  [RR: Field Read Fastpath code found in []]
+  [RR: Field Write Fastpath code found in []]
+  [RR: No Tools implement enter/exit hooks.]
+[RR: 0.0460 sec]
+[RR: OPTIONS:]
+  [RR: (rr.state.agent.ThreadStateExtensionAgent) javaArgs             = testRace.TestRace1  ]
+  [RR: (rr.state.agent.ThreadStateExtensionAgent) noDecInline          = false               ]
+  [RR: (acme.util.Util)                   quiet                = false               ]
+  [RR: (acme.util.Util)                   logDepth             = 100                 ]
+  [RR: (acme.util.Util)                   logs                 = log                 ]
+  [RR: (acme.util.Util)                   out                  =                     ]
+  [RR: (acme.util.Util)                   err                  =                     ]
+  [RR: (rr.RRMain)                        noinst               = false               ]
+  [RR: (rr.RRMain)                        inst                 = INST                ]
+  [RR: (rr.RRMain)                        infThreads           = 0                   ]
+  [RR: (rr.RRMain)                        benchmark            = 0                   ]
+  [RR: (rr.RRMain)                        warmup               = 3                   ]
+  [RR: (rr.RRMain)                        availableProcessors  = 4                   ]
+  [RR: (rr.RRMain)                        args                 = []                  ]
+  [RR: (acme.util.Debug)                  d                    = []                  ]
+  [RR: (acme.util.Yikes)                  maxYikes             = 5                   ]
+  [RR: (rr.RRMain$5)                      help                 = false               ]
+  [RR: (rr.tool.RR)                       toolpath             = /home/jiangao/confu-master/classes/rr/simple:/home/jiangao/confu-master/classes/tools]
+  [RR: (rr.tool.RR)                       classpath            = /home/jiangao/github/JBench/benchmark-suite/testRace1/bin]
+  [RR: (rr.tool.RR)                       tool                 = FT2                 ]
+  [RR: (rr.tool.RR)                       tools                = false               ]
+  [RR: (rr.tool.RR)                       noxml                = true                ]
+  [RR: (rr.tool.RR)                       constantGC           = false               ]
+  [RR: (rr.tool.RR)                       noFP                 = false               ]
+  [RR: (rr.tool.RR)                       noShutdownHook       = false               ]
+  [RR: (rr.tool.RR)                       noEnter              = true                ]
+## 
+  [RR: (rr.tool.RR)                       xml                  = log.xml             ]
+## =====================================================================
+  [RR: (rr.tool.RR)                       pulse                =                     ]
+## FastTrack Error
+## 
+##          Thread: 2    
+##           Blame: testRace/TestRace1.x_I
+  [RR: (rr.tool.RR)                       maxTime              = 0                   ]
+  [RR: (rr.tool.RR)                       maxMem               = 10240               ]
+##           Count: 1    (max: 100)
+  [RR: (rr.tool.RR)                       maxTid               = 16                  ]
+##    Shadow State: [W=(1:3) R=(1:3) V=[]]
+  [RR: (rr.tool.RR)                       stacks               = false               ]
+##  Current Thread: [tid=2    C=[(0:4) (1:0) (2:3) (3:0)]   E=(2:3)]
+  [RR: (rr.tool.RR)                       values               = false               ]
+##           Class: testRace/TestRace1
+##           Field: null.testRace/TestRace1.x_I
+##         Message: Write-Read Race
+##     Previous Op: Write by  null
+##     Currrent Op: Read by  Thread-1[tid = 2]
+  [RR: (rr.tool.RR)                       noTidGC              = false               ]
+##           Stack: Use -stacks to show stacks...
+##       Race Pair: testRace/TestRace1.java:41 --- testRace/TestRace1.java:47
+  [RR: (rr.tool.RR)                       noEventReuse         = false               ]
+## =====================================================================
+  [RR: (rr.tool.RR)                       trackMemoryUsage     = false               ]
+## 
+  [RR: (rr.loader.LoaderContext)          repository           =                     ]
+## 
+  [RR: (rr.meta.MetaDataInfoMaps)         meta                 = null                ]
+## =====================================================================
+## FastTrack Error
+  [RR: (rr.meta.InstrumentationFilter)    methods              = ["-.*Barrier.await\(\)V", "-java.util.concurrent.CyclicBarrier.await\(JLjava/util/concurrent/TimeUnit;\)I", "-java.util.concurrent.CyclicBarrier.await\(\)I", "-.*Barrier.DoBarrier\(I\)V", "-.*TournamentBarrier.DoBarrier\(I\)V", default=ACCEPT]]
+  [RR: (rr.meta.InstrumentationFilter)    fields               = ["-.*this\$.*", "-$.*__\$rr.*", default=ACCEPT]]
+## 
+  [RR: (rr.meta.InstrumentationFilter)    lines                = [default=ACCEPT]    ]
+##          Thread: 2    
+  [RR: (rr.meta.InstrumentationFilter)    classes              = ["-.*Barrier.*", "-java..*", "-javax..*", "-com.sun..*", "-sun..*", "-rr..*", "-tools..*", "-acme..*", "-.*__\$rr_.*", "-org.xml..*", default=ACCEPT]]
+##           Blame: testRace/TestRace1.x_I
+##           Count: 2    (max: 100)
+  [RR: (rr.meta.InstrumentationFilter)    shadowThread         = ["-.*", default=ACCEPT]]
+##    Shadow State: [W=(1:3) R=(1:3) V=[]]
+##  Current Thread: [tid=2    C=[(0:4) (1:0) (2:3) (3:0)]   E=(2:3)]
+  [RR: (rr.meta.InstrumentationFilter)    noop                 = [default=ACCEPT]    ]
+  [RR: (rr.instrument.classes.ThreadDataThunkInserter) noConstructor        = false               ]
+##           Class: testRace/TestRace1
+  [RR: (rr.instrument.classes.CloneFixer) noClone              = false               ]
+  [RR: (rr.instrument.Instrumentor)       dump                 =                     ]
+##           Field: null.testRace/TestRace1.x_I
+  [RR: (rr.instrument.Instrumentor)       field                = FINE                ]
+##         Message: Write-Write Race
+  [RR: (rr.instrument.Instrumentor)       fancy                = false               ]
+##     Previous Op: Write by  null
+##     Currrent Op: Write by  Thread-1[tid = 2]
+  [RR: (rr.instrument.Instrumentor)       verify               = false               ]
+##           Stack: Use -stacks to show stacks...
+##       Race Pair: testRace/TestRace1.java:41 --- testRace/TestRace1.java:47
+  [RR: (rr.instrument.Instrumentor)       trackReflection      = false               ]
+  [RR: (rr.instrument.Instrumentor)       arraySites           = false               ]
+## =====================================================================
+  [RR: (rr.instrument.Instrumentor)       Use TestAcquires     = false               ]
+## 
+  [RR: (rr.loader.InstrumentingDefineClassLoader) sanity               = false               ]
+## 
+  [RR: (rr.tool.RREventGenerator)         reentrantEvents      = false               ]
+## =====================================================================
+  [RR: (rr.tool.RREventGenerator)         nojoin               = false               ]
+## FastTrack Error
+  [RR: (rr.tool.RREventGenerator)         multiLoader          = false               ]
+## 
+  [RR: (rr.tool.RREventGenerator)         indices              = 2147483647          ]
+  [RR: (rr.state.update.Updaters)         updaters             = SAFE                ]
+##          Thread: 2    
+  [RR: (rr.state.ArrayStateFactory)       array                = FINE                ]
+##           Blame: testRace/TestRace1.x_I
+  [RR: (rr.state.ArrayStateFactory$1)     userArray            = rr.state.ArrayStateCreator$1@5e2de80c]
+##           Count: 3    (max: 100)
+  [RR: (rr.barrier.BarrierMonitor)        nobarrier            = false               ]
+##    Shadow State: [W=(1:3) R=(1:3) V=[]]
+##  Current Thread: [tid=2    C=[(0:4) (1:0) (2:3) (3:0)]   E=(2:3)]
+  [RR: (rr.state.AbstractArrayStateCache) arrayCacheType       = STRONG              ]
+##           Class: testRace/TestRace1
+  [RR: (rr.instrument.methods.ThreadDataInstructionAdapter) callSites            = false               ]
+##           Field: null.testRace/TestRace1.x_I
+  [RR: (rr.error.ErrorMessage)            maxWarn              = 100                 ]
+[RR: 0.0110 sec]
+##         Message: Read-Write Race
+[RR: Adding Attic Listener to GC PS MarkSweep]
+##     Previous Op: Read by  null
+[RR: Installing DefineClassListener rr.loader.InstrumentingDefineClassLoader@1d44bcfa]
+[RR: System Class Path = [file:/home/jiangao/github/JBench/benchmark-suite/testRace1/bin/]]
+##     Currrent Op: Write by  Thread-1[tid = 2]
+[RR: Tool Init()]
+##           Stack: Use -stacks to show stacks...
+[RR: Running target]
+##       Race Pair: testRace/TestRace1.java:41 --- testRace/TestRace1.java:47
+[main: ----- ----- ----- -----       Meep Meep.      ----- ----- ----- -----]
+## =====================================================================
+[main: ]
+## 
+[main: Instrumenting testRace/TestRace1 (Loader=@01:class rr.RRMain$RRMainLoader)]
+[main: Instrumenting testRace/TestRace1$1 (Loader=@01:class rr.RRMain$RRMainLoader)]
+[main: Instrumenting testRace/TestRace1$2 (Loader=@01:class rr.RRMain$RRMainLoader)]
+[main: New Thread main with tid=0.]
+[main: Initial E for 0: (0:2)]
+[main: New Thread Thread-0 with tid=1.]
+[main: Initial E for 1: (1:2)]
+[main: New Thread Thread-1 with tid=2.]
+[main: Initial E for 2: (2:2)]
+[RR Waiter for 1: Terminating thread: Thread-0[tid = 1]]
+x = 22
+[RR Waiter for 2: Terminating thread: Thread-1[tid = 2]]
+[main: Terminating thread: main[tid = 0]]
+[main: Tool Fini()]
+[main: ]
+[main: ----- ----- ----- -----      Thpthpthpth.     ----- ----- ----- -----]
+[RR: 0.720 sec]
+[RR: Total Time: 719]
+
+[RR: Time = 719]
+[RR: Exiting: 0]
+[total time:1s]
+>>>>>end<<<<<
+
+>>>>>start command [testRace3]/home/jiangao/confu-master/date-script/confu -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace3/bin -tool=FT2 -noxml testRace.TestRace3 about testRace3 on 2016-11-13 23:10:20 <<<<<
+java version "1.8.0_111"
+Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+[premain: Installling RoadRunner Agent...]
+[main: RoadRunner Agent Loaded.]
+[main: Running in FAST Mode]
+[RR: Creating Fresh Meta Data]
+[RR: Creating Tool Chain]
+  [RR: Creating tool loader with path [file:/home/jiangao/confu-master/classes/rr/simple/, file:/home/jiangao/confu-master/classes/tools/]]
+  [RR: file:/home/jiangao/confu-master/classes/rr/simple/rrtools.properties]
+    [RR: [C, T, FPTest, S, PCT, TL, SFPTool, P, N, PPT, LOG]]
+  [RR: 0.00 sec]
+  [RR: file:/home/jiangao/confu-master/classes/tools/rrtools.properties]
+    [RR: [BE, DL, HB, NPD, A, FT2L, COV, FT2, PL, RS, LS]]
+  [RR: 0.00 sec]
+  [RR: Extending States for tools/fasttrack/FastTrackTool]
+  [RR: 0.00200 sec]
+  [RR: Transforming rr/state/ShadowThread]
+  [RR: Adding field E to rr/state/ShadowThread (tools/fasttrack/FastTrackTool)]
+  [RR: Adding field V to rr/state/ShadowThread (tools/fasttrack/FastTrackTool)]
+  [RR: Adding field badVarState to rr/state/ShadowThread (tools/fasttrack/FastTrackTool)]
+  [RR: done]
+  [RR: Transforming tools/fasttrack/FastTrackTool]
+  [RR: done]
+  [RR: Epoch will use 5 bits for tids]
+  [RR: Turning off Instrumentation for all classes match .*Barrier.*: see -nobarrier]
+  [RR:     complete chain: tools.fasttrack.FastTrackTool -> Last]
+  [RR:        enter chain: [Last]]
+  [RR:         exit chain: [Last]]
+  [RR:      acquire chain: [tools.fasttrack.FastTrackTool, Last]]
+  [RR:      release chain: [tools.fasttrack.FastTrackTool, Last]]
+  [RR:       access chain: [tools.fasttrack.FastTrackTool, Last]]
+  [RR: Read Fastpath code found in [tools.fasttrack.FastTrackTool, Last]]
+  [RR: Write Fastpath code found in [tools.fasttrack.FastTrackTool, Last]]
+  [RR: Array Read Fastpath code found in []]
+  [RR: Array Write Fastpath code found in []]
+  [RR: Field Read Fastpath code found in []]
+  [RR: Field Write Fastpath code found in []]
+  [RR: No Tools implement enter/exit hooks.]
+[RR: 0.0560 sec]
+[RR: OPTIONS:]
+  [RR: (rr.state.agent.ThreadStateExtensionAgent) javaArgs             = testRace.TestRace3  ]
+  [RR: (rr.state.agent.ThreadStateExtensionAgent) noDecInline          = false               ]
+  [RR: (acme.util.Util)                   quiet                = false               ]
+  [RR: (acme.util.Util)                   logDepth             = 100                 ]
+  [RR: (acme.util.Util)                   logs                 = log                 ]
+  [RR: (acme.util.Util)                   out                  =                     ]
+  [RR: (acme.util.Util)                   err                  =                     ]
+  [RR: (rr.RRMain)                        noinst               = false               ]
+  [RR: (rr.RRMain)                        inst                 = INST                ]
+  [RR: (rr.RRMain)                        infThreads           = 0                   ]
+  [RR: (rr.RRMain)                        benchmark            = 0                   ]
+  [RR: (rr.RRMain)                        warmup               = 3                   ]
+  [RR: (rr.RRMain)                        availableProcessors  = 4                   ]
+  [RR: (rr.RRMain)                        args                 = []                  ]
+  [RR: (acme.util.Debug)                  d                    = []                  ]
+  [RR: (acme.util.Yikes)                  maxYikes             = 5                   ]
+  [RR: (rr.RRMain$5)                      help                 = false               ]
+  [RR: (rr.tool.RR)                       toolpath             = /home/jiangao/confu-master/classes/rr/simple:/home/jiangao/confu-master/classes/tools]
+  [RR: (rr.tool.RR)                       classpath            = /home/jiangao/github/JBench/benchmark-suite/testRace3/bin]
+  [RR: (rr.tool.RR)                       tool                 = FT2                 ]
+  [RR: (rr.tool.RR)                       tools                = false               ]
+  [RR: (rr.tool.RR)                       noxml                = true                ]
+  [RR: (rr.tool.RR)                       constantGC           = false               ]
+  [RR: (rr.tool.RR)                       noFP                 = false               ]
+  [RR: (rr.tool.RR)                       noShutdownHook       = false               ]
+  [RR: (rr.tool.RR)                       noEnter              = true                ]
+  [RR: (rr.tool.RR)                       xml                  = log.xml             ]
+  [RR: (rr.tool.RR)                       pulse                =                     ]
+  [RR: (rr.tool.RR)                       maxTime              = 0                   ]
+  [RR: (rr.tool.RR)                       maxMem               = 10240               ]
+  [RR: (rr.tool.RR)                       maxTid               = 16                  ]
+  [RR: (rr.tool.RR)                       stacks               = false               ]
+  [RR: (rr.tool.RR)                       values               = false               ]
+  [RR: (rr.tool.RR)                       noTidGC              = false               ]
+  [RR: (rr.tool.RR)                       noEventReuse         = false               ]
+## 
+  [RR: (rr.tool.RR)                       trackMemoryUsage     = false               ]
+## =====================================================================
+## FastTrack Error
+  [RR: (rr.loader.LoaderContext)          repository           =                     ]
+## 
+##          Thread: 0    
+  [RR: (rr.meta.MetaDataInfoMaps)         meta                 = null                ]
+##           Blame: testRace/TestRace3.x_I
+  [RR: (rr.meta.InstrumentationFilter)    methods              = ["-.*Barrier.await\(\)V", "-java.util.concurrent.CyclicBarrier.await\(JLjava/util/concurrent/TimeUnit;\)I", "-java.util.concurrent.CyclicBarrier.await\(\)I", "-.*Barrier.DoBarrier\(I\)V", "-.*TournamentBarrier.DoBarrier\(I\)V", default=ACCEPT]]
+  [RR: (rr.meta.InstrumentationFilter)    fields               = ["-.*this\$.*", "-$.*__\$rr.*", default=ACCEPT]]
+##           Count: 1    (max: 100)
+  [RR: (rr.meta.InstrumentationFilter)    lines                = [default=ACCEPT]    ]
+  [RR: (rr.meta.InstrumentationFilter)    classes              = ["-.*Barrier.*", "-java..*", "-javax..*", "-com.sun..*", "-sun..*", "-rr..*", "-tools..*", "-acme..*", "-.*__\$rr_.*", "-org.xml..*", default=ACCEPT]]
+##    Shadow State: [W=(1:3) R=(1:3) V=[]]
+  [RR: (rr.meta.InstrumentationFilter)    shadowThread         = ["-.*", default=ACCEPT]]
+  [RR: (rr.meta.InstrumentationFilter)    noop                 = [default=ACCEPT]    ]
+##  Current Thread: [tid=0    C=[(0:4) (1:0) (2:0) (3:0)]   E=(0:4)]
+  [RR: (rr.instrument.classes.ThreadDataThunkInserter) noConstructor        = false               ]
+##           Class: testRace/TestRace3
+  [RR: (rr.instrument.classes.CloneFixer) noClone              = false               ]
+  [RR: (rr.instrument.Instrumentor)       dump                 =                     ]
+##           Field: null.testRace/TestRace3.x_I
+  [RR: (rr.instrument.Instrumentor)       field                = FINE                ]
+##         Message: Write-Read Race
+##     Previous Op: Write by  null
+  [RR: (rr.instrument.Instrumentor)       fancy                = false               ]
+##     Currrent Op: Read by  main[tid = 0]
+##           Stack: Use -stacks to show stacks...
+  [RR: (rr.instrument.Instrumentor)       verify               = false               ]
+##       Race Pair: testRace/TestRace3.java:42 --- testRace/TestRace3.java:46
+## =====================================================================
+  [RR: (rr.instrument.Instrumentor)       trackReflection      = false               ]
+  [RR: (rr.instrument.Instrumentor)       arraySites           = false               ]
+## 
+  [RR: (rr.instrument.Instrumentor)       Use TestAcquires     = false               ]
+  [RR: (rr.loader.InstrumentingDefineClassLoader) sanity               = false               ]
+## 
+  [RR: (rr.tool.RREventGenerator)         reentrantEvents      = false               ]
+## =====================================================================
+  [RR: (rr.tool.RREventGenerator)         nojoin               = false               ]
+## FastTrack Error
+## 
+##          Thread: 0    
+##           Blame: testRace/TestRace3.x_I
+  [RR: (rr.tool.RREventGenerator)         multiLoader          = false               ]
+##           Count: 2    (max: 100)
+  [RR: (rr.tool.RREventGenerator)         indices              = 2147483647          ]
+##    Shadow State: [W=(1:3) R=(1:3) V=[]]
+  [RR: (rr.state.update.Updaters)         updaters             = SAFE                ]
+##  Current Thread: [tid=0    C=[(0:4) (1:0) (2:0) (3:0)]   E=(0:4)]
+  [RR: (rr.state.ArrayStateFactory)       array                = FINE                ]
+##           Class: testRace/TestRace3
+  [RR: (rr.state.ArrayStateFactory$1)     userArray            = rr.state.ArrayStateCreator$1@5e2de80c]
+##           Field: null.testRace/TestRace3.x_I
+  [RR: (rr.barrier.BarrierMonitor)        nobarrier            = false               ]
+##         Message: Write-Write Race
+  [RR: (rr.state.AbstractArrayStateCache) arrayCacheType       = STRONG              ]
+  [RR: (rr.instrument.methods.ThreadDataInstructionAdapter) callSites            = false               ]
+##     Previous Op: Write by  null
+##     Currrent Op: Write by  main[tid = 0]
+  [RR: (rr.error.ErrorMessage)            maxWarn              = 100                 ]
+##           Stack: Use -stacks to show stacks...
+[RR: 0.0140 sec]
+##       Race Pair: testRace/TestRace3.java:42 --- testRace/TestRace3.java:46
+[RR: Adding Attic Listener to GC PS MarkSweep]
+## =====================================================================
+## 
+[RR: Installing DefineClassListener rr.loader.InstrumentingDefineClassLoader@1d44bcfa]
+## 
+[RR: System Class Path = [file:/home/jiangao/github/JBench/benchmark-suite/testRace3/bin/]]
+[RR: Tool Init()]
+[RR: Running target]
+## =====================================================================
+[main: ----- ----- ----- -----       Meep Meep.      ----- ----- ----- -----]
+## FastTrack Error
+[main: ]
+## 
+[main: Instrumenting testRace/TestRace3 (Loader=@01:class rr.RRMain$RRMainLoader)]
+##          Thread: 0    
+[main: Instrumenting testRace/TestRace3$1 (Loader=@01:class rr.RRMain$RRMainLoader)]
+##           Blame: testRace/TestRace3.x_I
+[main: New Thread main with tid=0.]
+##           Count: 3    (max: 100)
+[main: Initial E for 0: (0:2)]
+##    Shadow State: [W=(1:3) R=(1:3) V=[]]
+[main: New Thread Thread-0 with tid=1.]
+##  Current Thread: [tid=0    C=[(0:4) (1:0) (2:0) (3:0)]   E=(0:4)]
+[main: Initial E for 1: (1:2)]
+##           Class: testRace/TestRace3
+[RR Waiter for 1: Terminating thread: Thread-0[tid = 1]]
+##           Field: null.testRace/TestRace3.x_I
+x = 2
+##         Message: Read-Write Race
+[main: Terminating thread: main[tid = 0]]
+##     Previous Op: Read by  null
+[main: Tool Fini()]
+##     Currrent Op: Write by  main[tid = 0]
+[main: ]
+##           Stack: Use -stacks to show stacks...
+[main: ----- ----- ----- -----      Thpthpthpth.     ----- ----- ----- -----]
+##       Race Pair: testRace/TestRace3.java:42 --- testRace/TestRace3.java:46
+[RR: 0.573 sec]
+## =====================================================================
+[RR: Total Time: 570]
+
+## 
+[RR: Time = 570]
+[RR: Exiting: 0]
+[total time:1s]
+>>>>>end<<<<<
