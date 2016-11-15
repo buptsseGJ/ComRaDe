@@ -1,2 +1,0 @@
-#! /bin/bash
-rv-predict -cp /home/jiangao/github/JBench/benchmark-suite/testAtomicity6/bin benchmarks.testcases.TestAtomicity6

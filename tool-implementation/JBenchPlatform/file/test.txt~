@@ -1,3 +1,0 @@
-[testRace1]/home/jiangao/confu-master/date-script/confu -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace1/bin -tool=FT2 -noxml testRace.TestRace1
-[testRace3]/home/jiangao/confu-master/date-script/confu -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace3/bin -tool=FT2 -noxml testRace.TestRace3
-[JGFMolDynBenchSizeA]/home/jiangao/confu-master/date-script/confu -classpath=/home/jiangao/github/JBench/benchmark-suite/JGFMolDynBenchSizeA/bin -tool=FT2 -noxml  benchmarks.JGFMolDynBenchSizeA 3

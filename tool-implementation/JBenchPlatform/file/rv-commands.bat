@@ -1,0 +1,2 @@
+[testAtomicity1]rv-predict -cp D:/github/JBench/benchmark-suite/testAtomicity1/bin benchmarks.testcases.TestAtomicity1
+[testAtomicity4]rv-predict -cp D:/github/JBench/benchmark-suite/testAtomicity4/bin benchmarks.testcases.TestAtomicity4

@@ -763,3 +763,329 @@ TOOL:,DATE,,,,,,,,,,,,
 ,,,,3,missing,null,143,143,null,null,,,
 ,,,,4,missing,null,136,143,null,null,,,
 ,,,,5,missing,null,139,143,null,null,,,
+DATE:,2016-11-16 00:24:50
+TOOL:,Rv-Predict
+,,No.,USECASE NAME,IS IN BENCHMARKS,IS IN SCRIPTFILE,TOTAL,FOUNDED,MISSED,EXTRA,PR,FNR,FPR,OVERHEAD
+,,1,testAtomicity1,TRUE,TRUE,2,2,0,0,100.0%,0.0%,0.0%,88.55,
+,,2,testAtomicity4,TRUE,TRUE,2,1,1,0,50.0%,50.0%,0.0%,74.95,
+,,3,testAtomicity6,TRUE,TRUE,1,1,0,0,100.0%,0.0%,0.0%,67.97,
+,,4,testRace1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,5,testRace3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,6,testRace4,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,7,testRace6,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,8,testRace10,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,9,testRace11,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,10,testRace12,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,11,testRace13,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,12,tsp,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,13,sor,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,14,cyclicDemo,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,15,JGFMolDynBenchSizeA,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,16,JGFRayTracerBenchSizeA,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,17,jpf_test_cases,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,18,simpleExample,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,19,testAtomicity7,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,20,testAtomicity8,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,21,testAtomicity9,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,22,testAtomicity11,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,23,testAtomicity12,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,24,testAtomicity13,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,25,testAtomicity14,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,26,account,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,27,airlinetickets,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,28,boundedbuffer,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,29,bubblesort,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,30,bufwriter,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,31,critical,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,32,mergesort,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,33,pingpong,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,34,animator,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,35,Elevator,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,36,dbcp3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,37,derby3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,38,groovy1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,39,groovy5,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,40,groovy6,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,41,log4j1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,42,log4j3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,43,tomcat8.0.26,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,44,zookeeper,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,45,ftpserver1.1.0,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,46,log4j2.8.1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,47,guava-21.0,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,48,commons-dbcps2-2.1.1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,,Statistic description:
+,,1,testAtomicity1,total 2 races;,2 right race;,0 missing race;,0 extra race;,precision is 100.0%;,FNR is 0.0%;,FPR is0.0%;,
+,,2,testAtomicity4,total 2 races;,1 right race;,1 missing race;,0 extra race;,precision is 50.0%;,FNR is 50.0%;,FPR is0.0%;,
+,,3,testAtomicity6,total 1 races;,1 right race;,0 missing race;,0 extra race;,precision is 100.0%;,FNR is 0.0%;,FPR is0.0%;,
+,,4. ,testRace1,in scriptfile,not in benchmarks;
+,,5. ,testRace3,in scriptfile,not in benchmarks;
+,,6. ,testRace4,in scriptfile,not in benchmarks;
+,,7. ,testRace6,in scriptfile,not in benchmarks;
+,,8. ,testRace10,in scriptfile,not in benchmarks;
+,,9. ,testRace11,in scriptfile,not in benchmarks;
+,,10. ,testRace12,in scriptfile,not in benchmarks;
+,,11. ,testRace13,in scriptfile,not in benchmarks;
+,,12. ,tsp,in scriptfile,not in benchmarks;
+,,13. ,sor,in scriptfile,not in benchmarks;
+,,14. ,cyclicDemo,in scriptfile,not in benchmarks;
+,,15. ,JGFMolDynBenchSizeA,in scriptfile,not in benchmarks;
+,,16. ,JGFRayTracerBenchSizeA,in scriptfile,not in benchmarks;
+,,17. ,jpf_test_cases,in scriptfile,not in benchmarks;
+,,18. ,simpleExample,in scriptfile,not in benchmarks;
+,,19. ,testAtomicity7,in scriptfile,not in benchmarks;
+,,20. ,testAtomicity8,in scriptfile,not in benchmarks;
+,,21. ,testAtomicity9,in scriptfile,not in benchmarks;
+,,22. ,testAtomicity11,in scriptfile,not in benchmarks;
+,,23. ,testAtomicity12,in scriptfile,not in benchmarks;
+,,24. ,testAtomicity13,in scriptfile,not in benchmarks;
+,,25. ,testAtomicity14,in scriptfile,not in benchmarks;
+,,26. ,account,in scriptfile,not in benchmarks;
+,,27. ,airlinetickets,in scriptfile,not in benchmarks;
+,,28. ,boundedbuffer,in scriptfile,not in benchmarks;
+,,29. ,bubblesort,in scriptfile,not in benchmarks;
+,,30. ,bufwriter,in scriptfile,not in benchmarks;
+,,31. ,critical,in scriptfile,not in benchmarks;
+,,32. ,mergesort,in scriptfile,not in benchmarks;
+,,33. ,pingpong,in scriptfile,not in benchmarks;
+,,34. ,animator,in scriptfile,not in benchmarks;
+,,35. ,Elevator,in scriptfile,not in benchmarks;
+,,36. ,dbcp3,in scriptfile,not in benchmarks;
+,,37. ,derby3,in scriptfile,not in benchmarks;
+,,38. ,groovy1,in scriptfile,not in benchmarks;
+,,39. ,groovy5,in scriptfile,not in benchmarks;
+,,40. ,groovy6,in scriptfile,not in benchmarks;
+,,41. ,log4j1,in scriptfile,not in benchmarks;
+,,42. ,log4j3,in scriptfile,not in benchmarks;
+,,43. ,tomcat8.0.26,in scriptfile,not in benchmarks;
+,,44. ,zookeeper,in scriptfile,not in benchmarks;
+,,45. ,ftpserver1.1.0,in scriptfile,not in benchmarks;
+,,46. ,log4j2.8.1,in scriptfile,not in benchmarks;
+,,47. ,guava-21.0,in scriptfile,not in benchmarks;
+,,48. ,commons-dbcps2-2.1.1,in scriptfile,not in benchmarks;
+,,,Races details:
+,,,NAME,No.,STATE,CLASS,Line1,Line2,VARIABLE,DETAILs,
+,,,testAtomicity1,1,correctly found,null,18,24,null,null,
+,,,,2,correctly found,null,18,25,null,null,
+,,,NAME,No.,STATE,CLASS,Line1,Line2,VARIABLE,DETAILs,
+,,,testAtomicity4,1,correctly found,null,25,43,null,null,
+,,,,2,missing,null,25,44,null,null,
+,,,NAME,No.,STATE,CLASS,Line1,Line2,VARIABLE,DETAILs,
+,,,testAtomicity6,1,correctly found,null,20,30,null,null,
+
+DATE:,2016-11-16 00:47:21
+TOOL:,Rv-Predict
+,,No.,USECASE NAME,IS IN BENCHMARKS,IS IN SCRIPTFILE,TOTAL,FOUNDED,MISSED,EXTRA,PR,FNR,FPR,OVERHEAD
+,,1,testAtomicity1,TRUE,TRUE,2,2,0,0,100.0%,0.0%,0.0%,178.1,
+,,2,testAtomicity4,TRUE,TRUE,2,1,1,0,50.0%,50.0%,0.0%,163.56,
+,,3,testRace1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,4,testRace3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,5,sor,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,6,tomcat8.0.26,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,7,testRace4,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,8,testRace6,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,9,testRace10,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,10,testRace11,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,11,testRace12,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,12,testRace13,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,13,tsp,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,14,cyclicDemo,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,15,JGFMolDynBenchSizeA,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,16,JGFRayTracerBenchSizeA,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,17,jpf_test_cases,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,18,simpleExample,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,19,testAtomicity6,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,20,testAtomicity7,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,21,testAtomicity8,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,22,testAtomicity9,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,23,testAtomicity11,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,24,testAtomicity12,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,25,testAtomicity13,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,26,testAtomicity14,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,27,account,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,28,airlinetickets,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,29,boundedbuffer,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,30,bubblesort,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,31,bufwriter,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,32,critical,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,33,mergesort,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,34,pingpong,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,35,animator,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,36,Elevator,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,37,dbcp3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,38,derby3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,39,groovy1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,40,groovy5,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,41,groovy6,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,42,log4j1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,43,log4j3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,44,zookeeper,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,45,ftpserver1.1.0,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,46,log4j2.8.1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,47,guava-21.0,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,48,commons-dbcps2-2.1.1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,,Statistic description:
+,,1,testAtomicity1,total 2 races;,2 right race;,0 missing race;,0 extra race;,precision is 100.0%;,FNR is 0.0%;,FPR is0.0%;,
+,,2,testAtomicity4,total 2 races;,1 right race;,1 missing race;,0 extra race;,precision is 50.0%;,FNR is 50.0%;,FPR is0.0%;,
+,,3. ,testRace1,in scriptfile,not in benchmarks;
+,,4. ,testRace3,in scriptfile,not in benchmarks;
+,,5. ,sor,in scriptfile,not in benchmarks;
+,,6. ,tomcat8.0.26,in scriptfile,not in benchmarks;
+,,7. ,testRace4,in scriptfile,not in benchmarks;
+,,8. ,testRace6,in scriptfile,not in benchmarks;
+,,9. ,testRace10,in scriptfile,not in benchmarks;
+,,10. ,testRace11,in scriptfile,not in benchmarks;
+,,11. ,testRace12,in scriptfile,not in benchmarks;
+,,12. ,testRace13,in scriptfile,not in benchmarks;
+,,13. ,tsp,in scriptfile,not in benchmarks;
+,,14. ,cyclicDemo,in scriptfile,not in benchmarks;
+,,15. ,JGFMolDynBenchSizeA,in scriptfile,not in benchmarks;
+,,16. ,JGFRayTracerBenchSizeA,in scriptfile,not in benchmarks;
+,,17. ,jpf_test_cases,in scriptfile,not in benchmarks;
+,,18. ,simpleExample,in scriptfile,not in benchmarks;
+,,19. ,testAtomicity6,in scriptfile,not in benchmarks;
+,,20. ,testAtomicity7,in scriptfile,not in benchmarks;
+,,21. ,testAtomicity8,in scriptfile,not in benchmarks;
+,,22. ,testAtomicity9,in scriptfile,not in benchmarks;
+,,23. ,testAtomicity11,in scriptfile,not in benchmarks;
+,,24. ,testAtomicity12,in scriptfile,not in benchmarks;
+,,25. ,testAtomicity13,in scriptfile,not in benchmarks;
+,,26. ,testAtomicity14,in scriptfile,not in benchmarks;
+,,27. ,account,in scriptfile,not in benchmarks;
+,,28. ,airlinetickets,in scriptfile,not in benchmarks;
+,,29. ,boundedbuffer,in scriptfile,not in benchmarks;
+,,30. ,bubblesort,in scriptfile,not in benchmarks;
+,,31. ,bufwriter,in scriptfile,not in benchmarks;
+,,32. ,critical,in scriptfile,not in benchmarks;
+,,33. ,mergesort,in scriptfile,not in benchmarks;
+,,34. ,pingpong,in scriptfile,not in benchmarks;
+,,35. ,animator,in scriptfile,not in benchmarks;
+,,36. ,Elevator,in scriptfile,not in benchmarks;
+,,37. ,dbcp3,in scriptfile,not in benchmarks;
+,,38. ,derby3,in scriptfile,not in benchmarks;
+,,39. ,groovy1,in scriptfile,not in benchmarks;
+,,40. ,groovy5,in scriptfile,not in benchmarks;
+,,41. ,groovy6,in scriptfile,not in benchmarks;
+,,42. ,log4j1,in scriptfile,not in benchmarks;
+,,43. ,log4j3,in scriptfile,not in benchmarks;
+,,44. ,zookeeper,in scriptfile,not in benchmarks;
+,,45. ,ftpserver1.1.0,in scriptfile,not in benchmarks;
+,,46. ,log4j2.8.1,in scriptfile,not in benchmarks;
+,,47. ,guava-21.0,in scriptfile,not in benchmarks;
+,,48. ,commons-dbcps2-2.1.1,in scriptfile,not in benchmarks;
+,,,Races details:
+,,,NAME,No.,STATE,CLASS,Line1,Line2,VARIABLE,DETAILs,
+,,,testAtomicity1,1,correctly found,null,18,24,null,null,
+,,,,2,correctly found,null,18,25,null,null,
+,,,NAME,No.,STATE,CLASS,Line1,Line2,VARIABLE,DETAILs,
+,,,testAtomicity4,1,correctly found,null,25,43,null,null,
+,,,,2,missing,null,25,44,null,null,
+
+DATE:,2016-11-16 00:48:45
+TOOL:,Rv-Predict
+,,No.,USECASE NAME,IS IN BENCHMARKS,IS IN SCRIPTFILE,TOTAL,FOUNDED,MISSED,EXTRA,PR,FNR,FPR,OVERHEAD
+,,1,testAtomicity1,TRUE,TRUE,2,2,0,0,100.0%,0.0%,0.0%,178.1,
+,,2,testAtomicity4,TRUE,TRUE,2,1,1,0,50.0%,50.0%,0.0%,163.56,
+,,3,testRace1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,4,testRace3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,5,sor,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,6,tomcat8.0.26,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,7,testRace4,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,8,testRace6,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,9,testRace10,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,10,testRace11,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,11,testRace12,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,12,testRace13,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,13,tsp,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,14,cyclicDemo,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,15,JGFMolDynBenchSizeA,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,16,JGFRayTracerBenchSizeA,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,17,jpf_test_cases,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,18,simpleExample,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,19,testAtomicity6,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,20,testAtomicity7,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,21,testAtomicity8,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,22,testAtomicity9,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,23,testAtomicity11,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,24,testAtomicity12,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,25,testAtomicity13,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,26,testAtomicity14,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,27,account,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,28,airlinetickets,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,29,boundedbuffer,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,30,bubblesort,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,31,bufwriter,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,32,critical,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,33,mergesort,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,34,pingpong,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,35,animator,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,36,Elevator,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,37,dbcp3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,38,derby3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,39,groovy1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,40,groovy5,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,41,groovy6,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,42,log4j1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,43,log4j3,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,44,zookeeper,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,45,ftpserver1.1.0,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,46,log4j2.8.1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,47,guava-21.0,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,48,commons-dbcps2-2.1.1,TRUE,FALSE,,--,--,--,--,--,--,--,
+,,,Statistic description:
+,,1,testAtomicity1,total 2 races;,2 right race;,0 missing race;,0 extra race;,precision is 100.0%;,FNR is 0.0%;,FPR is0.0%;,
+,,2,testAtomicity4,total 2 races;,1 right race;,1 missing race;,0 extra race;,precision is 50.0%;,FNR is 50.0%;,FPR is0.0%;,
+,,3. ,testRace1,in scriptfile,not in benchmarks;
+,,4. ,testRace3,in scriptfile,not in benchmarks;
+,,5. ,sor,in scriptfile,not in benchmarks;
+,,6. ,tomcat8.0.26,in scriptfile,not in benchmarks;
+,,7. ,testRace4,in scriptfile,not in benchmarks;
+,,8. ,testRace6,in scriptfile,not in benchmarks;
+,,9. ,testRace10,in scriptfile,not in benchmarks;
+,,10. ,testRace11,in scriptfile,not in benchmarks;
+,,11. ,testRace12,in scriptfile,not in benchmarks;
+,,12. ,testRace13,in scriptfile,not in benchmarks;
+,,13. ,tsp,in scriptfile,not in benchmarks;
+,,14. ,cyclicDemo,in scriptfile,not in benchmarks;
+,,15. ,JGFMolDynBenchSizeA,in scriptfile,not in benchmarks;
+,,16. ,JGFRayTracerBenchSizeA,in scriptfile,not in benchmarks;
+,,17. ,jpf_test_cases,in scriptfile,not in benchmarks;
+,,18. ,simpleExample,in scriptfile,not in benchmarks;
+,,19. ,testAtomicity6,in scriptfile,not in benchmarks;
+,,20. ,testAtomicity7,in scriptfile,not in benchmarks;
+,,21. ,testAtomicity8,in scriptfile,not in benchmarks;
+,,22. ,testAtomicity9,in scriptfile,not in benchmarks;
+,,23. ,testAtomicity11,in scriptfile,not in benchmarks;
+,,24. ,testAtomicity12,in scriptfile,not in benchmarks;
+,,25. ,testAtomicity13,in scriptfile,not in benchmarks;
+,,26. ,testAtomicity14,in scriptfile,not in benchmarks;
+,,27. ,account,in scriptfile,not in benchmarks;
+,,28. ,airlinetickets,in scriptfile,not in benchmarks;
+,,29. ,boundedbuffer,in scriptfile,not in benchmarks;
+,,30. ,bubblesort,in scriptfile,not in benchmarks;
+,,31. ,bufwriter,in scriptfile,not in benchmarks;
+,,32. ,critical,in scriptfile,not in benchmarks;
+,,33. ,mergesort,in scriptfile,not in benchmarks;
+,,34. ,pingpong,in scriptfile,not in benchmarks;
+,,35. ,animator,in scriptfile,not in benchmarks;
+,,36. ,Elevator,in scriptfile,not in benchmarks;
+,,37. ,dbcp3,in scriptfile,not in benchmarks;
+,,38. ,derby3,in scriptfile,not in benchmarks;
+,,39. ,groovy1,in scriptfile,not in benchmarks;
+,,40. ,groovy5,in scriptfile,not in benchmarks;
+,,41. ,groovy6,in scriptfile,not in benchmarks;
+,,42. ,log4j1,in scriptfile,not in benchmarks;
+,,43. ,log4j3,in scriptfile,not in benchmarks;
+,,44. ,zookeeper,in scriptfile,not in benchmarks;
+,,45. ,ftpserver1.1.0,in scriptfile,not in benchmarks;
+,,46. ,log4j2.8.1,in scriptfile,not in benchmarks;
+,,47. ,guava-21.0,in scriptfile,not in benchmarks;
+,,48. ,commons-dbcps2-2.1.1,in scriptfile,not in benchmarks;
+,,,Races details:
+,,,NAME,No.,STATE,CLASS,Line1,Line2,VARIABLE,DETAILs,
+,,,testAtomicity1,1,correctly found,null,18,24,null,null,
+,,,,2,correctly found,null,18,25,null,null,
+,,,NAME,No.,STATE,CLASS,Line1,Line2,VARIABLE,DETAILs,
+,,,testAtomicity4,1,correctly found,null,25,43,null,null,
+,,,,2,missing,null,25,44,null,null,
+
