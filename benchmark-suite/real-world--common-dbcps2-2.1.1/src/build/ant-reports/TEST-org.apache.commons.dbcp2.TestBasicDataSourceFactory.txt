@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.dbcp2.TestBasicDataSourceFactory
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.011 sec
+
+Testcase: testProperties took 0.938 sec
+Testcase: testValidateProperties took 0.01 sec
+Testcase: testNoProperties took 0 sec

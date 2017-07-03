@@ -1,0 +1,12 @@
+org\apache\logging\slf4j\Log4j1222Test$ShutdownHook.class
+org\apache\logging\slf4j\Log4j1222Test$1.class
+org\apache\logging\slf4j\SerializeTest.class
+org\apache\logging\slf4j\CallerInformationTest.class
+org\apache\logging\slf4j\LoggerTest.class
+org\apache\logging\slf4j\CustomFlatMarker.class
+org\apache\logging\slf4j\Log4j1222Test$ShutdownHook$Holder.class
+org\apache\logging\slf4j\MarkerTest.class
+org\apache\logging\slf4j\OptionalTest.class
+org\apache\logging\slf4j\Log4j1222Test.class
+org\apache\logging\slf4j\Log4j2_1482_Slf4jTest.class
+org\apache\logging\slf4j\Log4jMarkerTest.class

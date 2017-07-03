@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestUtils
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.dbcp2.TestUtils
+testClassLoads(org.apache.commons.dbcp2.TestUtils)  Time elapsed: 0 sec

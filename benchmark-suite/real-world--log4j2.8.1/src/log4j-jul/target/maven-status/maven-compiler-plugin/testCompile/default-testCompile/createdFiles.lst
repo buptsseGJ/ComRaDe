@@ -1,0 +1,10 @@
+org\apache\logging\log4j\jul\DefaultLevelConverterCustomJulLevelsTest.class
+org\apache\logging\log4j\jul\JavaLevelTranslatorTest.class
+org\apache\logging\log4j\jul\Log4jLevelTranslatorTest.class
+org\apache\logging\log4j\jul\AbstractLoggerTest.class
+org\apache\logging\log4j\jul\DefaultLevelConverterTest.class
+org\apache\logging\log4j\jul\CallerInformationTest.class
+org\apache\logging\log4j\jul\DefaultLevelConverterCustomJulLevelsTest$CustomLevel.class
+org\apache\logging\log4j\jul\CoreLoggerTest.class
+org\apache\logging\log4j\jul\BracketInNotInterpolatedMessageTest.class
+org\apache\logging\log4j\jul\ApiLoggerTest.class

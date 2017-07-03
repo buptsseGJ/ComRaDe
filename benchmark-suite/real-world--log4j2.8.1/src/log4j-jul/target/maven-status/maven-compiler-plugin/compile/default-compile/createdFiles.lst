@@ -1,0 +1,12 @@
+org\apache\logging\log4j\jul\ApiLoggerAdapter.class
+org\apache\logging\log4j\jul\LevelTranslator.class
+org\apache\logging\log4j\jul\LevelConverter.class
+org\apache\logging\log4j\jul\Constants.class
+org\apache\logging\log4j\jul\CoreLoggerAdapter.class
+org\apache\logging\log4j\jul\CoreLogger.class
+org\apache\logging\log4j\jul\DefaultLevelConverter.class
+org\apache\logging\log4j\jul\ApiLogger.class
+org\apache\logging\log4j\jul\AbstractLoggerAdapter.class
+org\apache\logging\log4j\jul\WrappedLogger.class
+org\apache\logging\log4j\jul\LogManager.class
+org\apache\logging\log4j\jul\DefaultLevelConverter$JulLevelComparator.class

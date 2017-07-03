@@ -1,0 +1,2 @@
+2016-06-27 23:55:33,925 WARN o.a.l.l.c.a.MemoryMappedFileAppenderLocationTest [main]  Test log1 org.apache.logging.log4j.core.appender.MemoryMappedFileAppenderLocationTest.testMemMapLocation(MemoryMappedFileAppenderLocationTest.java:65) 
+2016-06-27 23:55:33,933 WARN o.a.l.l.c.a.MemoryMappedFileAppenderLocationTest [main]  Test log2 org.apache.logging.log4j.core.appender.MemoryMappedFileAppenderLocationTest.testMemMapLocation(MemoryMappedFileAppenderLocationTest.java:69) 

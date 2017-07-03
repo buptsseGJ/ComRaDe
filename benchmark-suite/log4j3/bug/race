@@ -1,0 +1,56 @@
+----------------Instrumented execution to record the trace-----------------
+[RV-Predict] Log directory: /tmp/rv-predict508955679345580018
+[RV-Predict] Finished retransforming preloaded classes.
+********************************
+Starting test: log4j54325
+Expected bug type: race
+********************************
+
+java.lang.ArrayIndexOutOfBoundsException: 998 >= 0
+
+	at java.util.Vector.elementAt(Vector.java:474)
+Finished test: Bug has been reproduced successfully.
+	at org.apache.log4j.helpers.AppenderAttachableImpl.removeAllAppenders(AppenderAttachableImpl.java:139)
+	at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:46)
+Data race on field org.apache.log4j.helpers.AppenderAttachableImpl.appenderList: {{{
+    Concurrent read in thread T14 (locks held: {})
+ ---->  at org.apache.log4j.helpers.AppenderAttachableImpl.removeAllAppenders(AppenderAttachableImpl.java:139)
+        at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:46)
+    T14 is created by T1
+        at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at org.apache.log4j.helpers.AppenderAttachableImpl.removeAllAppenders(AppenderAttachableImpl.java:143)
+        at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:46)
+    T15 is created by T1
+        at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
+}}}
+
+Data race on field org.apache.log4j.helpers.AppenderAttachableImpl.appenderList: {{{
+    Concurrent read in thread T14 (locks held: {})
+ ---->  at org.apache.log4j.helpers.AppenderAttachableImpl.removeAllAppenders(AppenderAttachableImpl.java:142)
+        at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:46)
+    T14 is created by T1
+        at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at org.apache.log4j.helpers.AppenderAttachableImpl.removeAllAppenders(AppenderAttachableImpl.java:143)
+        at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:46)
+    T15 is created by T1
+        at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
+}}}
+
+Data race on field org.apache.log4j.helpers.AppenderAttachableImpl.appenderList: {{{
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at org.apache.log4j.helpers.AppenderAttachableImpl.removeAllAppenders(AppenderAttachableImpl.java:143)
+        at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:46)
+    T15 is created by T1
+        at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
+
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at org.apache.log4j.helpers.AppenderAttachableImpl.removeAllAppenders(AppenderAttachableImpl.java:143)
+        at org.apache.log4j.helpers.Test54325$RemoveThread.run(Test54325.java:46)
+    T14 is created by T1
+        at org.apache.log4j.helpers.Test54325.run(Test54325.java:32)
+}}}
+

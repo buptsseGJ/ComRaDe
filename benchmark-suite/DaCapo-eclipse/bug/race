@@ -1,0 +1,341 @@
+//use Rv-Predict to run eclipse of DaCapo with command "--window 1000 --exclude org,dacapo.harness -s small"
+
+rv-predict --exclude org.dacapo.harness.* -jar dacapo-9.12-bach.jar eclipse -s small
+----------------Instrumented execution to record the trace-----------------
+
+[RV-Predict] Log directory: /tmp/rv-predict6745645545559791454
+
+[RV-Predict] Excluding: [org/dacapo/harness/.*.*]
+
+[RV-Predict] Finished retransforming preloaded classes.
+
+Unzip workspace 
+
+===== DaCapo 9.12 eclipse starting =====
+
+Initialize workspace ...................
+
+===== DaCapo 9.12 eclipse PASSED in 15672 msec =====
+
+Delete workspace 
+
+Data race on field org.eclipse.debug.core.model.RuntimeProcess.fTerminated: {{{
+
+    Concurrent read in thread T1 (locks held: {Monitor@1926fe15, Monitor@4d7490ce})
+
+ ---->  at org.eclipse.debug.core.model.RuntimeProcess.isTerminated(RuntimeProcess.java:187)
+
+        at org.eclipse.jdt.internal.launching.StandardVMType.generateLibraryInfo(StandardVMType.java:504)
+
+        at org.eclipse.jdt.internal.launching.StandardVMType.getLibraryInfo(StandardVMType.java:122)
+
+        - locked Monitor@4d7490ce at org.eclipse.jdt.internal.launching.StandardVMType.getLibraryInfo(StandardVMType.java:n/a) 
+
+        at org.eclipse.jdt.internal.launching.StandardVMType.getVMVersion(StandardVMType.java:154)
+
+        at org.eclipse.jdt.internal.launching.Standard11xVMType.canDetectDefaultSystemLibraries(Standard11xVMType.java:90)
+
+        at org.eclipse.jdt.internal.launching.StandardVMType.detectInstallLocation(StandardVMType.java:192)
+
+        at org.eclipse.jdt.launching.JavaRuntime.detectEclipseRuntime(JavaRuntime.java:1712)
+
+        at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2596)
+
+        - locked Monitor@1926fe15 at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2563) 
+
+        at org.eclipse.jdt.launching.JavaRuntime.getDefaultVMId(JavaRuntime.java:519)
+
+        at org.eclipse.jdt.launching.JavaRuntime.getDefaultVMInstall(JavaRuntime.java:464)
+
+        at org.eclipse.jdt.internal.launching.JavaClasspathVariablesInitializer.initialize(JavaClasspathVariablesInitializer.java:39)
+
+        at org.eclipse.jdt.core.JavaCore.getClasspathVariable(JavaCore.java:2775)
+
+        at org.eclipse.jdt.internal.core.JavaModelManager.getResolvedVariablePath(JavaModelManager.java:2305)
+
+        at org.eclipse.jdt.internal.core.JavaModelManager.resolveVariableEntry(JavaModelManager.java:2226)
+
+        at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2556)
+
+        at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2679)
+
+        at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1866)
+
+        at org.eclipse.jdt.internal.core.ExternalFoldersManager.refreshReferences(ExternalFoldersManager.java:268)
+
+        at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1890)
+
+        at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:470)
+
+        at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:291)
+
+        at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+
+        at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+
+        at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:267)
+
+        at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:307)
+
+        at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1527)
+
+        at org.eclipse.core.internal.resources.Project.open(Project.java:927)
+
+        at org.eclipse.core.internal.resources.Project.open(Project.java:947)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment$1.run(TestingEnvironment.java:171)
+
+        at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+
+        at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1782)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.createProject(TestingEnvironment.java:174)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addProject(TestingEnvironment.java:211)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addProject(TestingEnvironment.java:206)
+
+        at org.eclipse.jdt.core.tests.performance.FullSourceWorkspaceTests.setUpFullSourceWorkspace(FullSourceWorkspaceTests.java:334)
+
+        at org.eclipse.jdt.core.tests.performance.FullSourceWorkspaceTests.setup(FullSourceWorkspaceTests.java:103)
+
+        at org.dacapo.eclipse.BenchmarkRunner.start(BenchmarkRunner.java:67)
+
+        at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.reStart(EclipseAppLauncher.java:155)
+
+        at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:370)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+
+
+    Concurrent write in thread T23 (locks held: {})
+
+ ---->  at org.eclipse.debug.core.model.RuntimeProcess.terminated(RuntimeProcess.java:236)
+
+        at org.eclipse.debug.core.model.RuntimeProcess$ProcessMonitorThread.run(RuntimeProcess.java:411)
+
+    T23 is created by T1
+
+        at org.eclipse.debug.core.model.RuntimeProcess.<init>(RuntimeProcess.java:124)
+
+}}}
+
+
+
+Data race on field org.eclipse.debug.internal.core.InputStreamMonitor.fThread: {{{
+
+    Concurrent write in thread T27 (locks held: {})
+
+ ---->  at org.eclipse.debug.internal.core.InputStreamMonitor.close(InputStreamMonitor.java:99)
+
+        at org.eclipse.debug.internal.core.StreamsProxy.close(StreamsProxy.java:73)
+
+        at org.eclipse.debug.core.model.RuntimeProcess.terminated(RuntimeProcess.java:234)
+
+        at org.eclipse.debug.core.model.RuntimeProcess$ProcessMonitorThread.run(RuntimeProcess.java:411)
+
+    T27 is created by T1
+
+        at org.eclipse.debug.core.model.RuntimeProcess.<init>(RuntimeProcess.java:124)
+
+
+
+    Concurrent read in thread T26 (locks held: {})
+
+ ---->  at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:108)
+
+        at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:84)
+
+    T26 is created by T1
+
+        at org.eclipse.debug.internal.core.InputStreamMonitor.startMonitoring(InputStreamMonitor.java:88)
+
+}}}
+
+
+
+Data race on field java.util.HashSet.$state: {{{
+
+    Concurrent write in thread T1 (locks held: {})
+
+ ---->  at org.eclipse.core.internal.events.NotificationManager.endAvoidNotify(NotificationManager.java:193)
+
+        at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1806)
+
+        at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1782)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.createProject(TestingEnvironment.java:174)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addProject(TestingEnvironment.java:211)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addProject(TestingEnvironment.java:206)
+
+        at org.eclipse.jdt.core.tests.performance.FullSourceWorkspaceTests.setUpFullSourceWorkspace(FullSourceWorkspaceTests.java:334)
+
+        at org.eclipse.jdt.core.tests.performance.FullSourceWorkspaceTests.setup(FullSourceWorkspaceTests.java:103)
+
+        at org.dacapo.eclipse.BenchmarkRunner.start(BenchmarkRunner.java:67)
+
+        at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.reStart(EclipseAppLauncher.java:155)
+
+        at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:370)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+
+
+    Concurrent read in thread T19 (locks held: {})
+
+ ---->  at org.eclipse.core.internal.events.NotificationManager.requestNotify(NotificationManager.java:201)
+
+        at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1003)
+
+        at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1809)
+
+        at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:4694)
+
+        at org.eclipse.jdt.internal.launching.LaunchingPlugin$VMChanges.doit(LaunchingPlugin.java:255)
+
+        at org.eclipse.jdt.internal.launching.LaunchingPlugin$JREUpdateJob.run(LaunchingPlugin.java:335)
+
+        at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+    T19 is created by T17
+
+        at org.eclipse.core.internal.jobs.WorkerPool.jobQueued(WorkerPool.java:145)
+
+}}}
+
+
+
+Data race on field org.eclipse.core.internal.resources.Workspace.tree: {{{
+
+    Concurrent read in thread T1 (locks held: {})
+
+ ---->  at org.eclipse.core.internal.resources.Workspace.getResourceInfo(Workspace.java:1245)
+
+        at org.eclipse.core.internal.resources.Resource.getResourceInfo(Resource.java:1129)
+
+        at org.eclipse.core.internal.resources.Project.getDescription(Project.java:356)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addBuilderSpecs(TestingEnvironment.java:186)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.createProject(TestingEnvironment.java:176)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addProject(TestingEnvironment.java:211)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addProject(TestingEnvironment.java:206)
+
+        at org.eclipse.jdt.core.tests.performance.FullSourceWorkspaceTests.setUpFullSourceWorkspace(FullSourceWorkspaceTests.java:334)
+
+        at org.eclipse.jdt.core.tests.performance.FullSourceWorkspaceTests.setup(FullSourceWorkspaceTests.java:103)
+
+        at org.dacapo.eclipse.BenchmarkRunner.start(BenchmarkRunner.java:67)
+
+        at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.reStart(EclipseAppLauncher.java:155)
+
+        at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:370)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+
+
+    Concurrent write in thread T19 (locks held: {})
+
+ ---->  at org.eclipse.core.internal.resources.Workspace.newWorkingTree(Workspace.java:1652)
+
+        at org.eclipse.core.internal.resources.Workspace.beginOperation(Workspace.java:292)
+
+        at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:36)
+
+        at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+    T19 is created by T17
+
+        at org.eclipse.core.internal.jobs.WorkerPool.jobQueued(WorkerPool.java:145)
+
+}}}
+
+
+
+Data race on field org.eclipse.core.internal.resources.Workspace.tree: {{{
+
+    Concurrent read in thread T1 (locks held: {})
+
+ ---->  at org.eclipse.core.internal.resources.Workspace.getResourceInfo(Workspace.java:1240)
+
+        at org.eclipse.core.internal.resources.Resource.getResourceInfo(Resource.java:1129)
+
+        at org.eclipse.core.internal.resources.Project.getDescription(Project.java:356)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addBuilderSpecs(TestingEnvironment.java:186)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.createProject(TestingEnvironment.java:176)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addProject(TestingEnvironment.java:211)
+
+        at org.eclipse.jdt.core.tests.builder.TestingEnvironment.addProject(TestingEnvironment.java:206)
+
+        at org.eclipse.jdt.core.tests.performance.FullSourceWorkspaceTests.setUpFullSourceWorkspace(FullSourceWorkspaceTests.java:334)
+
+        at org.eclipse.jdt.core.tests.performance.FullSourceWorkspaceTests.setup(FullSourceWorkspaceTests.java:103)
+
+        at org.dacapo.eclipse.BenchmarkRunner.start(BenchmarkRunner.java:67)
+
+        at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.reStart(EclipseAppLauncher.java:155)
+
+        at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:370)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+
+
+    Concurrent write in thread T19 (locks held: {})
+
+ ---->  at org.eclipse.core.internal.resources.Workspace.newWorkingTree(Workspace.java:1652)
+
+        at org.eclipse.core.internal.resources.Workspace.beginOperation(Workspace.java:292)
+
+        at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:36)
+
+        at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+    T19 is created by T17
+
+        at org.eclipse.core.internal.jobs.WorkerPool.jobQueued(WorkerPool.java:145)
+
+}}}
+

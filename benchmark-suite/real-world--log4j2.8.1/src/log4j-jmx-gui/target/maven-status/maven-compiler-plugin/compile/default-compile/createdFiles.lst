@@ -1,0 +1,9 @@
+org\apache\logging\log4j\jmx\gui\Client.class
+org\apache\logging\log4j\jmx\gui\ClientEditConfigPanel.class
+org\apache\logging\log4j\jmx\gui\ClientEditConfigPanel$1.class
+org\apache\logging\log4j\jmx\gui\ClientGui$2.class
+org\apache\logging\log4j\jmx\gui\ClientGui$3.class
+org\apache\logging\log4j\jmx\gui\ClientEditConfigPanel$2.class
+org\apache\logging\log4j\jmx\gui\ClientGuiJConsolePlugin.class
+org\apache\logging\log4j\jmx\gui\ClientGui$1.class
+org\apache\logging\log4j\jmx\gui\ClientGui.class

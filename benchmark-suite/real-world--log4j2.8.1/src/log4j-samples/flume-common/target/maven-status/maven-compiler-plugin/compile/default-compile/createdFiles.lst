@@ -1,0 +1,16 @@
+org\apache\logging\log4j\samples\events\Login.class
+org\apache\logging\log4j\samples\dto\AuditEvent.class
+org\apache\logging\log4j\samples\util\NamingUtils.class
+org\apache\logging\log4j\samples\events\Transfer.class
+org\apache\logging\log4j\samples\app\LoggingApp$Worker.class
+org\apache\logging\log4j\samples\app\LoggingController.class
+org\apache\logging\log4j\samples\app\MockEventsSupplier.class
+org\apache\logging\log4j\samples\app\LogEventFactory$AuditProxy.class
+org\apache\logging\log4j\samples\app\LogEventFactory.class
+org\apache\logging\log4j\samples\app\LoggingApp.class
+org\apache\logging\log4j\samples\app\LoggingController$1.class
+org\apache\logging\log4j\samples\events\Alert.class
+org\apache\logging\log4j\samples\dto\RequestContext.class
+org\apache\logging\log4j\samples\events\ScheduledTransaction.class
+org\apache\logging\log4j\samples\events\ChangePassword.class
+org\apache\logging\log4j\samples\dto\Constraint.class

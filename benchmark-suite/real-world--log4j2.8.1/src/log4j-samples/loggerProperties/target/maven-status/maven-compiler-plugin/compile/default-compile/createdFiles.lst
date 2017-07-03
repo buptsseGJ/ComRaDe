@@ -1,0 +1,4 @@
+org\apache\logging\log4j\lookup\MapMessageLookup.class
+org\apache\logging\log4j\lookup\CustomMapMessage.class
+META-INF\org\apache\logging\log4j\core\config\plugins\Log4j2Plugins.dat
+org\apache\logging\log4j\lookup\CustomLookup.class

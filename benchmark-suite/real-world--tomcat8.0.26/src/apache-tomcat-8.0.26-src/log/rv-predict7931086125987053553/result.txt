@@ -1,0 +1,41 @@
+Data race on field org.apache.coyote.AbstractProcessor.socketWrapper: {{{
+    Concurrent write in thread T30 (locks held: {Monitor@2d5512b0})
+ ---->  at org.apache.coyote.AbstractProcessor.setSocketWrapper(AbstractProcessor.java:145)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:978)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:279)
+        - locked Monitor@2d5512b0 at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:259) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T30 is created by T29
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T29 (locks held: {})
+ ---->  at org.apache.coyote.http11.AbstractHttp11Processor.action(AbstractHttp11Processor.java:907)
+        at org.apache.coyote.Request.action(Request.java:378)
+        at org.apache.catalina.core.AsyncContextImpl$RunnableWrapper.run(AsyncContextImpl.java:570)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T29 is created by T28
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.coyote.AbstractProcessor.socketWrapper: {{{
+    Concurrent read in thread T61 (locks held: {})
+ ---->  at org.apache.coyote.http11.AbstractHttp11Processor.action(AbstractHttp11Processor.java:907)
+        at org.apache.coyote.Request.action(Request.java:378)
+        at org.apache.catalina.core.AsyncContextImpl$RunnableWrapper.run(AsyncContextImpl.java:570)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T61 is created by T60
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T62 (locks held: {Monitor@218bd538})
+ ---->  at org.apache.coyote.http11.Http11Processor.recycleInternal(Http11Processor.java:214)
+        at org.apache.coyote.http11.AbstractHttp11Processor.recycle(AbstractHttp11Processor.java:1838)
+        at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.release(Http11Protocol.java:143)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:750)
+        at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:279)
+        - locked Monitor@218bd538 at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:259) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T62 is created by T61
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

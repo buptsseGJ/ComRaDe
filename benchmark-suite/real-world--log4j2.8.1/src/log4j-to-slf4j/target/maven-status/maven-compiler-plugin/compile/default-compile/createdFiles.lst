@@ -1,0 +1,5 @@
+org\apache\logging\slf4j\SLF4JLogger$1.class
+org\apache\logging\slf4j\SLF4JLoggerContextFactory.class
+org\apache\logging\slf4j\MDCContextMap.class
+org\apache\logging\slf4j\SLF4JLoggerContext.class
+org\apache\logging\slf4j\SLF4JLogger.class

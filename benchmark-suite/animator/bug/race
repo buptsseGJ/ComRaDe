@@ -1,0 +1,17 @@
+Race: <XtangoAnimation.AnimatorCanvas: void paint(java.awt.Graphics)>|$r5 = r0.<XtangoAnimation.AnimatorCanvas: java.awt.Graphics offscreenGraphics>|742 - <XtangoAnimation.AnimatorCanvas: void resetBounds()>|r0.<XtangoAnimation.AnimatorCanvas: java.awt.Graphics offscreenGraphics> = $r4|723
+Trace Size: 8564
+Total #Threads: 7
+Total #SharedVariables: 31
+Total #Shared Read-Writes: 490
+Total #Local Read-Writes: 3622
+Total #Initial Writes: 1310
+Total #Synchronizations: 1274
+Total #Branches: 1868
+Total #Property Events: 0
+Total #Potential Violations: 147
+Total #Real Violations: 1
+Total Time: 3975ms
+
+real	0m42.054s
+user	0m31.180s
+sys		0m2.496s

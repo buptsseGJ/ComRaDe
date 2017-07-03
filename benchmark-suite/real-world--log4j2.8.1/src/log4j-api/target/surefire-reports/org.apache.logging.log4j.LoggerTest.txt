@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.LoggerTest
+-------------------------------------------------------------------------------
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.894 sec - in org.apache.logging.log4j.LoggerTest

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppenderTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 60.432 sec <<< FAILURE! - in org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppenderTest
+testClientServer(org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppenderTest)  Time elapsed: 60.026 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 60000 milliseconds
+	at org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppenderTest.testClientServer(JeroMqAppenderTest.java:70)
+

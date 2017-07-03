@@ -1,0 +1,2 @@
+Please use linux operation system to run it.
+run "ant junit.test"

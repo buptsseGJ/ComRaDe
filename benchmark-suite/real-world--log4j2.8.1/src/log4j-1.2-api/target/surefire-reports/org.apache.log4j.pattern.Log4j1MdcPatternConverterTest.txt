@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.log4j.pattern.Log4j1MdcPatternConverterTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.556 sec - in org.apache.log4j.pattern.Log4j1MdcPatternConverterTest

@@ -1,0 +1,10 @@
+org\apache\logging\log4j\nosql\appender\NoSqlDatabaseManagerTest$1.class
+org\apache\logging\log4j\nosql\appender\NoSqlDatabaseManagerTest$2.class
+org\apache\logging\log4j\nosql\appender\MongoDbTest.class
+org\apache\logging\log4j\nosql\appender\cassandra\CassandraRule$EmbeddedCassandra.class
+org\apache\logging\log4j\nosql\appender\cassandra\CassandraRule$1.class
+org\apache\logging\log4j\nosql\appender\NoSqlDatabaseManagerTest.class
+org\apache\logging\log4j\nosql\appender\cassandra\CassandraAppenderIT.class
+org\apache\logging\log4j\nosql\appender\cassandra\CassandraRule.class
+org\apache\logging\log4j\nosql\appender\MongoDbAuthTest.class
+org\apache\logging\log4j\nosql\appender\NoSqlAppenderTest.class

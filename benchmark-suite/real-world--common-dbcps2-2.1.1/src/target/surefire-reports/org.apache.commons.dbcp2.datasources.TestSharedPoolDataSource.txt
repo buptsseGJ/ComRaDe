@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource
+-------------------------------------------------------------------------------
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.817 sec - in org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource
+testPoolPreparedStatements(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0 sec
+testOpening(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0 sec
+testClosingWithUserName(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0 sec
+testChangePassword(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0 sec
+testPoolPrepareStatement(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0 sec
+testMaxWaitMillis(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 1.004 sec
+testClosePool(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.001 sec
+testClosing(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.003 sec
+testTransactionIsolationBehavior(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.004 sec
+testDbcp369(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 1.53 sec
+testMaxTotal(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.101 sec
+testSimpleWithUsername(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testSimple2(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.003 sec
+testSimple(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testMultipleThreads1(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.306 sec
+testMultipleThreads2(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 1.007 sec
+testIncorrectPassword(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.004 sec
+testThreaded(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 2.809 sec
+testCanCloseStatementTwice(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testNoRsetClose(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.003 sec
+testPooling(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.003 sec
+testCanCloseConnectionTwice(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testIsClosed(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.003 sec
+testCanCloseCallableStatementTwice(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testAutoCommitBehavior(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testHashing(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testCanClosePreparedStatementTwice(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.003 sec
+testPrepareStatementOptions(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testBackPointers(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testHashCode(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testConnectionsAreDistinct(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testRepeatedBorrowAndReturn(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testCanCloseResultSetTwice(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.002 sec
+testClearWarnings(org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource)  Time elapsed: 0.003 sec

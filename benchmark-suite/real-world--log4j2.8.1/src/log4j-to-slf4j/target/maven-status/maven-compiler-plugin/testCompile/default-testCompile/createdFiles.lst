@@ -1,0 +1,6 @@
+org\apache\logging\slf4j\Log4j2Jira1688Test.class
+org\apache\logging\slf4j\TestUtil.class
+org\apache\logging\slf4j\LoggerContextRule$1.class
+org\apache\logging\slf4j\LoggerContextRule.class
+org\apache\logging\slf4j\CallerInformationTest.class
+org\apache\logging\slf4j\LoggerTest.class

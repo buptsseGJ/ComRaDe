@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1482995872768
+Build-Jdk: 1.8.0_65
+Built-By: jiangao
+Bundle-Description: Apache Commons DBCP software implements Database Con
+ nection Pooling
+Bundle-DocURL: http://commons.apache.org/dbcp/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons DBCP
+Bundle-SymbolicName: org.apache.commons.dbcp2
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.1.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.dbcp2;version="2.1.1",org.apache.comm
+ ons.dbcp2.cpdsadapter;version="2.1.1",org.apache.commons.dbcp2.datasour
+ ces;version="2.1.1",org.apache.commons.dbcp2.managed;version="2.1.1"
+Import-Package: javax.management,javax.naming,javax.naming.spi,javax.sql
+ ,javax.transaction,javax.transaction.xa,org.apache.commons.logging,org.
+ apache.commons.pool2,org.apache.commons.pool2.impl
+Include-Resource: org/apache/commons/dbcp2/LocalStrings.properties=src/m
+ ain/resources/org/apache/commons/dbcp2/LocalStrings.properties,META-INF
+ /LICENSE.txt=LICENSE.txt,META-INF/NOTICE.txt=NOTICE.txt
+Tool: Bnd-2.1.0.20130426-122213

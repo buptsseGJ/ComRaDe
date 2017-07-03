@@ -1,0 +1,52 @@
+----------------Instrumented execution to record the trace-----------------
+[RV-Predict] Log directory: /tmp/rv-predict3082846402311122661
+[RV-Predict] Finished retransforming preloaded classes.
+********************************
+Starting test: groovy3495
+Expected bug type: race
+********************************
+
+java.lang.LinkageError: loader (instance of  org/codehaus/groovy/tools/RootLoader): attempted  duplicate class definition for name: "sun/awt/HKSCS"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at org.codehaus.groovy.tools.RootLoader.oldFindClass(RootLoader.java:152)
+
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:124)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at Groovy3495$1.run(Groovy3495.java:82)
+Finished test: Bug has been reproduced successfully.java.lang.LinkageError: loader (instance of  org/codehaus/groovy/tools/RootLoader): attempted  duplicate class definition for name: "sun/awt/HKSCS"
+
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at org.codehaus.groovy.tools.RootLoader.oldFindClass(RootLoader.java:152)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:124)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at Groovy3495$1.run(Groovy3495.java:82)
+Data race on field Groovy3495.buggy: {{{
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at Groovy3495.access$1(Groovy3495.java:45)
+        at Groovy3495$1.run(Groovy3495.java:88)
+    T15 is created by T1
+        at Groovy3495.run(Groovy3495.java:94)
+
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at Groovy3495.access$1(Groovy3495.java:45)
+        at Groovy3495$1.run(Groovy3495.java:88)
+    T14 is created by T1
+        at Groovy3495.run(Groovy3495.java:94)
+}}}
+

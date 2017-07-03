@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestPoolingDriver
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.715 sec - in org.apache.commons.dbcp2.TestPoolingDriver
+testLogWriter(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testReportedBug12400(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testReportedBug28912(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+test1(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+test2(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testClosePool(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testInvalidateConnection(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testThreaded(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 2.6 sec
+testCanCloseStatementTwice(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testNoRsetClose(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testOpening(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testPooling(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testCanCloseConnectionTwice(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testIsClosed(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testCanCloseCallableStatementTwice(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testAutoCommitBehavior(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testHashing(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testCanClosePreparedStatementTwice(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testClosing(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testPrepareStatementOptions(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testBackPointers(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testHashCode(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec
+testConnectionsAreDistinct(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testMaxTotal(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.101 sec
+testRepeatedBorrowAndReturn(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testCanCloseResultSetTwice(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testClearWarnings(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testSimple2(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0.001 sec
+testSimple(org.apache.commons.dbcp2.TestPoolingDriver)  Time elapsed: 0 sec

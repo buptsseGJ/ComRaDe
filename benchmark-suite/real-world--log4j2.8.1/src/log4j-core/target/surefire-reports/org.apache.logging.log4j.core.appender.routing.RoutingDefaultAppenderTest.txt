@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.core.appender.routing.RoutingDefaultAppenderTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.858 sec - in org.apache.logging.log4j.core.appender.routing.RoutingDefaultAppenderTest

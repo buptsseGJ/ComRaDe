@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: liquibase.ext.logging.log4j2.LoggingTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.749 sec - in liquibase.ext.logging.log4j2.LoggingTest

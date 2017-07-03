@@ -1,0 +1,23 @@
+Race: <boundedbuffer.Buffer: boolean isActive()>|$z0 = <boundedbuffer.Buffer: boolean _active>|104 - <boundedbuffer.Buffer: void enq(java.lang.Object)>|<boundedbuffer.Buffer: boolean _active> = 1|128
+Race: <boundedbuffer.Buffer: boolean isActive()>|$z0 = <boundedbuffer.Buffer: boolean _active>|104 - <boundedbuffer.Buffer: java.lang.Object deq(java.lang.String)>|<boundedbuffer.Buffer: boolean _active> = 1|150
+Race: <boundedbuffer.Buffer: void resetActive()>|<boundedbuffer.Buffer: boolean _active> = 0|100 - <boundedbuffer.Buffer: void enq(java.lang.Object)>|<boundedbuffer.Buffer: boolean _active> = 1|128
+Race: <boundedbuffer.Buffer: void resetActive()>|<boundedbuffer.Buffer: boolean _active> = 0|100 - <boundedbuffer.Buffer: java.lang.Object deq(java.lang.String)>|<boundedbuffer.Buffer: boolean _active> = 1|150
+Race: <boundedbuffer.BoundedBuffer: boolean WaitForBug(int)>|$i4 = <boundedbuffer.BoundedBuffer: int _finish>|291 - <boundedbuffer.Producer: void run()>|<boundedbuffer.BoundedBuffer: int _finish> = $i3|381
+Race: <boundedbuffer.BoundedBuffer: boolean WaitForBug(int)>|$i4 = <boundedbuffer.BoundedBuffer: int _finish>|291 - <boundedbuffer.Consumer: void run()>|<boundedbuffer.BoundedBuffer: int _finish> = $i4|400
+Race: <boundedbuffer.Producer: void run()>|$i2 = <boundedbuffer.BoundedBuffer: int _finish>|381 - <boundedbuffer.Consumer: void run()>|<boundedbuffer.BoundedBuffer: int _finish> = $i4|400
+Race: <boundedbuffer.Producer: void run()>|<boundedbuffer.BoundedBuffer: int _finish> = $i3|381 - <boundedbuffer.Consumer: void run()>|<boundedbuffer.BoundedBuffer: int _finish> = $i4|400
+Race: <boundedbuffer.Consumer: void run()>|$i3 = <boundedbuffer.BoundedBuffer: int _finish>|400 - <boundedbuffer.Producer: void run()>|<boundedbuffer.BoundedBuffer: int _finish> = $i3|381
+Race: <boundedbuffer.BoundedBuffer: boolean WaitForBug(int)>|$i6 = <boundedbuffer.BoundedBuffer: int _finish>|294 - <boundedbuffer.Producer: void run()>|<boundedbuffer.BoundedBuffer: int _finish> = $i3|381
+Race: <boundedbuffer.BoundedBuffer: boolean WaitForBug(int)>|$i7 = <boundedbuffer.BoundedBuffer: int _finish>|302 - <boundedbuffer.Producer: void run()>|<boundedbuffer.BoundedBuffer: int _finish> = $i3|381
+Trace Size: 2186
+Total #Threads: 4
+Total #SharedVariables: 8
+Total #Shared Read-Writes: 591
+Total #Local Read-Writes: 607
+Total #Initial Writes: 33
+Total #Synchronizations: 214
+Total #Branches: 741
+Total #Property Events: 0
+Total #Potential Violations: 73
+Total #Real Violations: 11
+Total Time: 6987ms

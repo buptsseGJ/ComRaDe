@@ -1,0 +1,86 @@
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent read in thread T44 (locks held: {})
+ ---->  at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:45)
+        at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:41)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberAdded(ChannelCoordinator.java:244)
+        at org.apache.catalina.tribes.membership.McastService.memberAdded(McastService.java:461)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$2.run(McastServiceImpl.java:397)
+    T44 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T46 (locks held: {Monitor@5ec6ac5e})
+ ---->  at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:51)
+        - locked Monitor@5ec6ac5e at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:47) 
+        at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:41)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberAdded(ChannelCoordinator.java:244)
+        at org.apache.catalina.tribes.membership.McastService.memberAdded(McastService.java:461)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$2.run(McastServiceImpl.java:397)
+    T46 is created by T38
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.catalina.tribes.membership.Membership.members: {{{
+    Concurrent read in thread T72 (locks held: {Monitor@7bcc6d3b, Monitor@609dd640})
+ ---->  at org.apache.catalina.tribes.membership.Membership.hasMembers(Membership.java:225)
+        at org.apache.catalina.tribes.membership.Membership.expire(Membership.java:195)
+        - locked Monitor@609dd640 at org.apache.catalina.tribes.membership.Membership.expire(Membership.java:n/a) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.checkExpired(McastServiceImpl.java:455)
+        - locked Monitor@7bcc6d3b at org.apache.catalina.tribes.membership.McastServiceImpl.checkExpired(McastServiceImpl.java:454) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.send(McastServiceImpl.java:512)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.send(McastServiceImpl.java:487)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$SenderThread.run(McastServiceImpl.java:575)
+    T72 is created by T23
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:280)
+
+    Concurrent write in thread T37 (locks held: {Monitor@2eb4c371})
+ ---->  at org.apache.catalina.tribes.membership.Membership.removeMember(Membership.java:183)
+        - locked Monitor@2eb4c371 at org.apache.catalina.tribes.membership.Membership.removeMember(Membership.java:168) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.memberDataReceived(McastServiceImpl.java:376)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:356)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:541)
+    T37 is created by T23
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:269)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent read in thread T72 (locks held: {Monitor@7bcc6d3b, Monitor@609dd640})
+ ---->  at org.apache.catalina.tribes.membership.Membership.expire(Membership.java:200)
+        - locked Monitor@609dd640 at org.apache.catalina.tribes.membership.Membership.expire(Membership.java:n/a) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.checkExpired(McastServiceImpl.java:455)
+        - locked Monitor@7bcc6d3b at org.apache.catalina.tribes.membership.McastServiceImpl.checkExpired(McastServiceImpl.java:454) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.send(McastServiceImpl.java:512)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.send(McastServiceImpl.java:487)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$SenderThread.run(McastServiceImpl.java:575)
+    T72 is created by T23
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:280)
+
+    Concurrent write in thread T37 (locks held: {})
+ ---->  at org.apache.catalina.tribes.membership.Membership.removeMember(Membership.java:167)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.memberDataReceived(McastServiceImpl.java:376)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:356)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:541)
+    T37 is created by T23
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:269)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent read in thread T72 (locks held: {Monitor@7bcc6d3b, Monitor@609dd640})
+ ---->  at org.apache.catalina.tribes.membership.Membership.expire(Membership.java:201)
+        - locked Monitor@609dd640 at org.apache.catalina.tribes.membership.Membership.expire(Membership.java:n/a) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.checkExpired(McastServiceImpl.java:455)
+        - locked Monitor@7bcc6d3b at org.apache.catalina.tribes.membership.McastServiceImpl.checkExpired(McastServiceImpl.java:454) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.send(McastServiceImpl.java:512)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.send(McastServiceImpl.java:487)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$SenderThread.run(McastServiceImpl.java:575)
+    T72 is created by T23
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:280)
+
+    Concurrent write in thread T37 (locks held: {})
+ ---->  at org.apache.catalina.tribes.membership.Membership.removeMember(Membership.java:167)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.memberDataReceived(McastServiceImpl.java:376)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:356)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:541)
+    T37 is created by T23
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:269)
+}}}
+

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.core.config.plugins.convert.TypeConverterRegistryTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.905 sec - in org.apache.logging.log4j.core.config.plugins.convert.TypeConverterRegistryTest

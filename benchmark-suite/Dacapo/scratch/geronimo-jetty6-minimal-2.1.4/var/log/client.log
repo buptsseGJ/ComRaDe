@@ -1,0 +1,38 @@
+2017-07-03 22:24:41,894 INFO  [Log4jService] ----------------------------------------------
+2017-07-03 22:24:41,895 INFO  [Log4jService] Started Logging Service
+2017-07-03 22:24:41,895 INFO  [Log4jService] Runtime Information:
+2017-07-03 22:24:41,896 INFO  [Log4jService]   Install Directory = E:\github\JBench\benchmark-suite\Dacapo\scratch\geronimo-jetty6-minimal-2.1.4
+2017-07-03 22:24:41,897 INFO  [JvmVendor] Sun JVM 1.8.0_65
+2017-07-03 22:24:41,897 INFO  [Log4jService]   JVM in use = Sun JVM 1.8.0_65
+2017-07-03 22:24:41,897 INFO  [Log4jService] Java Information:
+2017-07-03 22:24:41,897 INFO  [Log4jService]   System property [java.runtime.name]  = Java(TM) SE Runtime Environment
+2017-07-03 22:24:41,897 INFO  [Log4jService]   System property [java.runtime.version]  = 1.8.0_65-b17
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [os.name]             = Windows 10
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [os.version]          = 10.0
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [sun.os.patch.level]  = 
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [os.arch]             = amd64
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.class.version]  = 52.0
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [locale]              = zh_CN
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [unicode.encoding]    = UnicodeLittle
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [file.encoding]       = GBK
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.vm.name]        = Java HotSpot(TM) 64-Bit Server VM
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.vm.vendor]      = Oracle Corporation
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.vm.version]     = 25.65-b01
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.vm.info]        = mixed mode
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.home]           = C:\Program Files\Java\jdk1.8.0_65\jre
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.classpath]      = null
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.library.path]   = C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\RV-Predict\bin;E:\apache-ant-1.9.6\bin;D:\Program Files\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;E:\CTEX\UserData\miktex\bin;E:\CTEX\MiKTeX\miktex\bin;E:\CTEX\CTeX\ctex\bin;E:\CTEX\CTeX\cct\bin;E:\CTEX\CTeX\ty\bin;E:\CTEX\Ghostscript\gs9.05\bin;E:\CTEX\GSview\gsview;E:\CTEX\WinEdt;C:\Users\13477\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;c:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\13477\AppData\Local\Microsoft\WindowsApps;;.
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.endorsed.dirs]  = C:\Program Files\Java\jdk1.8.0_65\jre\lib\endorsed
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [java.ext.dirs]       = E:\github\JBench\benchmark-suite\Dacapo\.\scratch\geronimo-jetty6-minimal-2.1.4/lib/ext:C:\Program Files\Java\jdk1.8.0_65\jre/lib/ext
+2017-07-03 22:24:41,898 INFO  [Log4jService]   System property [sun.boot.class.path] = C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes
+2017-07-03 22:24:41,898 INFO  [Log4jService] ----------------------------------------------
+2017-07-03 22:24:42,613 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/client/2.1.4/car?ServiceModule=org.apache.geronimo.configs/client/2.1.4/car,j2eeType=Context,name=JavaCompContext at name java:comp
+2017-07-03 22:24:42,614 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/client/2.1.4/car?ServiceModule=org.apache.geronimo.configs/client/2.1.4/car,j2eeType=Context,name=JavaContext at name java:
+2017-07-03 22:24:42,614 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/client/2.1.4/car?ServiceModule=org.apache.geronimo.configs/client/2.1.4/car,j2eeType=Context,name=GeronimoContext at name ger:
+2017-07-03 22:24:42,624 WARN  [SystemProperties] Existing Property=java.net.preferIPv4Stack is already set to Value=true
+2017-07-03 22:24:42,624 WARN  [SystemProperties] Existing Property=javax.xml.soap.MessageFactory is already set to Value=org.apache.geronimo.webservices.saaj.GeronimoMessageFactory
+2017-07-03 22:24:42,624 WARN  [SystemProperties] Existing Property=org.apache.cxf.jaxws.checkPublishEndpointPermission is already set to Value=true
+2017-07-03 22:24:42,624 WARN  [SystemProperties] Existing Property=javax.xml.soap.SOAPConnectionFactory is already set to Value=org.apache.geronimo.webservices.saaj.GeronimoSOAPConnectionFactory
+2017-07-03 22:24:42,624 WARN  [SystemProperties] Existing Property=javax.xml.soap.SOAPFactory is already set to Value=org.apache.geronimo.webservices.saaj.GeronimoSOAPFactory
+2017-07-03 22:24:42,624 WARN  [SystemProperties] Existing Property=javax.xml.soap.MetaFactory is already set to Value=org.apache.geronimo.webservices.saaj.GeronimoMetaFactory
+2017-07-03 22:24:42,624 WARN  [SystemProperties] Existing Property=java.security.Provider is already set to Value=SUN

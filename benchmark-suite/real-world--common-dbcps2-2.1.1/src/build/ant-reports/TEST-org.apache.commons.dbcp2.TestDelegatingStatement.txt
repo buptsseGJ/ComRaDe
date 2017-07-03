@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.dbcp2.TestDelegatingStatement
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 sec
+
+Testcase: testGetDelegate took 0.067 sec
+Testcase: testIsWrapperFor took 0.013 sec
+Testcase: testExecuteQueryReturnsNull took 0.03 sec
+Testcase: testCheckOpen took 0.044 sec

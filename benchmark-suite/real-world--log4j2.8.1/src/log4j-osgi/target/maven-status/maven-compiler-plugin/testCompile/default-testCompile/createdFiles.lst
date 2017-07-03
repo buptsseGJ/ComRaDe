@@ -1,0 +1,5 @@
+org\apache\logging\log4j\osgi\tests\junit\OsgiRule.class
+org\apache\logging\log4j\osgi\tests\junit\BundleTestInfo.class
+org\apache\logging\log4j\osgi\tests\AbstractLoadBundleTest.class
+org\apache\logging\log4j\osgi\tests\equinox\EquinoxLoadApiBundleTest.class
+org\apache\logging\log4j\osgi\tests\felix\FelixLoadApiBundleTest.class

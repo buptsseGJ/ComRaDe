@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 101.134 sec <<< FAILURE! - in org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest
+testMultiple(org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest)  Time elapsed: 39.533 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest.testMultiple(FlumeEmbeddedAgentTest.java:150)
+
+testFailover(org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest)  Time elapsed: 30.31 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest.testFailover(FlumeEmbeddedAgentTest.java:169)
+
+testLog4Event(org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest)  Time elapsed: 30.576 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest.testLog4Event(FlumeEmbeddedAgentTest.java:135)
+

@@ -1,0 +1,66 @@
+Testsuite: org.apache.commons.dbcp2.TestPStmtPoolingBasicDataSource
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.196 sec
+------------- Standard Output ---------------
+Multithread test time = 10558 ms. Threads: 100. Loops: 3218. Hold time: 5. maxWaitMillis: -1. Done: 100. Did not run: 0. Failed: 0. expectError: false
+------------- ---------------- ---------------
+
+Testcase: testLRUBehavior took 1.064 sec
+Testcase: testPreparedStatementPooling took 0.006 sec
+Testcase: testPStmtPoolingAccrossClose took 0.005 sec
+Testcase: testPStmtPoolingWithNoClose took 0.007 sec
+Testcase: testPStmtCatalog took 0.007 sec
+Testcase: testMultipleThreads1 took 10.56 sec
+Testcase: testEmptyValidationQuery took 0 sec
+Testcase: testValidationQueryTimoutFail took 0.002 sec
+Testcase: testSetValidationTestProperties took 0.001 sec
+Testcase: testRollbackReadOnly took 0.005 sec
+Testcase: testClose took 0.008 sec
+Testcase: testPropertyTestOnReturn took 0.005 sec
+Testcase: testValidationQueryTimeoutSucceed took 0.006 sec
+Testcase: testMaxTotalZero took 0.107 sec
+Testcase: testPooling took 0.015 sec
+Testcase: testMaxConnLifetimeExceeded took 0.517 sec
+Testcase: testValidationQueryTimeoutNegative took 0.023 sec
+Testcase: testPoolCloseRTE took 0.009 sec
+Testcase: testInvalidConnectionInitSql took 0.001 sec
+Testcase: testSetAutoCommitTrueOnClose took 0.007 sec
+Testcase: testConcurrentInitBorrow took 0.537 sec
+Testcase: testValidationQueryTimeoutZero took 0.004 sec
+Testcase: testMaxConnLifetimeExceededMutedLog took 0.505 sec
+Testcase: testEmptyInitConnectionSql took 0.001 sec
+Testcase: testDriverClassLoader took 0.011 sec
+Testcase: testJmxDisabled took 0.007 sec
+Testcase: testInitialSize took 0.019 sec
+Testcase: testInvalidValidationQuery took 0.003 sec
+Testcase: testNoAccessToUnderlyingConnectionAllowed took 0.006 sec
+Testcase: testPoolCloseCheckedException took 0.004 sec
+Testcase: testCreateDataSourceCleanupEvictor took 1.004 sec
+Testcase: testTransactionIsolationBehavior took 0.012 sec
+Testcase: testCreateDataSourceCleanupThreads took 0.003 sec
+Testcase: testDefaultCatalog took 0.031 sec
+Testcase: testAccessToUnderlyingConnectionAllowed took 0.005 sec
+Testcase: testInvalidateConnection took 0.006 sec
+Testcase: testSetProperties took 0 sec
+Testcase: testDisconnectSqlCodes took 0.004 sec
+Testcase: testIsClosedFailure took 0.002 sec
+Testcase: testThreaded took 4.168 sec
+Testcase: testCanCloseStatementTwice took 0.004 sec
+Testcase: testNoRsetClose took 0.004 sec
+Testcase: testOpening took 0.011 sec
+Testcase: testCanCloseConnectionTwice took 0.004 sec
+Testcase: testIsClosed took 0.006 sec
+Testcase: testCanCloseCallableStatementTwice took 0.014 sec
+Testcase: testAutoCommitBehavior took 0.004 sec
+Testcase: testHashing took 0.005 sec
+Testcase: testCanClosePreparedStatementTwice took 0.004 sec
+Testcase: testClosing took 0.007 sec
+Testcase: testPrepareStatementOptions took 0.004 sec
+Testcase: testBackPointers took 0.013 sec
+Testcase: testHashCode took 0.003 sec
+Testcase: testConnectionsAreDistinct took 0.01 sec
+Testcase: testMaxTotal took 0.109 sec
+Testcase: testRepeatedBorrowAndReturn took 0.023 sec
+Testcase: testCanCloseResultSetTwice took 0.002 sec
+Testcase: testClearWarnings took 0.01 sec
+Testcase: testSimple2 took 0.003 sec
+Testcase: testSimple took 0.003 sec

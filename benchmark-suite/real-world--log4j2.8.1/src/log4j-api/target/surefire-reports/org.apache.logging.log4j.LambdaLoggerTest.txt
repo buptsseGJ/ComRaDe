@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.LambdaLoggerTest
+-------------------------------------------------------------------------------
+Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.026 sec - in org.apache.logging.log4j.LambdaLoggerTest

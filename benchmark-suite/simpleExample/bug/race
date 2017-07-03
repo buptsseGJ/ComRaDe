@@ -1,0 +1,18 @@
+Race: <benchmarks.SimpleExample: void run()>|<benchmarks.SimpleExample: int b> = 2|24 - <benchmarks.SimpleExample: void run()>|<benchmarks.SimpleExample: int b> = 2|24
+Race: <benchmarks.SimpleExample: void run()>|<benchmarks.SimpleExample: int a> = 1|21 - <benchmarks.SimpleExample: void run()>|<benchmarks.SimpleExample: int a> = 1|21
+Trace Size: 26
+Total #Threads: 3
+Total #SharedVariables: 2
+Total #Shared Read-Writes: 4
+Total #Local Read-Writes: 4
+Total #Initial Writes: 4
+Total #Synchronizations: 10
+Total #Branches: 4
+Total #Property Events: 0
+Total #Potential Violations: 2
+Total #Real Violations: 2
+Total Time: 1001ms
+
+real	0m10.105s
+user	0m9.580s
+sys		0m0.220s

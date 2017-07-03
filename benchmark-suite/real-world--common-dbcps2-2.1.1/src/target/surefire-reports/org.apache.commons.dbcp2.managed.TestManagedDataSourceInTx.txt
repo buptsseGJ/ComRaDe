@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx
+-------------------------------------------------------------------------------
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.806 sec - in org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx
+testNestedConnections(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testSharedConnection(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testReadOnly(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testConnectionReturnOnCommit(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testAutoCommitBehavior(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testCloseInTransaction(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testManagedConnectionEqualsFail(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testHashCode(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testConnectionsAreDistinct(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testMaxTotal(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.08 sec
+testCommit(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testClearWarnings(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testSharedTransactionConversion(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testManagedConnectionEqualsSameDelegateNoUnderlyingAccess(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testManagedConnectionEqualsSameDelegate(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testManagedConnectionEqualsNull(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testManagedConnectionEqualsType(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testManagedConnectionEqualInnermost(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testManagedConnectionEqualsReflexive(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testAccessToUnderlyingConnectionAllowed(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testThreaded(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 2.709 sec
+testCanCloseStatementTwice(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testNoRsetClose(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testOpening(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testPooling(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testCanCloseConnectionTwice(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testIsClosed(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testCanCloseCallableStatementTwice(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testHashing(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testCanClosePreparedStatementTwice(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testClosing(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testPrepareStatementOptions(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec
+testBackPointers(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testRepeatedBorrowAndReturn(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testCanCloseResultSetTwice(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testSimple2(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0.001 sec
+testSimple(org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx)  Time elapsed: 0 sec

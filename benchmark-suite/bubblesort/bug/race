@@ -1,0 +1,27 @@
+Race: <bubblesort.OneBubble: void run()>|$i6 = $r3[i3]|51 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r5[i0] = $i3|63
+Race: <bubblesort.OneBubble: void run()>|$i8 = $r4[$i7]|51 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r7[$i4] = i1|64
+Race: <bubblesort.OneBubble: void run()>|$i8 = $r4[$i7]|51 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r5[i0] = $i3|63
+Race: <bubblesort.OneBubble: void run()>|$i6 = $r3[i3]|51 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r7[$i4] = i1|64
+Race: <bubblesort.BubbleSortImpl: void PrintArray()>|$i5 = $r8[i3]|99 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r5[i0] = $i3|63
+Race: <bubblesort.BubbleSortImpl: void PrintArray()>|$i5 = $r8[i3]|99 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r7[$i4] = i1|64
+Trace Size: 13747
+Total #Threads: 26
+Total #SharedVariables: 25
+Total #Shared Read-Writes: 1968
+Total #Local Read-Writes: 4905
+Total #Initial Writes: 137
+Total #Synchronizations: 495
+Total #Branches: 6242
+Total #Property Events: 0
+Total #Potential Violations: 7
+Total #Real Violations: 6
+Total Time: 1877ms
+java.lang.RuntimeException
+	at bubblesort.Reporter.Report(Reporter.java:102)
+	at bubblesort.BubbleSort.main(BubbleSort.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at edu.uiuc.run.Main.run(Main.java:85)
+	at edu.uiuc.run.Main.main(Main.java:53)

@@ -1,0 +1,3 @@
+META-INF\org\apache\logging\log4j\core\config\plugins\Log4j2Plugins.dat
+org\apache\logging\log4j\configuration\CustomConfiguration.class
+org\apache\logging\log4j\configuration\CustomConfigurationFactory.class

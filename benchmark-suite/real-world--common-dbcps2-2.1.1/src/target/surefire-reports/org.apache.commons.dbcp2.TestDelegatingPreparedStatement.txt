@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestDelegatingPreparedStatement
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.dbcp2.TestDelegatingPreparedStatement
+testGetDelegate(org.apache.commons.dbcp2.TestDelegatingPreparedStatement)  Time elapsed: 0 sec
+testExecuteQueryReturnsNotNull(org.apache.commons.dbcp2.TestDelegatingPreparedStatement)  Time elapsed: 0 sec
+testExecuteQueryReturnsNull(org.apache.commons.dbcp2.TestDelegatingPreparedStatement)  Time elapsed: 0 sec

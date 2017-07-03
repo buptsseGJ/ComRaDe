@@ -1,0 +1,10 @@
+org\slf4j\impl\StaticLoggerBinder.class
+org\apache\logging\slf4j\Log4jMarkerFactory.class
+org\apache\logging\slf4j\Log4jLogger.class
+org\apache\logging\slf4j\Log4jMDCAdapter.class
+org\slf4j\impl\StaticMDCBinder.class
+org\apache\logging\slf4j\Log4jLoggerFactory.class
+org\slf4j\impl\StaticMarkerBinder.class
+org\apache\logging\slf4j\EventDataConverter.class
+org\apache\logging\slf4j\SLF4JLoggingException.class
+org\apache\logging\slf4j\Log4jMarker.class

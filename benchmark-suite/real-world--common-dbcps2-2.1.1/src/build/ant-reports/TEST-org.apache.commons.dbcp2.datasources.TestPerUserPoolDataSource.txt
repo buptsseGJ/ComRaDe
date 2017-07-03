@@ -1,0 +1,42 @@
+Testsuite: org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.484 sec
+------------- Standard Output ---------------
+Multithread test time = 323 ms. Threads: 20. Loops: 178. Hold time: 1. maxWaitMillis: 430. Done: 20. Did not run: 0. Failed: 0. expectError: false
+Multithread test time = 1059 ms. Threads: 20. Loops: 20. Hold time: 1000. maxWaitMillis: 500. Done: 10. Did not run: 0. Failed: 10. expectError: true
+------------- ---------------- ---------------
+
+Testcase: testPerUserMethods took 0.889 sec
+Testcase: testOpening took 0.006 sec
+Testcase: testSerialization took 0.032 sec
+Testcase: testClosingWithUserName took 0.007 sec
+Testcase: testChangePassword took 0.008 sec
+Testcase: testDefaultUser1 took 0.06 sec
+Testcase: testDefaultUser2 took 0.008 sec
+Testcase: testClosing took 0.007 sec
+Testcase: testTransactionIsolationBehavior took 0.008 sec
+Testcase: testMaxTotal took 0.107 sec
+Testcase: testSimpleWithUsername took 0.013 sec
+Testcase: testMaxWaitMillisZero took 0.006 sec
+Testcase: testSimple2 took 0.007 sec
+Testcase: testSimple took 0.004 sec
+Testcase: testMultipleThreads1 took 0.324 sec
+Testcase: testMultipleThreads2 took 1.064 sec
+Testcase: testUnregisteredUser took 0.023 sec
+Testcase: testIncorrectPassword took 0.009 sec
+Testcase: testThreaded took 3.682 sec
+Testcase: testCanCloseStatementTwice took 0.008 sec
+Testcase: testNoRsetClose took 0.007 sec
+Testcase: testPooling took 0.01 sec
+Testcase: testCanCloseConnectionTwice took 0.004 sec
+Testcase: testIsClosed took 0.005 sec
+Testcase: testCanCloseCallableStatementTwice took 0.01 sec
+Testcase: testAutoCommitBehavior took 0.005 sec
+Testcase: testHashing took 0.004 sec
+Testcase: testCanClosePreparedStatementTwice took 0.003 sec
+Testcase: testPrepareStatementOptions took 0.003 sec
+Testcase: testBackPointers took 0.007 sec
+Testcase: testHashCode took 0.004 sec
+Testcase: testConnectionsAreDistinct took 0.005 sec
+Testcase: testRepeatedBorrowAndReturn took 0.012 sec
+Testcase: testCanCloseResultSetTwice took 0.005 sec
+Testcase: testClearWarnings took 0.005 sec

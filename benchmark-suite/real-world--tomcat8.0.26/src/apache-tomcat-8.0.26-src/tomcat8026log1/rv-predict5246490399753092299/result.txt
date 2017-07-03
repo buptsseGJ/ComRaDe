@@ -1,0 +1,247 @@
+Data race on field org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcessCount: {{{
+    Concurrent write in thread T79 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:862)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T79 is created by T1
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+
+    Concurrent read in thread T45 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:863)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T45 is created by T1
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcessCount: {{{
+    Concurrent read in thread T79 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:862)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T79 is created by T1
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+
+    Concurrent write in thread T99 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:862)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T99 is created by T98
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameClient.response: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.<init>(WsFrameClient.java:45)
+        at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:379)
+        at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:204)
+        at org.apache.tomcat.websocket.TestWsWebSocketContainer.doTestWriteTimeoutServer(TestWsWebSocketContainer.java:417)
+        at org.apache.tomcat.websocket.TestWsWebSocketContainer.testWriteTimeoutServerEndpoint(TestWsWebSocketContainer.java:383)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+        at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T28 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:62)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T28 is created by T20
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameClient.response: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.<init>(WsFrameClient.java:45)
+        at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:379)
+        at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:204)
+        at org.apache.tomcat.websocket.TestWsWebSocketContainer.doTestWriteTimeoutServer(TestWsWebSocketContainer.java:417)
+        at org.apache.tomcat.websocket.TestWsWebSocketContainer.testWriteTimeoutServerEndpoint(TestWsWebSocketContainer.java:383)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+        at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T28 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:63)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T28 is created by T20
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameClient.response: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.<init>(WsFrameClient.java:45)
+        at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:379)
+        at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:204)
+        at org.apache.tomcat.websocket.TestWsWebSocketContainer.doTestWriteTimeoutServer(TestWsWebSocketContainer.java:417)
+        at org.apache.tomcat.websocket.TestWsWebSocketContainer.testWriteTimeoutServerEndpoint(TestWsWebSocketContainer.java:383)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+        at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T28 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.access$200(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:123)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T28 is created by T20
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsSession.binaryMessageHandler: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsSession.doAddMessageHandler(WsSession.java:249)
+        at org.apache.tomcat.websocket.WsSession.addMessageHandler(WsSession.java:199)
+        at org.apache.tomcat.websocket.TestWsWebSocketContainer.doTestWriteTimeoutServer(TestWsWebSocketContainer.java:423)
+        at org.apache.tomcat.websocket.TestWsWebSocketContainer.testWriteTimeoutServerEndpoint(TestWsWebSocketContainer.java:383)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+        at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T28 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsSession.getBinaryMessageHandler(WsSession.java:706)
+        at org.apache.tomcat.websocket.WsFrameBase.processInitialHeader(WsFrameBase.java:188)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:115)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T28 is created by T20
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcessCount: {{{
+    Concurrent read in thread T139 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:863)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T139 is created by T1
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+
+    Concurrent write in thread T159 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:864)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T159 is created by T158
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+}}}
+
+Data race on field org.apache.tomcat.util.net.SecureNio2Channel.closed: {{{
+    Concurrent write in thread T366 (locks held: {})
+ ---->  at org.apache.tomcat.util.net.SecureNio2Channel.close(SecureNio2Channel.java:485)
+        at org.apache.tomcat.util.net.Nio2Endpoint.closeSocket(Nio2Endpoint.java:628)
+        at org.apache.coyote.http11.Http11Nio2Protocol$Http11ConnectionHandler.closeAll(Http11Nio2Protocol.java:251)
+        at org.apache.tomcat.util.net.Nio2Endpoint$1.run(Nio2Endpoint.java:396)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T366 is created by T350
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T361 (locks held: {Monitor@31f72df5, Monitor@53630f26, Monitor@7e9876dd})
+ ---->  at org.apache.tomcat.util.net.SecureNio2Channel.close(SecureNio2Channel.java:485)
+        at org.apache.coyote.http11.upgrade.Nio2ServletOutputStream.doClose(Nio2ServletOutputStream.java:187)
+        at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.close(AbstractServletOutputStream.java:140)
+        at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doClose(WsRemoteEndpointImplServer.java:142)
+        at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.close(WsRemoteEndpointImplBase.java:638)
+        at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:516)
+        - locked Monitor@7e9876dd at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:502) 
+        at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:342)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:60)
+        - locked Monitor@53630f26 at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:48) 
+        at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler$WsReadListener.onDataAvailable(WsHttpUpgradeHandler.java:203)
+        at org.apache.coyote.http11.upgrade.AbstractServletInputStream.onDataAvailable(AbstractServletInputStream.java:198)
+        at org.apache.coyote.http11.upgrade.AbstractProcessor.upgradeDispatch(AbstractProcessor.java:96)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.doRun(Nio2Endpoint.java:1074)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1033)
+        - locked Monitor@31f72df5 at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1032) 
+        at org.apache.tomcat.util.net.Nio2Endpoint.processSocket0(Nio2Endpoint.java:594)
+        at org.apache.tomcat.util.net.Nio2Endpoint.processSocket(Nio2Endpoint.java:578)
+        at org.apache.coyote.http11.upgrade.Nio2ServletInputStream$1.completed(Nio2ServletInputStream.java:65)
+        at org.apache.tomcat.util.net.SecureNio2Channel$3.completed(SecureNio2Channel.java:777)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T361 is created by T350
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

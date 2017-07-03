@@ -1,0 +1,4 @@
+2016-06-28 00:13:36,031 INFO c.f.Bar [main]  some message org.apache.logging.log4j.core.async.AsyncLoggerConfigUseAfterShutdownTest.testNoErrorIfLogAfterShutdown(AsyncLoggerConfigUseAfterShutdownTest.java:42) 
+2016-06-28 00:13:36,031 INFO c.f.Bar [main]  some message  
+2016-06-28 00:13:36,128 INFO c.f.Bar [main]  msg  
+2016-06-28 00:13:36,128 INFO c.f.Bar [main]  msg  

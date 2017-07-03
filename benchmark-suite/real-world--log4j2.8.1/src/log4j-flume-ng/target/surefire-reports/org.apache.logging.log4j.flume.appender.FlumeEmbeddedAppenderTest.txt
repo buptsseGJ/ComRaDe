@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 101.114 sec <<< FAILURE! - in org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest
+testMultiple(org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest)  Time elapsed: 39.15 sec  <<< FAILURE!
+java.lang.AssertionError: Event should not be null
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest.testMultiple(FlumeEmbeddedAppenderTest.java:150)
+
+testFailover(org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest)  Time elapsed: 30.432 sec  <<< FAILURE!
+java.lang.AssertionError: Event should not be null
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest.testFailover(FlumeEmbeddedAppenderTest.java:169)
+
+testLog4Event(org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest)  Time elapsed: 30.744 sec  <<< FAILURE!
+java.lang.AssertionError: Event should not be null
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest.testLog4Event(FlumeEmbeddedAppenderTest.java:135)
+

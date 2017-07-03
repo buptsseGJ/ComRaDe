@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1467046265895
+Build-Jdk: 1.8.0_65
+Built-By: jiangao
+Bundle-Description: The Apache Log4j Flume Appender
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Log4j Flume Bridge
+Bundle-SymbolicName: org.apache.logging.log4j.flume
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.8.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.logging.log4j.flume.appender;version="2.8.1";
+ uses:="com.sleepycat.je,javax.crypto,org.apache.flume,org.apache.flume.
+ agent.embedded,org.apache.flume.event,org.apache.flume.source,org.apach
+ e.logging.log4j,org.apache.logging.log4j.core,org.apache.logging.log4j.
+ core.appender,org.apache.logging.log4j.core.config,org.apache.logging.l
+ og4j.core.config.plugins,org.apache.logging.log4j.core.impl,org.apache.
+ logging.log4j.message,org.apache.logging.log4j.util"
+Fragment-Host: org.apache.logging.log4j.core
+Implementation-Title: Apache Log4j Flume Bridge
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.8.1
+Import-Package: com.sleepycat.je,javax.crypto,org.apache.flume,org.apach
+ e.flume.agent.embedded;resolution:=optional,org.apache.flume.api,org.ap
+ ache.flume.channel;resolution:=optional,org.apache.flume.event,org.apac
+ he.flume.instrumentation;resolution:=optional,org.apache.flume.source;r
+ esolution:=optional,org.apache.logging.log4j;version="[2.8,3)",org.apac
+ he.logging.log4j.core;version="[2.8,3)",org.apache.logging.log4j.core.a
+ ppender;version="[2.8,3)",org.apache.logging.log4j.core.config;version=
+ "[2.8,3)",org.apache.logging.log4j.core.config.plugins;version="[2.8,3)
+ ",org.apache.logging.log4j.core.config.plugins.util;version="[2.8,3)",o
+ rg.apache.logging.log4j.core.impl;version="[2.8,3)",org.apache.logging.
+ log4j.core.layout;version="[2.8,3)",org.apache.logging.log4j.core.net;v
+ ersion="[2.8,3)",org.apache.logging.log4j.core.util;version="[2.8,3)",o
+ rg.apache.logging.log4j.message;version="[2.8,3)",org.apache.logging.lo
+ g4j.status;version="[2.8,3)",org.apache.logging.log4j.util;version="[2.
+ 8,3)",org.slf4j;version="[1.7,2)"
+Log4jReleaseKey: B3D8E1BA
+Log4jReleaseManager: Ralph Goers
+Log4jReleaseVersion: 2.8.1
+Originally-Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Specification-Title: Apache Log4j Flume Bridge
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.8.1
+Tool: Bnd-3.2.0.201605172007
+X-Compile-Source-JDK: 1.7
+X-Compile-Target-JDK: 1.7

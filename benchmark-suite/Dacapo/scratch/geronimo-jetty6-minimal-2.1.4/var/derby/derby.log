@@ -1,0 +1,7 @@
+Apache Derby Network Server - 10.4.2.0 - (689064) started and ready to accept connections on port 1527 at 2017-07-03 14:24:43.891 GMT 
+----------------------------------------------------------------
+2017-07-03 14:24:44.227 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance a816c00e-015d-08d6-d739-ffff9b6f2e1a
+on database directory E:\github\JBench\benchmark-suite\Dacapo\scratch\geronimo-jetty6-minimal-2.1.4\var\derby\SystemDatabase  
+
+Database Class Loader started - derby.database.classpath=''

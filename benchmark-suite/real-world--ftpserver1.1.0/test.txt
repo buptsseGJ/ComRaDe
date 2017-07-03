@@ -1,0 +1,1 @@
+1.run "mvn clean test" in src folder.

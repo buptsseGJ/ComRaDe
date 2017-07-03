@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestDriverManagerConnectionFactory
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.apache.commons.dbcp2.TestDriverManagerConnectionFactory
+testDriverManagerInit(org.apache.commons.dbcp2.TestDriverManagerConnectionFactory)  Time elapsed: 0.018 sec

@@ -1,0 +1,20 @@
+Data race on field org.apache.tomcat.util.net.SocketWrapper.error: {{{
+    Concurrent write in thread T28 (locks held: {})
+ ---->  at org.apache.tomcat.util.net.SocketWrapper.setError(SocketWrapper.java:104)
+        at org.apache.coyote.http11.upgrade.Nio2ServletOutputStream$1.failed(Nio2ServletOutputStream.java:67)
+        at org.apache.tomcat.util.net.SecureNio2Channel$4.failed(SecureNio2Channel.java:844)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T28 is created by T14
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T32 (locks held: {})
+ ---->  at org.apache.tomcat.util.net.SocketWrapper.setError(SocketWrapper.java:104)
+        at org.apache.coyote.http11.upgrade.Nio2ServletInputStream$1.failed(Nio2ServletInputStream.java:70)
+        at org.apache.tomcat.util.net.SecureNio2Channel$3.failed(SecureNio2Channel.java:786)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T32 is created by T14
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

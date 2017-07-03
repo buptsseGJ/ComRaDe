@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.core.config.JiraLog4j2_1100JsonTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.425 sec - in org.apache.logging.log4j.core.config.JiraLog4j2_1100JsonTest

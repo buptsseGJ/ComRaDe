@@ -1,0 +1,17 @@
+Race: <account.Account: void go(java.lang.String[])>|$i10 = $r15.<account.BankAccount: int Balance>|67 - <account.Account: void Service(int,int)>|$r1.<account.BankAccount: int Balance> = $i3|97
+Race: <account.Account: void Service(int,int)>|$i4 = <account.Account: int Bank_Total>|98 - <account.Account: void Service(int,int)>|<account.Account: int Bank_Total> = $i5|98
+Race: <account.Account: void Service(int,int)>|<account.Account: int Bank_Total> = $i5|98 - <account.Account: void Service(int,int)>|<account.Account: int Bank_Total> = $i5|98
+Race: <account.Account: void checkResult(int)>|$i1 = <account.Account: int Bank_Total>|75 - <account.Account: void Service(int,int)>|<account.Account: int Bank_Total> = $i5|98
+Race: <account.Account: void checkResult(int)>|$i2 = <account.Account: int Bank_Total>|76 - <account.Account: void Service(int,int)>|<account.Account: int Bank_Total> = $i5|98
+Trace Size: 126
+Total #Threads: 3
+Total #SharedVariables: 6
+Total #Shared Read-Writes: 45
+Total #Local Read-Writes: 25
+Total #Initial Writes: 12
+Total #Synchronizations: 2
+Total #Branches: 42
+Total #Property Events: 0
+Total #Potential Violations: 9
+Total #Real Violations: 5
+Total Time: 1011ms

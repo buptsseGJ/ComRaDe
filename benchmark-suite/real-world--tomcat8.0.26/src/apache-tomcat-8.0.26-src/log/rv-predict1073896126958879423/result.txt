@@ -1,0 +1,54 @@
+Data race on field org.apache.catalina.connector.OutputBuffer.suspended: {{{
+    Concurrent read in thread T63 (locks held: {})
+ ---->  at org.apache.catalina.connector.OutputBuffer.isSuspended(OutputBuffer.java:200)
+        at org.apache.catalina.connector.Response.isSuspended(Response.java:400)
+        at org.apache.catalina.connector.Response.isAppCommitted(Response.java:341)
+        at org.apache.catalina.connector.ResponseFacade.isCommitted(ResponseFacade.java:345)
+        at org.apache.catalina.connector.ResponseFacade.setContentType(ResponseFacade.java:249)
+        at org.apache.coyote.http11.TestAbstractHttp11Processor$Bug57621Servlet$1.run(TestAbstractHttp11Processor.java:754)
+        at org.apache.catalina.core.AsyncContextImpl$RunnableWrapper.run(AsyncContextImpl.java:562)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T63 is created by T62
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T62 (locks held: {Monitor@190e7d51})
+ ---->  at org.apache.catalina.connector.OutputBuffer.setSuspended(OutputBuffer.java:210)
+        at org.apache.catalina.connector.Response.setSuspended(Response.java:392)
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:167)
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:277)
+        - locked Monitor@190e7d51 at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:259) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T62 is created by T60
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent write in thread T62 (locks held: {Monitor@190e7d51})
+ ---->  at org.apache.catalina.connector.OutputBuffer.clearEncoders(OutputBuffer.java:255)
+        at org.apache.catalina.connector.Response.clearEncoders(Response.java:295)
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:587)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:277)
+        - locked Monitor@190e7d51 at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:259) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T62 is created by T60
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T63 (locks held: {})
+ ---->  at org.apache.catalina.connector.OutputBuffer.setConverter(OutputBuffer.java:580)
+        at org.apache.catalina.connector.OutputBuffer.checkConverter(OutputBuffer.java:563)
+        at org.apache.catalina.connector.Response.getWriter(Response.java:599)
+        at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:212)
+        at org.apache.coyote.http11.TestAbstractHttp11Processor$Bug57621Servlet$1.run(TestAbstractHttp11Processor.java:757)
+        at org.apache.catalina.core.AsyncContextImpl$RunnableWrapper.run(AsyncContextImpl.java:562)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T63 is created by T62
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

@@ -1,0 +1,84 @@
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent read in thread T55 (locks held: {})
+ ---->  at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:45)
+        at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:41)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberAdded(ChannelCoordinator.java:244)
+        at org.apache.catalina.tribes.membership.McastService.memberAdded(McastService.java:461)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$2.run(McastServiceImpl.java:397)
+    T55 is created by T39
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T64 (locks held: {Monitor@3cf6887d})
+ ---->  at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:51)
+        - locked Monitor@3cf6887d at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:47) 
+        at org.apache.catalina.tribes.transport.SenderState.getSenderState(SenderState.java:41)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberAdded(ChannelCoordinator.java:244)
+        at org.apache.catalina.tribes.membership.McastService.memberAdded(McastService.java:461)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$2.run(McastServiceImpl.java:397)
+    T64 is created by T34
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.catalina.tribes.membership.MemberImpl.memberAliveTime: {{{
+    Concurrent read in thread T70 (locks held: {Monitor@7ee0d527, Monitor@7adf5e23})
+ ---->  at org.apache.catalina.tribes.membership.MemberImpl.getMemberAliveTime(MemberImpl.java:466)
+        at org.apache.catalina.tribes.membership.Membership$MemberComparator.compare(Membership.java:280)
+        at org.apache.catalina.tribes.membership.Membership.addMember(Membership.java:155)
+        - locked Monitor@7adf5e23 at org.apache.catalina.tribes.membership.Membership.addMember(Membership.java:147) 
+        at org.apache.catalina.tribes.membership.Membership.memberAlive(Membership.java:125)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberAdded(DomainFilterInterceptor.java:62)
+        - locked Monitor@7ee0d527 at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberAdded(DomainFilterInterceptor.java:60) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberAdded(ChannelInterceptorBase.java:87)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberAdded(ChannelCoordinator.java:245)
+        at org.apache.catalina.tribes.membership.McastService.memberAdded(McastService.java:461)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$2.run(McastServiceImpl.java:397)
+    T70 is created by T39
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T39 (locks held: {Monitor@7b853fc9})
+ ---->  at org.apache.catalina.tribes.membership.MemberImpl.setMemberAliveTime(MemberImpl.java:505)
+        at org.apache.catalina.tribes.membership.Membership.memberAlive(Membership.java:132)
+        - locked Monitor@7b853fc9 at org.apache.catalina.tribes.membership.Membership.memberAlive(Membership.java:n/a) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.memberDataReceived(McastServiceImpl.java:389)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:356)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:541)
+    T39 is created by T16
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:269)
+}}}
+
+Data race on field org.apache.catalina.tribes.membership.McastService.listener: {{{
+    Concurrent read in thread T92 (locks held: {})
+ ---->  at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T92 is created by T41
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T1 (locks held: {Monitor@58fdd99, Monitor@7ff2a664})
+ ---->  at org.apache.catalina.tribes.membership.McastService.setMembershipListener(McastService.java:441)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.internalStop(ChannelCoordinator.java:223)
+        - locked Monitor@7ff2a664 at org.apache.catalina.tribes.group.ChannelCoordinator.internalStop(ChannelCoordinator.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelCoordinator.stop(ChannelCoordinator.java:121)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.stop(ChannelInterceptorBase.java:171)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.stop(ChannelInterceptorBase.java:171)
+        at org.apache.catalina.tribes.group.GroupChannel.stop(GroupChannel.java:444)
+        - locked Monitor@58fdd99 at org.apache.catalina.tribes.group.GroupChannel.stop(GroupChannel.java:n/a) 
+        at org.apache.catalina.tribes.group.TestGroupChannelMemberArrival.tearDown(TestGroupChannelMemberArrival.java:104)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+}}}
+

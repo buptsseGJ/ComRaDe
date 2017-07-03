@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.core.config.JiraLog4j2_1100YamlBadTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 sec - in org.apache.logging.log4j.core.config.JiraLog4j2_1100YamlBadTest

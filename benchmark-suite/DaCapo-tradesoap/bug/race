@@ -1,0 +1,223 @@
+//use Rv-Predict to run tradesoap of DaCapo with command "--window 1000 --exclude org,dacapo.harness -s small"
+
+Data race on field org.apache.geronimo.kernel.rmi.RMIClassLoaderSpiImpl.delegate: {{{
+
+    Concurrent write in thread T15 (locks held: {Monitor@34c7b142, Monitor@68b66158})
+
+ ---->  at org.apache.geronimo.kernel.rmi.RMIClassLoaderSpiImpl.<init>(RMIClassLoaderSpiImpl.java:41)
+
+        at javax.naming.InitialContext.bind(InitialContext.java:425)
+
+        at javax.management.remote.rmi.RMIConnectorServer.bind(RMIConnectorServer.java:644)
+
+        at javax.management.remote.rmi.RMIConnectorServer.start(RMIConnectorServer.java:427)
+
+        - locked Monitor@68b66158 at javax.management.remote.rmi.RMIConnectorServer.start(RMIConnectorServer.java:n/a) 
+
+        at org.apache.geronimo.jmxremoting.JMXConnector.doStart(JMXConnector.java:197)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstance.createInstance(GBeanInstance.java:998)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstanceState.attemptFullStart(GBeanInstanceState.java:268)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstanceState.start(GBeanInstanceState.java:102)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstanceState.startRecursive(GBeanInstanceState.java:124)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstance.startRecursive(GBeanInstance.java:555)
+
+        at org.apache.geronimo.kernel.basic.BasicKernel.startRecursiveGBean(BasicKernel.java:379)
+
+        at org.apache.geronimo.kernel.config.ConfigurationUtil.startConfigurationGBeans(ConfigurationUtil.java:456)
+
+        at org.apache.geronimo.kernel.config.KernelConfigurationManager.start(KernelConfigurationManager.java:188)
+
+        at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:563)
+
+        - locked Monitor@34c7b142 at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:n/a) 
+
+        at org.apache.geronimo.gbean.runtime.ReflectionMethodInvoker.invoke(ReflectionMethodInvoker.java:34)
+
+        at org.apache.geronimo.gbean.runtime.GBeanOperation.invoke(GBeanOperation.java:124)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstance.invoke(GBeanInstance.java:832)
+
+        at org.apache.geronimo.gbean.runtime.RawInvoker.invoke(RawInvoker.java:57)
+
+        at org.apache.geronimo.kernel.basic.RawOperationInvoker.invoke(RawOperationInvoker.java:35)
+
+        at org.apache.geronimo.kernel.basic.ProxyMethodInterceptor.intercept(ProxyMethodInterceptor.java:96)
+
+        at org.apache.geronimo.kernel.config.EditableConfigurationManager$$EnhancerByCGLIB$$e6e7a8de.startConfiguration(<generated>:n/a)
+
+        at org.apache.geronimo.system.main.EmbeddedDaemon.doStartup(EmbeddedDaemon.java:162)
+
+        at org.apache.geronimo.system.main.EmbeddedDaemon.execute(EmbeddedDaemon.java:79)
+
+        at org.dacapo.daytrader.DaCapoServerRunner$1.run(DaCapoServerRunner.java:45)
+
+    T15 is created by T1
+
+        at org.dacapo.daytrader.DaCapoServerRunner.initialize(DaCapoServerRunner.java:48)
+
+
+
+    Concurrent read in thread T22 (locks held: {})
+
+ ---->  at org.apache.geronimo.kernel.rmi.RMIClassLoaderSpiImpl.loadClass(RMIClassLoaderSpiImpl.java:53)
+
+    T22 is created by T16
+
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:950)
+
+}}}
+
+
+
+Data race on field org.mortbay.component.AbstractLifeCycle._state: {{{
+
+    Concurrent read in thread T29 (locks held: {})
+
+ ---->  at org.mortbay.component.AbstractLifeCycle.isRunning(AbstractLifeCycle.java:85)
+
+        at org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:444)
+
+    T29 is created by T15
+
+        at org.mortbay.thread.BoundedThreadPool.newThread(BoundedThreadPool.java:385)
+
+
+
+    Concurrent write in thread T15 (locks held: {Monitor@34c7b142, Monitor@2f57a3c8})
+
+ ---->  at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:42)
+
+        at org.mortbay.jetty.Server.doStart(Server.java:216)
+
+        at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+
+        at org.apache.geronimo.jetty6.JettyContainerImpl.doStart(JettyContainerImpl.java:275)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstance.createInstance(GBeanInstance.java:998)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstanceState.attemptFullStart(GBeanInstanceState.java:268)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstanceState.start(GBeanInstanceState.java:102)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstance.start(GBeanInstance.java:541)
+
+        at org.apache.geronimo.gbean.runtime.GBeanDependency.attemptFullStart(GBeanDependency.java:111)
+
+        at org.apache.geronimo.gbean.runtime.GBeanDependency.addTarget(GBeanDependency.java:146)
+
+        - locked Monitor@2f57a3c8 at org.apache.geronimo.gbean.runtime.GBeanDependency.addTarget(GBeanDependency.java:139) 
+
+        at org.apache.geronimo.gbean.runtime.GBeanDependency$1.running(GBeanDependency.java:120)
+
+        at org.apache.geronimo.kernel.basic.BasicLifecycleMonitor.fireRunningEvent(BasicLifecycleMonitor.java:176)
+
+        at org.apache.geronimo.kernel.basic.BasicLifecycleMonitor.access$300(BasicLifecycleMonitor.java:44)
+
+        at org.apache.geronimo.kernel.basic.BasicLifecycleMonitor$RawLifecycleBroadcaster.fireRunningEvent(BasicLifecycleMonitor.java:254)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstanceState.attemptFullStart(GBeanInstanceState.java:294)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstanceState.start(GBeanInstanceState.java:102)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstanceState.startRecursive(GBeanInstanceState.java:124)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstance.startRecursive(GBeanInstance.java:555)
+
+        at org.apache.geronimo.kernel.basic.BasicKernel.startRecursiveGBean(BasicKernel.java:379)
+
+        at org.apache.geronimo.kernel.config.ConfigurationUtil.startConfigurationGBeans(ConfigurationUtil.java:456)
+
+        at org.apache.geronimo.kernel.config.KernelConfigurationManager.start(KernelConfigurationManager.java:188)
+
+        at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:563)
+
+        - locked Monitor@34c7b142 at org.apache.geronimo.kernel.config.SimpleConfigurationManager.startConfiguration(SimpleConfigurationManager.java:n/a) 
+
+        at org.apache.geronimo.gbean.runtime.ReflectionMethodInvoker.invoke(ReflectionMethodInvoker.java:34)
+
+        at org.apache.geronimo.gbean.runtime.GBeanOperation.invoke(GBeanOperation.java:124)
+
+        at org.apache.geronimo.gbean.runtime.GBeanInstance.invoke(GBeanInstance.java:832)
+
+        at org.apache.geronimo.gbean.runtime.RawInvoker.invoke(RawInvoker.java:57)
+
+        at org.apache.geronimo.kernel.basic.RawOperationInvoker.invoke(RawOperationInvoker.java:35)
+
+        at org.apache.geronimo.kernel.basic.ProxyMethodInterceptor.intercept(ProxyMethodInterceptor.java:96)
+
+        at org.apache.geronimo.kernel.config.EditableConfigurationManager$$EnhancerByCGLIB$$e6e7a8de.startConfiguration(<generated>:n/a)
+
+        at org.apache.geronimo.system.main.EmbeddedDaemon.doStartup(EmbeddedDaemon.java:162)
+
+        at org.apache.geronimo.system.main.EmbeddedDaemon.execute(EmbeddedDaemon.java:79)
+
+        at org.dacapo.daytrader.DaCapoServerRunner$1.run(DaCapoServerRunner.java:45)
+
+    T15 is created by T1
+
+        at org.dacapo.daytrader.DaCapoServerRunner.initialize(DaCapoServerRunner.java:48)
+
+}}}
+
+
+
+Data race on field org.mortbay.thread.Timeout._now: {{{
+
+    Concurrent read in thread T243 (locks held: {})
+
+ ---->  at org.mortbay.thread.Timeout.getNow(Timeout.java:74)
+
+        at org.mortbay.io.nio.SelectorManager$SelectSet.getNow(SelectorManager.java:610)
+
+        at org.mortbay.jetty.nio.SelectChannelConnector.customize(SelectChannelConnector.java:143)
+
+        at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:503)
+
+        at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:842)
+
+        at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+
+        at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+
+        at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+
+        at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+
+        at org.apache.geronimo.pool.ThreadPool$1.run(ThreadPool.java:214)
+
+        at org.apache.geronimo.pool.ThreadPool$ContextClassLoaderRunnable.run(ThreadPool.java:344)
+
+    T243 is created by T71
+
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+
+
+    Concurrent write in thread T73 (locks held: {Monitor@1a75d97})
+
+ ---->  at org.mortbay.thread.Timeout.setNow(Timeout.java:80)
+
+        at org.mortbay.io.nio.SelectorManager$SelectSet.doSelect(SelectorManager.java:385)
+
+        - locked Monitor@1a75d97 at org.mortbay.io.nio.SelectorManager$SelectSet.doSelect(SelectorManager.java:383) 
+
+        at org.mortbay.io.nio.SelectorManager.doSelect(SelectorManager.java:166)
+
+        at org.mortbay.jetty.nio.SelectChannelConnector.accept(SelectChannelConnector.java:124)
+
+        at org.mortbay.jetty.AbstractConnector$Acceptor.run(AbstractConnector.java:515)
+
+        at org.apache.geronimo.pool.ThreadPool$1.run(ThreadPool.java:214)
+
+        at org.apache.geronimo.pool.ThreadPool$ContextClassLoaderRunnable.run(ThreadPool.java:344)
+
+    T73 is created by T15
+
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+}}}

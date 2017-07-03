@@ -1,0 +1,301 @@
+Data race on field java.util.LinkedList.$state: {{{
+    Concurrent write in thread T26 (locks held: {Monitor@1b0e63c1, Monitor@3095852e})
+ ---->  at org.apache.catalina.tribes.transport.nio.NioReceiver.addEvent(NioReceiver.java:152)
+        - locked Monitor@3095852e at org.apache.catalina.tribes.transport.nio.NioReceiver.addEvent(NioReceiver.java:151) 
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.registerForRead(NioReplicationTask.java:271)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:195)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@1b0e63c1 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T26 is created by T17
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T17 (locks held: {})
+ ---->  at org.apache.catalina.tribes.transport.nio.NioReceiver.events(NioReceiver.java:160)
+        at org.apache.catalina.tribes.transport.nio.NioReceiver.listen(NioReceiver.java:264)
+        at org.apache.catalina.tribes.transport.nio.NioReceiver.run(NioReceiver.java:419)
+    T17 is created by T15
+        at org.apache.catalina.tribes.transport.nio.NioReceiver.start(NioReceiver.java:91)
+}}}
+
+Data race on field org.apache.catalina.tribes.membership.Membership.members: {{{
+    Concurrent read in thread T22 (locks held: {Monitor@4af7b34, Monitor@35968580})
+ ---->  at org.apache.catalina.tribes.membership.Membership.hasMembers(Membership.java:225)
+        at org.apache.catalina.tribes.membership.Membership.expire(Membership.java:195)
+        - locked Monitor@35968580 at org.apache.catalina.tribes.membership.Membership.expire(Membership.java:n/a) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.checkExpired(McastServiceImpl.java:455)
+        - locked Monitor@4af7b34 at org.apache.catalina.tribes.membership.McastServiceImpl.checkExpired(McastServiceImpl.java:454) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.send(McastServiceImpl.java:512)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.send(McastServiceImpl.java:487)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$SenderThread.run(McastServiceImpl.java:575)
+    T22 is created by T15
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:280)
+
+    Concurrent write in thread T19 (locks held: {Monitor@1fe1f881})
+ ---->  at org.apache.catalina.tribes.membership.Membership.removeMember(Membership.java:183)
+        - locked Monitor@1fe1f881 at org.apache.catalina.tribes.membership.Membership.removeMember(Membership.java:168) 
+        at org.apache.catalina.tribes.membership.McastServiceImpl.memberDataReceived(McastServiceImpl.java:376)
+        at org.apache.catalina.tribes.membership.McastServiceImpl.receive(McastServiceImpl.java:356)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread.run(McastServiceImpl.java:541)
+    T19 is created by T15
+        at org.apache.catalina.tribes.membership.McastServiceImpl.start(McastServiceImpl.java:269)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent read in thread T58 (locks held: {Monitor@34451436, WriteLock@39571bcc})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.getInCounter(OrderInterceptor.java:198)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:132)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.messageReceived(OrderInterceptor.java:111)
+        - locked WriteLock@39571bcc at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock(ReentrantReadWriteLock.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:48)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:262)
+        at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:242)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:211)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@34451436 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T58 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T61 (locks held: {})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.getInCounter(OrderInterceptor.java:202)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processLeftOvers(OrderInterceptor.java:119)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.memberDisappeared(OrderInterceptor.java:187)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberDisappeared(DomainFilterInterceptor.java:79)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberDisappeared(ChannelCoordinator.java:251)
+        at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T61 is created by T37
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent read in thread T61 (locks held: {})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:134)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processLeftOvers(OrderInterceptor.java:122)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.memberDisappeared(OrderInterceptor.java:187)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberDisappeared(DomainFilterInterceptor.java:79)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberDisappeared(ChannelCoordinator.java:251)
+        at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T61 is created by T37
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T56 (locks held: {Monitor@4b620af7, WriteLock@39571bcc})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:171)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.messageReceived(OrderInterceptor.java:111)
+        - locked WriteLock@39571bcc at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock(ReentrantReadWriteLock.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:48)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:262)
+        at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:242)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:211)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@4b620af7 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T56 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.catalina.tribes.group.interceptors.OrderInterceptor$MessageOrder.msg: {{{
+    Concurrent read in thread T61 (locks held: {})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor$MessageOrder.getMessage(OrderInterceptor.java:247)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:131)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processLeftOvers(OrderInterceptor.java:122)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.memberDisappeared(OrderInterceptor.java:187)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberDisappeared(DomainFilterInterceptor.java:79)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberDisappeared(ChannelCoordinator.java:251)
+        at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T61 is created by T37
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T56 (locks held: {Monitor@4b620af7, WriteLock@39571bcc})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor$MessageOrder.setMessage(OrderInterceptor.java:251)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:145)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.messageReceived(OrderInterceptor.java:111)
+        - locked WriteLock@39571bcc at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock(ReentrantReadWriteLock.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:48)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:262)
+        at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:242)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:211)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@4b620af7 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T56 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent read in thread T58 (locks held: {Monitor@34451436, WriteLock@39571bcc})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.getInCounter(OrderInterceptor.java:198)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:132)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.messageReceived(OrderInterceptor.java:111)
+        - locked WriteLock@39571bcc at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock(ReentrantReadWriteLock.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:48)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:262)
+        at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:242)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:211)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@34451436 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T58 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T61 (locks held: {})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.memberDisappeared(OrderInterceptor.java:184)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberDisappeared(DomainFilterInterceptor.java:79)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberDisappeared(ChannelCoordinator.java:251)
+        at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T61 is created by T37
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.catalina.tribes.group.interceptors.OrderInterceptor$MessageOrder.msg: {{{
+    Concurrent write in thread T56 (locks held: {Monitor@4b620af7, WriteLock@39571bcc})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor$MessageOrder.setMessage(OrderInterceptor.java:251)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:145)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.messageReceived(OrderInterceptor.java:111)
+        - locked WriteLock@39571bcc at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock(ReentrantReadWriteLock.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:48)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:262)
+        at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:242)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:211)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@4b620af7 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T56 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T61 (locks held: {})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor$MessageOrder.setMessage(OrderInterceptor.java:251)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:145)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processLeftOvers(OrderInterceptor.java:122)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.memberDisappeared(OrderInterceptor.java:187)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberDisappeared(DomainFilterInterceptor.java:79)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberDisappeared(ChannelCoordinator.java:251)
+        at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T61 is created by T37
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent write in thread T56 (locks held: {Monitor@4b620af7, WriteLock@39571bcc})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:171)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.messageReceived(OrderInterceptor.java:111)
+        - locked WriteLock@39571bcc at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock(ReentrantReadWriteLock.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:48)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:262)
+        at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:242)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:211)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@4b620af7 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T56 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T61 (locks held: {})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processLeftOvers(OrderInterceptor.java:117)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.memberDisappeared(OrderInterceptor.java:187)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberDisappeared(DomainFilterInterceptor.java:79)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberDisappeared(ChannelCoordinator.java:251)
+        at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T61 is created by T37
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent write in thread T61 (locks held: {})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:170)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processLeftOvers(OrderInterceptor.java:122)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.memberDisappeared(OrderInterceptor.java:187)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberDisappeared(DomainFilterInterceptor.java:79)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberDisappeared(ChannelCoordinator.java:251)
+        at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T61 is created by T37
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T57 (locks held: {Monitor@4f6857f4, WriteLock@39571bcc})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:170)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.messageReceived(OrderInterceptor.java:111)
+        - locked WriteLock@39571bcc at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock(ReentrantReadWriteLock.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:48)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:262)
+        at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:242)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:211)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@4f6857f4 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T57 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field java.util.HashMap.$state: {{{
+    Concurrent read in thread T59 (locks held: {Monitor@3cd80f0c, WriteLock@39571bcc})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:134)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.messageReceived(OrderInterceptor.java:111)
+        - locked WriteLock@39571bcc at java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock(ReentrantReadWriteLock.java:n/a) 
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.messageReceived(DomainFilterInterceptor.java:48)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.messageReceived(ChannelInterceptorBase.java:81)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.messageReceived(ChannelCoordinator.java:262)
+        at org.apache.catalina.tribes.transport.ReceiverBase.messageDataReceived(ReceiverBase.java:242)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:211)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@3cd80f0c at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T59 is created by T36
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T61 (locks held: {})
+ ---->  at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processIncoming(OrderInterceptor.java:170)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.processLeftOvers(OrderInterceptor.java:122)
+        at org.apache.catalina.tribes.group.interceptors.OrderInterceptor.memberDisappeared(OrderInterceptor.java:187)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor.memberDisappeared(DomainFilterInterceptor.java:79)
+        at org.apache.catalina.tribes.group.ChannelInterceptorBase.memberDisappeared(ChannelInterceptorBase.java:93)
+        at org.apache.catalina.tribes.group.ChannelCoordinator.memberDisappeared(ChannelCoordinator.java:251)
+        at org.apache.catalina.tribes.membership.McastService.memberDisappeared(McastService.java:471)
+        at org.apache.catalina.tribes.membership.McastServiceImpl$1.run(McastServiceImpl.java:383)
+    T61 is created by T37
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

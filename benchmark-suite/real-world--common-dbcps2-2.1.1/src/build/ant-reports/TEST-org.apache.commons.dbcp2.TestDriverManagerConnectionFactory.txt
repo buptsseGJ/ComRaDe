@@ -1,0 +1,4 @@
+Testsuite: org.apache.commons.dbcp2.TestDriverManagerConnectionFactory
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.03 sec
+
+Testcase: testDriverManagerInit took 0.98 sec

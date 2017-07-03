@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestDelegatingCallableStatement
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.dbcp2.TestDelegatingCallableStatement
+testGetDelegate(org.apache.commons.dbcp2.TestDelegatingCallableStatement)  Time elapsed: 0 sec
+testExecuteQueryReturnsNotNull(org.apache.commons.dbcp2.TestDelegatingCallableStatement)  Time elapsed: 0 sec
+testExecuteQueryReturnsNull(org.apache.commons.dbcp2.TestDelegatingCallableStatement)  Time elapsed: 0 sec

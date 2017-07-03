@@ -1,0 +1,47 @@
+----------------Instrumented execution to record the trace-----------------
+[RV-Predict] Log directory: /tmp/rv-predict1905395449339774540
+[RV-Predict] Finished retransforming preloaded classes.
+********************************
+Starting test: groovy4292
+Expected bug type: race
+This test should finish in 30 seconds.
+********************************
+
+starting next loop 1
+started.
+starting next loop 2
+started.
+starting next loop 3
+started.
+starting next loop 4
+started.
+starting next loop 5
+started.
+Data race on field java.util.WeakHashMap.$state: {{{
+    Concurrent read in thread T17 (locks held: {})
+ ---->  at org.codehaus.groovy.ast.ClassHelper.makeCached(ClassHelper.java:115)
+        at org.codehaus.groovy.ast.Groovy4292$AsyncWeakRef.run(Groovy4292.java:89)
+    T17 is created by T1
+        at org.codehaus.groovy.ast.Groovy4292.main(Groovy4292.java:49)
+
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at org.codehaus.groovy.ast.ClassHelper.makeCached(ClassHelper.java:119)
+        at org.codehaus.groovy.ast.Groovy4292$AsyncWeakRef.run(Groovy4292.java:89)
+    T14 is created by T1
+        at org.codehaus.groovy.ast.Groovy4292.main(Groovy4292.java:49)
+}}}
+
+Data race on field java.util.WeakHashMap.$state: {{{
+    Concurrent write in thread T16 (locks held: {})
+ ---->  at org.codehaus.groovy.ast.ClassHelper.makeCached(ClassHelper.java:119)
+        at org.codehaus.groovy.ast.Groovy4292$AsyncWeakRef.run(Groovy4292.java:89)
+    T16 is created by T1
+        at org.codehaus.groovy.ast.Groovy4292.main(Groovy4292.java:49)
+
+    Concurrent read in thread T14 (locks held: {})
+ ---->  at org.codehaus.groovy.ast.ClassHelper.makeCached(ClassHelper.java:119)
+        at org.codehaus.groovy.ast.Groovy4292$AsyncWeakRef.run(Groovy4292.java:89)
+    T14 is created by T1
+        at org.codehaus.groovy.ast.Groovy4292.main(Groovy4292.java:49)
+}}}
+

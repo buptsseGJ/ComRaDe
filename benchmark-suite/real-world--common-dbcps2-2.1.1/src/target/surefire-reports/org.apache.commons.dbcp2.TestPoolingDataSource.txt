@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestPoolingDataSource
+-------------------------------------------------------------------------------
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.717 sec - in org.apache.commons.dbcp2.TestPoolingDataSource
+testClose(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testFixFactoryConfig(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testPoolGuardConnectionWrapperEqualsSameDelegate(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testPoolGuardConnectionWrapperEqualInnermost(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testPoolGuardConnectionWrapperEqualsReflexive(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testPoolGuardConnectionWrapperEqualsFail(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testPoolGuardConnectionWrapperEqualsNull(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testPoolGuardConnectionWrapperEqualsType(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testThreaded(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 2.593 sec
+testCanCloseStatementTwice(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testNoRsetClose(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testOpening(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testPooling(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testCanCloseConnectionTwice(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testIsClosed(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testCanCloseCallableStatementTwice(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.003 sec
+testAutoCommitBehavior(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testHashing(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testCanClosePreparedStatementTwice(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testClosing(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testPrepareStatementOptions(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testBackPointers(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testHashCode(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testConnectionsAreDistinct(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0 sec
+testMaxTotal(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.102 sec
+testRepeatedBorrowAndReturn(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testCanCloseResultSetTwice(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testClearWarnings(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec
+testSimple2(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.002 sec
+testSimple(org.apache.commons.dbcp2.TestPoolingDataSource)  Time elapsed: 0.001 sec

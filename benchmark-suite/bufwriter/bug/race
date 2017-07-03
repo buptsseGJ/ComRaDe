@@ -1,0 +1,14 @@
+Race: <bufwriter.SyncWriter: void run()>|$z0 = r0.<bufwriter.SyncWriter: boolean flag>|27 - <bufwriter.SyncWriter: void stopWriter()>|r0.<bufwriter.SyncWriter: boolean flag> = 0|18
+Race: <bufwriter.Checker: void run()>|$z0 = <bufwriter.Checker: boolean flag>|26 - <bufwriter.Checker: void stopChecker()>|<bufwriter.Checker: boolean flag> = 0|17
+Trace Size: 568
+Total #Threads: 5
+Total #SharedVariables: 8
+Total #Shared Read-Writes: 123
+Total #Local Read-Writes: 193
+Total #Initial Writes: 16
+Total #Synchronizations: 56
+Total #Branches: 180
+Total #Property Events: 0
+Total #Potential Violations: 20
+Total #Real Violations: 2
+Total Time: 1589ms

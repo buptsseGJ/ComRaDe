@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.core.util.datetime.FastDateParserTest
+-------------------------------------------------------------------------------
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.49 sec - in org.apache.logging.log4j.core.util.datetime.FastDateParserTest

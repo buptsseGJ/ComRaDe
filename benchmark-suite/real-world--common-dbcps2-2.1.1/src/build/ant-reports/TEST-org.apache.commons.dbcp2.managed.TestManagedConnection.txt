@@ -1,0 +1,4 @@
+Testsuite: org.apache.commons.dbcp2.managed.TestManagedConnection
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.88 sec
+
+Testcase: testConnectionReturnOnErrorWhenEnlistingXAResource took 0.828 sec

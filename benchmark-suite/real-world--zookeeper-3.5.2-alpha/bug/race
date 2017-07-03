@@ -1,0 +1,1654 @@
+Data race on array element #0: {{{
+    Concurrent write in thread T106 (locks held: {Monitor@66fbc5e7})
+ ---->  at org.apache.zookeeper.test.SessionTest$2.processResult(SessionTest.java:333)
+        - locked Monitor@66fbc5e7 at org.apache.zookeeper.test.SessionTest$2.processResult(SessionTest.java:333)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:664)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T106 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.test.SessionTest.testSessionMove(SessionTest.java:341)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on array element #0: {{{
+    Concurrent write in thread T106 (locks held: {Monitor@66fbc5e7})
+ ---->  at org.apache.zookeeper.test.SessionTest$2.processResult(SessionTest.java:333)
+        - locked Monitor@66fbc5e7 at org.apache.zookeeper.test.SessionTest$2.processResult(SessionTest.java:333)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:664)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T106 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.test.SessionTest.testSessionMove(SessionTest.java:342)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field java.util.ArrayList.$state: {{{
+    Concurrent write in thread T1104 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.process(RemoveWatchesTest.java:1170)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T1104 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+    Concurrent read in thread T1107 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest.testRemoveAllDataWatchers(RemoveWatchesTest.java:312)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T1107 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+}}} 
+
+Data race on field java.util.ArrayList.$state: {{{
+    Concurrent write in thread T1104 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.process(RemoveWatchesTest.java:1170)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T1104 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+    Concurrent read in thread T1107 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest.testRemoveAllDataWatchers(RemoveWatchesTest.java:313)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T1107 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+}}} 
+
+Data race on field java.util.ArrayList.$state: {{{
+    Concurrent write in thread T1146 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.process(RemoveWatchesTest.java:1170)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T1146 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+    Concurrent read in thread T1149 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest.testRemoveAllChildWatchers(RemoveWatchesTest.java:365)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T1149 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+}}} 
+
+Data race on field java.util.ArrayList.$state: {{{
+    Concurrent write in thread T2773 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.process(RemoveWatchesTest.java:1170)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T2773 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+    Concurrent read in thread T2776 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest.testRemoveAllChildWatchers(RemoveWatchesTest.java:366)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T2776 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+}}} 
+
+Data race on field java.util.HashSet.$state: {{{
+    Concurrent write in thread T40 (locks held: {})
+ ---->  at org.apache.zookeeper.test.FLETest$LEThread.run(FLETest.java:187)
+    T40 is created by T1
+        at org.apache.zookeeper.test.FLETest.runElection(FLETest.java:329)
+
+    Concurrent read in thread T50 (locks held: {})
+ ---->  at org.apache.zookeeper.test.FLETest$LEThread.run(FLETest.java:187)
+    T50 is created by T1
+        at org.apache.zookeeper.test.FLETest.runElection(FLETest.java:329)
+
+}}} 
+
+Data race on field java.util.HashSet.$state: {{{
+    Concurrent write in thread T70 (locks held: {})
+ ---->  at org.apache.zookeeper.test.FLETest$LEThread.run(FLETest.java:187)
+    T70 is created by T1
+        at org.apache.zookeeper.test.FLETest.runElection(FLETest.java:329)
+
+    Concurrent read in thread T80 (locks held: {})
+ ---->  at org.apache.zookeeper.test.FLETest$LEThread.waitForQuorum(FLETest.java:248)
+        at org.apache.zookeeper.test.FLETest$LEThread.run(FLETest.java:192)
+    T80 is created by T1
+        at org.apache.zookeeper.test.FLETest.runElection(FLETest.java:329)
+
+}}} 
+
+Data race on field java.util.LinkedList.$state: {{{
+    Concurrent write in thread T451 (locks held: {Monitor@31cbec6c})
+ ---->  at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1330)
+        - locked Monitor@31cbec6c at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1326)
+        at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1245)
+    T451 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:400)
+
+    Concurrent read in thread T455 (locks held: {})
+ ---->  at org.apache.zookeeper.ClientCnxn.toString(ClientCnxn.java:231)
+        at org.apache.zookeeper.ZooKeeper.toString(ZooKeeper.java:2866)
+        at org.slf4j.helpers.MessageFormatter.safeObjectAppend(MessageFormatter.java:304)
+        at org.slf4j.helpers.MessageFormatter.deeplyAppendParameter(MessageFormatter.java:276)
+        at org.slf4j.helpers.MessageFormatter.arrayFormat(MessageFormatter.java:230)
+        at org.slf4j.impl.Log4jLoggerAdapter.info(Log4jLoggerAdapter.java:366)
+        at org.apache.zookeeper.RemoveWatchesTest.removeWatches(RemoveWatchesTest.java:91)
+        at org.apache.zookeeper.RemoveWatchesTest.testRemoveWatcherWhenNoConnection(RemoveWatchesTest.java:525)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T455 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+}}} 
+
+Data race on field org.apache.zookeeper.RemoveWatchesCmdTest$MyWatcher.eventPath: {{{
+    Concurrent read in thread T143 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesCmdTest$MyWatcher.matches(RemoveWatchesCmdTest.java:339)
+        at org.apache.zookeeper.RemoveWatchesCmdTest.testRemoveNodeDeletedWatches(RemoveWatchesCmdTest.java:230)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T143 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+    Concurrent write in thread T139 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesCmdTest$MyWatcher.process(RemoveWatchesCmdTest.java:328)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T139 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+}}} 
+
+Data race on field org.apache.zookeeper.RemoveWatchesCmdTest$MyWatcher.eventPath: {{{
+    Concurrent read in thread T143 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesCmdTest$MyWatcher.matches(RemoveWatchesCmdTest.java:341)
+        at org.apache.zookeeper.RemoveWatchesCmdTest.testRemoveNodeDeletedWatches(RemoveWatchesCmdTest.java:230)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T143 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+    Concurrent write in thread T139 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesCmdTest$MyWatcher.process(RemoveWatchesCmdTest.java:328)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T139 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+}}} 
+
+Data race on field org.apache.zookeeper.RemoveWatchesTest$MyWatcher.eventPath: {{{
+    Concurrent read in thread T1107 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.matches(RemoveWatchesTest.java:1192)
+        at org.apache.zookeeper.RemoveWatchesTest.testRemoveAllDataWatchers(RemoveWatchesTest.java:307)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T1107 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+    Concurrent write in thread T1104 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.process(RemoveWatchesTest.java:1166)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T1104 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+}}} 
+
+Data race on field org.apache.zookeeper.RemoveWatchesTest$MyWatcher.eventPath: {{{
+    Concurrent read in thread T1107 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.matches(RemoveWatchesTest.java:1194)
+        at org.apache.zookeeper.RemoveWatchesTest.testRemoveAllDataWatchers(RemoveWatchesTest.java:307)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T1107 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+    Concurrent write in thread T1104 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.process(RemoveWatchesTest.java:1166)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T1104 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.PrepRequestProcessor.failCreate: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.PrepRequestProcessor.setFailCreate(PrepRequestProcessor.java:127)
+        at org.apache.zookeeper.test.ClientTest.testPathValidation(ClientTest.java:695)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T1104 (locks held: {})
+ ---->  at org.apache.zookeeper.server.PrepRequestProcessor.validatePathForCreate(PrepRequestProcessor.java:340)
+        at org.apache.zookeeper.server.PrepRequestProcessor.pRequest2Txn(PrepRequestProcessor.java:375)
+        at org.apache.zookeeper.server.PrepRequestProcessor.pRequest(PrepRequestProcessor.java:714)
+        at org.apache.zookeeper.server.PrepRequestProcessor.run(PrepRequestProcessor.java:144)
+    T1104 is created by T1
+        at org.apache.zookeeper.server.ZooKeeperServer.setupRequestProcessors(ZooKeeperServer.java:459)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.ServerCnxnFactory.zkServer: {{{
+    Concurrent write in thread T36 (locks held: {})
+ ---->  at org.apache.zookeeper.server.ServerCnxnFactory.setZooKeeperServer(ServerCnxnFactory.java:114)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.setZooKeeperServer(QuorumPeer.java:1607)
+        at org.apache.zookeeper.server.quorum.Leader.lead(Leader.java:537)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$LeadThread.run(Zab1_0Test.java:95)
+    T36 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testLeaderConversation(Zab1_0Test.java:377)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.ServerCnxnFactory.setZooKeeperServer(ServerCnxnFactory.java:114)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.setZooKeeperServer(QuorumPeer.java:1607)
+        at org.apache.zookeeper.server.quorum.Leader.shutdown(Leader.java:631)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testLeaderConversation(Zab1_0Test.java:395)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testLeaderBehind(Zab1_0Test.java:1152)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.FollowerRequestProcessor.finished: {{{
+    Concurrent read in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.FollowerRequestProcessor.run(FollowerRequestProcessor.java:61)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.FollowerZooKeeperServer.setupRequestProcessors(FollowerZooKeeperServer.java:75)
+
+    Concurrent write in thread T1 (locks held: {Monitor@33f3ebfc})
+ ---->  at org.apache.zookeeper.server.quorum.FollowerRequestProcessor.shutdown(FollowerRequestProcessor.java:139)
+        at org.apache.zookeeper.server.ZooKeeperServer.shutdown(ZooKeeperServer.java:509)
+        at org.apache.zookeeper.server.quorum.LearnerZooKeeperServer.shutdown(LearnerZooKeeperServer.java:167)
+        - locked Monitor@33f3ebfc at org.apache.zookeeper.server.quorum.LearnerZooKeeperServer.shutdown(LearnerZooKeeperServer.java:n/a)
+        at org.apache.zookeeper.server.quorum.WatchLeakTest.testWatchesLeak(WatchLeakTest.java:172)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at org.junit.runners.Suite.runChild(Suite.java:128)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.Leader.epoch: {{{
+    Concurrent write in thread T33 (locks held: {Monitor@4b43e5ee})
+ ---->  at org.apache.zookeeper.server.quorum.Leader.getEpochToPropose(Leader.java:1166)
+        - locked Monitor@4b43e5ee at org.apache.zookeeper.server.quorum.Leader.getEpochToPropose(Leader.java:1161)
+        at org.apache.zookeeper.server.quorum.Leader.lead(Leader.java:430)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$LeadThread.run(Zab1_0Test.java:95)
+    T33 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testLastAcceptedEpoch(Zab1_0Test.java:221)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.Zab1_0Test$MockLeader.getCurrentEpochToPropose(Zab1_0Test.java:122)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testLastAcceptedEpoch(Zab1_0Test.java:223)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.Leader.isShutdown: {{{
+    Concurrent read in thread T28 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.Leader.shutdown(Leader.java:619)
+        at org.apache.zookeeper.server.quorum.Leader.lead(Leader.java:493)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$LeadThread.run(Zab1_0Test.java:95)
+    T28 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testPopulatedLeaderConversation(Zab1_0Test.java:446)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.Leader.shutdown(Leader.java:651)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testPopulatedLeaderConversation(Zab1_0Test.java:464)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testUnnecessarySnap(Zab1_0Test.java:580)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.ObserverRequestProcessor.finished: {{{
+    Concurrent read in thread T66 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.ObserverRequestProcessor.run(ObserverRequestProcessor.java:70)
+    T66 is created by T64
+        at org.apache.zookeeper.server.quorum.ObserverZooKeeperServer.setupRequestProcessors(ObserverZooKeeperServer.java:99)
+
+    Concurrent write in thread T1 (locks held: {Monitor@6401188a})
+ ---->  at org.apache.zookeeper.server.quorum.ObserverRequestProcessor.shutdown(ObserverRequestProcessor.java:151)
+        at org.apache.zookeeper.server.ZooKeeperServer.shutdown(ZooKeeperServer.java:509)
+        at org.apache.zookeeper.server.quorum.LearnerZooKeeperServer.shutdown(LearnerZooKeeperServer.java:167)
+        at org.apache.zookeeper.server.quorum.ObserverZooKeeperServer.shutdown(ObserverZooKeeperServer.java:139)
+        - locked Monitor@6401188a at org.apache.zookeeper.server.quorum.ObserverZooKeeperServer.shutdown(ObserverZooKeeperServer.java:n/a)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$8.converseWithObserver(Zab1_0Test.java:1121)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testObserverConversation(Zab1_0Test.java:562)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalObserverRun(Zab1_0Test.java:997)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.addr: {{{
+    Concurrent read in thread T57 (locks held: {Monitor@6b5966e1, Monitor@c7a975a})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:146)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@c7a975a at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@6b5966e1 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T57 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent write in thread T67 (locks held: {Monitor@56db847e, Monitor@372ea2bc})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:164)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@372ea2bc at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@56db847e at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T67 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.addr: {{{
+    Concurrent write in thread T429 (locks held: {Monitor@68c7ef83, Monitor@5bcb04cb})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:164)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@5bcb04cb at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@68c7ef83 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T429 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent read in thread T1 (locks held: {Monitor@20de05e5})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.setQuorumVerifier(QuorumPeer.java:1490)
+        - locked Monitor@20de05e5 at org.apache.zookeeper.server.quorum.QuorumPeer.setQuorumVerifier(QuorumPeer.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.<init>(QuorumPeer.java:737)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.<init>(QuorumPeer.java:862)
+        at org.apache.zookeeper.test.FLETest.runElection(FLETest.java:325)
+        at org.apache.zookeeper.test.FLETest.testTripleElection(FLETest.java:286)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is created by T1
+        at org.apache.zookeeper.server.quorum.QuorumPeer.start(QuorumPeer.java:759)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.addr: {{{
+    Concurrent write in thread T18 (locks held: {Monitor@69e153c5, Monitor@69997e9d})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:164)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@69997e9d at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@69e153c5 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T18 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent read in thread T21 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.toString(QuorumPeer.java:289)
+        at org.apache.zookeeper.server.quorum.flexible.QuorumMaj.toString(QuorumMaj.java:117)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.sendNotifications(FastLeaderElection.java:676)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.lookForLeader(FastLeaderElection.java:896)
+        at org.apache.zookeeper.server.quorum.FLETestUtils$LEThread.run(FLETestUtils.java:56)
+    T21 is created by T1
+        at org.apache.zookeeper.server.quorum.FLELostMessageTest.testLostMessage(FLELostMessageTest.java:84)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.addr: {{{
+    Concurrent write in thread T18 (locks held: {Monitor@69e153c5, Monitor@69997e9d})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:164)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@69997e9d at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@69e153c5 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T18 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent read in thread T21 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.toString(QuorumPeer.java:290)
+        at org.apache.zookeeper.server.quorum.flexible.QuorumMaj.toString(QuorumMaj.java:117)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.sendNotifications(FastLeaderElection.java:676)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.lookForLeader(FastLeaderElection.java:896)
+        at org.apache.zookeeper.server.quorum.FLETestUtils$LEThread.run(FLETestUtils.java:56)
+    T21 is created by T1
+        at org.apache.zookeeper.server.quorum.FLELostMessageTest.testLostMessage(FLELostMessageTest.java:84)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.addr: {{{
+    Concurrent write in thread T18 (locks held: {Monitor@69e153c5, Monitor@69997e9d})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:164)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@69997e9d at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@69e153c5 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T18 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent read in thread T21 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.toString(QuorumPeer.java:292)
+        at org.apache.zookeeper.server.quorum.flexible.QuorumMaj.toString(QuorumMaj.java:117)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.sendNotifications(FastLeaderElection.java:676)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.lookForLeader(FastLeaderElection.java:896)
+        at org.apache.zookeeper.server.quorum.FLETestUtils$LEThread.run(FLETestUtils.java:56)
+    T21 is created by T1
+        at org.apache.zookeeper.server.quorum.FLELostMessageTest.testLostMessage(FLELostMessageTest.java:84)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent read in thread T57 (locks held: {Monitor@6b5966e1, Monitor@c7a975a})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:150)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@c7a975a at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@6b5966e1 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T57 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent write in thread T67 (locks held: {Monitor@56db847e, Monitor@372ea2bc})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:657)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@372ea2bc at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@56db847e at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T67 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent write in thread T429 (locks held: {Monitor@68c7ef83, Monitor@5bcb04cb})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:657)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@5bcb04cb at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@68c7ef83 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T429 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent read in thread T1 (locks held: {Monitor@20de05e5})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.setQuorumVerifier(QuorumPeer.java:1491)
+        - locked Monitor@20de05e5 at org.apache.zookeeper.server.quorum.QuorumPeer.setQuorumVerifier(QuorumPeer.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.<init>(QuorumPeer.java:737)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.<init>(QuorumPeer.java:862)
+        at org.apache.zookeeper.test.FLETest.runElection(FLETest.java:325)
+        at org.apache.zookeeper.test.FLETest.testTripleElection(FLETest.java:286)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is created by T1
+        at org.apache.zookeeper.server.quorum.QuorumPeer.start(QuorumPeer.java:759)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent write in thread T28 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:628)
+    T28 is created by T1
+        at org.apache.zookeeper.test.CnxManagerTest.testCnxManagerSpinLock(CnxManagerTest.java:234)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.test.CnxManagerTest.testCnxManagerSpinLock(CnxManagerTest.java:239)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent write in thread T18 (locks held: {Monitor@69e153c5, Monitor@69997e9d})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:657)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@69997e9d at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@69e153c5 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T18 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent read in thread T21 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.toString(QuorumPeer.java:294)
+        at org.apache.zookeeper.server.quorum.flexible.QuorumMaj.toString(QuorumMaj.java:117)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.sendNotifications(FastLeaderElection.java:676)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.lookForLeader(FastLeaderElection.java:896)
+        at org.apache.zookeeper.server.quorum.FLETestUtils$LEThread.run(FLETestUtils.java:56)
+    T21 is created by T1
+        at org.apache.zookeeper.server.quorum.FLELostMessageTest.testLostMessage(FLELostMessageTest.java:84)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent write in thread T18 (locks held: {Monitor@69e153c5, Monitor@69997e9d})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:657)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@69997e9d at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@69e153c5 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T18 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent read in thread T21 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.toString(QuorumPeer.java:296)
+        at org.apache.zookeeper.server.quorum.flexible.QuorumMaj.toString(QuorumMaj.java:117)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.sendNotifications(FastLeaderElection.java:676)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection.lookForLeader(FastLeaderElection.java:896)
+        at org.apache.zookeeper.server.quorum.FLETestUtils$LEThread.run(FLETestUtils.java:56)
+    T21 is created by T1
+        at org.apache.zookeeper.server.quorum.FLELostMessageTest.testLostMessage(FLELostMessageTest.java:84)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent write in thread T16 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:628)
+    T16 is created by T1
+        at org.apache.zookeeper.test.CnxManagerTest.testCnxManagerNPE(CnxManagerTest.java:299)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.test.CnxManagerTest.testCnxManagerNPE(CnxManagerTest.java:303)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent write in thread T62 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:628)
+    T62 is created by T1
+        at org.apache.zookeeper.test.CnxManagerTest.testSocketTimeout(CnxManagerTest.java:346)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.test.CnxManagerTest.testSocketTimeout(CnxManagerTest.java:350)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is created by T1
+        at org.apache.zookeeper.server.quorum.QuorumPeer.start(QuorumPeer.java:759)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent read in thread T57 (locks held: {Monitor@6b5966e1, Monitor@c7a975a})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:485)
+        - locked Monitor@c7a975a at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@6b5966e1 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T57 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent write in thread T67 (locks held: {Monitor@56db847e, Monitor@372ea2bc})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:482)
+        - locked Monitor@372ea2bc at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@56db847e at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T67 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent read in thread T419 (locks held: {Monitor@7cf283e1, Monitor@4647881c})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:489)
+        - locked Monitor@4647881c at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@7cf283e1 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T419 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent write in thread T427 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:628)
+    T427 is created by T1
+        at org.apache.zookeeper.server.quorum.QuorumPeer.createElectionAlgorithm(QuorumPeer.java:946)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent read in thread T419 (locks held: {Monitor@7cf283e1, Monitor@4647881c})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:490)
+        - locked Monitor@4647881c at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@7cf283e1 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T419 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent write in thread T427 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:628)
+    T427 is created by T1
+        at org.apache.zookeeper.server.quorum.QuorumPeer.createElectionAlgorithm(QuorumPeer.java:946)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.acceptedEpoch: {{{
+    Concurrent read in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1714)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:302)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1715)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:653)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.acceptedEpoch: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1714)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:684)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.setAcceptedEpoch(QuorumPeer.java:1727)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:323)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.acceptedEpoch: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1714)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:653)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:785)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.acceptedEpoch: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1715)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:653)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1717)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:302)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.acceptedEpoch: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1715)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:653)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:785)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.acceptedEpoch: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1715)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:653)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:796)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.acceptedEpoch: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1717)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:684)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.setAcceptedEpoch(QuorumPeer.java:1727)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:323)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.acceptedEpoch: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getAcceptedEpoch(QuorumPeer.java:1717)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:653)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:785)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.currentEpoch: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getCurrentEpoch(QuorumPeer.java:1707)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:703)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {Monitor@463fd068})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.setCurrentEpoch(QuorumPeer.java:1721)
+        at org.apache.zookeeper.server.quorum.Learner.syncWithLeader(Learner.java:521)
+        - locked Monitor@463fd068 at org.apache.zookeeper.server.quorum.Learner.syncWithLeader(Learner.java:364)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:86)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.currentEpoch: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getCurrentEpoch(QuorumPeer.java:1707)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:654)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:770)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.currentEpoch: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getCurrentEpoch(QuorumPeer.java:1708)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:654)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:770)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.currentEpoch: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getCurrentEpoch(QuorumPeer.java:1708)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:654)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:781)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.currentEpoch: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getCurrentEpoch(QuorumPeer.java:1708)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:654)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:796)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.currentEpoch: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getCurrentEpoch(QuorumPeer.java:1710)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:703)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {Monitor@463fd068})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.setCurrentEpoch(QuorumPeer.java:1721)
+        at org.apache.zookeeper.server.quorum.Learner.syncWithLeader(Learner.java:521)
+        - locked Monitor@463fd068 at org.apache.zookeeper.server.quorum.Learner.syncWithLeader(Learner.java:364)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:86)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.currentEpoch: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getCurrentEpoch(QuorumPeer.java:1710)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$4.converseWithFollower(Zab1_0Test.java:654)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:511)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testNormalFollowerRun(Zab1_0Test.java:643)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T13 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.loadDataBase(QuorumPeer.java:770)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.getLastLoggedZxid(QuorumPeer.java:906)
+        at org.apache.zookeeper.server.quorum.Learner.registerWithLeader(Learner.java:299)
+        at org.apache.zookeeper.server.quorum.Follower.followLeader(Follower.java:75)
+        at org.apache.zookeeper.server.quorum.Zab1_0Test$1.run(Zab1_0Test.java:495)
+    T13 is created by T1
+        at org.apache.zookeeper.server.quorum.Zab1_0Test.testFollowerConversation(Zab1_0Test.java:503)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer.myElectionAddr: {{{
+    Concurrent read in thread T1 (locks held: {Monitor@2657d4dd, Monitor@c05fddc})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.getElectionAddress(QuorumPeer.java:671)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.initiateConnection(QuorumCnxManager.java:265)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:448)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:485)
+        - locked Monitor@c05fddc at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@2657d4dd at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FLELostMessageTest.mockServer(FLELostMessageTest.java:101)
+        at org.apache.zookeeper.server.quorum.FLELostMessageTest.testLostMessage(FLELostMessageTest.java:89)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T26 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer.setElectionAddress(QuorumPeer.java:675)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:649)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:628)
+    T26 is created by T1
+        at org.apache.zookeeper.server.quorum.FLELostMessageTest.mockServer(FLELostMessageTest.java:99)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeerTestBase$MainThread.currentThread: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeerTestBase$MainThread.join(QuorumPeerTestBase.java:263)
+        at org.apache.zookeeper.test.ObserverTest.testObserverWithStandlone(ObserverTest.java:228)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T12 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeerTestBase$MainThread.run(QuorumPeerTestBase.java:250)
+    T12 is created by T1
+        at org.apache.zookeeper.server.quorum.QuorumPeerTestBase$MainThread.start(QuorumPeerTestBase.java:234)
+
+}}} 
+
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeerTestBase$MainThread.currentThread: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeerTestBase$MainThread.isAlive(QuorumPeerTestBase.java:270)
+        at org.apache.zookeeper.test.ObserverTest.testObserverWithStandlone(ObserverTest.java:229)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T12 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeerTestBase$MainThread.run(QuorumPeerTestBase.java:250)
+    T12 is created by T1
+        at org.apache.zookeeper.server.quorum.QuorumPeerTestBase$MainThread.start(QuorumPeerTestBase.java:234)
+
+}}} 
+
+Data race on field org.apache.zookeeper.test.ClientTest$VerifyClientCleanup.current: {{{
+    Concurrent write in thread T187 (locks held: {})
+ ---->  at org.apache.zookeeper.test.ClientTest$VerifyClientCleanup.run(ClientTest.java:760)
+    T187 is created by T1
+        at org.apache.zookeeper.test.ClientTest.testClientCleanup(ClientTest.java:803)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.zookeeper.test.ClientTest.testClientCleanup(ClientTest.java:808)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.rules.TestWatchman$1.evaluate(TestWatchman.java:53)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+}}} 

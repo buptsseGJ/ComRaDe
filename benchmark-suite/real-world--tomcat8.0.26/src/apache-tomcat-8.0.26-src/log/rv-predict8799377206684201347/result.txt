@@ -1,0 +1,111 @@
+Data race on field org.apache.coyote.http11.AbstractHttp11Processor.keepAlive: {{{
+    Concurrent write in thread T43 (locks held: {})
+ ---->  at org.apache.coyote.http11.AbstractHttp11Processor.prepareResponse(AbstractHttp11Processor.java:1547)
+        at org.apache.coyote.http11.AbstractHttp11Processor.action(AbstractHttp11Processor.java:740)
+        at org.apache.coyote.Response.action(Response.java:179)
+        at org.apache.coyote.http11.AbstractOutputBuffer.doWrite(AbstractOutputBuffer.java:249)
+        at org.apache.coyote.Response.doWrite(Response.java:503)
+        at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:388)
+        at org.apache.tomcat.util.buf.ByteChunk.append(ByteChunk.java:315)
+        at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:418)
+        at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:406)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:97)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:90)
+        at org.apache.catalina.connector.TestCoyoteAdapter$AsyncServlet$1.run(TestCoyoteAdapter.java:387)
+    T43 is created by T42
+        at org.apache.catalina.connector.TestCoyoteAdapter$AsyncServlet.doGet(TestCoyoteAdapter.java:409)
+
+    Concurrent read in thread T42 (locks held: {Monitor@5dfde2ad})
+ ---->  at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:998)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1526)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1482)
+        - locked Monitor@5dfde2ad at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1481) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T42 is created by T40
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.catalina.connector.OutputBuffer.suspended: {{{
+    Concurrent write in thread T42 (locks held: {Monitor@5dfde2ad})
+ ---->  at org.apache.catalina.connector.OutputBuffer.setSuspended(OutputBuffer.java:210)
+        at org.apache.catalina.connector.Response.setSuspended(Response.java:392)
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:167)
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1526)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1482)
+        - locked Monitor@5dfde2ad at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1481) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T42 is created by T40
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T43 (locks held: {})
+ ---->  at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:402)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:97)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:90)
+        at org.apache.catalina.connector.TestCoyoteAdapter$AsyncServlet$1.run(TestCoyoteAdapter.java:387)
+    T43 is created by T42
+        at org.apache.catalina.connector.TestCoyoteAdapter$AsyncServlet.doGet(TestCoyoteAdapter.java:409)
+}}}
+
+Data race on field org.apache.coyote.http11.AbstractHttp11Processor.keepAlive: {{{
+    Concurrent write in thread T43 (locks held: {})
+ ---->  at org.apache.coyote.http11.AbstractHttp11Processor.prepareResponse(AbstractHttp11Processor.java:1547)
+        at org.apache.coyote.http11.AbstractHttp11Processor.action(AbstractHttp11Processor.java:740)
+        at org.apache.coyote.Response.action(Response.java:179)
+        at org.apache.coyote.http11.AbstractOutputBuffer.doWrite(AbstractOutputBuffer.java:249)
+        at org.apache.coyote.Response.doWrite(Response.java:503)
+        at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:388)
+        at org.apache.tomcat.util.buf.ByteChunk.append(ByteChunk.java:315)
+        at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:418)
+        at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:406)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:97)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:90)
+        at org.apache.catalina.connector.TestCoyoteAdapter$AsyncServlet$1.run(TestCoyoteAdapter.java:387)
+    T43 is created by T42
+        at org.apache.catalina.connector.TestCoyoteAdapter$AsyncServlet.doGet(TestCoyoteAdapter.java:409)
+
+    Concurrent read in thread T42 (locks held: {Monitor@5dfde2ad})
+ ---->  at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1097)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1526)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1482)
+        - locked Monitor@5dfde2ad at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1481) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T42 is created by T40
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.coyote.http11.AbstractHttp11Processor.keepAlive: {{{
+    Concurrent write in thread T43 (locks held: {})
+ ---->  at org.apache.coyote.http11.AbstractHttp11Processor.prepareResponse(AbstractHttp11Processor.java:1547)
+        at org.apache.coyote.http11.AbstractHttp11Processor.action(AbstractHttp11Processor.java:740)
+        at org.apache.coyote.Response.action(Response.java:179)
+        at org.apache.coyote.http11.AbstractOutputBuffer.doWrite(AbstractOutputBuffer.java:249)
+        at org.apache.coyote.Response.doWrite(Response.java:503)
+        at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:388)
+        at org.apache.tomcat.util.buf.ByteChunk.append(ByteChunk.java:315)
+        at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:418)
+        at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:406)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:97)
+        at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:90)
+        at org.apache.catalina.connector.TestCoyoteAdapter$AsyncServlet$1.run(TestCoyoteAdapter.java:387)
+    T43 is created by T42
+        at org.apache.catalina.connector.TestCoyoteAdapter$AsyncServlet.doGet(TestCoyoteAdapter.java:409)
+
+    Concurrent read in thread T42 (locks held: {Monitor@5dfde2ad})
+ ---->  at org.apache.coyote.http11.Http11NioProcessor.breakKeepAliveLoop(Http11NioProcessor.java:277)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1172)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1526)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1482)
+        - locked Monitor@5dfde2ad at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1481) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T42 is created by T40
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

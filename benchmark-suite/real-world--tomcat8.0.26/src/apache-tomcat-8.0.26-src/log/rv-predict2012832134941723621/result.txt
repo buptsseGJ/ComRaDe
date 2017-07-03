@@ -1,0 +1,24 @@
+Data race on field org.apache.coyote.RequestInfo.stage: {{{
+    Concurrent read in thread T22 (locks held: {})
+ ---->  at org.apache.coyote.RequestInfo.getStage(RequestInfo.java:172)
+        at org.apache.coyote.http11.Http11NioProcessor.actionInternal(Http11NioProcessor.java:494)
+        at org.apache.coyote.http11.AbstractHttp11Processor.action(AbstractHttp11Processor.java:924)
+        at org.apache.coyote.Request.action(Request.java:380)
+        at org.apache.catalina.connector.Request.cometClose(Request.java:2582)
+        at org.apache.catalina.connector.CometEventImpl.close(CometEventImpl.java:98)
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseThread.run(TestCometProcessor.java:665)
+    T22 is created by T21
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseValve.invoke(TestCometProcessor.java:648)
+
+    Concurrent write in thread T21 (locks held: {Monitor@6cda0124})
+ ---->  at org.apache.coyote.RequestInfo.setStage(RequestInfo.java:176)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1170)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1526)
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1482)
+        - locked Monitor@6cda0124 at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1481) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T21 is created by T18
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

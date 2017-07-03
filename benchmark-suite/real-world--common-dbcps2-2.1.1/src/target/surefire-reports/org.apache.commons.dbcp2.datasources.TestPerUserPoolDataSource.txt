@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.195 sec - in org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource
+testPerUserMethods(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testOpening(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testSerialization(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testClosingWithUserName(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testChangePassword(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testDefaultUser1(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testDefaultUser2(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testClosing(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testTransactionIsolationBehavior(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testMaxTotal(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.097 sec
+testSimpleWithUsername(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.001 sec
+testMaxWaitMillisZero(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testSimple2(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0 sec
+testSimple(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.001 sec
+testMultipleThreads1(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.309 sec
+testMultipleThreads2(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 1.008 sec
+testUnregisteredUser(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.004 sec
+testIncorrectPassword(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.005 sec
+testThreaded(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 2.716 sec
+testCanCloseStatementTwice(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.004 sec
+testNoRsetClose(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.003 sec
+testPooling(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.004 sec
+testCanCloseConnectionTwice(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.002 sec
+testIsClosed(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.002 sec
+testCanCloseCallableStatementTwice(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.008 sec
+testAutoCommitBehavior(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.003 sec
+testHashing(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.002 sec
+testCanClosePreparedStatementTwice(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.003 sec
+testPrepareStatementOptions(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.002 sec
+testBackPointers(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.004 sec
+testHashCode(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.003 sec
+testConnectionsAreDistinct(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.002 sec
+testRepeatedBorrowAndReturn(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.001 sec
+testCanCloseResultSetTwice(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.002 sec
+testClearWarnings(org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource)  Time elapsed: 0.002 sec

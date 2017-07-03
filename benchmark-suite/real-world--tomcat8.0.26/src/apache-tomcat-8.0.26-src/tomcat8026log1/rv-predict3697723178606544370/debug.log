@@ -1,0 +1,96 @@
+Missing write events on 3253869748890368759
+Missing write events on 5558715806000347895
+Missing write events on 8981420861030399346
+Cannot retransform org/apache/jsp/echo_002dparams_jsp
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [javax/servlet/http/HttpServlet.class]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1354)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1028)
+	at java.lang.ClassLoader.getResource(ClassLoader.java:1088)
+	at com.runtimeverification.rvpredict.metadata.ClassFile.getResource(ClassFile.java:274)
+	at com.runtimeverification.rvpredict.metadata.ClassFile.getInstance0(ClassFile.java:236)
+	at com.runtimeverification.rvpredict.metadata.ClassFile.getInstance(ClassFile.java:227)
+	at com.runtimeverification.rvpredict.metadata.ClassFile.isAssignableFrom(ClassFile.java:118)
+	at com.runtimeverification.rvpredict.metadata.ClassFile.isAssignableFrom(ClassFile.java:120)
+	at com.runtimeverification.rvpredict.metadata.ClassFile.isSubtypeOf(ClassFile.java:305)
+	at com.runtimeverification.rvpredict.instrument.InstrumentUtils.needToInstrument(InstrumentUtils.java:68)
+	at com.runtimeverification.rvpredict.instrument.Agent.transform(Agent.java:204)
+	at sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:428)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:129)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:171)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.ajp.AbstractAjpProcessor.process(AbstractAjpProcessor.java:844)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1526)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1482)
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1220)
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:648)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Missing write events on 8836185257720937207
+Missing write events on 1996744868734434039
+Missing write events on 1412128806759561975
+Missing write events on 2124893382743423735
+Missing write events on 2638149301829630711
+Missing write events on 5835958771045628663
+Missing write events on 2988209649217436407
+Missing write events on 3001420826886011639
+Missing write events on 8974597652645673719
+Missing write events on 2458622920147073783
+Missing write events on 7423732619017190135
+Missing write events on 2045665976459983607
+Missing write events on 4201351869534042871
+Missing write events on 8644043749636176631
+Missing write events on 7942579902622989047
+Missing write events on 5359076144010230519
+Missing write events on 5538359228680370935
+Missing write events on 5526490808112380663
+Missing write events on 9092223913391291127
+Missing write events on 5328229585811143415
+Missing write events on 5884768866751478519
+Missing write events on 5984626942282824439
+Missing write events on 6529014248914287351
+Missing write events on 8132728464278026999
+Missing write events on 6401873037880195831
+Missing write events on 6465517177532316407
+Missing write events on 4996750057219816183
+Missing write events on 4426502649419922167
+Missing write events on 1685118409857039095
+Missing write events on 4788809194109139703
+Missing write events on 3587950885201771890
+Missing write events on 8015008680619539191
+Missing write events on 1593848469326396151
+Missing write events on 7869971590698499442
+Missing write events on 98973930743659255
+Missing write events on 5377019731393903351
+Missing write events on 2619696460173671159
+Missing write events on 7776091564182338295
+Missing write events on 8607627138545220343
+Missing write events on 1398169548867238647
+Missing write events on 6340159430193052407
+Missing write events on 7027288793791068919
+Missing write events on 118051063075962226
+Missing write events on 4194711343288285943
+Missing write events on 7210672683170659063

@@ -1,0 +1,601 @@
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T38 (locks held: {Monitor@389c5263})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:601)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@389c5263 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T38 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+
+    Concurrent write in thread T30 (locks held: {Monitor@140d4bd8})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:609)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@140d4bd8 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T30 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T35 (locks held: {Monitor@8b1a5bf})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.destroy(GenericObjectPool.java:894)
+        at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:603)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@8b1a5bf at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T35 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+
+    Concurrent write in thread T32 (locks held: {Monitor@389c5263})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:609)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@389c5263 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T32 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+}}}
+
+Data race on field org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.instanceKey: {{{
+    Concurrent read in thread T35 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getInstanceKey(InstanceKeyDataSource.java:672)
+        at org.apache.commons.dbcp2.datasources.SharedPoolDataSource.close(SharedPoolDataSource.java:77)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource$2.run(TestSharedPoolDataSource.java:608)
+    T35 is created by T1
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.testDbcp369(TestSharedPoolDataSource.java:617)
+
+    Concurrent write in thread T34 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.setDataSourceName(InstanceKeyDataSource.java:557)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource$1.run(TestSharedPoolDataSource.java:598)
+    T34 is created by T1
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.testDbcp369(TestSharedPoolDataSource.java:616)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T43 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.getNumActive(GenericKeyedObjectPool.java:689)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.reuseCapacity(GenericKeyedObjectPool.java:821)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:562)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T43 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+
+    Concurrent write in thread T36 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:549)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T36 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T36 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:541)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T36 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+
+    Concurrent write in thread T43 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:549)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T43 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T45 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.clearOldest(GenericKeyedObjectPool.java:761)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1020)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:357)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:279)
+        at org.apache.commons.dbcp2.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:140)
+        at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:885)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.getConnection(TestSharedPoolDataSource.java:50)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:929)
+    T45 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+
+    Concurrent write in thread T44 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:549)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T44 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent write in thread T45 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.destroy(GenericKeyedObjectPool.java:1069)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.clearOldest(GenericKeyedObjectPool.java:786)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1020)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:357)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:279)
+        at org.apache.commons.dbcp2.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:140)
+        at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:885)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.getConnection(TestSharedPoolDataSource.java:50)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:929)
+    T45 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+
+    Concurrent read in thread T40 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.getNumActive(GenericKeyedObjectPool.java:689)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.reuseCapacity(GenericKeyedObjectPool.java:821)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:562)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T40 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent write in thread T45 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.destroy(GenericKeyedObjectPool.java:1069)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.clearOldest(GenericKeyedObjectPool.java:786)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1020)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:357)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:279)
+        at org.apache.commons.dbcp2.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:140)
+        at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:885)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.getConnection(TestSharedPoolDataSource.java:50)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:929)
+    T45 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+
+    Concurrent read in thread T36 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:549)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T36 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent write in thread T45 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.destroy(GenericKeyedObjectPool.java:1069)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.clearOldest(GenericKeyedObjectPool.java:786)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1020)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:357)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:279)
+        at org.apache.commons.dbcp2.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:140)
+        at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:885)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.getConnection(TestSharedPoolDataSource.java:50)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:929)
+    T45 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+
+    Concurrent read in thread T38 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.getNumIdle(GenericKeyedObjectPool.java:677)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1017)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:357)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:279)
+        at org.apache.commons.dbcp2.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:140)
+        at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:885)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.getConnection(TestSharedPoolDataSource.java:50)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:929)
+    T38 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T46 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.clearOldest(GenericKeyedObjectPool.java:761)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1020)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:357)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:279)
+        at org.apache.commons.dbcp2.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:140)
+        at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:885)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.getConnection(TestSharedPoolDataSource.java:50)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:929)
+    T46 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+
+    Concurrent write in thread T49 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.destroy(GenericKeyedObjectPool.java:1069)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.clearOldest(GenericKeyedObjectPool.java:786)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1020)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:357)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:279)
+        at org.apache.commons.dbcp2.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:140)
+        at org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:885)
+        at org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource.getConnection(TestSharedPoolDataSource.java:50)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:929)
+    T49 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent write in thread T36 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.destroy(GenericKeyedObjectPool.java:1069)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:543)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T36 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+
+    Concurrent read in thread T38 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.destroy(GenericKeyedObjectPool.java:1069)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:543)
+        at org.apache.commons.dbcp2.datasources.KeyedCPDSConnectionFactory.connectionClosed(KeyedCPDSConnectionFactory.java:257)
+        at org.apache.commons.dbcp2.cpdsadapter.PooledConnectionImpl.notifyListeners(PooledConnectionImpl.java:236)
+        at org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close(ConnectionImpl.java:82)
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.run(TestConnectionPool.java:948)
+    T38 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool$PoolTest.start(TestConnectionPool.java:918)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent write in thread T17 (locks held: {Monitor@12e7c76f})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.destroy(GenericObjectPool.java:894)
+        at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:603)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@12e7c76f at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:244)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T17 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+
+    Concurrent read in thread T21 (locks held: {Monitor@4dbec059})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:601)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@4dbec059 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:244)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T21 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent write in thread T17 (locks held: {Monitor@1a9b0f12})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:609)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@1a9b0f12 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.managed.ManagedConnection.close(ManagedConnection.java:166)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T17 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+
+    Concurrent read in thread T15 (locks held: {Monitor@5b099e5b})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:609)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@5b099e5b at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.managed.ManagedConnection.close(ManagedConnection.java:166)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T15 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+}}}
+
+Data race on field org.apache.commons.dbcp2.DelegatingStatement._stmt: {{{
+    Concurrent write in thread T3 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.DelegatingStatement.close(DelegatingStatement.java:165)
+        at org.apache.commons.dbcp2.DelegatingStatement.finalize(DelegatingStatement.java:550)
+    T3 is created by n/a
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.DelegatingStatement.getDelegate(DelegatingStatement.java:72)
+        at org.apache.commons.dbcp2.TestDelegatingCallableStatement.testGetDelegate(TestDelegatingCallableStatement.java:64)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+}}}
+
+Data race on field org.apache.commons.dbcp2.DelegatingStatement._closed: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.DelegatingStatement.<init>(DelegatingStatement.java:108)
+        at org.apache.commons.dbcp2.TestDelegatingCallableStatement.testGetDelegate(TestDelegatingCallableStatement.java:63)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T3 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.DelegatingStatement.isClosed(DelegatingStatement.java:470)
+        at org.apache.commons.dbcp2.DelegatingStatement.close(DelegatingStatement.java:132)
+        at org.apache.commons.dbcp2.DelegatingStatement.finalize(DelegatingStatement.java:550)
+    T3 is created by n/a
+}}}
+
+Data race on field org.apache.commons.dbcp2.DelegatingStatement._conn: {{{
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.DelegatingStatement.<init>(DelegatingStatement.java:63)
+        at org.apache.commons.dbcp2.TestDelegatingCallableStatement.testGetDelegate(TestDelegatingCallableStatement.java:63)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent read in thread T3 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.DelegatingStatement.close(DelegatingStatement.java:137)
+        at org.apache.commons.dbcp2.DelegatingStatement.finalize(DelegatingStatement.java:550)
+    T3 is created by n/a
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.getNumIdle(GenericKeyedObjectPool.java:677)
+        at org.apache.commons.pool2.impl.GenericKeyedObjectPool.getNumActive(GenericKeyedObjectPool.java:667)
+        at org.apache.commons.dbcp2.TestAbandonedBasicDataSource.testGarbageCollectorCleanUp02(TestAbandonedBasicDataSource.java:255)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T3 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:549)
+        at org.apache.commons.dbcp2.PoolablePreparedStatement.close(PoolablePreparedStatement.java:103)
+        at org.apache.commons.dbcp2.DelegatingStatement.close(DelegatingStatement.java:156)
+        at org.apache.commons.dbcp2.DelegatingStatement.close(DelegatingStatement.java:156)
+        at org.apache.commons.dbcp2.DelegatingStatement.finalize(DelegatingStatement.java:550)
+    T3 is created by n/a
+}}}
+
+Data race on field java.util.ArrayList.$state: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.AbandonedTrace.getTrace(AbandonedTrace.java:129)
+        at org.apache.commons.dbcp2.TestAbandonedBasicDataSource.testGarbageCollectorCleanUp02(TestAbandonedBasicDataSource.java:254)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T3 (locks held: {Monitor@6af90849})
+ ---->  at org.apache.commons.dbcp2.AbandonedTrace.removeTrace(AbandonedTrace.java:164)
+        - locked Monitor@6af90849 at org.apache.commons.dbcp2.AbandonedTrace.removeTrace(AbandonedTrace.java:155) 
+        at org.apache.commons.dbcp2.DelegatingStatement.close(DelegatingStatement.java:138)
+        at org.apache.commons.dbcp2.DelegatingStatement.finalize(DelegatingStatement.java:550)
+    T3 is created by n/a
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.getNumIdle(GenericObjectPool.java:690)
+        at org.apache.commons.dbcp2.TestBasicDataSource.testConcurrentInitBorrow(TestBasicDataSource.java:712)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T14 (locks held: {Monitor@6eb32c74})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:609)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@6eb32c74 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:244)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T14 is created by T1
+        at org.apache.commons.dbcp2.TestBasicDataSource.testConcurrentInitBorrow(TestBasicDataSource.java:704)
+}}}
+
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent read in thread T15 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.getNumActive(GenericObjectPool.java:685)
+        at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:417)
+        at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+        at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:134)
+        at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1533)
+        at org.apache.commons.dbcp2.TestBasicDataSource.getConnection(TestBasicDataSource.java:52)
+        at org.apache.commons.dbcp2.TestConnectionPool.newConnection(TestConnectionPool.java:88)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:621)
+    T15 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+
+    Concurrent write in thread T21 (locks held: {Monitor@47778367})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:609)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@47778367 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:244)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T21 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent write in thread T24 (locks held: {Monitor@37780bdc})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.destroy(GenericObjectPool.java:894)
+        at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:603)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@37780bdc at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:244)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:630)
+    T24 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+
+    Concurrent read in thread T20 (locks held: {})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.getNumIdle(GenericObjectPool.java:690)
+        at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:416)
+        at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+        at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:134)
+        at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1533)
+        at org.apache.commons.dbcp2.TestBasicDataSource.getConnection(TestBasicDataSource.java:52)
+        at org.apache.commons.dbcp2.TestConnectionPool.newConnection(TestConnectionPool.java:88)
+        at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:621)
+    T20 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+}}}
+
+Data race on field org.apache.commons.pool2.impl.LinkedBlockingDeque.$state: {{{
+    Concurrent write in thread T16 (locks held: {Monitor@284a15a4})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.destroy(GenericObjectPool.java:894)
+        at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:603)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@284a15a4 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:244)
+        at org.apache.commons.dbcp2.TestDriverManagerConnectionFactory$ConnectionThread.run(TestDriverManagerConnectionFactory.java:100)
+    T16 is created by T1
+        at org.apache.commons.dbcp2.TestDriverManagerConnectionFactory.testDriverManagerInit(TestDriverManagerConnectionFactory.java:69)
+
+    Concurrent read in thread T18 (locks held: {Monitor@6454f470})
+ ---->  at org.apache.commons.pool2.impl.GenericObjectPool.destroy(GenericObjectPool.java:894)
+        at org.apache.commons.pool2.impl.GenericObjectPool.returnObject(GenericObjectPool.java:603)
+        at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:206)
+        - locked Monitor@6454f470 at org.apache.commons.dbcp2.PoolableConnection.close(PoolableConnection.java:n/a) 
+        at org.apache.commons.dbcp2.DelegatingConnection.closeInternal(DelegatingConnection.java:236)
+        at org.apache.commons.dbcp2.DelegatingConnection.close(DelegatingConnection.java:218)
+        at org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:244)
+        at org.apache.commons.dbcp2.TestDriverManagerConnectionFactory$ConnectionThread.run(TestDriverManagerConnectionFactory.java:100)
+    T18 is created by T1
+        at org.apache.commons.dbcp2.TestDriverManagerConnectionFactory.testDriverManagerInit(TestDriverManagerConnectionFactory.java:69)
+}}}
+
+Data race on field org.apache.commons.dbcp2.TestConnectionPool$TestThread._complete: {{{
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.TestConnectionPool$TestThread.complete(TestConnectionPool.java:606)
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:573)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:535)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1182)
+        at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1033)
+    T1 is the main thread
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at org.apache.commons.dbcp2.TestConnectionPool$TestThread.run(TestConnectionPool.java:637)
+    T15 is created by T1
+        at org.apache.commons.dbcp2.TestConnectionPool.testThreaded(TestConnectionPool.java:570)
+}}}

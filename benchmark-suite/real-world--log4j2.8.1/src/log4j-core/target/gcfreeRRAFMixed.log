@@ -1,0 +1,1185 @@
+2016-06-27 16:26:50,399 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 debug not set  
+ [36m[1;36m2016-06-28 00:26:50,399[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 debug not set  
+[m2016-06-27 16:26:50,399 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 debug not set  
+ [36m[1;36m2016-06-28 00:26:50,399[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 debug not set  
+[m2016-06-27 16:26:50,424 FATAL o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 This message is logged to the console  
+ [1;31m[1;36m2016-06-28 00:26:50,424[m FATAL o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 This message is logged to the console  
+[m2016-06-27 16:26:50,424 FATAL o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 This message is logged to the console  
+ [1;31m[1;36m2016-06-28 00:26:50,424[m FATAL o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 This message is logged to the console  
+[m2016-06-27 16:26:50,443 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Sample error message  
+ [1;31m[1;36m2016-06-28 00:26:50,443[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Sample error message  
+[m2016-06-27 16:26:50,443 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Sample error message  
+ [1;31m[1;36m2016-06-28 00:26:50,443[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Sample error message  
+[m2016-06-27 16:26:50,446 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:50,446[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:50,446 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:50,446[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:50,474 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:50,474[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:50,482 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,482[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,474 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:50,474[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:50,483 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,483[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,482 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,482[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,516 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,516[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,483 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,483[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,516 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,516[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,517 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,517[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,535 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,535[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,516 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,516[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,516 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,516[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,536 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,536[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,537 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,537[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,517 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,517[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,537 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,537[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,535 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,535[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,549 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,549[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,536 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,536[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,549 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,549[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,537 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,537[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,550 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,550[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,537 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,537[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,550 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,550[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,549 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,549[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,569 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,569[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,549 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,549[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,569 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,569[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,550 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,550[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,569 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,569[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,550 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,550[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,570 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,570[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,569 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,569[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,582 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,582[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,569 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,569[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,583 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,583[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,569 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,569[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,570 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,570[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,583 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,583[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,582 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,582[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,591 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,591[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,583 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,583[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,591 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,591[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,583 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,583[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,591 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,591[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,610 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,610[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,591 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,591[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,591 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,591[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,611 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,611[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,591 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,591[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,611 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,611[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,611 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,611[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,610 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,610[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,624 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,624[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,611 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,611[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,624 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,624[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,611 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,611[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,625 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,625[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,611 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,611[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,625 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,625[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,643 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,643[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,624 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,624[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,624 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,624[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,625 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,625[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,625 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,625[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,643 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,643[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,657 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,657[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,658 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,658[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,658 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,658[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,658 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,658[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,658 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,658[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,666 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,666[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,657 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,657[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,658 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,658[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,666 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,666[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,658 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,658[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,666 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,666[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,658 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,658[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,666 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,666[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,658 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,658[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,667 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,667[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,666 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,666[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,675 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,675[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,666 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,666[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,675 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,675[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,666 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,666[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,666 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,666[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,675 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,675[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,667 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,667[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,675 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,675[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,683 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,683[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,675 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,675[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,675 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,675[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,683 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,683[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,675 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,675[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,683 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,683[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,675 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,675[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,683 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,683[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,703 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,703[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,683 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,683[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,683 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,683[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,703 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,703[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,683 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,683[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,683 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,683[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,703 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,703[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,703 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,703[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,704 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,704[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,703 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,703[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,717 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,717[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,703 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,703[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,717 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,717[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,704 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,704[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,717 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,717[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,717 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,717[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,717 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,717[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,725 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,725[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,717 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,717[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,725 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,725[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,717 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,717[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,717 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,717[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,726 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,726[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,725 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,725[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,745 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,745[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,725 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,725[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,726 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,726[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,745 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,745[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,745 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,745[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,758 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,758[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,745 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,745[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,745 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,745[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,759 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,759[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,745 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,745[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,759 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,759[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,758 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,758[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,777 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,777[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,759 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,759[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,777 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,777[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,759 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,759[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,777 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,777[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,777 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,777[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,792 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,792[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,777 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,777[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,777 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,777[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,792 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,792[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,792 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,792[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,800 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,800[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,792 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,792[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,800 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,800[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,800 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,800[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,808 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,808[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,800 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,800[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,808 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,808[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,808 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,808[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,817 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,817[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,808 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,808[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,817 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,817[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,817 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,817[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,825 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,825[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,817 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,817[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,825 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,825[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,825 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,825[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,833 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,833[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,825 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,825[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,833 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,833[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,833 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,833[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,842 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,842[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,833 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,833[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,842 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,842[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,842 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,842[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,850 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,850[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,842 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,842[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,850 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,850[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,850 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,850[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,858 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,858[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,850 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,850[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,858 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,858[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,858 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,858[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,867 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,867[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,858 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,858[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,867 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,867[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,867 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,867[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,875 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,875[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,867 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,867[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,875 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,875[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,875 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,875[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,883 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,883[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,875 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,875[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,883 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,883[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,883 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,883[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,891 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,891[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,883 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,883[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,891 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,891[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,891 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,891[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,900 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,900[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,891 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,891[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,900 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,900[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,900 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,900[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,908 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,908[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,900 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,900[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,908 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,908[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,908 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,908[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,917 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,917[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,908 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,908[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,917 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,917[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,917 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,917[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,925 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,925[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,917 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,917[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,925 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,925[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,925 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,925[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,944 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,944[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,925 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,925[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,944 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,944[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,944 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,944[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,959 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,959[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,944 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,944[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,959 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,959[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,959 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,959[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,977 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,977[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,959 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,959[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,977 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,977[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,977 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,977[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,992 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,992[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,977 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,977[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,992 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,992[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,992 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,992[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,000 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,000[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:50,992 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:50,992[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,000 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,000[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,000 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,000[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,020 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,020[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,000 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,000[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,020 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,020[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,020 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,020[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,034 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,034[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,020 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,020[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,034 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,034[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,034 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,034[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,042 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,042[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,034 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,034[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,042 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,042[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,042 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,042[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,050 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,050[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,042 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,042[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,050 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,050[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,050 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,050[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,059 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,059[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,050 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,050[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,059 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,059[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,059 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,059[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,078 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,078[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,059 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,059[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,078 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,078[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,078 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,078[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,092 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,092[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,078 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,078[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,092 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,092[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,092 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,092[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,100 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,100[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,092 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,092[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,100 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,100[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,100 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,100[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,109 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,109[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,100 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,100[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,109 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,109[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,109 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,109[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,109 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,109[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,117 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,117[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,117 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,117[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,125 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,125[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,125 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,125[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,134 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,134[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,134 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,134[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,142 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,142[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,142 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,142[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,150 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,150[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,150 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,150[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,158 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,158[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,158 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,158[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,167 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,167[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,167 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,167[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,175 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,175[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,175 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,175[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,183 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,183[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,183 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,183[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,191 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,191[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,191 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,191[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,200 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,200[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,200 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,200[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,209 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,209[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,209 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,209[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,217 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,217[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,217 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,217[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,225 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,225[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,225 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,225[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,258 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,258[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,258 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,258[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,267 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,267[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,267 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,267[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,275 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,275[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,275 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,275[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,283 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,283[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,283 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,283[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,292 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,292[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,292 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,292[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,300 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,300[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,300 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,300[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,309 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,309[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,309 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,309[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,328 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,328[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,328 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,328[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,334 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,334[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,334 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,334[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,342 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,342[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,342 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,342[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,350 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,350[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,350 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,350[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,400 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,400[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,400 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,400[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,408 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,408[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,408 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,408[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,417 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,417[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,417 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,417[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,417 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,417[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,425 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,425[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,417 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,417[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,425 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,425[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,425 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,425[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,434 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,434[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,425 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,425[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,434 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,434[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,434 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,434[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,453 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,453[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,434 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,434[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,453 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,453[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,453 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,453[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,467 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,467[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,453 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,453[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,467 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,467[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,467 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,467[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,475 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,475[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,467 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,467[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,475 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,475[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,475 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,475[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,484 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,484[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,475 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,475[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,484 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,484[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,484 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,484[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,547 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,547[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,484 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,484[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,548 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,548[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,547 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,547[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,548 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,548[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,599 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,599[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,599 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,599[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,644 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,644[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,745 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,745[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,745 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,745[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,750 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,750[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,750 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,750[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,759 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,759[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,759 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,759[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,767 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,767[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,767 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,767[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,776 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,776[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,776 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,776[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,784 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,784[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,784 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,784[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,792 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,792[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,792 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,792[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,800 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,800[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,800 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,800[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,809 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,809[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,809 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,809[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,817 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,817[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,817 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,817[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,826 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,826[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,826 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,826[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,834 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,834[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,834 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,834[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,842 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,842[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,842 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,842[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,850 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,850[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,850 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,850[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,858 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,858[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,858 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,858[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,867 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,867[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,867 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,867[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,876 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,876[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,876 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,876[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,884 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,884[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,884 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,884[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,893 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,893[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,893 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,893[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,901 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,901[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,901 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,901[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,909 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,909[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,909 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,909[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,918 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,918[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,918 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,918[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,926 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,926[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,926 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,926[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,934 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,934[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,934 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,934[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,942 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,942[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,942 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,942[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,951 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,951[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,951 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,951[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,959 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,959[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,959 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,959[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,967 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,967[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,967 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,967[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,976 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,976[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,976 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,976[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,984 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,984[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,984 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,984[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,992 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,992[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:51,992 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:51,992[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,001 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,001[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,001 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,001[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,009 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,009[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,009 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,009[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,018 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,018[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,018 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,018[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,052 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,052[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,052 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,052[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,059 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,059[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,059 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,059[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,067 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,067[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,067 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,067[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,075 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,075[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,075 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,075[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,084 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,084[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,084 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,084[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,092 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,092[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,092 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,092[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,101 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,101[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,101 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,101[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,120 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,120[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,120 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,120[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,134 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,134[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,134 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,134[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,143 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,143[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,143 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,143[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,151 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,151[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,151 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,151[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,169 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,169[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,169 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,169[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,176 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,176[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,176 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,176[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,184 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,184[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,184 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,184[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,192 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,192[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,193 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,193[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,192 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,192[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,212 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,212[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,193 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,193[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,212 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,212[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,212 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,212[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,259 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,259[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,212 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,212[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,259 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,259[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,259 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,259[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,268 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,268[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,259 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,259[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,268 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,268[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,268 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,268[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,286 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,286[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,268 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,268[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,287 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,287[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,286 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,286[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,292 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,292[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,287 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,287[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,292 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,292[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,292 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,292[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,301 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,301[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,292 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,292[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,301 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,301[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,301 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,301[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,309 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,309[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,301 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,301[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,309 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,309[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,309 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,309[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,317 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,317[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,309 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,309[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,318 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,318[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,317 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,317[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,326 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,326[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,318 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,318[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,326 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,326[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,326 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,326[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,326 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,326[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,334 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,334[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,334 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,334[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,343 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,343[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,343 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,343[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,351 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,351[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,351 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,351[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,359 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,359[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,359 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,359[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,368 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,368[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,368 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,368[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,442 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,442[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,442 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,442[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,451 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,451[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,451 DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+ [36m[1;36m2016-06-28 00:26:52,451[m DEBUG o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 ensure all ringbuffer slots have been used once  
+[m2016-06-27 16:26:52,961 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:52,961[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:52,961 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:52,961[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:52,961 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:52,961[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:52,961 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:52,961[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:52,976 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:52,976[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:52,976 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:52,976[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:52,985 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:52,985[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:52,985 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:52,985[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:52,993 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:52,993[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:52,993 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:52,993[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,001 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,001[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,001 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,001[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,009 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,009[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,009 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,009[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,018 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,018[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,018 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,018[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,026 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,026[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,026 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,026[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,035 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:53,035[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:53,035 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:53,035[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:53,043 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:53,043[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:53,043 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:53,043[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:53,051 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:53,051[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,051 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:53,051[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,060 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,060[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,060 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,060[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,068 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,068[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,068 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,068[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,076 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,076[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,076 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,076[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,084 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,084[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,084 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,084[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,093 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:53,093[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:53,093 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:53,093[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:53,101 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:53,101[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:53,101 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:53,101[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:53,126 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:53,126[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,126 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:53,126[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,135 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,135[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,135 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,135[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,142 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,142[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,142 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,142[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,151 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,151[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,151 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,151[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,159 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,159[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,159 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,159[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,168 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:53,168[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:53,168 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:53,168[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:53,176 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:53,176[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:53,176 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:53,176[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:53,195 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:53,195[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,195 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:53,195[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,201 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,201[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,201 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,201[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,210 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,210[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,210 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,210[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,228 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,228[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,228 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,228[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,234 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,234[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,234 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+ [1;31m[1;36m2016-06-28 00:26:53,234[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil  
+[m2016-06-27 16:26:53,243 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:53,243[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:53,243 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+ [1;31m[1;36m2016-06-28 00:26:53,243[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test message  
+[m2016-06-27 16:26:53,251 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:53,251[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:53,251 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+ [1;31m[1;36m2016-06-28 00:26:53,251[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message param  
+[m2016-06-27 16:26:53,259 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:53,259[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,259 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+ [1;31m[1;36m2016-06-28 00:26:53,259[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2  
+[m2016-06-27 16:26:53,268 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,268[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,268 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+ [1;31m[1;36m2016-06-28 00:26:53,268[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 Test parameterized message paramparam2abc  
+[m2016-06-27 16:26:53,276 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,276[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m2016-06-27 16:26:53,276 ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+ [1;31m[1;36m2016-06-28 00:26:53,276[m ERROR o.a.l.l.c.GcFreeMixedSyncAyncLoggingTest [main] value1 eventId="Login"  
+[m

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.361 sec - in org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS
+testNullValidationQuery(org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS)  Time elapsed: 0.121 sec
+testClosingWithUserName(org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS)  Time elapsed: 0 sec
+testDbcp367(org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS)  Time elapsed: 2.176 sec
+testSimpleWithUsername(org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS)  Time elapsed: 0.002 sec
+testSetProperties(org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS)  Time elapsed: 0 sec
+testSimple(org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS)  Time elapsed: 0.001 sec
+testIncorrectPassword(org.apache.commons.dbcp2.cpdsadapter.TestDriverAdapterCPDS)  Time elapsed: 0 sec

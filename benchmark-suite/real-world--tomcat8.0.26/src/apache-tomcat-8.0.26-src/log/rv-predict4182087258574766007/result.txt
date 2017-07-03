@@ -1,0 +1,145 @@
+Data race on field org.apache.coyote.Request.hook: {{{
+    Concurrent write in thread T23 (locks held: {Monitor@4d22c433})
+ ---->  at org.apache.coyote.Request.action(Request.java:373)
+        at org.apache.catalina.connector.InputBuffer.available(InputBuffer.java:244)
+        at org.apache.catalina.connector.Request.getAvailable(Request.java:2558)
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.doRun(Nio2Endpoint.java:1074)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1033)
+        - locked Monitor@4d22c433 at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1032) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T23 is created by T22
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T24 (locks held: {})
+ ---->  at org.apache.coyote.Request.action(Request.java:376)
+        at org.apache.catalina.connector.Request.cometClose(Request.java:2582)
+        at org.apache.catalina.connector.CometEventImpl.close(CometEventImpl.java:98)
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseThread.run(TestCometProcessor.java:665)
+    T24 is created by T23
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseValve.invoke(TestCometProcessor.java:648)
+}}}
+
+Data race on field org.apache.coyote.Request.hook: {{{
+    Concurrent write in thread T23 (locks held: {Monitor@4d22c433})
+ ---->  at org.apache.coyote.Request.action(Request.java:373)
+        at org.apache.catalina.connector.InputBuffer.available(InputBuffer.java:244)
+        at org.apache.catalina.connector.Request.getAvailable(Request.java:2558)
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.doRun(Nio2Endpoint.java:1074)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1033)
+        - locked Monitor@4d22c433 at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1032) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T23 is created by T22
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T24 (locks held: {})
+ ---->  at org.apache.coyote.Request.action(Request.java:380)
+        at org.apache.catalina.connector.Request.cometClose(Request.java:2582)
+        at org.apache.catalina.connector.CometEventImpl.close(CometEventImpl.java:98)
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseThread.run(TestCometProcessor.java:665)
+    T24 is created by T23
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseValve.invoke(TestCometProcessor.java:648)
+}}}
+
+Data race on field org.apache.coyote.RequestInfo.stage: {{{
+    Concurrent read in thread T24 (locks held: {})
+ ---->  at org.apache.coyote.RequestInfo.getStage(RequestInfo.java:172)
+        at org.apache.coyote.http11.Http11Nio2Processor.actionInternal(Http11Nio2Processor.java:520)
+        at org.apache.coyote.http11.AbstractHttp11Processor.action(AbstractHttp11Processor.java:924)
+        at org.apache.coyote.Request.action(Request.java:380)
+        at org.apache.catalina.connector.Request.cometClose(Request.java:2582)
+        at org.apache.catalina.connector.CometEventImpl.close(CometEventImpl.java:98)
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseThread.run(TestCometProcessor.java:665)
+    T24 is created by T23
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseValve.invoke(TestCometProcessor.java:648)
+
+    Concurrent write in thread T23 (locks held: {Monitor@4d22c433})
+ ---->  at org.apache.coyote.RequestInfo.setStage(RequestInfo.java:176)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1129)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.doRun(Nio2Endpoint.java:1074)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1033)
+        - locked Monitor@4d22c433 at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1032) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T23 is created by T22
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.catalina.connector.OutputBuffer.suspended: {{{
+    Concurrent read in thread T24 (locks held: {})
+ ---->  at org.apache.catalina.connector.OutputBuffer.close(OutputBuffer.java:272)
+        at org.apache.catalina.connector.Response.finishResponse(Response.java:453)
+        at org.apache.catalina.connector.CometEventImpl.close(CometEventImpl.java:96)
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseThread.run(TestCometProcessor.java:665)
+    T24 is created by T23
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseValve.invoke(TestCometProcessor.java:648)
+
+    Concurrent write in thread T23 (locks held: {Monitor@4d22c433})
+ ---->  at org.apache.catalina.connector.OutputBuffer.setSuspended(OutputBuffer.java:210)
+        at org.apache.catalina.connector.Response.setSuspended(Response.java:392)
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:167)
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.doRun(Nio2Endpoint.java:1074)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1033)
+        - locked Monitor@4d22c433 at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1032) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T23 is created by T22
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.coyote.Request.hook: {{{
+    Concurrent read in thread T24 (locks held: {})
+ ---->  at org.apache.coyote.Request.action(Request.java:372)
+        at org.apache.catalina.connector.Request.cometClose(Request.java:2582)
+        at org.apache.catalina.connector.CometEventImpl.close(CometEventImpl.java:98)
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseThread.run(TestCometProcessor.java:665)
+    T24 is created by T23
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseValve.invoke(TestCometProcessor.java:648)
+
+    Concurrent write in thread T23 (locks held: {Monitor@4d22c433})
+ ---->  at org.apache.coyote.Request.action(Request.java:373)
+        at org.apache.catalina.connector.InputBuffer.available(InputBuffer.java:244)
+        at org.apache.catalina.connector.Request.getAvailable(Request.java:2558)
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.doRun(Nio2Endpoint.java:1074)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1033)
+        - locked Monitor@4d22c433 at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1032) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T23 is created by T22
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.catalina.connector.OutputBuffer.closed: {{{
+    Concurrent write in thread T24 (locks held: {})
+ ---->  at org.apache.catalina.connector.OutputBuffer.close(OutputBuffer.java:297)
+        at org.apache.catalina.connector.Response.finishResponse(Response.java:453)
+        at org.apache.catalina.connector.CometEventImpl.close(CometEventImpl.java:96)
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseThread.run(TestCometProcessor.java:665)
+    T24 is created by T23
+        at org.apache.catalina.comet.TestCometProcessor$AsyncCometCloseValve.invoke(TestCometProcessor.java:648)
+
+    Concurrent read in thread T23 (locks held: {Monitor@4d22c433})
+ ---->  at org.apache.catalina.connector.OutputBuffer.isClosed(OutputBuffer.java:220)
+        at org.apache.catalina.connector.Response.isClosed(Response.java:408)
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.doRun(Nio2Endpoint.java:1074)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1033)
+        - locked Monitor@4d22c433 at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1032) 
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T23 is created by T22
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.dbcp2.TestPoolableConnection
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.768 sec
+
+Testcase: testPoolableConnectionLeak took 0.665 sec
+Testcase: testFastFailValidationCustomCodes took 0.01 sec
+Testcase: testConnectionPool took 0.005 sec
+Testcase: testClosingWrappedInDelegate took 0.002 sec
+Testcase: testFastFailValidation took 0.036 sec

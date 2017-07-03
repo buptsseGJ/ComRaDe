@@ -1,0 +1,21 @@
+Race: <benchmarks.tsp.TspSolver: void split_tour(int)>|$i19 = <benchmarks.tsp.TspSolver: int MinTourLen>|305 - <benchmarks.tsp.TspSolver: void set_best(int,int[])>|<benchmarks.tsp.TspSolver: int MinTourLen> = i0|117
+Race: <benchmarks.tsp.TspSolver: void visit_nodes(int)>|$i12 = <benchmarks.tsp.TspSolver: int MinTourLen>|528 - <benchmarks.tsp.TspSolver: void set_best(int,int[])>|<benchmarks.tsp.TspSolver: int MinTourLen> = i0|117
+Race: <benchmarks.tsp.TspSolver: void visit_nodes(int)>|$i27 = <benchmarks.tsp.TspSolver: int MinTourLen>|544 - <benchmarks.tsp.TspSolver: void set_best(int,int[])>|<benchmarks.tsp.TspSolver: int MinTourLen> = i0|117
+Race: <benchmarks.tsp.TspSolver: int find_solvable_tour()>|$i12 = <benchmarks.tsp.TspSolver: int MinTourLen>|377 - <benchmarks.tsp.TspSolver: void set_best(int,int[])>|<benchmarks.tsp.TspSolver: int MinTourLen> = i0|117
+Race: <benchmarks.tsp.TspSolver: void visit_nodes(int)>|$i22 = <benchmarks.tsp.TspSolver: int MinTourLen>|538 - <benchmarks.tsp.TspSolver: void set_best(int,int[])>|<benchmarks.tsp.TspSolver: int MinTourLen> = i0|117
+Trace Size: 562891963
+Total #Threads: 6
+Total #SharedVariables: 12
+Total #Shared Read-Writes: 1203
+Total #Local Read-Writes: 313613130
+Total #Initial Writes: 5022
+Total #Synchronizations: 1122
+Total #Branches: 249271486
+Total #Property Events: 0
+Total #Potential Violations: 9
+Total #Real Violations: 5
+Total Time: 2459435ms
+
+real	130m39.617s
+user	102m48.016s
+sys		11m29.856s

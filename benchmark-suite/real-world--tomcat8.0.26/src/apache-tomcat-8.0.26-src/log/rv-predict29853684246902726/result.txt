@@ -1,0 +1,408 @@
+Data race on field org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcessCount: {{{
+    Concurrent write in thread T42 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:862)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T42 is created by T41
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+
+    Concurrent read in thread T59 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:862)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T59 is created by T1
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcessCount: {{{
+    Concurrent write in thread T42 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:862)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T42 is created by T41
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+
+    Concurrent read in thread T51 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsWebSocketContainer.backgroundProcess(WsWebSocketContainer.java:863)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.process(BackgroundProcessManager.java:91)
+        at org.apache.tomcat.websocket.BackgroundProcessManager.access$000(BackgroundProcessManager.java:32)
+        at org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread.run(BackgroundProcessManager.java:119)
+    T51 is created by T50
+        at org.apache.tomcat.websocket.BackgroundProcessManager.register(BackgroundProcessManager.java:66)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.writePos: {{{
+    Concurrent read in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:759)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:406)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:289)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:70)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.state: {{{
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:124)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processRemainingHeader(WsFrameBase.java:276)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:125)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.state: {{{
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInitialHeader(WsFrameBase.java:222)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:115)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:124)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.writePos: {{{
+    Concurrent read in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processRemainingHeader(WsFrameBase.java:248)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:125)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:70)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.state: {{{
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInitialHeader(WsFrameBase.java:222)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:115)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.writePos: {{{
+    Concurrent read in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:750)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:406)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:289)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:70)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.state: {{{
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processRemainingHeader(WsFrameBase.java:276)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:125)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.payloadWritten: {{{
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.access$400(WsFrameBase.java:42)
+        at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:750)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:406)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:289)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.access$402(WsFrameBase.java:42)
+        at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:755)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:406)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:289)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.readPos: {{{
+    Concurrent read in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.access$500(WsFrameBase.java:42)
+        at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:759)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:406)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:289)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.access$502(WsFrameBase.java:42)
+        at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:754)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:406)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:289)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.payloadWritten: {{{
+    Concurrent write in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.access$402(WsFrameBase.java:42)
+        at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:755)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:406)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:289)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.checkRoomPayload(WsFrameBase.java:631)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:298)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.writePos: {{{
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:65)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:70)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.writePos: {{{
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:70)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:70)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.state: {{{
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInitialHeader(WsFrameBase.java:222)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:115)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:114)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.state: {{{
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:114)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processRemainingHeader(WsFrameBase.java:276)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:125)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.writePos: {{{
+    Concurrent read in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.processInitialHeader(WsFrameBase.java:144)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:115)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:70)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.writePos: {{{
+    Concurrent read in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:69)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:70)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.readPos: {{{
+    Concurrent write in thread T192 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.access$502(WsFrameBase.java:42)
+        at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:754)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:406)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:289)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T192 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T189 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.checkRoomPayload(WsFrameBase.java:631)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:298)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T189 is created by T19
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

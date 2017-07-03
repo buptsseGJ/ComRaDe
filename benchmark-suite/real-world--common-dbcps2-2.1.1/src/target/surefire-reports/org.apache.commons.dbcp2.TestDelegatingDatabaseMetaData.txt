@@ -1,0 +1,6 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestDelegatingDatabaseMetaData
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.dbcp2.TestDelegatingDatabaseMetaData
+testGetDelegate(org.apache.commons.dbcp2.TestDelegatingDatabaseMetaData)  Time elapsed: 0 sec
+testCheckOpen(org.apache.commons.dbcp2.TestDelegatingDatabaseMetaData)  Time elapsed: 0 sec

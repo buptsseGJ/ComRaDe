@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestDelegatingConnection
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.dbcp2.TestDelegatingConnection
+testGetDelegate(org.apache.commons.dbcp2.TestDelegatingConnection)  Time elapsed: 0 sec
+testCheckOpenNull(org.apache.commons.dbcp2.TestDelegatingConnection)  Time elapsed: 0 sec
+testCheckOpen(org.apache.commons.dbcp2.TestDelegatingConnection)  Time elapsed: 0 sec
+testConnectionToString(org.apache.commons.dbcp2.TestDelegatingConnection)  Time elapsed: 0 sec

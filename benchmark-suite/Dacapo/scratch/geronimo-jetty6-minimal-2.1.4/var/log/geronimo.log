@@ -1,0 +1,263 @@
+2009-12-24 13:51:32,752 INFO  [Log4jService] ----------------------------------------------
+2009-12-24 13:51:32,753 INFO  [Log4jService] Started Logging Service
+2009-12-24 13:51:32,753 INFO  [Log4jService] Runtime Information:
+2009-12-24 13:51:32,753 INFO  [Log4jService]   Install Directory = /home/steveb/devel/dacapo/svn/dacapo/benchmarks/release/benchmarks/libs/daytrader/build/geronimo-jetty6-minimal-2.1.4
+2009-12-24 13:51:32,754 INFO  [JvmVendor] Sun JVM 1.5.0_16
+2009-12-24 13:51:32,754 INFO  [Log4jService]   JVM in use = Sun JVM 1.5.0_16
+2009-12-24 13:51:32,754 INFO  [Log4jService] Java Information:
+2009-12-24 13:51:32,754 INFO  [Log4jService]   System property [java.runtime.name]  = Java(TM) 2 Runtime Environment, Standard Edition
+2009-12-24 13:51:32,754 INFO  [Log4jService]   System property [java.runtime.version]  = 1.5.0_16-b02
+2009-12-24 13:51:32,754 INFO  [Log4jService]   System property [os.name]             = Linux
+2009-12-24 13:51:32,754 INFO  [Log4jService]   System property [os.version]          = 2.6.27-9-perfctr
+2009-12-24 13:51:32,754 INFO  [Log4jService]   System property [sun.os.patch.level]  = unknown
+2009-12-24 13:51:32,754 INFO  [Log4jService]   System property [os.arch]             = i386
+2009-12-24 13:51:32,754 INFO  [Log4jService]   System property [java.class.version]  = 49.0
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [locale]              = en_AU
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [unicode.encoding]    = UnicodeLittle
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [file.encoding]       = UTF-8
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.vm.name]        = Java HotSpot(TM) Server VM
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.vm.vendor]      = Sun Microsystems Inc.
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.vm.version]     = 1.5.0_16-b02
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.vm.info]        = mixed mode
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.home]           = /usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.classpath]      = null
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.library.path]   = /usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/i386/server:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/i386:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/../lib/i386
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.endorsed.dirs]  = /home/steveb/devel/dacapo/svn/dacapo/benchmarks/release/benchmarks/libs/daytrader/build/geronimo-jetty6-minimal-2.1.4/lib/endorsed:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/endorsed
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [java.ext.dirs]       = /home/steveb/devel/dacapo/svn/dacapo/benchmarks/release/benchmarks/libs/daytrader/build/geronimo-jetty6-minimal-2.1.4/lib/ext:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/ext
+2009-12-24 13:51:32,755 INFO  [Log4jService]   System property [sun.boot.class.path] = /home/steveb/devel/dacapo/svn/dacapo/benchmarks/release/benchmarks/libs/daytrader/build/geronimo-jetty6-minimal-2.1.4/lib/endorsed/yoko-rmi-spec-1.0.jar:/home/steveb/devel/dacapo/svn/dacapo/benchmarks/release/benchmarks/libs/daytrader/build/geronimo-jetty6-minimal-2.1.4/lib/endorsed/yoko-spec-corba-1.0.jar:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/rt.jar:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/i18n.jar:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/jsse.jar:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/jce.jar:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/lib/charsets.jar:/usr/lib/jvm/java-1.5.0-sun-1.5.0.16/jre/classes
+2009-12-24 13:51:32,755 INFO  [Log4jService] ----------------------------------------------
+2009-12-24 13:51:33,229 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=JavaCompContext at name java:comp
+2009-12-24 13:51:33,230 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=JavaContext at name java:
+2009-12-24 13:51:33,231 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=GeronimoContext at name ger:
+2009-12-24 13:51:33,733 INFO  [SystemProperties] Setting Property=java.net.preferIPv4Stack to Value=true
+2009-12-24 13:51:33,733 INFO  [SystemProperties] Setting Property=javax.xml.soap.MessageFactory to Value=org.apache.geronimo.webservices.saaj.GeronimoMessageFactory
+2009-12-24 13:51:33,733 INFO  [SystemProperties] Setting Property=org.apache.cxf.jaxws.checkPublishEndpointPermission to Value=true
+2009-12-24 13:51:33,733 INFO  [SystemProperties] Setting Property=javax.xml.soap.SOAPConnectionFactory to Value=org.apache.geronimo.webservices.saaj.GeronimoSOAPConnectionFactory
+2009-12-24 13:51:33,733 INFO  [SystemProperties] Setting Property=javax.xml.soap.SOAPFactory to Value=org.apache.geronimo.webservices.saaj.GeronimoSOAPFactory
+2009-12-24 13:51:33,733 INFO  [SystemProperties] Setting Property=javax.xml.soap.MetaFactory to Value=org.apache.geronimo.webservices.saaj.GeronimoMetaFactory
+2009-12-24 13:51:33,733 INFO  [SystemProperties] Setting Property=java.security.Provider to Value=SUN
+2009-12-24 13:51:33,923 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/transaction/2.1.4/car?ServiceModule=org.apache.geronimo.configs/transaction/2.1.4/car,j2eeType=Context,name=ResourceBindings at name jca:
+2009-12-24 13:51:34,129 INFO  [log] Logging to org.slf4j.impl.JCLLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2009-12-24 13:51:34,133 INFO  [log] jetty-6.1.7
+2009-12-24 13:51:34,169 INFO  [log] Opened /home/steveb/devel/dacapo/svn/dacapo/benchmarks/release/benchmarks/libs/daytrader/build/geronimo-jetty6-minimal-2.1.4/var/log/jetty_2009_12_24.log
+2009-12-24 13:51:34,193 INFO  [log] Started SelectChannelConnector@0.0.0.0:8080
+2009-12-24 13:51:34,196 INFO  [log] AJP13 is not a secure protocol. Please protect port 8009
+2009-12-24 13:51:34,201 INFO  [log] Started Ajp13SocketConnector@0.0.0.0:8009
+2009-12-24 13:51:34,529 INFO  [log] Started GeronimoSelectChannelSSLListener@0.0.0.0:8443
+2009-12-24 13:51:34,550 INFO  [SystemProperties] Setting Property=org.apache.jasper.Constants.USE_INSTANCE_MANAGER_FOR_TAGS to Value=true
+2009-12-24 13:53:33,424 INFO  [DirectoryMonitor] Hot deployer notified that an artifact was removed: org.apache.geronimo.configs/unavailable-client-deployer/2.1.4/car
+2009-12-24 13:53:35,622 INFO  [DirectoryMonitor] Hot deployer notified that an artifact was removed: org.apache.geronimo.configs/unavailable-ejb-deployer/2.1.4/car
+2009-12-24 13:53:38,035 INFO  [DirectoryMonitor] Hot deployer notified that an artifact was removed: org.apache.geronimo.configs/unavailable-webservices-deployer/2.1.4/car
+2009-12-24 13:53:40,666 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-openejb/2.1.4/jar
+2009-12-24 13:53:40,677 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openejb/openejb-loader/3.0.1/jar
+2009-12-24 13:53:40,678 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openejb/openejb-ejbd/3.0.1/jar
+2009-12-24 13:53:40,679 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openejb/openejb-server/3.0.1/jar
+2009-12-24 13:53:40,681 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openejb/openejb-client/3.0.1/jar
+2009-12-24 13:53:40,682 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openejb/openejb-javaagent/3.0.1/jar
+2009-12-24 13:53:40,687 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openejb/openejb-jee/3.0.1/jar
+2009-12-24 13:53:40,689 INFO  [PluginInstallerGBean] Installed artifact=org.codehaus.swizzle/swizzle-stream/1.0.1/jar
+2009-12-24 13:53:43,533 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-client-builder/2.1.4/jar
+2009-12-24 13:53:43,560 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@a5adc and name=Geronimo Plugins, Connector :: Client transaction
+2009-12-24 13:53:43,570 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@19cee52 and name=Geronimo Plugins, Client :: Security
+2009-12-24 13:53:48,692 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@1892f2c and name=Geronimo Plugins, Spring
+2009-12-24 13:53:48,695 INFO  [PluginInstallerGBean] Installed artifact=org.springframework/spring-core/2.5.6/jar
+2009-12-24 13:53:48,699 INFO  [PluginInstallerGBean] Installed artifact=org.springframework/spring-beans/2.5.6/jar
+2009-12-24 13:53:48,715 INFO  [PluginInstallerGBean] Installed artifact=org.springframework/spring-context/2.5.6/jar
+2009-12-24 13:53:48,717 INFO  [PluginInstallerGBean] Installed artifact=org.springframework/spring-web/2.5.6/jar
+2009-12-24 13:53:48,720 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-cxf/2.1.4/jar
+2009-12-24 13:53:48,723 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-api/2.0.8/jar
+2009-12-24 13:53:48,725 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-common-utilities/2.0.8/jar
+2009-12-24 13:53:48,726 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-rt-bindings-soap/2.0.8/jar
+2009-12-24 13:53:48,728 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-rt-bindings-xml/2.0.8/jar
+2009-12-24 13:53:48,732 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-rt-core/2.0.8/jar
+2009-12-24 13:53:48,734 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-rt-databinding-jaxb/2.0.8/jar
+2009-12-24 13:53:48,736 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-rt-frontend-jaxws/2.0.8/jar
+2009-12-24 13:53:48,737 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-rt-frontend-simple/2.0.8/jar
+2009-12-24 13:53:48,739 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-rt-transports-http/2.0.8/jar
+2009-12-24 13:53:48,741 INFO  [PluginInstallerGBean] Installed artifact=org.apache.cxf/cxf-tools-common/2.0.8/jar
+2009-12-24 13:53:48,743 INFO  [PluginInstallerGBean] Installed artifact=org.apache.ws.commons.schema/XmlSchema/1.4.2/jar
+2009-12-24 13:53:48,744 INFO  [PluginInstallerGBean] Installed artifact=xml-resolver/xml-resolver/1.1/jar
+2009-12-24 13:53:48,746 INFO  [PluginInstallerGBean] Installed artifact=org.apache.neethi/neethi/2.0/jar
+2009-12-24 13:53:51,924 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@1cdae24 and name=Geronimo Plugins, JAXWS :: Deployer
+2009-12-24 13:53:51,926 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-jaxws-builder/2.1.4/jar
+2009-12-24 13:53:51,931 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-cxf-builder/2.1.4/jar
+2009-12-24 13:53:54,992 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@19048da and name=Geronimo Plugins, OpenEJB :: OpenEJB
+2009-12-24 13:53:55,006 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@1993f8e and name=Geronimo Plugins, System Database :: System Database
+2009-12-24 13:53:55,014 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@fad2a1 and name=Geronimo Plugins, Derby
+2009-12-24 13:53:55,032 INFO  [PluginInstallerGBean] Installed artifact=org.apache.derby/derby/10.4.2.0/jar
+2009-12-24 13:53:55,039 INFO  [PluginInstallerGBean] Installed artifact=org.apache.derby/derbyclient/10.4.2.0/jar
+2009-12-24 13:53:55,043 INFO  [PluginInstallerGBean] Installed artifact=org.apache.derby/derbynet/10.4.2.0/jar
+2009-12-24 13:53:55,045 INFO  [PluginInstallerGBean] Installed artifact=org.apache.derby/derbytools/10.4.2.0/jar
+2009-12-24 13:53:55,050 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-derby/2.1.4/jar
+2009-12-24 13:53:55,052 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-timer/2.1.4/jar
+2009-12-24 13:53:55,054 INFO  [PluginInstallerGBean] Installed artifact=org.tranql/tranql-connector-derby-embed-xa/1.4/rar
+2009-12-24 13:53:55,070 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@6815e4 and name=Geronimo Plugins, ActiveMQ :: Broker
+2009-12-24 13:53:55,073 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-activemq/2.1.4/jar
+2009-12-24 13:53:55,075 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-activemq-management/2.1.4/jar
+2009-12-24 13:53:55,088 INFO  [PluginInstallerGBean] Installed artifact=org.apache.activemq/activemq-core/4.1.2-G20090207/jar
+2009-12-24 13:53:55,092 INFO  [PluginInstallerGBean] Installed artifact=org.apache.activemq/activeio-core/3.0.1/jar
+2009-12-24 13:53:55,095 INFO  [PluginInstallerGBean] Installed artifact=backport-util-concurrent/backport-util-concurrent/2.2/jar
+2009-12-24 13:53:55,103 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openejb/openejb-core/3.0.1/jar
+2009-12-24 13:53:55,120 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@b25572 and name=Geronimo Plugins, OpenJPA :: OpenJPA
+2009-12-24 13:53:55,132 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openjpa/openjpa/1.2.1/jar
+2009-12-24 13:53:55,134 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-openjpa/2.1.4/jar
+2009-12-24 13:53:55,136 INFO  [PluginInstallerGBean] Installed artifact=net.sourceforge.serp/serp/1.11.0/jar
+2009-12-24 13:53:55,139 INFO  [PluginInstallerGBean] Installed artifact=commons-collections/commons-collections/3.2/jar
+2009-12-24 13:53:55,141 INFO  [PluginInstallerGBean] Installed artifact=commons-lang/commons-lang/2.3/jar
+2009-12-24 13:53:55,150 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-cxf-ejb/2.1.4/jar
+2009-12-24 13:53:56,911 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/system-database/2.1.4/car?J2EEApplication=null,JCAConnectionFactory=SystemDatasource,JCAResource=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapter=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapterModule=org.apache.geronimo.configs/system-database/2.1.4/car,j2eeType=JCAManagedConnectionFactory,name=SystemDatasource at name org.apache.geronimo.configs/system-database/JCAManagedConnectionFactory/SystemDatasource
+2009-12-24 13:53:57,068 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/system-database/2.1.4/car?J2EEApplication=null,JCAConnectionFactory=NoTxDatasource,JCAResource=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapter=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapterModule=org.apache.geronimo.configs/system-database/2.1.4/car,j2eeType=JCAManagedConnectionFactory,name=NoTxDatasource at name org.apache.geronimo.configs/system-database/JCAManagedConnectionFactory/NoTxDatasource
+2009-12-24 13:53:58,148 INFO  [service] Creating TransactionManager(id=Default Transaction Manager)
+2009-12-24 13:53:58,156 INFO  [service] Creating SecurityService(id=Default Security Service)
+2009-12-24 13:53:58,158 INFO  [service] Creating ProxyFactory(id=Default JDK 1.3 ProxyFactory)
+2009-12-24 13:53:58,217 INFO  [config] Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+2009-12-24 13:53:58,220 INFO  [service] Creating Container(id=Default Stateless Container)
+2009-12-24 13:53:58,279 INFO  [config] Configuring Service(id=Default Stateful Container, type=Container, provider-id=Default Stateful Container)
+2009-12-24 13:53:58,280 INFO  [service] Creating Container(id=Default Stateful Container)
+2009-12-24 13:53:58,309 INFO  [OpenEJB] Using directory /home/steveb/devel/dacapo/svn/dacapo/benchmarks/release/benchmarks/libs/daytrader/build/geronimo-jetty6-minimal-2.1.4/var/temp for stateful session passivation
+2009-12-24 13:53:58,309 INFO  [config] Configuring Service(id=Default BMP Container, type=Container, provider-id=Default BMP Container)
+2009-12-24 13:53:58,309 INFO  [service] Creating Container(id=Default BMP Container)
+2009-12-24 13:53:58,324 INFO  [config] Configuring Service(id=Default CMP Container, type=Container, provider-id=Default CMP Container)
+2009-12-24 13:53:58,325 INFO  [service] Creating Container(id=Default CMP Container)
+2009-12-24 13:54:01,462 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@a518fc and name=Geronimo Plugins, JAXWS :: EJB Deployer
+2009-12-24 13:54:01,472 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@4b3c7b and name=Geronimo Plugins, OpenEJB :: Deployer
+2009-12-24 13:54:01,475 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-webservices-builder/2.1.4/jar
+2009-12-24 13:54:01,476 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-openejb-builder/2.1.4/jar
+2009-12-24 13:54:01,480 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-jaxws-ejb-builder/2.1.4/jar
+2009-12-24 13:54:01,485 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-cxf-ejb-builder/2.1.4/jar
+2009-12-24 13:54:04,510 INFO  [PluginInstallerGBean] Installed artifact=org.apache.geronimo.modules/geronimo-axis/2.1.4/jar
+2009-12-24 13:54:04,518 INFO  [PluginInstallerGBean] Installed artifact=axis/axis/1.4/jar
+2009-12-24 13:54:04,520 INFO  [PluginInstallerGBean] Installed artifact=org.apache.openejb/openejb-axis/3.0.1/jar
+2009-12-24 13:54:04,522 INFO  [PluginInstallerGBean] Installed artifact=commons-discovery/commons-discovery/0.4/jar
+2009-12-24 13:54:04,530 INFO  [PluginInstallerGBean] Installed artifact=org.apache.ws.scout/scout/1.0rc1/jar
+2009-12-24 13:54:04,601 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/axis/2.1.4/car?ServiceModule=org.apache.geronimo.configs/axis/2.1.4/car,j2eeType=JAXRConnectionFactory,name=eis/JAXR at name org.apache.geronimo.configs/axis/JAXRConnectionFactory/eis/JAXR
+2009-12-24 13:54:10,853 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@127d091 and name=Daytrader :: H2 DataSource
+2009-12-24 13:54:10,859 INFO  [PluginInstallerGBean] Installed artifact=com.h2database/h2/1.2.121/jar
+2009-12-24 13:54:10,907 INFO  [PluginInstallerGBean] Installed plugin with moduleId=org.apache.geronimo.system.plugin.model.ArtifactType@ee1793 and name=Daytrader :: JMS Resource
+2009-12-24 13:54:10,912 INFO  [PluginInstallerGBean] Installed artifact=org.apache.activemq/activemq-ra/4.1.2/jar
+2009-12-24 13:54:11,782 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jdbc/TradeDataSource,JCAResource=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jdbc/TradeDataSource at name org.apache.geronimo.daytrader/daytrader-h2-datasource/JCAManagedConnectionFactory/jdbc/TradeDataSource
+2009-12-24 13:54:11,784 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jdbc/NoTxTradeDataSource,JCAResource=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jdbc/NoTxTradeDataSource at name org.apache.geronimo.daytrader/daytrader-h2-datasource/JCAManagedConnectionFactory/jdbc/NoTxTradeDataSource
+2009-12-24 13:54:11,860 INFO  [config] Configuring Service(id=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car.TradeJMSResources-javax.jms.MessageListener, type=Container, provider-id=Default MDB Container)
+2009-12-24 13:54:11,861 INFO  [service] Creating Container(id=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car.TradeJMSResources-javax.jms.MessageListener)
+2009-12-24 13:54:12,061 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jms/QueueConnectionFactory,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jms/QueueConnectionFactory at name org.apache.geronimo.daytrader/daytrader-jms/JCAManagedConnectionFactory/jms/QueueConnectionFactory
+2009-12-24 13:54:12,109 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jms/TopicConnectionFactory,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jms/TopicConnectionFactory at name org.apache.geronimo.daytrader/daytrader-jms/JCAManagedConnectionFactory/jms/TopicConnectionFactory
+2009-12-24 13:54:12,123 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TradeStreamerTopic at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TradeStreamerTopic
+2009-12-24 13:54:12,124 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/DTStreamerTopic3 at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/DTStreamerTopic3
+2009-12-24 13:54:12,136 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TradeBrokerQueue at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TradeBrokerQueue
+2009-12-24 13:54:12,138 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/DTBrokerQueue3 at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/DTBrokerQueue3
+2009-12-24 13:54:12,139 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TestQueue at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TestQueue
+2009-12-24 13:54:12,485 INFO  [startup] Assembling app: /tmp/geronimo-deploymentUtil42737.jar
+2009-12-24 13:54:12,623 INFO  [startup] Jndi(name=TradeSLSBBeanLocal) --> Ejb(deployment-id=dt-ejb.jar/TradeSLSBBean)
+2009-12-24 13:54:12,625 INFO  [startup] Jndi(name=TradeSLSBBeanRemote) --> Ejb(deployment-id=dt-ejb.jar/TradeSLSBBean)
+2009-12-24 13:54:12,625 INFO  [startup] Jndi(name=DirectSLSBBeanLocal) --> Ejb(deployment-id=dt-ejb.jar/DirectSLSBBean)
+2009-12-24 13:54:12,626 INFO  [startup] Jndi(name=DirectSLSBBeanRemote) --> Ejb(deployment-id=dt-ejb.jar/DirectSLSBBean)
+2009-12-24 13:54:12,626 INFO  [startup] Jndi(name=dt-ejb.jar/DTStreamer3MDB) --> Ejb(deployment-id=dt-ejb.jar/DTStreamer3MDB)
+2009-12-24 13:54:12,626 INFO  [startup] Jndi(name=dt-ejb.jar/DTBroker3MDB) --> Ejb(deployment-id=dt-ejb.jar/DTBroker3MDB)
+2009-12-24 13:54:12,646 INFO  [startup] Created Ejb(deployment-id=dt-ejb.jar/TradeSLSBBean, ejb-name=TradeSLSBBean, container=Default Stateless Container)
+2009-12-24 13:54:12,646 INFO  [startup] Created Ejb(deployment-id=dt-ejb.jar/DirectSLSBBean, ejb-name=DirectSLSBBean, container=Default Stateless Container)
+2009-12-24 13:54:12,646 INFO  [startup] Created Ejb(deployment-id=dt-ejb.jar/DTStreamer3MDB, ejb-name=DTStreamer3MDB, container=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car.TradeJMSResources-javax.jms.MessageListener)
+2009-12-24 13:54:12,646 INFO  [startup] Created Ejb(deployment-id=dt-ejb.jar/DTBroker3MDB, ejb-name=DTBroker3MDB, container=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car.TradeJMSResources-javax.jms.MessageListener)
+2009-12-24 13:54:12,648 INFO  [startup] Deployed Application(path=/tmp/geronimo-deploymentUtil42737.jar)
+2009-12-24 13:54:22,678 INFO  [startup] Undeploying app: /tmp/geronimo-deploymentUtil42737.jar
+2009-12-24 13:54:22,764 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TradeStreamerTopic at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TradeStreamerTopic
+2009-12-24 13:54:22,765 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jms/QueueConnectionFactory,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jms/QueueConnectionFactory at name org.apache.geronimo.daytrader/daytrader-jms/JCAManagedConnectionFactory/jms/QueueConnectionFactory
+2009-12-24 13:54:22,765 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jms/TopicConnectionFactory,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jms/TopicConnectionFactory at name org.apache.geronimo.daytrader/daytrader-jms/JCAManagedConnectionFactory/jms/TopicConnectionFactory
+2009-12-24 13:54:22,766 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/DTStreamerTopic3 at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/DTStreamerTopic3
+2009-12-24 13:54:22,766 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TestQueue at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TestQueue
+2009-12-24 13:54:22,766 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TradeBrokerQueue at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TradeBrokerQueue
+2009-12-24 13:54:22,766 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/DTBrokerQueue3 at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/DTBrokerQueue3
+2009-12-24 13:54:22,906 INFO  [remote] Received stop signal
+2009-12-24 13:54:22,909 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.configs/axis/2.1.4/car?ServiceModule=org.apache.geronimo.configs/axis/2.1.4/car,j2eeType=JAXRConnectionFactory,name=eis/JAXR at name org.apache.geronimo.configs/axis/JAXRConnectionFactory/eis/JAXR
+2009-12-24 13:54:32,961 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.configs/system-database/2.1.4/car?J2EEApplication=null,JCAConnectionFactory=SystemDatasource,JCAResource=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapter=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapterModule=org.apache.geronimo.configs/system-database/2.1.4/car,j2eeType=JCAManagedConnectionFactory,name=SystemDatasource at name org.apache.geronimo.configs/system-database/JCAManagedConnectionFactory/SystemDatasource
+2009-12-24 13:54:32,962 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.configs/system-database/2.1.4/car?J2EEApplication=null,JCAConnectionFactory=NoTxDatasource,JCAResource=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapter=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapterModule=org.apache.geronimo.configs/system-database/2.1.4/car,j2eeType=JCAManagedConnectionFactory,name=NoTxDatasource at name org.apache.geronimo.configs/system-database/JCAManagedConnectionFactory/NoTxDatasource
+2009-12-24 13:54:33,393 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jdbc/TradeDataSource,JCAResource=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jdbc/TradeDataSource at name org.apache.geronimo.daytrader/daytrader-h2-datasource/JCAManagedConnectionFactory/jdbc/TradeDataSource
+2009-12-24 13:54:33,394 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jdbc/NoTxTradeDataSource,JCAResource=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jdbc/NoTxTradeDataSource at name org.apache.geronimo.daytrader/daytrader-h2-datasource/JCAManagedConnectionFactory/jdbc/NoTxTradeDataSource
+2009-12-24 13:54:33,399 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.configs/transaction/2.1.4/car?ServiceModule=org.apache.geronimo.configs/transaction/2.1.4/car,j2eeType=Context,name=ResourceBindings at name jca:
+2009-12-24 13:54:33,420 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=JavaContext at name java:
+2009-12-24 13:54:33,420 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=GeronimoContext at name ger:
+2009-12-24 13:54:33,430 INFO  [KernelContextGBean] unbound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=JavaCompContext at name java:comp
+2017-07-03 22:24:41,345 INFO  [Log4jService] ----------------------------------------------
+2017-07-03 22:24:41,345 INFO  [Log4jService] Started Logging Service
+2017-07-03 22:24:41,345 INFO  [Log4jService] Runtime Information:
+2017-07-03 22:24:41,345 INFO  [Log4jService]   Install Directory = E:\github\JBench\benchmark-suite\Dacapo\scratch\geronimo-jetty6-minimal-2.1.4
+2017-07-03 22:24:41,346 INFO  [JvmVendor] Sun JVM 1.8.0_65
+2017-07-03 22:24:41,346 INFO  [Log4jService]   JVM in use = Sun JVM 1.8.0_65
+2017-07-03 22:24:41,346 INFO  [Log4jService] Java Information:
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.runtime.name]  = Java(TM) SE Runtime Environment
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.runtime.version]  = 1.8.0_65-b17
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [os.name]             = Windows 10
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [os.version]          = 10.0
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [sun.os.patch.level]  = 
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [os.arch]             = amd64
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.class.version]  = 52.0
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [locale]              = zh_CN
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [unicode.encoding]    = UnicodeLittle
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [file.encoding]       = GBK
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.vm.name]        = Java HotSpot(TM) 64-Bit Server VM
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.vm.vendor]      = Oracle Corporation
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.vm.version]     = 25.65-b01
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.vm.info]        = mixed mode
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.home]           = C:\Program Files\Java\jdk1.8.0_65\jre
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.classpath]      = null
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.library.path]   = C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\RV-Predict\bin;E:\apache-ant-1.9.6\bin;D:\Program Files\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;E:\CTEX\UserData\miktex\bin;E:\CTEX\MiKTeX\miktex\bin;E:\CTEX\CTeX\ctex\bin;E:\CTEX\CTeX\cct\bin;E:\CTEX\CTeX\ty\bin;E:\CTEX\Ghostscript\gs9.05\bin;E:\CTEX\GSview\gsview;E:\CTEX\WinEdt;C:\Users\13477\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;c:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\13477\AppData\Local\Microsoft\WindowsApps;;.
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.endorsed.dirs]  = C:\Program Files\Java\jdk1.8.0_65\jre\lib\endorsed
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [java.ext.dirs]       = E:\github\JBench\benchmark-suite\Dacapo\.\scratch\geronimo-jetty6-minimal-2.1.4/lib/ext:C:\Program Files\Java\jdk1.8.0_65\jre/lib/ext
+2017-07-03 22:24:41,346 INFO  [Log4jService]   System property [sun.boot.class.path] = C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes
+2017-07-03 22:24:41,346 INFO  [Log4jService] ----------------------------------------------
+2017-07-03 22:24:41,814 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=JavaCompContext at name java:comp
+2017-07-03 22:24:41,815 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=JavaContext at name java:
+2017-07-03 22:24:41,815 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.framework/rmi-naming/2.1.4/car?ServiceModule=org.apache.geronimo.framework/rmi-naming/2.1.4/car,j2eeType=Context,name=GeronimoContext at name ger:
+2017-07-03 22:24:42,259 INFO  [SystemProperties] Setting Property=java.net.preferIPv4Stack to Value=true
+2017-07-03 22:24:42,259 INFO  [SystemProperties] Setting Property=javax.xml.soap.MessageFactory to Value=org.apache.geronimo.webservices.saaj.GeronimoMessageFactory
+2017-07-03 22:24:42,259 INFO  [SystemProperties] Setting Property=org.apache.cxf.jaxws.checkPublishEndpointPermission to Value=true
+2017-07-03 22:24:42,259 INFO  [SystemProperties] Setting Property=javax.xml.soap.SOAPConnectionFactory to Value=org.apache.geronimo.webservices.saaj.GeronimoSOAPConnectionFactory
+2017-07-03 22:24:42,259 INFO  [SystemProperties] Setting Property=javax.xml.soap.SOAPFactory to Value=org.apache.geronimo.webservices.saaj.GeronimoSOAPFactory
+2017-07-03 22:24:42,259 INFO  [SystemProperties] Setting Property=javax.xml.soap.MetaFactory to Value=org.apache.geronimo.webservices.saaj.GeronimoMetaFactory
+2017-07-03 22:24:42,259 INFO  [SystemProperties] Setting Property=java.security.Provider to Value=SUN
+2017-07-03 22:24:42,383 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/transaction/2.1.4/car?ServiceModule=org.apache.geronimo.configs/transaction/2.1.4/car,j2eeType=Context,name=ResourceBindings at name jca:
+2017-07-03 22:24:42,549 INFO  [log] Logging to org.slf4j.impl.JCLLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2017-07-03 22:24:42,551 INFO  [log] jetty-6.1.7
+2017-07-03 22:24:42,576 INFO  [log] Opened E:\github\JBench\benchmark-suite\Dacapo\scratch\geronimo-jetty6-minimal-2.1.4\var\log\jetty_2017_07_03.log
+2017-07-03 22:24:42,623 INFO  [log] Started SelectChannelConnector@0.0.0.0:8080
+2017-07-03 22:24:42,625 INFO  [log] AJP13 is not a secure protocol. Please protect port 8009
+2017-07-03 22:24:42,629 INFO  [log] Started Ajp13SocketConnector@0.0.0.0:8009
+2017-07-03 22:24:42,807 INFO  [log] Started GeronimoSelectChannelSSLListener@0.0.0.0:8443
+2017-07-03 22:24:42,822 INFO  [SystemProperties] Setting Property=org.apache.jasper.Constants.USE_INSTANCE_MANAGER_FOR_TAGS to Value=true
+2017-07-03 22:24:44,938 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/system-database/2.1.4/car?J2EEApplication=null,JCAConnectionFactory=SystemDatasource,JCAResource=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapter=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapterModule=org.apache.geronimo.configs/system-database/2.1.4/car,j2eeType=JCAManagedConnectionFactory,name=SystemDatasource at name org.apache.geronimo.configs/system-database/JCAManagedConnectionFactory/SystemDatasource
+2017-07-03 22:24:44,939 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/system-database/2.1.4/car?J2EEApplication=null,JCAConnectionFactory=NoTxDatasource,JCAResource=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapter=org.apache.geronimo.configs/system-database/2.1.4/car,ResourceAdapterModule=org.apache.geronimo.configs/system-database/2.1.4/car,j2eeType=JCAManagedConnectionFactory,name=NoTxDatasource at name org.apache.geronimo.configs/system-database/JCAManagedConnectionFactory/NoTxDatasource
+2017-07-03 22:24:46,319 INFO  [service] Creating TransactionManager(id=Default Transaction Manager)
+2017-07-03 22:24:46,323 INFO  [service] Creating SecurityService(id=Default Security Service)
+2017-07-03 22:24:46,324 INFO  [service] Creating ProxyFactory(id=Default JDK 1.3 ProxyFactory)
+2017-07-03 22:24:46,355 INFO  [config] Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+2017-07-03 22:24:46,356 INFO  [service] Creating Container(id=Default Stateless Container)
+2017-07-03 22:24:46,392 INFO  [config] Configuring Service(id=Default Stateful Container, type=Container, provider-id=Default Stateful Container)
+2017-07-03 22:24:46,393 INFO  [service] Creating Container(id=Default Stateful Container)
+2017-07-03 22:24:46,416 INFO  [OpenEJB] Using directory E:\github\JBench\benchmark-suite\Dacapo\.\scratch\geronimo-jetty6-minimal-2.1.4\var\temp for stateful session passivation
+2017-07-03 22:24:46,416 INFO  [config] Configuring Service(id=Default BMP Container, type=Container, provider-id=Default BMP Container)
+2017-07-03 22:24:46,416 INFO  [service] Creating Container(id=Default BMP Container)
+2017-07-03 22:24:46,426 INFO  [config] Configuring Service(id=Default CMP Container, type=Container, provider-id=Default CMP Container)
+2017-07-03 22:24:46,426 INFO  [service] Creating Container(id=Default CMP Container)
+2017-07-03 22:24:46,631 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.configs/axis/2.1.4/car?ServiceModule=org.apache.geronimo.configs/axis/2.1.4/car,j2eeType=JAXRConnectionFactory,name=eis/JAXR at name org.apache.geronimo.configs/axis/JAXRConnectionFactory/eis/JAXR
+2017-07-03 22:24:46,803 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jdbc/TradeDataSource,JCAResource=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jdbc/TradeDataSource at name org.apache.geronimo.daytrader/daytrader-h2-datasource/JCAManagedConnectionFactory/jdbc/TradeDataSource
+2017-07-03 22:24:46,804 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jdbc/NoTxTradeDataSource,JCAResource=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-h2-datasource/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jdbc/NoTxTradeDataSource at name org.apache.geronimo.daytrader/daytrader-h2-datasource/JCAManagedConnectionFactory/jdbc/NoTxTradeDataSource
+2017-07-03 22:24:46,933 INFO  [config] Configuring Service(id=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car.TradeJMSResources-javax.jms.MessageListener, type=Container, provider-id=Default MDB Container)
+2017-07-03 22:24:46,934 INFO  [service] Creating Container(id=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car.TradeJMSResources-javax.jms.MessageListener)
+2017-07-03 22:24:47,041 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jms/QueueConnectionFactory,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jms/QueueConnectionFactory at name org.apache.geronimo.daytrader/daytrader-jms/JCAManagedConnectionFactory/jms/QueueConnectionFactory
+2017-07-03 22:24:47,052 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAConnectionFactory=jms/TopicConnectionFactory,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAManagedConnectionFactory,name=jms/TopicConnectionFactory at name org.apache.geronimo.daytrader/daytrader-jms/JCAManagedConnectionFactory/jms/TopicConnectionFactory
+2017-07-03 22:24:47,055 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TradeStreamerTopic at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TradeStreamerTopic
+2017-07-03 22:24:47,055 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/DTStreamerTopic3 at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/DTStreamerTopic3
+2017-07-03 22:24:47,057 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TradeBrokerQueue at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TradeBrokerQueue
+2017-07-03 22:24:47,057 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/DTBrokerQueue3 at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/DTBrokerQueue3
+2017-07-03 22:24:47,058 INFO  [KernelContextGBean] bound gbean org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car?J2EEApplication=null,JCAResource=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapter=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,ResourceAdapterModule=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car,j2eeType=JCAAdminObject,name=jms/TestQueue at name org.apache.geronimo.daytrader/daytrader-jms/JCAAdminObject/jms/TestQueue
+2017-07-03 22:24:47,814 INFO  [startup] Assembling app: /tmp/geronimo-deploymentUtil42737.jar
+2017-07-03 22:24:47,929 INFO  [startup] Jndi(name=TradeSLSBBeanLocal) --> Ejb(deployment-id=dt-ejb.jar/TradeSLSBBean)
+2017-07-03 22:24:47,931 INFO  [startup] Jndi(name=TradeSLSBBeanRemote) --> Ejb(deployment-id=dt-ejb.jar/TradeSLSBBean)
+2017-07-03 22:24:47,931 INFO  [startup] Jndi(name=DirectSLSBBeanLocal) --> Ejb(deployment-id=dt-ejb.jar/DirectSLSBBean)
+2017-07-03 22:24:47,932 INFO  [startup] Jndi(name=DirectSLSBBeanRemote) --> Ejb(deployment-id=dt-ejb.jar/DirectSLSBBean)
+2017-07-03 22:24:47,932 INFO  [startup] Jndi(name=dt-ejb.jar/DTStreamer3MDB) --> Ejb(deployment-id=dt-ejb.jar/DTStreamer3MDB)
+2017-07-03 22:24:47,932 INFO  [startup] Jndi(name=dt-ejb.jar/DTBroker3MDB) --> Ejb(deployment-id=dt-ejb.jar/DTBroker3MDB)
+2017-07-03 22:24:47,956 INFO  [startup] Created Ejb(deployment-id=dt-ejb.jar/TradeSLSBBean, ejb-name=TradeSLSBBean, container=Default Stateless Container)
+2017-07-03 22:24:47,956 INFO  [startup] Created Ejb(deployment-id=dt-ejb.jar/DirectSLSBBean, ejb-name=DirectSLSBBean, container=Default Stateless Container)
+2017-07-03 22:24:47,956 INFO  [startup] Created Ejb(deployment-id=dt-ejb.jar/DTStreamer3MDB, ejb-name=DTStreamer3MDB, container=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car.TradeJMSResources-javax.jms.MessageListener)
+2017-07-03 22:24:47,956 INFO  [startup] Created Ejb(deployment-id=dt-ejb.jar/DTBroker3MDB, ejb-name=DTBroker3MDB, container=org.apache.geronimo.daytrader/daytrader-jms/2.2-SNAPSHOT/car.TradeJMSResources-javax.jms.MessageListener)
+2017-07-03 22:24:47,961 INFO  [startup] Deployed Application(path=/tmp/geronimo-deploymentUtil42737.jar)

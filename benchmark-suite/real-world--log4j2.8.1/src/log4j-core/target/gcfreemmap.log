@@ -1,0 +1,297 @@
+[36m[1;36m2016-06-28 00:27:03,433[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 debug not set
+[m[1;31m[1;36m2016-06-28 00:27:03,440[m FATAL o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 This message is logged to the console
+[m[1;31m[1;36m2016-06-28 00:27:03,441[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Sample error message
+[m[1;31m[1;36m2016-06-28 00:27:03,443[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message param
+[m[1;31m[1;36m2016-06-28 00:27:03,445[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 eventId="Login"
+[m[36m[1;36m2016-06-28 00:27:03,445[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,446[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,446[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,446[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,447[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,447[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,447[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,448[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,448[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,448[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,448[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,449[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,449[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,450[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,450[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,450[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,450[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,451[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,451[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,452[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,452[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,452[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,453[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,453[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,453[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,453[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,454[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,454[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,454[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,454[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,454[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,455[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,455[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,455[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,455[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,455[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,456[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,456[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,456[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,456[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,456[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,457[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,457[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,457[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,458[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,458[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,458[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,459[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,459[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,459[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,459[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,460[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,460[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,460[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,461[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,461[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,461[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,462[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,462[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,462[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,462[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,463[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,463[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,463[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,463[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,464[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,464[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,464[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,464[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,465[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,465[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,465[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,465[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,466[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,466[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,466[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,466[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,466[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,467[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,467[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,467[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,468[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,468[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,468[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,468[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,469[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,469[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,469[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,469[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,469[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,470[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,470[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,470[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,471[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,471[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,471[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,471[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,472[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,472[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,472[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,473[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,473[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,473[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,473[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,474[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,474[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,474[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,474[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,475[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,475[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,475[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,475[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,475[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,476[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,476[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,476[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,476[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,477[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,477[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,477[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,477[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,477[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,478[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,478[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,478[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,479[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,479[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,479[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,479[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,479[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,480[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,480[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,480[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,480[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,480[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,481[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,481[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,481[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,481[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,481[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,481[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,481[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,482[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,482[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,482[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,482[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,482[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,482[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,483[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,483[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,483[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,483[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,483[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,483[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,484[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,484[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,484[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,484[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,484[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,485[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,485[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,485[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,485[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,485[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,485[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,485[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,486[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,486[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,486[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,486[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,486[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,486[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,487[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,487[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,487[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,487[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,487[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,487[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,487[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,487[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,488[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,489[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,490[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,491[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,492[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,493[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,493[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,493[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,493[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,493[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,493[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,493[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,494[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,494[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,494[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,494[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,494[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,494[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,494[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,495[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,495[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,495[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,495[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,495[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,495[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,495[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,496[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,496[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,496[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,496[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[36m[1;36m2016-06-28 00:27:03,496[m DEBUG o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 ensure all ringbuffer slots have been used once
+[m[1;31m[1;36m2016-06-28 00:27:03,997[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:03,997[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:03,998[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test message
+[m[1;31m[1;36m2016-06-28 00:27:03,998[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message param
+[m[1;31m[1;36m2016-06-28 00:27:03,998[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2
+[m[1;31m[1;36m2016-06-28 00:27:03,999[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2abc
+[m[1;31m[1;36m2016-06-28 00:27:03,999[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 eventId="Login"
+[m[1;31m[1;36m2016-06-28 00:27:03,999[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:04,000[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:04,000[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test message
+[m[1;31m[1;36m2016-06-28 00:27:04,000[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message param
+[m[1;31m[1;36m2016-06-28 00:27:04,001[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2
+[m[1;31m[1;36m2016-06-28 00:27:04,001[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2abc
+[m[1;31m[1;36m2016-06-28 00:27:04,001[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 eventId="Login"
+[m[1;31m[1;36m2016-06-28 00:27:04,001[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:04,002[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:04,002[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test message
+[m[1;31m[1;36m2016-06-28 00:27:04,002[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message param
+[m[1;31m[1;36m2016-06-28 00:27:04,003[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2
+[m[1;31m[1;36m2016-06-28 00:27:04,003[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2abc
+[m[1;31m[1;36m2016-06-28 00:27:04,003[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 eventId="Login"
+[m[1;31m[1;36m2016-06-28 00:27:04,004[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:04,004[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:04,004[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test message
+[m[1;31m[1;36m2016-06-28 00:27:04,005[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message param
+[m[1;31m[1;36m2016-06-28 00:27:04,005[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2
+[m[1;31m[1;36m2016-06-28 00:27:04,005[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2abc
+[m[1;31m[1;36m2016-06-28 00:27:04,005[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 eventId="Login"
+[m[1;31m[1;36m2016-06-28 00:27:04,006[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:04,006[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 class org.apache.logging.log4j.core.GcFreeLoggingTestUtil
+[m[1;31m[1;36m2016-06-28 00:27:04,006[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test message
+[m[1;31m[1;36m2016-06-28 00:27:04,006[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message param
+[m[1;31m[1;36m2016-06-28 00:27:04,007[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2
+[m[1;31m[1;36m2016-06-28 00:27:04,007[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 Test parameterized message paramparam2abc
+[m[1;31m[1;36m2016-06-28 00:27:04,007[m ERROR o.a.l.l.c.GcFreeSynchronousLoggingTest [main] value1 eventId="Login"
+[m

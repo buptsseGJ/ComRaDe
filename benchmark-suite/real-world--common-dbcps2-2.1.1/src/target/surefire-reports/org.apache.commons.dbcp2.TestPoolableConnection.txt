@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestPoolableConnection
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.dbcp2.TestPoolableConnection
+testPoolableConnectionLeak(org.apache.commons.dbcp2.TestPoolableConnection)  Time elapsed: 0 sec
+testFastFailValidationCustomCodes(org.apache.commons.dbcp2.TestPoolableConnection)  Time elapsed: 0 sec
+testConnectionPool(org.apache.commons.dbcp2.TestPoolableConnection)  Time elapsed: 0 sec
+testClosingWrappedInDelegate(org.apache.commons.dbcp2.TestPoolableConnection)  Time elapsed: 0 sec
+testFastFailValidation(org.apache.commons.dbcp2.TestPoolableConnection)  Time elapsed: 0 sec

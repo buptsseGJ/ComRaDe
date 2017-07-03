@@ -1,0 +1,19 @@
+Data race on field java.util.LinkedList.$state: {{{
+    Concurrent write in thread T18 (locks held: {Monitor@608466c8, Monitor@4b1f7ccc})
+ ---->  at org.apache.catalina.tribes.transport.nio.NioReceiver.addEvent(NioReceiver.java:152)
+        - locked Monitor@4b1f7ccc at org.apache.catalina.tribes.transport.nio.NioReceiver.addEvent(NioReceiver.java:151) 
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.registerForRead(NioReplicationTask.java:271)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.drainChannel(NioReplicationTask.java:195)
+        at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:102)
+        - locked Monitor@608466c8 at org.apache.catalina.tribes.transport.nio.NioReplicationTask.run(NioReplicationTask.java:n/a) 
+    T18 is created by T16
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T16 (locks held: {})
+ ---->  at org.apache.catalina.tribes.transport.nio.NioReceiver.events(NioReceiver.java:160)
+        at org.apache.catalina.tribes.transport.nio.NioReceiver.listen(NioReceiver.java:264)
+        at org.apache.catalina.tribes.transport.nio.NioReceiver.run(NioReceiver.java:419)
+    T16 is created by T1
+        at org.apache.catalina.tribes.transport.nio.NioReceiver.start(NioReceiver.java:91)
+}}}
+

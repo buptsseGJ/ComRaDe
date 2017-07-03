@@ -1,0 +1,32 @@
+Testsuite: org.apache.commons.dbcp2.TestPoolingDriver
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.444 sec
+
+Testcase: testLogWriter took 0.679 sec
+Testcase: testReportedBug12400 took 0.168 sec
+Testcase: testReportedBug28912 took 0.073 sec
+Testcase: test1 took 0.007 sec
+Testcase: test2 took 0.003 sec
+Testcase: testClosePool took 0.004 sec
+Testcase: testInvalidateConnection took 0.003 sec
+Testcase: testThreaded took 4.157 sec
+Testcase: testCanCloseStatementTwice took 0.002 sec
+Testcase: testNoRsetClose took 0.002 sec
+Testcase: testOpening took 0.006 sec
+Testcase: testPooling took 0.006 sec
+Testcase: testCanCloseConnectionTwice took 0.003 sec
+Testcase: testIsClosed took 0.005 sec
+Testcase: testCanCloseCallableStatementTwice took 0.011 sec
+Testcase: testAutoCommitBehavior took 0.005 sec
+Testcase: testHashing took 0.003 sec
+Testcase: testCanClosePreparedStatementTwice took 0.003 sec
+Testcase: testClosing took 0.005 sec
+Testcase: testPrepareStatementOptions took 0.002 sec
+Testcase: testBackPointers took 0.015 sec
+Testcase: testHashCode took 0.003 sec
+Testcase: testConnectionsAreDistinct took 0.006 sec
+Testcase: testMaxTotal took 0.109 sec
+Testcase: testRepeatedBorrowAndReturn took 0.054 sec
+Testcase: testCanCloseResultSetTwice took 0.002 sec
+Testcase: testClearWarnings took 0.008 sec
+Testcase: testSimple2 took 0.002 sec
+Testcase: testSimple took 0.002 sec

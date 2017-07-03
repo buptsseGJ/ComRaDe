@@ -1,0 +1,20 @@
+Race: <benchmarks.testcases.TestAtomicity14$2: void run()>|<benchmarks.testcases.TestAtomicity14: int e> = 42|29 - <benchmarks.testcases.TestAtomicity14$1: void run()>|<benchmarks.testcases.TestAtomicity14: int e> = 42|24
+Race: <benchmarks.testcases.TestAtomicity14$2: void run()>|<benchmarks.testcases.TestAtomicity14: int c> = 42|30 - <benchmarks.testcases.TestAtomicity14$1: void run()>|<benchmarks.testcases.TestAtomicity14: int c> = 42|21
+Race: <benchmarks.testcases.TestAtomicity14: void f()>|<benchmarks.testcases.TestAtomicity14: int d> = 42|42 - <benchmarks.testcases.TestAtomicity14$1: void run()>|<benchmarks.testcases.TestAtomicity14: int d> = 42|22
+Race: <benchmarks.testcases.TestAtomicity14: void f()>|<benchmarks.testcases.TestAtomicity14: int a> = 42|41 - <benchmarks.testcases.TestAtomicity14$1: void run()>|<benchmarks.testcases.TestAtomicity14: int a> = 42|23
+Trace Size: 17
+Total #Threads: 3
+Total #SharedVariables: 4
+Total #Shared Read-Writes: 8
+Total #Local Read-Writes: 0
+Total #Initial Writes: 5
+Total #Synchronizations: 4
+Total #Branches: 0
+Total #Property Events: 0
+Total #Potential Violations: 4
+Total #Real Violations: 4
+Total Time: 913ms
+
+real	0m8.226s
+user	0m6.308s
+sys	0m0.212s

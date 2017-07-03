@@ -1,0 +1,22 @@
+Race: <benchmarks.testcases.TestAtomicity11: void f()>|$i0 = <benchmarks.testcases.TestAtomicity11: int x>|28 - <benchmarks.testcases.TestAtomicity11$1: void run()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|18
+Race: <benchmarks.testcases.TestAtomicity11: void f()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|28 - <benchmarks.testcases.TestAtomicity11$1: void run()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|18
+Race: <benchmarks.testcases.TestAtomicity11: void f()>|<benchmarks.testcases.TestAtomicity11: int x> = $i3|29 - <benchmarks.testcases.TestAtomicity11$1: void run()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|18
+Race: <benchmarks.testcases.TestAtomicity11: void f()>|$i2 = <benchmarks.testcases.TestAtomicity11: int x>|29 - <benchmarks.testcases.TestAtomicity11$1: void run()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|18
+Race: <benchmarks.testcases.TestAtomicity11$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity11: int x>|18 - <benchmarks.testcases.TestAtomicity11: void f()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|28
+Race: <benchmarks.testcases.TestAtomicity11$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity11: int x>|18 - <benchmarks.testcases.TestAtomicity11: void f()>|<benchmarks.testcases.TestAtomicity11: int x> = $i3|29
+Trace Size: 11
+Total #Threads: 2
+Total #SharedVariables: 1
+Total #Shared Read-Writes: 7
+Total #Local Read-Writes: 0
+Total #Initial Writes: 2
+Total #Synchronizations: 2
+Total #Branches: 0
+Total #Property Events: 0
+Total #Potential Violations: 6
+Total #Real Violations: 6
+Total Time: 952ms
+
+real	0m8.225s
+user	0m6.268s
+sys	0m0.184s

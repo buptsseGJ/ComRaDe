@@ -1,0 +1,8 @@
+Testsuite: org.apache.commons.dbcp2.TestPStmtPooling
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.061 sec
+
+Testcase: testStmtPool took 0.938 sec
+Testcase: testBatchUpdate took 0.007 sec
+Testcase: testClosePool took 0.004 sec
+Testcase: testCallableStatementPooling took 0.021 sec
+Testcase: testMultipleClose took 0.029 sec

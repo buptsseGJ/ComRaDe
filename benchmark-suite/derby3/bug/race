@@ -1,0 +1,29 @@
+----------------Instrumented execution to record the trace-----------------
+[RV-Predict] Log directory: /tmp/rv-predict3638519057121929426
+[RV-Predict] Finished retransforming preloaded classes.
+********************************
+Starting test: derby5561
+Expected bug type: race
+********************************
+
+Exception in thread "Thread-3" java.lang.NullPointerException
+	at Derby5561$TestConnection.nativeSQL(Derby5561.java:81)
+
+	at Derby5561$NativeRunnable.run(Derby5561.java:29)
+	at java.lang.Thread.run(Thread.java:745)Finished test: Bug has been reproduced successfully.
+
+Data race on field org.apache.derby.client.am.LogicalConnection.physicalConnection_: {{{
+    Concurrent read in thread T15 (locks held: {})
+ ---->  at org.apache.derby.client.am.LogicalConnection.checkForNullPhysicalConnection(LogicalConnection.java:136)
+        at Derby5561$TestConnection.nativeSQL(Derby5561.java:74)
+        at Derby5561$NativeRunnable.run(Derby5561.java:29)
+    T15 is created by T1
+        at Derby5561.run(Derby5561.java:123)
+
+    Concurrent write in thread T14 (locks held: {Monitor@1e063e42})
+ ---->  at org.apache.derby.client.am.LogicalConnection.nullPhysicalConnection(LogicalConnection.java:64)
+        - locked Monitor@1e063e42 at org.apache.derby.client.am.LogicalConnection.nullPhysicalConnection(LogicalConnection.java:n/a) 
+        at Derby5561$NullRunnable.run(Derby5561.java:51)
+    T14 is created by T1
+        at Derby5561.run(Derby5561.java:122)
+}}}

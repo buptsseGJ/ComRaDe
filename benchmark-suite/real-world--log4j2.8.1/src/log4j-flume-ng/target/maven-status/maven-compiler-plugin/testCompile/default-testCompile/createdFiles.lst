@@ -1,0 +1,14 @@
+org\apache\logging\log4j\flume\appender\FlumeEmbeddedAppenderTest.class
+org\apache\logging\log4j\flume\appender\FlumeEmbeddedAppenderTest$EventCollector.class
+org\apache\logging\log4j\flume\appender\FlumePersistentAppenderTest$WriterThread.class
+org\apache\logging\log4j\flume\appender\FlumePersistentPerf.class
+org\apache\logging\log4j\flume\appender\FlumeAppenderTest.class
+org\apache\logging\log4j\flume\appender\FlumePersistentAppenderTest$EventCollector.class
+META-INF\org\apache\logging\log4j\core\config\plugins\Log4j2Plugins.dat
+org\apache\logging\log4j\flume\appender\FlumeEmbeddedAgentTest.class
+org\apache\logging\log4j\flume\appender\FlumePersistentAppenderTest$ReaderThread.class
+org\apache\logging\log4j\flume\appender\FlumeEmbeddedAgentTest$EventCollector.class
+org\apache\logging\log4j\flume\appender\FlumePersistentAppenderTest$1.class
+org\apache\logging\log4j\flume\appender\FlumePersistentAppenderTest.class
+org\apache\logging\log4j\flume\test\FlumeKeyProvider.class
+org\apache\logging\log4j\flume\appender\FlumePersistentPerf$EventCollector.class

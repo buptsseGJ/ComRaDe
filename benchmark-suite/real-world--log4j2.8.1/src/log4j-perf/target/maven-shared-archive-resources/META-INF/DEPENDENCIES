@@ -1,0 +1,87 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Log4J Performance Tests
+
+
+From: 'an unknown organization'
+  - H2 Database Engine (http://www.h2database.com) com.h2database:h2:jar:1.4.193
+    License: MPL 2.0 or EPL 1.0  (http://h2database.com/html/license.html)
+  - Disruptor Framework (http://lmax-exchange.github.com/disruptor) com.lmax:disruptor:jar:3.3.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - persistence-api  javax.persistence:persistence-api:jar:1.0.2
+
+  - JOpt Simple (http://pholser.github.com/jopt-simple) net.sf.jopt-simple:jopt-simple:jar:4.6
+    License: The MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - Java Concurrency Tools Core Library (https://github.com/JCTools) org.jctools:jctools-core:jar:1.2.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - Apache Log4j (http://logging.apache.org/log4j/1.2/) log4j:log4j:bundle:1.2.17
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Conversant Engineering' (http://engineering.conversantmedia.com)
+  - com.conversantmedia:disruptor (https://github.com/conversant/disruptor) com.conversantmedia:disruptor:jar:1.2.10
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Eclipse.org - EclipseLink Project' (http://www.eclipse.org/eclipselink)
+  - SDO API (http://www.eclipse.org/eclipselink) org.eclipse.persistence:commonj.sdo:jar:2.1.1
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - EclipseLink (non-OSGi) (http://www.eclipse.org/eclipselink) org.eclipse.persistence:eclipselink:jar:2.5.2
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - EclipseLink ANTLR (http://www.eclipse.org/eclipselink) org.eclipse.persistence:org.eclipse.persistence.antlr:jar:2.6.0
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - EclipseLink ASM (http://www.eclipse.org/eclipselink) org.eclipse.persistence:org.eclipse.persistence.asm:jar:2.6.0
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - EclipseLink Core (http://www.eclipse.org/eclipselink) org.eclipse.persistence:org.eclipse.persistence.core:jar:2.6.0
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - EclipseLink JPA (http://www.eclipse.org/eclipselink) org.eclipse.persistence:org.eclipse.persistence.jpa:jar:2.6.0
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+  - EclipseLink Hermes JPQL Parser (http://www.eclipse.org/eclipselink) org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:jar:2.6.0
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: Eclipse Distribution License v. 1.0  (http://www.eclipse.org/org/documents/edl-v10.php)
+
+From: 'FasterXML' (http://fasterxml.com/)
+  - Jackson-annotations (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-annotations:bundle:2.8.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackson-core (https://github.com/FasterXML/jackson-core) com.fasterxml.jackson.core:jackson-core:bundle:2.8.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jackson-databind (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-databind:bundle:2.8.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Oracle' (http://openjdk.java.net/)
+  - JMH Core (http://openjdk.java.net/projects/code-tools/jmh/jmh-core/) org.openjdk.jmh:jmh-core:jar:1.1.1
+    License: GNU General Public License (GPL), version 2, with the Classpath exception  (http://openjdk.java.net/legal/gplv2+ce.html)
+
+From: 'Oracle' (http://www.oracle.com)
+  - JSR 353 (JSON Processing) Default Provider (http://jsonp.java.net) org.glassfish:javax.json:bundle:1.0.4
+    License: Dual license consisting of the CDDL v1.1 and GPL v2  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - Logback Classic Module (http://logback.qos.ch/logback-classic) ch.qos.logback:logback-classic:jar:1.2.0
+    License: Eclipse Public License - v 1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+  - Logback Core Module (http://logback.qos.ch/logback-core) ch.qos.logback:logback-core:jar:1.2.0
+    License: Eclipse Public License - v 1.0  (http://www.eclipse.org/legal/epl-v10.html)    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.24
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - SLF4J Extensions Module (http://www.slf4j.org) org.slf4j:slf4j-ext:jar:1.7.24
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons Math (http://commons.apache.org/proper/commons-math/) org.apache.commons:commons-math3:jar:3.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Log4j API (https://logging.apache.org/log4j/2.x/log4j-api/) org.apache.logging.log4j:log4j-api:jar:2.8.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Log4j Core (https://logging.apache.org/log4j/2.x/log4j-core/) org.apache.logging.log4j:log4j-core:jar:2.8.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The HSQL Development Group' (http://hsqldb.org)
+  - HyperSQL Database (http://hsqldb.org) org.hsqldb:hsqldb:jar:2.3.4
+    License: HSQLDB License, a BSD open source license  (http://hsqldb.org/web/hsqlLicense.html)
+
+
+
+

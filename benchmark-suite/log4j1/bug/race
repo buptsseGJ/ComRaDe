@@ -1,0 +1,66 @@
+----------------Instrumented execution to record the trace-----------------
+[RV-Predict] Log directory: /tmp/rv-predict2038480035548455565
+[RV-Predict] Finished retransforming preloaded classes.
+********************************
+Starting test: log4j44032
+Expected bug type: race
+********************************
+
+
+Finished test: Failed to reproduce the bug.
+Data race on field org.apache.log4j.spi.ThrowableInformation.rep: {{{
+    Concurrent read in thread T23 (locks held: {})
+ ---->  at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:56)
+        at Test44032$TestThread.run(Test44032.java:52)
+    T23 is created by T1
+        at Test44032.run(Test44032.java:37)
+
+    Concurrent write in thread T17 (locks held: {})
+ ---->  at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:60)
+        at Test44032$TestThread.run(Test44032.java:52)
+    T17 is created by T1
+        at Test44032.run(Test44032.java:37)
+}}}
+
+Data race on field org.apache.log4j.spi.ThrowableInformation.rep: {{{
+    Concurrent read in thread T17 (locks held: {})
+ ---->  at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:55)
+        at Test44032$TestThread.run(Test44032.java:52)
+    T17 is created by T1
+        at Test44032.run(Test44032.java:37)
+
+    Concurrent write in thread T19 (locks held: {})
+ ---->  at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:60)
+        at Test44032$TestThread.run(Test44032.java:52)
+    T19 is created by T1
+        at Test44032.run(Test44032.java:37)
+}}}
+
+Data race on field org.apache.log4j.spi.ThrowableInformation.rep: {{{
+    Concurrent write in thread T17 (locks held: {})
+ ---->  at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:60)
+        at Test44032$TestThread.run(Test44032.java:52)
+    T17 is created by T1
+        at Test44032.run(Test44032.java:37)
+
+    Concurrent read in thread T19 (locks held: {})
+ ---->  at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:61)
+        at Test44032$TestThread.run(Test44032.java:52)
+    T19 is created by T1
+        at Test44032.run(Test44032.java:37)
+}}}
+
+Data race on field org.apache.log4j.spi.ThrowableInformation.rep: {{{
+    Concurrent write in thread T19 (locks held: {})
+ ---->  at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:60)
+        at Test44032$TestThread.run(Test44032.java:52)
+    T19 is created by T1
+        at Test44032.run(Test44032.java:37)
+
+    Concurrent write in thread T17 (locks held: {})
+ ---->  at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:60)
+        at Test44032$TestThread.run(Test44032.java:52)
+    T17 is created by T1
+        at Test44032.run(Test44032.java:37)
+}}}
+

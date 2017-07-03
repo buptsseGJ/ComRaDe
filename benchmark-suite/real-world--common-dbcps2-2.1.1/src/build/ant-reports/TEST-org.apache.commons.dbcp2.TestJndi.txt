@@ -1,0 +1,6 @@
+Testsuite: org.apache.commons.dbcp2.TestJndi
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.499 sec
+
+Testcase: testBasicDataSourceBind took 0.377 sec
+Testcase: testPerUserPoolDataSourceBind took 0.052 sec
+Testcase: testSharedPoolDataSourceBind took 0.01 sec

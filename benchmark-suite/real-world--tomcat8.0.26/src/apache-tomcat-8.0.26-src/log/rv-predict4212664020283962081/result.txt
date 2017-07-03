@@ -1,0 +1,32 @@
+Data race on field org.apache.coyote.http11.InternalNio2OutputBuffer.socket: {{{
+    Concurrent read in thread T73 (locks held: {})
+ ---->  at org.apache.coyote.http11.InternalNio2OutputBuffer.access$100(InternalNio2OutputBuffer.java:47)
+        at org.apache.coyote.http11.InternalNio2OutputBuffer$1.failed(InternalNio2OutputBuffer.java:158)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T73 is created by T69
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T72 (locks held: {Monitor@762f5c15})
+ ---->  at org.apache.coyote.http11.InternalNio2OutputBuffer.recycle(InternalNio2OutputBuffer.java:240)
+        at org.apache.coyote.http11.AbstractHttp11Processor.recycle(AbstractHttp11Processor.java:1830)
+        at org.apache.coyote.http11.Http11Nio2Protocol$Http11ConnectionHandler.release(Http11Nio2Protocol.java:174)
+        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:727)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.doRun(Nio2Endpoint.java:1074)
+        at org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor.run(Nio2Endpoint.java:1033)
+        at org.apache.tomcat.util.net.Nio2Endpoint.processSocket0(Nio2Endpoint.java:594)
+        at org.apache.tomcat.util.net.Nio2Endpoint.processSocket(Nio2Endpoint.java:578)
+        at org.apache.tomcat.util.net.AbstractEndpoint.executeNonBlockingDispatches(AbstractEndpoint.java:715)
+        - locked Monitor@762f5c15 at org.apache.tomcat.util.net.AbstractEndpoint.executeNonBlockingDispatches(AbstractEndpoint.java:710) 
+        at org.apache.coyote.http11.AbstractHttp11Processor.action(AbstractHttp11Processor.java:909)
+        at org.apache.coyote.Response.action(Response.java:179)
+        at org.apache.coyote.Response.setWriteListener(Response.java:603)
+        at org.apache.catalina.connector.OutputBuffer.setWriteListener(OutputBuffer.java:668)
+        at org.apache.catalina.connector.CoyoteOutputStream.setWriteListener(CoyoteOutputStream.java:162)
+        at org.apache.catalina.connector.TestCoyoteOutputStream$NonBlockingWriteServlet$AsyncTask.run(TestCoyoteOutputStream.java:199)
+        at org.apache.catalina.core.AsyncContextImpl$RunnableWrapper.run(AsyncContextImpl.java:562)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    T72 is created by T71
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

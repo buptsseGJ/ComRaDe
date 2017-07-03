@@ -1,0 +1,6 @@
+1. compile commands
+
+		note: It has been compiled it by http://www.dacapobench.org/, you can use it directly.
+2. run commands
+		1) Put dacapo-9.12-bach.jar in DaCapo directory into DaCapo-luindex/jar directory.
+		2) java -jar dacapo-9.12-bach.jar luindex

@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 3.091 sec <<< FAILURE! - in org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest
+testMissingImportOfCoreOsgiPackage(org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest)  Time elapsed: 1.093 sec  <<< ERROR!
+org.osgi.framework.BundleException: Unable to cache bundle: file:///E:/log4j/apache-log4j-2.8.1-src/log4j-api/target/log4j-api-2.8.1.jar
+Caused by: java.io.FileNotFoundException: E:\log4j\apache-log4j-2.8.1-src\log4j-api\target\log4j-api-2.8.1.jar (系统找不到指定的文件。)
+
+testApiCoreStartStopStartStop(org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest)  Time elapsed: 0.356 sec  <<< ERROR!
+org.osgi.framework.BundleException: Unable to cache bundle: file:///E:/log4j/apache-log4j-2.8.1-src/log4j-api/target/log4j-api-2.8.1.jar
+Caused by: java.io.FileNotFoundException: E:\log4j\apache-log4j-2.8.1-src\log4j-api\target\log4j-api-2.8.1.jar (系统找不到指定的文件。)
+
+testLog4J12Fragement(org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest)  Time elapsed: 0.252 sec  <<< ERROR!
+org.osgi.framework.BundleException: Unable to cache bundle: file:///E:/log4j/apache-log4j-2.8.1-src/log4j-api/target/log4j-api-2.8.1.jar
+Caused by: java.io.FileNotFoundException: E:\log4j\apache-log4j-2.8.1-src\log4j-api\target\log4j-api-2.8.1.jar (系统找不到指定的文件。)
+
+testClassNotFoundErrorLogger(org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest)  Time elapsed: 0.198 sec  <<< ERROR!
+org.osgi.framework.BundleException: Unable to cache bundle: file:///E:/log4j/apache-log4j-2.8.1-src/log4j-api/target/log4j-api-2.8.1.jar
+Caused by: java.io.FileNotFoundException: E:\log4j\apache-log4j-2.8.1-src\log4j-api\target\log4j-api-2.8.1.jar (系统找不到指定的文件。)
+
+testSimpleLogInAnOsgiContext(org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest)  Time elapsed: 0.205 sec  <<< ERROR!
+org.osgi.framework.BundleException: Unable to cache bundle: file:///E:/log4j/apache-log4j-2.8.1-src/log4j-api/target/log4j-api-2.8.1.jar
+Caused by: java.io.FileNotFoundException: E:\log4j\apache-log4j-2.8.1-src\log4j-api\target\log4j-api-2.8.1.jar (系统找不到指定的文件。)
+

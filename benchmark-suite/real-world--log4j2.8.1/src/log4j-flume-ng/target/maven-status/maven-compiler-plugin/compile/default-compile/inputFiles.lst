@@ -1,0 +1,11 @@
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\AbstractFlumeManager.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\FlumeAvroManager.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\Log4jEventSource.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\FlumeEmbeddedManager.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\FlumeAppender.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\FlumeEvent.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\FlumeEventFactory.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\package-info.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\BatchEvent.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\FlumePersistentManager.java
+E:\log4j\apache-log4j-2.8.1-src\log4j-flume-ng\src\main\java\org\apache\logging\log4j\flume\appender\Agent.java

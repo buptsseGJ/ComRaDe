@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.io.LoggerPrintWriterJdbcH2Test
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 37.765 sec - in org.apache.logging.log4j.io.LoggerPrintWriterJdbcH2Test

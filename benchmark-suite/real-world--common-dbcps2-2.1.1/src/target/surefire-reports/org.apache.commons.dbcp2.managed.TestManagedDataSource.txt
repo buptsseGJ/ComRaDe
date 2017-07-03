@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.managed.TestManagedDataSource
+-------------------------------------------------------------------------------
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.924 sec - in org.apache.commons.dbcp2.managed.TestManagedDataSource
+testManagedConnectionEqualsSameDelegateNoUnderlyingAccess(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testNestedConnections(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testSharedConnection(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testManagedConnectionEqualsSameDelegate(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testConnectionReturnOnCommit(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testManagedConnectionEqualsFail(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testManagedConnectionEqualsNull(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testManagedConnectionEqualsType(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testManagedConnectionEqualInnermost(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testManagedConnectionEqualsReflexive(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testAccessToUnderlyingConnectionAllowed(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testThreaded(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 2.799 sec
+testCanCloseStatementTwice(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testNoRsetClose(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testOpening(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testPooling(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.002 sec
+testCanCloseConnectionTwice(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testIsClosed(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testCanCloseCallableStatementTwice(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testAutoCommitBehavior(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testHashing(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testCanClosePreparedStatementTwice(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testClosing(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testPrepareStatementOptions(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testBackPointers(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.002 sec
+testHashCode(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testConnectionsAreDistinct(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testMaxTotal(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.102 sec
+testRepeatedBorrowAndReturn(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testCanCloseResultSetTwice(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testClearWarnings(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec
+testSimple2(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0 sec
+testSimple(org.apache.commons.dbcp2.managed.TestManagedDataSource)  Time elapsed: 0.001 sec

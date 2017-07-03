@@ -1,0 +1,20 @@
+Race: <pingpong.BuggedProgram: void pingPong()>|$i5 = r0.<pingpong.BuggedProgram: int bugAppearanceNumber>|93 - <pingpong.BuggedProgram: void pingPong()>|r0.<pingpong.BuggedProgram: int bugAppearanceNumber> = $i6|93
+Race: <pingpong.BuggedProgram: void pingPong()>|r0.<pingpong.BuggedProgram: int bugAppearanceNumber> = $i6|93 - <pingpong.BuggedProgram: void pingPong()>|r0.<pingpong.BuggedProgram: int bugAppearanceNumber> = $i6|93
+Race: <pingpong.BuggedProgram: void pingPong()>|$r2 = r0.<pingpong.BuggedProgram: pingpong.PP pingPongPlayer>|85 - <pingpong.BuggedProgram: void pingPong()>|r0.<pingpong.BuggedProgram: pingpong.PP pingPongPlayer> = null|88
+Race: <pingpong.BuggedProgram: void pingPong()>|$r2 = r0.<pingpong.BuggedProgram: pingpong.PP pingPongPlayer>|85 - <pingpong.BuggedProgram: void pingPong()>|r0.<pingpong.BuggedProgram: pingpong.PP pingPongPlayer> = r1|91
+Trace Size: 63
+Total #Threads: 5
+Total #SharedVariables: 2
+Total #Shared Read-Writes: 13
+Total #Local Read-Writes: 14
+Total #Initial Writes: 12
+Total #Synchronizations: 4
+Total #Branches: 20
+Total #Property Events: 0
+Total #Potential Violations: 10
+Total #Real Violations: 4
+Total Time: 766ms
+
+real	0m15.755s
+user	0m14.880s
+sys		0m0.332s

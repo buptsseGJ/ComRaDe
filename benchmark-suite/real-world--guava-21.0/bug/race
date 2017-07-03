@@ -1,0 +1,217 @@
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.frq: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.access$0(FinalizableReferenceQueueTest.java:36)
+        at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:103)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T14 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.tearDown(FinalizableReferenceQueueTest.java:40)
+        at junit.framework.TestCase.runBare(TestCase.java:140)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+        at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+    T1 is the main thread
+
+}}} 
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.frq: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.access$0(FinalizableReferenceQueueTest.java:36)
+        at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:103)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T14 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.weaklyReferenceQueue(FinalizableReferenceQueueTest.java:91)
+        at com.google.common.base.FinalizableReferenceQueueTest.testThatFinalizerStops(FinalizableReferenceQueueTest.java:76)
+        at junit.framework.TestCase.runTest(TestCase.java:168)
+        at junit.framework.TestCase.runBare(TestCase.java:134)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+        at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+    T1 is the main thread
+
+}}} 
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.frq: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.access$0(FinalizableReferenceQueueTest.java:36)
+        at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:103)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T14 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.weaklyReferenceQueue(FinalizableReferenceQueueTest.java:92)
+        at com.google.common.base.FinalizableReferenceQueueTest.testThatFinalizerStops(FinalizableReferenceQueueTest.java:76)
+        at junit.framework.TestCase.runTest(TestCase.java:168)
+        at junit.framework.TestCase.runBare(TestCase.java:134)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+        at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+    T1 is the main thread
+
+}}} 
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.frq: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.access$0(FinalizableReferenceQueueTest.java:36)
+        at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:103)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T14 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.weaklyReferenceQueue(FinalizableReferenceQueueTest.java:99)
+        at com.google.common.base.FinalizableReferenceQueueTest.testThatFinalizerStops(FinalizableReferenceQueueTest.java:76)
+        at junit.framework.TestCase.runTest(TestCase.java:168)
+        at junit.framework.TestCase.runBare(TestCase.java:134)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+        at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+    T1 is the main thread
+
+}}} 
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.reference: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:102)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T14 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.weaklyReferenceQueue(FinalizableReferenceQueueTest.java:99)
+        at com.google.common.base.FinalizableReferenceQueueTest.testThatFinalizerStops(FinalizableReferenceQueueTest.java:76)
+        at junit.framework.TestCase.runTest(TestCase.java:168)
+        at junit.framework.TestCase.runBare(TestCase.java:134)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+        at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+        at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+    T1 is the main thread
+
+}}} 
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T14 (locks held: {Monitor@557e3a1, WriteLock@2a82fdf5})
+ ---->  at com.google.common.cache.LocalCache$Segment.drainRecencyQueue(LocalCache.java:2711)
+        at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2740)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@2a82fdf5 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a)
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@557e3a1 at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCacheTest$6.run(LocalCacheTest.java:701)
+    T14 is created by T1
+        at com.google.common.cache.LocalCacheTest.testCopyEntry_computing(LocalCacheTest.java:707)
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordRead(LocalCache.java:2664)
+        at com.google.common.cache.LocalCache$Segment.waitForLoadingValue(LocalCache.java:2324)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2305)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCacheTest$7.run(LocalCacheTest.java:719)
+    T15 is created by T1
+        at com.google.common.cache.LocalCacheTest.testCopyEntry_computing(LocalCacheTest.java:725)
+
+}}} 
+
+Data race on field com.google.common.util.concurrent.AbstractFuture$Listener.next: {{{
+    Concurrent write in thread T96 (locks held: {})
+ ---->  at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:627)
+        at com.google.common.util.concurrent.AbstractFutureTest$21.call(AbstractFutureTest.java:371)
+    T96 is created by T1
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(:)
+
+    Concurrent read in thread T105 (locks held: {})
+ ---->  at com.google.common.util.concurrent.AbstractFuture.clearListeners(AbstractFuture.java:889)
+        at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:791)
+        at com.google.common.util.concurrent.AbstractFuture.setFuture(AbstractFuture.java:713)
+        at com.google.common.util.concurrent.AbstractFutureTest$17.call(AbstractFutureTest.java:301)
+    T105 is created by T1
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(:)
+
+}}} 
+
+Data race on field com.google.common.util.concurrent.TrustedListenableFutureTask.task: {{{
+    Concurrent write in thread T46 (locks held: {})
+ ---->  at com.google.common.util.concurrent.TrustedListenableFutureTask.afterDone(TrustedListenableFutureTask.java:90)
+        at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:789)
+        at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:655)
+        at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111)
+        at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58)
+        at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75)
+        at com.google.common.util.concurrent.TrustedListenableFutureTaskTest$5.run(TrustedListenableFutureTaskTest.java:148)
+    T46 is created by T1
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(:)
+
+    Concurrent read in thread T47 (locks held: {})
+ ---->  at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:73)
+        at com.google.common.util.concurrent.TrustedListenableFutureTaskTest$5.run(TrustedListenableFutureTaskTest.java:148)
+    T47 is created by T1
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(:)
+
+}}} 
+

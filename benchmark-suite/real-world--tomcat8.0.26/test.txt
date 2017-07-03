@@ -1,0 +1,2 @@
+1. In src/apache-tomcat-8.0.26-src folder, please modify base.path as absolute path of src\tomcat-lib folder. 
+2. please refer to BUILDING.txt in src/apache-tomcat-8.0.26-src folder to run unit test.

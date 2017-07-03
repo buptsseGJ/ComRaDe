@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.logging.log4j.core.net.server.UdpXmlSocketServerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.193 sec - in org.apache.logging.log4j.core.net.server.UdpXmlSocketServerTest

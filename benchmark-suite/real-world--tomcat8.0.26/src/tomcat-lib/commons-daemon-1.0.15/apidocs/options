@@ -1,0 +1,31 @@
+-classpath
+'/shared/Workplace/COMMONS_DAEMON_1_0_15_RC1/target/classes'
+-encoding
+'iso-8859-1'
+-protected
+-quiet
+-source
+'1.3'
+-sourcepath
+'/shared/Workplace/COMMONS_DAEMON_1_0_15_RC1/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2002-2013 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.'
+-charset
+'iso-8859-1'
+-d
+'/shared/Workplace/COMMONS_DAEMON_1_0_15_RC1/target/site/apidocs'
+-docencoding
+'iso-8859-1'
+-doctitle
+'Commons Daemon 1.0.15 API'
+-link
+'http://download.oracle.com/javase/6/docs/api'
+-link
+'http://download.oracle.com/javaee/6/api'
+-linkoffline
+'http://download.oracle.com/javase/1.3/docs/api' '/shared/Workplace/COMMONS_DAEMON_1_0_15_RC1/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Commons Daemon 1.0.15 API'

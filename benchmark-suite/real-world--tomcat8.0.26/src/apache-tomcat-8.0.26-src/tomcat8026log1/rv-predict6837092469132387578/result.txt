@@ -1,0 +1,51 @@
+Data race on field org.apache.tomcat.websocket.WsFrameBase.payloadWritten: {{{
+    Concurrent write in thread T29 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.access$402(WsFrameBase.java:42)
+        at org.apache.tomcat.websocket.WsFrameBase$NoopTransformation.getMoreData(WsFrameBase.java:755)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:304)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T29 is created by T24
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T30 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.checkRoomPayload(WsFrameBase.java:631)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:298)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T30 is created by T24
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+Data race on field org.apache.tomcat.websocket.WsFrameBase.payloadWritten: {{{
+    Concurrent read in thread T30 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.checkRoomPayload(WsFrameBase.java:631)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:298)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T30 is created by T24
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent write in thread T29 (locks held: {})
+ ---->  at org.apache.tomcat.websocket.WsFrameBase.newFrame(WsFrameBase.java:610)
+        at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:368)
+        at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+        at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+        at org.apache.tomcat.websocket.WsFrameClient.processSocketRead(WsFrameClient.java:73)
+        at org.apache.tomcat.websocket.WsFrameClient.access$300(WsFrameClient.java:31)
+        at org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler.completed(WsFrameClient.java:125)
+        at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+    T29 is created by T24
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+

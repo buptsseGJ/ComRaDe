@@ -1,0 +1,1 @@
+2016-06-28 00:12:12,690 INFO c.f.Bar [main]  Message flushed with immediate flush=false org.apache.logging.log4j.core.async.AsyncLoggerConfigAutoFlushTest.testFlushAtEndOfBatch(AsyncLoggerConfigAutoFlushTest.java:50) 

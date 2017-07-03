@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!--
+  This file contains some false positive bugs detected by findbugs. Their
+  false positive nature has been analyzed individually and they have been
+  put here to instruct findbugs it must ignore them.
+-->
+<FindBugsFilter>
+  <!-- Unit tests -->
+  <!--  Mock objects often return null for unimplemented methods. -->
+  <Match>
+    <Class name="~.*\.Tester.*"/>
+    <Bug pattern="NP_NONNULL_RETURN_VIOLATION" />
+  </Match>
+  <!-- Tests aren't run with a security manager configured -->
+  <Match>
+    <Class name="org.apache.commons.dbcp2.TestBasicDataSource"/>
+    <Method name="setUp"/>
+    <Bug pattern="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED"/>
+  </Match>
+  <!-- Sleep is intentional and short -->
+  <Match>
+    <Class name="org.apache.commons.dbcp2.TestBasicDataSource"/>
+    <Method name="testCreateDataSourceCleanupEvictor"/>
+    <Bug pattern="SWL_SLEEP_WITH_LOCK_HELD"/>
+  </Match>
+  <!-- Write to static is intentional -->
+  <Match>
+    <Class name="org.apache.commons.dbcp2.TestBasicDataSource.TesterConnRequestCountDriver"/>
+    <Method name="connect"/>
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD "/>
+  </Match>
+  <!-- Not worth coding around for test code -->
+  <Match>
+    <Class name="org.apache.commons.dbcp2.TesterResultSet"/>
+    <Method name="&lt;init&gt;"/>
+    <Bug pattern="EI_EXPOSE_REP2"/>
+  </Match>
+  <Match>
+    <!-- Code just executed at setup, clearer as is -->
+    <Class name="org.apache.commons.dbcp2.BasicDataSourceFactory" />
+    <Method name="validatePropertyNames" />
+    <Bug pattern="WMI_WRONG_MAP_ITERATOR" />
+  </Match>
+  <Match>
+    <!-- False positive - method does not declare return as @Nonnull -->
+    <Class name="org.apache.commons.dbcp2.DelegatingConnection" />
+    <Method name="prepareStatement" />
+    <Bug pattern="NP_NONNULL_RETURN_VIOLATION" />
+  </Match>
+</FindBugsFilter>

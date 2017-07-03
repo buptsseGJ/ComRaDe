@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest" time="101.114" tests="3" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_65\jre\bin"/>
+    <property name="java.vm.version" value="25.65-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\github\DATE-Benchmark\DATE-Benchmark\tool-implementation\JBenchPlatform"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\github\DATE-Benchmark\DATE-Benchmark\tool-implementation\JBenchPlatform"/>
+    <property name="java.runtime.version" value="1.8.0_65-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_65\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\13477\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Program Files\apache-maven-3.3.9\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_65/bin/../jre/lib/amd64;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\RV-Predict\bin;E:\apache-ant-1.9.6\bin;D:\Program Files\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;E:\CTEX\UserData\miktex\bin;E:\CTEX\MiKTeX\miktex\bin;E:\CTEX\CTeX\ctex\bin;E:\CTEX\CTeX\cct\bin;E:\CTEX\CTeX\ty\bin;E:\CTEX\Ghostscript\gs9.05\bin;E:\CTEX\GSview\gsview;E:\CTEX\WinEdt;C:\Users\13477\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Users\13477\AppData\Local\Microsoft\WindowsApps;;E:\eclipse mars;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\13477"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="jiangao"/>
+    <property name="java.class.path" value="D:\Program Files\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_65\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -f E:\log4j\apache-log4j-2.8.1-src\pom.xml test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_65"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_65\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Program Files\apache-maven-3.3.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testMultiple" classname="org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest" time="39.15">
+    <failure message="Event should not be null" type="java.lang.AssertionError">java.lang.AssertionError: Event should not be null
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest.testMultiple(FlumeEmbeddedAppenderTest.java:150)
+</failure>
+    <system-out><![CDATA[Collector listening on port 1301
+Collector listening on port 1302
+2016-06-28 00:51:24,640 [WARN] org.apache.flume.sink.FailoverSinkProcessor Sink agent1 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:389) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185) [flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1301 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:314) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1301 }: Exception thrown from remote handler
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:396) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoSuchFieldError: writeBufferSize
+	at org.apache.avro.ipc.CallFuture.get(CallFuture.java:128) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:388) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.lang.NoSuchFieldError: writeBufferSize
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:282) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:204) ~[netty-3.9.4.Final.jar:?]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.lambda$rvPredictQueueOffer$47(RVPredictRuntime.java:1121) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionAccess(RVPredictRuntime.java:1345) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionWriteAccess(RVPredictRuntime.java:1244) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.rvPredictQueueOffer(RVPredictRuntime.java:1120) ~[?:1.8.2-SNAPSHOT]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:82) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:779) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:725) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:704) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:671) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248) ~[netty-3.9.4.Final.jar:?]
+	at org.apache.avro.ipc.NettyTransceiver.writeDataPack(NettyTransceiver.java:444) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.NettyTransceiver.transceive(NettyTransceiver.java:419) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:147) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:129) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.specific.SpecificRequestor.invoke(SpecificRequestor.java:84) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at com.sun.proxy.$Proxy23.appendBatch(Unknown Source) ~[?:?]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:347) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:343) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.FutureTask.run(FutureTask.java:294) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1220) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:648) ~[?:1.8.2-SNAPSHOT]
+	... 1 more
+2016-06-28 00:51:24,738 [WARN] org.apache.flume.sink.FailoverSinkProcessor Sink agent2 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:389) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185) [flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1302 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:314) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1302 }: Exception thrown from remote handler
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:396) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoSuchFieldError: writeBufferSize
+	at org.apache.avro.ipc.CallFuture.get(CallFuture.java:128) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:388) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.lang.NoSuchFieldError: writeBufferSize
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:282) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:204) ~[netty-3.9.4.Final.jar:?]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.lambda$rvPredictQueueOffer$47(RVPredictRuntime.java:1121) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionAccess(RVPredictRuntime.java:1345) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionWriteAccess(RVPredictRuntime.java:1244) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.rvPredictQueueOffer(RVPredictRuntime.java:1120) ~[?:1.8.2-SNAPSHOT]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:82) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:779) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:725) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:704) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:671) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248) ~[netty-3.9.4.Final.jar:?]
+	at org.apache.avro.ipc.NettyTransceiver.writeDataPack(NettyTransceiver.java:444) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.NettyTransceiver.transceive(NettyTransceiver.java:419) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:147) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:129) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.specific.SpecificRequestor.invoke(SpecificRequestor.java:84) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at com.sun.proxy.$Proxy23.appendBatch(Unknown Source) ~[?:?]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:347) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:343) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.FutureTask.run(FutureTask.java:294) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1220) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:648) ~[?:1.8.2-SNAPSHOT]
+	... 1 more
+2016-06-28 00:51:24,743 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:51:29,747 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:51:29,868 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:51:29,975 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:51:34,977 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:51:35,405 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:51:35,453 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:51:40,456 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:51:45,457 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:51:45,504 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:51:45,546 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:51:50,548 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+No Event returned
+2016-06-28 00:51:54,492 main ERROR No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
+]]></system-out>
+    <system-err><![CDATA[ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
+]]></system-err>
+  </testcase>
+  <testcase name="testFailover" classname="org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest" time="30.432">
+    <failure message="Event should not be null" type="java.lang.AssertionError">java.lang.AssertionError: Event should not be null
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest.testFailover(FlumeEmbeddedAppenderTest.java:169)
+</failure>
+    <system-out><![CDATA[Collector listening on port 1303
+Collector listening on port 1304
+2016-06-28 00:51:55,030 [WARN] org.apache.flume.sink.FailoverSinkProcessor Sink agent1 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:389) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185) [flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1303 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:314) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1303 }: Exception thrown from remote handler
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:396) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoSuchFieldError: writeBufferSize
+	at org.apache.avro.ipc.CallFuture.get(CallFuture.java:128) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:388) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.lang.NoSuchFieldError: writeBufferSize
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:282) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:204) ~[netty-3.9.4.Final.jar:?]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.lambda$rvPredictQueueOffer$47(RVPredictRuntime.java:1121) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionAccess(RVPredictRuntime.java:1345) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionWriteAccess(RVPredictRuntime.java:1244) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.rvPredictQueueOffer(RVPredictRuntime.java:1120) ~[?:1.8.2-SNAPSHOT]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:82) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:779) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:725) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:704) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:671) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248) ~[netty-3.9.4.Final.jar:?]
+	at org.apache.avro.ipc.NettyTransceiver.writeDataPack(NettyTransceiver.java:444) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.NettyTransceiver.transceive(NettyTransceiver.java:419) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:147) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:129) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.specific.SpecificRequestor.invoke(SpecificRequestor.java:84) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at com.sun.proxy.$Proxy23.appendBatch(Unknown Source) ~[?:?]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:347) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:343) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.FutureTask.run(FutureTask.java:294) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1220) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:648) ~[?:1.8.2-SNAPSHOT]
+	... 1 more
+2016-06-28 00:51:55,069 [WARN] org.apache.flume.sink.FailoverSinkProcessor Sink agent2 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:389) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185) [flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1304 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:314) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1304 }: Exception thrown from remote handler
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:396) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoSuchFieldError: writeBufferSize
+	at org.apache.avro.ipc.CallFuture.get(CallFuture.java:128) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:388) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.lang.NoSuchFieldError: writeBufferSize
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:282) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:204) ~[netty-3.9.4.Final.jar:?]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.lambda$rvPredictQueueOffer$47(RVPredictRuntime.java:1121) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionAccess(RVPredictRuntime.java:1345) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionWriteAccess(RVPredictRuntime.java:1244) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.rvPredictQueueOffer(RVPredictRuntime.java:1120) ~[?:1.8.2-SNAPSHOT]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:82) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:779) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:725) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:704) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:671) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248) ~[netty-3.9.4.Final.jar:?]
+	at org.apache.avro.ipc.NettyTransceiver.writeDataPack(NettyTransceiver.java:444) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.NettyTransceiver.transceive(NettyTransceiver.java:419) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:147) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:129) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.specific.SpecificRequestor.invoke(SpecificRequestor.java:84) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at com.sun.proxy.$Proxy23.appendBatch(Unknown Source) ~[?:?]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:347) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:343) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.FutureTask.run(FutureTask.java:294) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1220) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:648) ~[?:1.8.2-SNAPSHOT]
+	... 1 more
+2016-06-28 00:51:55,073 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:00,073 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:00,160 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:00,256 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:05,257 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:05,306 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:05,405 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:10,407 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:15,408 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:15,502 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:15,560 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:20,562 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+No Event returned
+2016-06-28 00:52:25,053 main ERROR No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
+]]></system-out>
+  </testcase>
+  <testcase name="testLog4Event" classname="org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest" time="30.744">
+    <failure message="Event should not be null" type="java.lang.AssertionError">java.lang.AssertionError: Event should not be null
+	at org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest.testLog4Event(FlumeEmbeddedAppenderTest.java:135)
+</failure>
+    <system-out><![CDATA[Collector listening on port 1305
+Collector listening on port 1306
+2016-06-28 00:52:25,842 [WARN] org.apache.flume.sink.FailoverSinkProcessor Sink agent1 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:389) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185) [flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1305 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:314) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1305 }: Exception thrown from remote handler
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:396) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoSuchFieldError: writeBufferSize
+	at org.apache.avro.ipc.CallFuture.get(CallFuture.java:128) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:388) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.lang.NoSuchFieldError: writeBufferSize
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:282) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:204) ~[netty-3.9.4.Final.jar:?]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.lambda$rvPredictQueueOffer$47(RVPredictRuntime.java:1121) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionAccess(RVPredictRuntime.java:1345) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionWriteAccess(RVPredictRuntime.java:1244) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.rvPredictQueueOffer(RVPredictRuntime.java:1120) ~[?:1.8.2-SNAPSHOT]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:82) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:779) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:725) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:704) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:671) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248) ~[netty-3.9.4.Final.jar:?]
+	at org.apache.avro.ipc.NettyTransceiver.writeDataPack(NettyTransceiver.java:444) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.NettyTransceiver.transceive(NettyTransceiver.java:419) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:147) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:129) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.specific.SpecificRequestor.invoke(SpecificRequestor.java:84) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at com.sun.proxy.$Proxy23.appendBatch(Unknown Source) ~[?:?]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:347) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:343) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.FutureTask.run(FutureTask.java:294) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1220) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:648) ~[?:1.8.2-SNAPSHOT]
+	... 1 more
+2016-06-28 00:52:25,875 [WARN] org.apache.flume.sink.FailoverSinkProcessor Sink agent2 failed and has been sent to failover list
+org.apache.flume.EventDeliveryException: Failed to send events
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:389) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:185) [flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1306 }: Failed to send batch
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:314) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: org.apache.flume.EventDeliveryException: NettyAvroRpcClient { host: localhost, port: 1306 }: Exception thrown from remote handler
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:396) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoSuchFieldError: writeBufferSize
+	at org.apache.avro.ipc.CallFuture.get(CallFuture.java:128) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.flume.api.NettyAvroRpcClient.waitForStatusOK(NettyAvroRpcClient.java:388) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:373) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient.appendBatch(NettyAvroRpcClient.java:302) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.sink.AbstractRpcSink.process(AbstractRpcSink.java:373) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	... 3 more
+Caused by: java.lang.NoSuchFieldError: writeBufferSize
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:282) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannel$WriteRequestQueue.offer(AbstractNioChannel.java:204) ~[netty-3.9.4.Final.jar:?]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.lambda$rvPredictQueueOffer$47(RVPredictRuntime.java:1121) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionAccess(RVPredictRuntime.java:1345) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.logCollectionWriteAccess(RVPredictRuntime.java:1244) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.RVPredictRuntime.rvPredictQueueOffer(RVPredictRuntime.java:1120) ~[?:1.8.2-SNAPSHOT]
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:82) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:779) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:725) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:704) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.Channels.write(Channels.java:671) ~[netty-3.9.4.Final.jar:?]
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248) ~[netty-3.9.4.Final.jar:?]
+	at org.apache.avro.ipc.NettyTransceiver.writeDataPack(NettyTransceiver.java:444) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.NettyTransceiver.transceive(NettyTransceiver.java:419) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:147) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.Requestor.request(Requestor.java:129) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at org.apache.avro.ipc.specific.SpecificRequestor.invoke(SpecificRequestor.java:84) ~[avro-ipc-1.7.4.jar:1.7.4]
+	at com.sun.proxy.$Proxy23.appendBatch(Unknown Source) ~[?:?]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:347) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at org.apache.flume.api.NettyAvroRpcClient$2.call(NettyAvroRpcClient.java:343) ~[flume-ng-sdk-1.7.0.jar:1.7.0]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.FutureTask.run(FutureTask.java:294) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1220) ~[?:1.8.2-SNAPSHOT]
+	at com.runtimeverification.rvpredict.runtime.java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:648) ~[?:1.8.2-SNAPSHOT]
+	... 1 more
+2016-06-28 00:52:25,879 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:30,881 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:30,921 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:31,082 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:36,085 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:36,123 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:36,173 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:41,175 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:46,175 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:46,255 [WARN] org.apache.flume.api.NettyAvroRpcClient Using default maxIOWorkers
+2016-06-28 00:52:46,321 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+2016-06-28 00:52:51,323 [ERROR] org.apache.flume.SinkRunner Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: All sinks failed to process, nothing left to failover to
+	at org.apache.flume.sink.FailoverSinkProcessor.process(FailoverSinkProcessor.java:194) ~[flume-ng-core-1.7.0.jar:1.7.0]
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145) [flume-ng-core-1.7.0.jar:1.7.0]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_65]
+No Event returned
+2016-06-28 00:52:55,814 main ERROR No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
+]]></system-out>
+  </testcase>
+</testsuite>

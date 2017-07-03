@@ -1,0 +1,295 @@
+//use Rv-Predict to run tomcat of DaCapo with command "--window 1000 --exclude org,dacapo.harness -s small"
+
+Data race on field org.apache.tomcat.util.net.NioEndpoint$1.$state: {{{
+
+    Concurrent read in thread T25 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:2271)
+
+    T25 is created by T14
+
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+
+
+    Concurrent write in thread T14 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint.processSocket(NioEndpoint.java:1226)
+
+        at org.apache.tomcat.util.net.NioEndpoint.processSocket(NioEndpoint.java:1216)
+
+        at org.apache.tomcat.util.net.NioEndpoint.processSocket(NioEndpoint.java:1208)
+
+        at org.apache.tomcat.util.net.NioEndpoint$Poller.processKey(NioEndpoint.java:1641)
+
+        at org.apache.tomcat.util.net.NioEndpoint$Poller.run(NioEndpoint.java:1580)
+
+    T14 is created by T1
+
+        at org.apache.tomcat.util.net.NioEndpoint.start(NioEndpoint.java:881)
+
+}}}
+
+
+
+Data race on field org.apache.tomcat.util.net.NioEndpoint$KeyAttachment.channel: {{{
+
+    Concurrent read in thread T12 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$KeyAttachment.getChannel(NioEndpoint.java:1850)
+
+        at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller$3.run(NioBlockingSelector.java:259)
+
+        at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.events(NioBlockingSelector.java:300)
+
+        at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.run(NioBlockingSelector.java:309)
+
+    T12 is created by T1
+
+        at org.apache.tomcat.util.net.NioBlockingSelector.open(NioBlockingSelector.java:58)
+
+
+
+    Concurrent write in thread T23 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$KeyAttachment.reset(NioEndpoint.java:1811)
+
+        at org.apache.tomcat.util.net.NioEndpoint$KeyAttachment.reset(NioEndpoint.java:1830)
+
+        at org.apache.tomcat.util.net.NioEndpoint$Poller.cancelledKey(NioEndpoint.java:1505)
+
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:2224)
+
+    T23 is created by T14
+
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+}}}
+
+
+
+Data race on field org.apache.tomcat.util.net.NioEndpoint$4.$state: {{{
+
+    Concurrent write in thread T25 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:2226)
+
+    T25 is created by T14
+
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+
+
+    Concurrent read in thread T15 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint.setSocketOptions(NioEndpoint.java:1047)
+
+        at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:1272)
+
+    T15 is created by T1
+
+        at org.apache.tomcat.util.net.NioEndpoint.start(NioEndpoint.java:889)
+
+}}}
+
+
+
+Data race on field org.apache.tomcat.util.net.NioEndpoint$2.$state: {{{
+
+    Concurrent read in thread T15 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$Poller.register(NioEndpoint.java:1474)
+
+        at org.apache.tomcat.util.net.NioEndpoint.setSocketOptions(NioEndpoint.java:1074)
+
+        at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:1272)
+
+    T15 is created by T1
+
+        at org.apache.tomcat.util.net.NioEndpoint.start(NioEndpoint.java:889)
+
+
+
+    Concurrent write in thread T25 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:2228)
+
+    T25 is created by T14
+
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+}}}
+
+
+
+Data race on field org.apache.tomcat.util.net.NioEndpoint$KeyAttachment.writeLatch: {{{
+
+    Concurrent read in thread T12 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$KeyAttachment.getWriteLatch(NioEndpoint.java:1857)
+
+        at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller$3.run(NioBlockingSelector.java:266)
+
+        at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.events(NioBlockingSelector.java:300)
+
+        at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.run(NioBlockingSelector.java:309)
+
+    T12 is created by T1
+
+        at org.apache.tomcat.util.net.NioBlockingSelector.open(NioBlockingSelector.java:58)
+
+
+
+    Concurrent write in thread T26 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$KeyAttachment.reset(NioEndpoint.java:1823)
+
+        at org.apache.tomcat.util.net.NioEndpoint$KeyAttachment.reset(NioEndpoint.java:1830)
+
+        at org.apache.tomcat.util.net.NioEndpoint$Poller.cancelledKey(NioEndpoint.java:1505)
+
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:2224)
+
+    T26 is created by T14
+
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+}}}
+
+
+
+Data race on field org.apache.catalina.core.ContainerBase.threadDone: {{{
+
+    Concurrent read in thread T13 (locks held: {})
+
+ ---->  at org.apache.catalina.core.ContainerBase.access$100(ContainerBase.java:123)
+
+        at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1577)
+
+    T13 is created by T1
+
+        at org.apache.catalina.core.ContainerBase.threadStart(ContainerBase.java:1540)
+
+
+
+    Concurrent write in thread T1 (locks held: {Monitor@72aab1cc})
+
+ ---->  at org.apache.catalina.core.ContainerBase.threadStop(ContainerBase.java:1554)
+
+        at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1083)
+
+        at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+
+        at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+
+        - locked Monitor@72aab1cc at org.apache.catalina.core.StandardService.stop(StandardService.java:582) 
+
+        at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+
+        at org.apache.catalina.startup.Catalina.stop(Catalina.java:633)
+
+        at org.apache.catalina.startup.Bootstrap.stop(Bootstrap.java:300)
+
+        at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:409)
+
+        at org.dacapo.tomcat.Control.exec(Control.java:61)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+}}}
+
+
+
+Data race on field org.apache.tomcat.util.net.NioEndpoint$Poller.close: {{{
+
+    Concurrent write in thread T1 (locks held: {Monitor@72a42916})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$Poller.destroy(NioEndpoint.java:1407)
+
+        at org.apache.tomcat.util.net.NioEndpoint.stop(NioEndpoint.java:926)
+
+        at org.apache.tomcat.util.net.NioEndpoint.destroy(NioEndpoint.java:953)
+
+        at org.apache.coyote.http11.Http11NioProtocol.destroy(Http11NioProtocol.java:201)
+
+        at org.apache.catalina.connector.Connector.stop(Connector.java:1189)
+
+        at org.apache.catalina.core.StandardService.stop(StandardService.java:593)
+
+        - locked Monitor@72a42916 at org.apache.catalina.core.StandardService.stop(StandardService.java:590) 
+
+        at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+
+        at org.apache.catalina.startup.Catalina.stop(Catalina.java:633)
+
+        at org.apache.catalina.startup.Bootstrap.stop(Bootstrap.java:300)
+
+        at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:409)
+
+        at org.dacapo.tomcat.Control.exec(Control.java:61)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+
+
+    Concurrent read in thread T14 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioEndpoint$Poller.run(NioEndpoint.java:1520)
+
+    T14 is created by T1
+
+        at org.apache.tomcat.util.net.NioEndpoint.start(NioEndpoint.java:881)
+
+}}}
+
+
+
+Data race on field org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.run: {{{
+
+    Concurrent write in thread T1 (locks held: {Monitor@72a42916})
+
+ ---->  at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.disable(NioBlockingSelector.java:201)
+
+        at org.apache.tomcat.util.net.NioBlockingSelector.close(NioBlockingSelector.java:63)
+
+        at org.apache.tomcat.util.net.NioSelectorPool.close(NioSelectorPool.java:118)
+
+        at org.apache.tomcat.util.net.NioEndpoint.destroy(NioEndpoint.java:962)
+
+        at org.apache.coyote.http11.Http11NioProtocol.destroy(Http11NioProtocol.java:201)
+
+        at org.apache.catalina.connector.Connector.stop(Connector.java:1189)
+
+        at org.apache.catalina.core.StandardService.stop(StandardService.java:593)
+
+        - locked Monitor@72a42916 at org.apache.catalina.core.StandardService.stop(StandardService.java:590) 
+
+        at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+
+        at org.apache.catalina.startup.Catalina.stop(Catalina.java:633)
+
+        at org.apache.catalina.startup.Bootstrap.stop(Bootstrap.java:300)
+
+        at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:409)
+
+        at org.dacapo.tomcat.Control.exec(Control.java:61)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+
+
+    Concurrent read in thread T12 (locks held: {})
+
+ ---->  at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.run(NioBlockingSelector.java:320)
+
+    T12 is created by T1
+
+        at org.apache.tomcat.util.net.NioBlockingSelector.open(NioBlockingSelector.java:58)
+
+}}}

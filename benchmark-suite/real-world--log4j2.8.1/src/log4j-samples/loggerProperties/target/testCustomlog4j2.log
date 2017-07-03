@@ -1,0 +1,2 @@
+2016-06-28 00:55:43,442 DEBUG [main] TestProperties CustomPropertiesTest TestValue - This is a test
+2016-06-28 00:55:43,468 DEBUG [main] MapProperties CustomPropertiesTest TestValue - key1="CustomPropertiesTest" key2="TestValue"

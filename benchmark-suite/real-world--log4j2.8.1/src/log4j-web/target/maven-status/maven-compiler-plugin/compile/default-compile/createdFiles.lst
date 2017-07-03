@@ -1,0 +1,14 @@
+org\apache\logging\log4j\web\Log4jServletFilter.class
+org\apache\logging\log4j\web\WebLookup.class
+org\apache\logging\log4j\web\Log4jServletContainerInitializer.class
+org\apache\logging\log4j\web\Log4jWebInitializerImpl.class
+META-INF\org\apache\logging\log4j\core\config\plugins\Log4j2Plugins.dat
+org\apache\logging\log4j\web\appender\ServletAppender$Builder.class
+org\apache\logging\log4j\web\appender\ServletAppender.class
+org\apache\logging\log4j\web\appender\ServletAppender$1.class
+org\apache\logging\log4j\web\Log4jWebSupport.class
+org\apache\logging\log4j\web\WebLoggerContextUtils$1.class
+org\apache\logging\log4j\web\WebLoggerContextUtils.class
+org\apache\logging\log4j\web\Log4jWebLifeCycle.class
+org\apache\logging\log4j\web\Log4jServletContextListener.class
+org\apache\logging\log4j\web\ServletRequestThreadContext.class

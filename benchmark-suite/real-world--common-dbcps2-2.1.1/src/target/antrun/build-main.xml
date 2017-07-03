@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="E:\dbcp\commons-dbcp2-2.1.1-src\target/apidocs/META-INF">
+    <fileset dir="E:\dbcp\commons-dbcp2-2.1.1-src">
+      <include name="LICENSE.txt"/>
+      <include name="NOTICE.txt"/>
+    </fileset>
+  </copy>
+</target>
+</project>

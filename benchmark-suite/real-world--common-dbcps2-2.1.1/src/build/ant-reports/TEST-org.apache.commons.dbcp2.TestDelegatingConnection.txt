@@ -1,0 +1,7 @@
+Testsuite: org.apache.commons.dbcp2.TestDelegatingConnection
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 sec
+
+Testcase: testGetDelegate took 0.071 sec
+Testcase: testCheckOpenNull took 0.534 sec
+Testcase: testCheckOpen took 0 sec
+Testcase: testConnectionToString took 0 sec

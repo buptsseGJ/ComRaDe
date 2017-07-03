@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.dbcp2.TestPStmtPooling
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.dbcp2.TestPStmtPooling
+testStmtPool(org.apache.commons.dbcp2.TestPStmtPooling)  Time elapsed: 0 sec
+testBatchUpdate(org.apache.commons.dbcp2.TestPStmtPooling)  Time elapsed: 0 sec
+testClosePool(org.apache.commons.dbcp2.TestPStmtPooling)  Time elapsed: 0 sec
+testCallableStatementPooling(org.apache.commons.dbcp2.TestPStmtPooling)  Time elapsed: 0 sec
+testMultipleClose(org.apache.commons.dbcp2.TestPStmtPooling)  Time elapsed: 0 sec

@@ -1,0 +1,101 @@
+----------------Instrumented execution to record the trace-----------------
+[RV-Predict] Log directory: /tmp/rv-predict6572222852277624831
+[RV-Predict] Finished retransforming preloaded classes.
+********************************
+Starting test: groovy6068
+Expected bug type: race
+********************************
+
+
+Finished test: Bug has been reproduced successfully.
+Exception in thread "main" java.lang.RuntimeException: System.in was altered!
+	at groovy.util.Groovy6068.main(Groovy6068.java:77)
+Data race on field org.apache.tools.ant.Project.defaultInputStream: {{{
+    Concurrent read in thread T15 (locks held: {})
+ ---->  at org.apache.tools.ant.Project.getDefaultInputStream(Project.java:238)
+        at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:209)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T15 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at org.apache.tools.ant.Project.setDefaultInputStream(Project.java:228)
+        at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:212)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T14 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+}}}
+
+Data race on field groovy.util.AntBuilder.lastCompletedNode: {{{
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:192)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T15 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:217)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T14 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+}}}
+
+Data race on field org.apache.tools.ant.Project.defaultInputStream: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at org.apache.tools.ant.Project.setDefaultInputStream(Project.java:228)
+        at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:220)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T14 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at org.apache.tools.ant.Project.setDefaultInputStream(Project.java:228)
+        at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:220)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T15 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+}}}
+
+Data race on field groovy.util.AntBuilder.lastCompletedNode: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:192)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T14 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:192)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T15 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+}}}
+
+Data race on field groovy.util.AntBuilder.insideTask: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:189)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T14 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:189)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T15 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+}}}
+
+Data race on field groovy.util.AntBuilder.lastCompletedNode: {{{
+    Concurrent write in thread T14 (locks held: {})
+ ---->  at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:217)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T14 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+
+    Concurrent write in thread T15 (locks held: {})
+ ---->  at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:217)
+        at groovy.util.Groovy6068$ThreadBuild.run(Groovy6068.java:57)
+    T15 is created by T1
+        at groovy.util.Groovy6068.run(Groovy6068.java:45)
+}}}
+
+

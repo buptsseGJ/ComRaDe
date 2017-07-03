@@ -1,0 +1,7 @@
+1. compile commands
+		eclipse project
+		
+		note: We have compiled it in advance, you can use it directly.
+2. run commands
+		cd bin
+		java -cp .;../lib/realLib/coring-1.4.jar;../lib/realLib/jacontebe-1.0.jar;../lib/realLib/derby.jar;../lib/realLib/derbyclient.jar;../lib/realLib/mockito-all-1.9.5.jar Derby5561

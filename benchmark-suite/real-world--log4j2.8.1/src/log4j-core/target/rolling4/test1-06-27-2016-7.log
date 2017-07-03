@@ -1,0 +1,5 @@
+2016-06-27 22:39:46,767 DEBUG o.a.l.l.c.a.r.RollingAppenderUncompressedTest [main] This is test message number 90
+2016-06-27 22:39:46,775 DEBUG o.a.l.l.c.a.r.RollingAppenderUncompressedTest [main] This is test message number 91
+2016-06-27 22:39:46,776 DEBUG o.a.l.l.c.a.r.RollingAppenderUncompressedTest [main] This is test message number 92
+2016-06-27 22:39:46,776 DEBUG o.a.l.l.c.a.r.RollingAppenderUncompressedTest [main] This is test message number 93
+2016-06-27 22:39:46,776 DEBUG o.a.l.l.c.a.r.RollingAppenderUncompressedTest [main] This is test message number 94

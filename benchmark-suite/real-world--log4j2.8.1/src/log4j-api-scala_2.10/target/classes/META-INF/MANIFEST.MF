@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1467046735431
+Build-Jdk: 1.8.0_65
+Built-By: jiangao
+Bundle-Description: Scala wrapper for Log4j API
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Log4j Scala 2.10 wrapper for Log4j API
+Bundle-SymbolicName: org.apache.logging.log4j.api-scala_2.10
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.8.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.logging.log4j.scala;version="2.8.1";uses:="or
+ g.apache.logging.log4j,org.apache.logging.log4j.message,org.apache.logg
+ ing.log4j.spi,scala,scala.collection,scala.reflect,scala.reflect.api,sc
+ ala.reflect.macros,scala.runtime"
+Implementation-Title: Apache Log4j Scala 2.10 wrapper for Log4j API
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.8.1
+Import-Package: org.apache.logging.log4j;version="[2.8,3)",org.apache.lo
+ gging.log4j.message;version="[2.8,3)",org.apache.logging.log4j.spi;vers
+ ion="[2.8,3)",scala;version="[2.10,3)",scala.collection;version="[2.10,
+ 3)",scala.collection.generic;version="[2.10,3)",scala.collection.immuta
+ ble;version="[2.10,3)",scala.collection.mutable;version="[2.10,3)",scal
+ a.reflect;version="[2.10,3)",scala.reflect.api;version="[2.10,3)",scala
+ .reflect.macros;version="[2.10,3)",scala.runtime;version="[2.10,3)"
+Log4jReleaseKey: B3D8E1BA
+Log4jReleaseManager: Ralph Goers
+Log4jReleaseVersion: 2.8.1
+Originally-Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Specification-Title: Apache Log4j Scala 2.10 wrapper for Log4j API
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.8.1
+Tool: Bnd-3.2.0.201605172007
+X-Compile-Source-JDK: 1.7
+X-Compile-Target-JDK: 1.7

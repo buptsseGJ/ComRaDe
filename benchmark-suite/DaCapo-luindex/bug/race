@@ -1,0 +1,72 @@
+//use Rv-Predict to run luindex of DaCapo with command "--window 1000 --exclude org,dacapo.harness -s small"
+
+Data race on field org.apache.lucene.index.ConcurrentMergeScheduler.writer: {{{
+
+    Concurrent write in thread T1 (locks held: {})
+
+ ---->  at org.apache.lucene.index.ConcurrentMergeScheduler.merge(ConcurrentMergeScheduler.java:144)
+
+        at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1643)
+
+        at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+
+        at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+
+        at org.dacapo.luindex.Index.main(Index.java:79)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+
+
+    Concurrent read in thread T12 (locks held: {})
+
+ ---->  at org.apache.lucene.index.ConcurrentMergeScheduler.message(ConcurrentMergeScheduler.java:98)
+
+        at org.apache.lucene.index.ConcurrentMergeScheduler.access$000(ConcurrentMergeScheduler.java:35)
+
+        at org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run(ConcurrentMergeScheduler.java:272)
+
+    T12 is created by T1
+
+        at org.apache.lucene.index.ConcurrentMergeScheduler.merge(ConcurrentMergeScheduler.java:197)
+
+}}}
+
+
+
+Data race on field org.apache.lucene.index.ConcurrentMergeScheduler.writer: {{{
+
+    Concurrent write in thread T1 (locks held: {})
+
+ ---->  at org.apache.lucene.index.ConcurrentMergeScheduler.merge(ConcurrentMergeScheduler.java:144)
+
+        at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1643)
+
+        at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1602)
+
+        at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1578)
+
+        at org.dacapo.luindex.Index.main(Index.java:79)
+
+        at Harness.main(Harness.java:17)
+
+    T1 is the main thread
+
+
+
+    Concurrent read in thread T12 (locks held: {})
+
+ ---->  at org.apache.lucene.index.ConcurrentMergeScheduler.message(ConcurrentMergeScheduler.java:99)
+
+        at org.apache.lucene.index.ConcurrentMergeScheduler.access$000(ConcurrentMergeScheduler.java:35)
+
+        at org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run(ConcurrentMergeScheduler.java:272)
+
+    T12 is created by T1
+
+        at org.apache.lucene.index.ConcurrentMergeScheduler.merge(ConcurrentMergeScheduler.java:197)
+
+}}}
+

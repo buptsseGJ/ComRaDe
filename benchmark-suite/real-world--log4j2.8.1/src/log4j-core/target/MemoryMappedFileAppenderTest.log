@@ -1,0 +1,2 @@
+2016-06-27 23:55:50,084 WARN o.a.l.l.c.a.MemoryMappedFileAppenderSimpleTest [main]  Test log1
+2016-06-27 23:55:50,097 WARN o.a.l.l.c.a.MemoryMappedFileAppenderSimpleTest [main]  Test log2
