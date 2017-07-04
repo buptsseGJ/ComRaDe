@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reports SYSTEM "standard.dtd">
+<reports>
+	<report name="testRace1">
+		<race>
+			<line1>41</line1>
+			<line2>47</line2>
+			<variable>x</variable>
+			<packageClass>testRace.TestRace1</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <testRace.TestRace1$1: void run()>|$i0 = <testRace.TestRace1: int x>|41 - <testRace.TestRace1$2: void run()>|<testRace.TestRace1: int x> = $i1|47
+					Race: <testRace.TestRace1$1: void run()>|<testRace.TestRace1: int x> = $i1|41 - <testRace.TestRace1$2: void run()>|<testRace.TestRace1: int x> = $i1|47
+					Race: <testRace.TestRace1$2: void run()>|$i0 = <testRace.TestRace1: int x>|47 - <testRace.TestRace1$1: void run()>|<testRace.TestRace1: int x> = $i1|41
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testRace3">
+		<race>
+			<line1>42</line1>
+			<line2>46</line2>
+			<variable>x</variable>
+			<packageClass>testRace.TestRace3</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <testRace.TestRace3: void main(java.lang.String[])>|$i0 = <testRace.TestRace3: int x>|46 - <testRace.TestRace3$1: void run()>|<testRace.TestRace3: int x> = $i1|42
+					Race: <testRace.TestRace3: void main(java.lang.String[])>|<testRace.TestRace3: int x> = $i1|46 - <testRace.TestRace3$1: void run()>|<testRace.TestRace3: int x> = $i1|42
+					Race: <testRace.TestRace3$1: void run()>|$i0 = <testRace.TestRace3: int x>|42 - <testRace.TestRace3: void main(java.lang.String[])>|<testRace.TestRace3: int x> = $i1|46
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testRace6">
+		<race>
+			<line1></line1>
+			<line2></line2>
+			<variable>x</variable>
+			<packageClass>testRace.TestRace6</packageClass>
+			<detail>
+				<![CDATA[
+					
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testRace10">
+		<race>
+			<line1></line1>
+			<line2></line2>
+			<variable>x</variable>
+			<packageClass>testRace.TestRace10</packageClass>
+			<detail>
+				<![CDATA[
+					
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testRace11">
+		<race>
+			<line1></line1>
+			<line2></line2>
+			<variable>x</variable>
+			<packageClass>testRace.TestRace11</packageClass>
+			<detail>
+				<![CDATA[
+					
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testRace12">
+		<race>
+			<line1></line1>
+			<line2></line2>
+			<variable>x</variable>
+			<packageClass>testRace.TestRace12</packageClass>
+			<detail>
+				<![CDATA[
+					
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testRace13">
+		<race>
+			<line1></line1>
+			<line2></line2>
+			<variable>x</variable>
+			<packageClass>testRace.TestRace13</packageClass>
+			<detail>
+				<![CDATA[
+					
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testAtomicity1">
+		<race>
+			<line1>42</line1>
+			<line2>48</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity1</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|$i0 = <benchmarks.testcases.TestAtomicity1: int x>|48 - <benchmarks.testcases.TestAtomicity1$1: void run()>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|48 - <benchmarks.testcases.TestAtomicity1$1: void run()>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity1$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity1: int x>|42 - <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|48
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>42</line1>
+			<line2>49</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity1</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|$i2 = <benchmarks.testcases.TestAtomicity1: int x>|49 - <benchmarks.testcases.TestAtomicity1$1: void run()>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity1: int x> = $i3|49 - <benchmarks.testcases.TestAtomicity1$1: void run()>|<benchmarks.testcases.TestAtomicity1: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity1$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity1: int x>|42 - <benchmarks.testcases.TestAtomicity1: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity1: int x> = $i3|49
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testAtomicity4">
+		<race>
+			<line1>48</line1>
+			<line2>64</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity4</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity4$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity4: int x>|48 - <benchmarks.testcases.TestAtomicity4: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity4: int x> = $i1|64
+					Race: <benchmarks.testcases.TestAtomicity4$1: void run()>|<benchmarks.testcases.TestAtomicity4: int x> = $i1|48 - <benchmarks.testcases.TestAtomicity4: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity4: int x> = $i1|64
+					Race: <benchmarks.testcases.TestAtomicity4: void main(java.lang.String[])>|$i0 = <benchmarks.testcases.TestAtomicity4: int x>|64 - <benchmarks.testcases.TestAtomicity4$1: void run()>|<benchmarks.testcases.TestAtomicity4: int x> = $i1|48
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>48</line1>
+			<line2>65</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity4</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity4$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity4: int x>|48 - <benchmarks.testcases.TestAtomicity4: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity4: int x> = $i3|65
+					Race: <benchmarks.testcases.TestAtomicity4$1: void run()>|<benchmarks.testcases.TestAtomicity4: int x> = $i1|48 - <benchmarks.testcases.TestAtomicity4: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity4: int x> = $i3|65
+					Race: <benchmarks.testcases.TestAtomicity4: void main(java.lang.String[])>|$i2 = <benchmarks.testcases.TestAtomicity4: int x>|65 - <benchmarks.testcases.TestAtomicity4$1: void run()>|<benchmarks.testcases.TestAtomicity4: int x> = $i1|48
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testAtomicity6">
+		<race>
+			<line1>44</line1>
+			<line2>51</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity6</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity6: void main(java.lang.String[])>|$i0 = <benchmarks.testcases.TestAtomicity6: int x>|51 - <benchmarks.testcases.TestAtomicity6$1: void run()>|<benchmarks.testcases.TestAtomicity6: int x> = $i1|44
+					Race: <benchmarks.testcases.TestAtomicity6: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity6: int x> = $i1|51 - <benchmarks.testcases.TestAtomicity6$1: void run()>|<benchmarks.testcases.TestAtomicity6: int x> = $i1|44
+					Race: <benchmarks.testcases.TestAtomicity6$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity6: int x>|44 - <benchmarks.testcases.TestAtomicity6: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity6: int x> = $i1|51				
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testAtomicity7">
+		<race>
+			<line1>42</line1>
+			<line2>48</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity7</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity7: void main(java.lang.String[])>|$i0 = <benchmarks.testcases.TestAtomicity7: int x>|48 - <benchmarks.testcases.TestAtomicity7$1: void run()>|<benchmarks.testcases.TestAtomicity7: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity7: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity7: int x> = $i1|48 - <benchmarks.testcases.TestAtomicity7$1: void run()>|<benchmarks.testcases.TestAtomicity7: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity7$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity7: int x>|42 - <benchmarks.testcases.TestAtomicity7: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity7: int x> = $i1|48
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>42</line1>
+			<line2>49</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity7</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity7: void main(java.lang.String[])>|$i2 = <benchmarks.testcases.TestAtomicity7: int x>|49 - <benchmarks.testcases.TestAtomicity7$1: void run()>|<benchmarks.testcases.TestAtomicity7: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity7: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity7: int x> = $i3|49 - <benchmarks.testcases.TestAtomicity7$1: void run()>|<benchmarks.testcases.TestAtomicity7: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity7$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity7: int x>|42 - <benchmarks.testcases.TestAtomicity7: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity7: int x> = $i3|49
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testAtomicity8">
+		<race>
+			<line1>45</line1>
+			<line2>50</line2>
+			<variable>y</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity8</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity8$1: void run()>|$i2 = <benchmarks.testcases.TestAtomicity8: int y>|45 - <benchmarks.testcases.TestAtomicity8$2: void run()>|<benchmarks.testcases.TestAtomicity8: int y> = $i1|50
+					Race: <benchmarks.testcases.TestAtomicity8$1: void run()>|<benchmarks.testcases.TestAtomicity8: int y> = $i3|45 - <benchmarks.testcases.TestAtomicity8$2: void run()>|<benchmarks.testcases.TestAtomicity8: int y> = $i1|50
+					Race: <benchmarks.testcases.TestAtomicity8$2: void run()>|$i0 = <benchmarks.testcases.TestAtomicity8: int y>|50 - <benchmarks.testcases.TestAtomicity8$1: void run()>|<benchmarks.testcases.TestAtomicity8: int y> = $i3|45
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>60</line1>
+			<line2>51</line2>
+			<variable>z</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity8</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity8: void main(java.lang.String[])>|i1 = <benchmarks.testcases.TestAtomicity8: int z>|60 - <benchmarks.testcases.TestAtomicity8$2: void run()>|<benchmarks.testcases.TestAtomicity8: int z> = $i3|51
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>44</line1>
+			<line2>59</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity8</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity8: void main(java.lang.String[])>|i0 = <benchmarks.testcases.TestAtomicity8: int x>|59 - <benchmarks.testcases.TestAtomicity8$1: void run()>|<benchmarks.testcases.TestAtomicity8: int x> = $i1|44
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testAtomicity9">
+		<race>
+			<line1>52</line1>
+			<line2>74</line2>
+			<variable>c</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i2 = <benchmarks.testcases.TestAtomicity9: int c>|74 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int c> = $i1|52
+				]]>
+			</detail>
+		</race>
+
+		<race>
+			<line1>44</line1>
+			<line2>72</line2>
+			<variable>a</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i0 = <benchmarks.testcases.TestAtomicity9: int a>|72 - <benchmarks.testcases.TestAtomicity9$1: void run()>|<benchmarks.testcases.TestAtomicity9: int a> = $i1|44
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>61</line1>
+			<line2>83</line2>
+			<variable>e</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i6 = <benchmarks.testcases.TestAtomicity9: int e>|83 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int e> = $i3|61
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>47</line1>
+			<line2>54</line2>
+			<variable>g</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9$1: void run()>|$i6 = <benchmarks.testcases.TestAtomicity9: int g>|47 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int g> = $i5|54
+					Race: <benchmarks.testcases.TestAtomicity9$1: void run()>|<benchmarks.testcases.TestAtomicity9: int g> = $i7|47 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int g> = $i5|54
+					Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|$i4 = <benchmarks.testcases.TestAtomicity9: int g>|54 - <benchmarks.testcases.TestAtomicity9$1: void run()>|<benchmarks.testcases.TestAtomicity9: int g> = $i7|47					
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>63</line1>
+			<line2>80</line2>
+			<variable>i</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i4 = <benchmarks.testcases.TestAtomicity9: int i>|80 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int i> = $i7|63
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>55</line1>
+			<line2>62</line2>
+			<variable>h</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|$i6 = <benchmarks.testcases.TestAtomicity9: int h>|55 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int h> = $i5|62
+					Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int h> = $i7|55 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int h> = $i5|62
+					Race: <benchmarks.testcases.TestAtomicity9$3: void run()>|$i4 = <benchmarks.testcases.TestAtomicity9: int h>|62 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int h> = $i7|55					
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>46</line1>
+			<line2>79</line2>
+			<variable>f</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i3 = <benchmarks.testcases.TestAtomicity9: int f>|79 - <benchmarks.testcases.TestAtomicity9$1: void run()>|<benchmarks.testcases.TestAtomicity9: int f> = $i5|46
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>53</line1>
+			<line2>60</line2>
+			<variable>d</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|$i2 = <benchmarks.testcases.TestAtomicity9: int d>|53 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int d> = $i1|60
+					Race: <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int d> = $i3|53 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int d> = $i1|60
+					Race: <benchmarks.testcases.TestAtomicity9$3: void run()>|$i0 = <benchmarks.testcases.TestAtomicity9: int d>|60 - <benchmarks.testcases.TestAtomicity9$2: void run()>|<benchmarks.testcases.TestAtomicity9: int d> = $i3|53
+				]]>
+			</detail>
+		</race>
+	</report>
+	<report name="testAtomicity11">
+		<race>
+			<line1>42</line1>
+			<line2>53</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity11</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity11: void f()>|$i0 = <benchmarks.testcases.TestAtomicity11: int x>|53 - <benchmarks.testcases.TestAtomicity11$1: void run()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity11: void f()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|53 - <benchmarks.testcases.TestAtomicity11$1: void run()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity11$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity11: int x>|42 - <benchmarks.testcases.TestAtomicity11: void f()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|53
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>42</line1>
+			<line2>54</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity11</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity11: void f()>|$i2 = <benchmarks.testcases.TestAtomicity11: int x>|54 - <benchmarks.testcases.TestAtomicity11$1: void run()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity11: void f()>|<benchmarks.testcases.TestAtomicity11: int x> = $i3|54 - <benchmarks.testcases.TestAtomicity11$1: void run()>|<benchmarks.testcases.TestAtomicity11: int x> = $i1|42
+					Race: <benchmarks.testcases.TestAtomicity11$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity11: int x>|42 - <benchmarks.testcases.TestAtomicity11: void f()>|<benchmarks.testcases.TestAtomicity11: int x> = $i3|54
+				]]>
+			</detail>
+		</race>
+		<race>
+			<line1>61</line1>
+			<line2>83</line2>
+			<variable>e</variable>
+			<packageClass>benchmarks.testcases.TestAtomicity9</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestAtomicity9: void main(java.lang.String[])>|i6 = <benchmarks.testcases.TestAtomicity9: int e>|83 - <benchmarks.testcases.TestAtomicity9$3: void run()>|<benchmarks.testcases.TestAtomicity9: int e> = $i3|61
+				]]>
+			</detail>
+		</race>
+		</report>
+</reports>

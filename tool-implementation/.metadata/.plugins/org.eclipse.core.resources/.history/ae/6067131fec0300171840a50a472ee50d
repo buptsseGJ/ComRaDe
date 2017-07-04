@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reports SYSTEM "standard.dtd">
+<reports>
+	<report name="testRace1">
+		<race>
+			<line1>41</line1>
+			<line2>47</line2>
+			<variable>x</variable>
+			<packageClass>benchmarks.testcases.TestRace1</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <benchmarks.testcases.TestRace1$1: void run()>|$i0 = <benchmarks.testcases.TestRace1: int x>|41 - <benchmarks.testcases.TestRace1$2: void run()>|<benchmarks.testcases.TestRace1: int x> = $i1|47
+					Race: <benchmarks.testcases.TestRace1$1: void run()>|<benchmarks.testcases.TestRace1: int x> = $i1|41 - <benchmarks.testcases.TestRace1$2: void run()>|<benchmarks.testcases.TestRace1: int x> = $i1|47
+					Race: <benchmarks.testcases.TestRace1$2: void run()>|$i0 = <benchmarks.testcases.TestRace1: int x>|47 - <benchmarks.testcases.TestRace1$1: void run()>|<benchmarks.testcases.TestRace1: int x> = $i1|41
+				]]>	
+			</detail>
+		</race>
+	</report>
+	<report name="testRace3">
+
+	</report></reports>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT reports (report*)>
+<!ELEMENT report (race*)>
+<!ATTLIST report name ID #REQUIRED>
+<!ATTLIST report totalTime CDATA #REQUIRED>
+<!ELEMENT race (line1,line2,variable,packageClass,detail,runningTime,variableType,codeStructure,methodSpan,sensitiveBranch,sensitiveLoop,cause,commonUsage,bug)>
+<!ELEMENT line1 (#PCDATA)>
+<!ELEMENT line2 (#PCDATA)>
+<!ELEMENT variable (#PCDATA)>
+<!ELEMENT packageClass (#PCDATA)>
+<!ELEMENT detail (#PCDATA)>
+<!ELEMENT runningTime (#PCDATA)>
+<!ELEMENT variableType (#PCDATA)>
+<!ELEMENT codeStructure (#PCDATA)>
+<!ELEMENT methodSpan (#PCDATA)>
+<!ELEMENT sensitiveBranch (#PCDATA)>
+<!ELEMENT sensitiveLoop (#PCDATA)>
+<!ELEMENT cause (#PCDATA)>
+<!ELEMENT commonUsage (#PCDATA)>
+<!ELEMENT bug (#PCDATA)>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reports SYSTEM "standard.dtd">
+<reports>
+	<report name="testRace1">
+		<race>
+			<line1>12</line1>
+			<line2>13</line2>
+			<variable>x</variable><packageClass>AAA.b</packageClass>
+			<detail>
+			2&gt; 3		
+			</detail>
+		</race>
+	</report>
+	<report name="race2">
+
+	</report></reports>

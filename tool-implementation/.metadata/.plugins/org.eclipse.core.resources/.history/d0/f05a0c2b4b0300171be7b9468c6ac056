@@ -1,0 +1,17 @@
+package cn.edu.thu.platform.frame;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+public class ExampleFrame extends JFrame {
+	private JTextArea jText= new JTextArea();
+	private JPanel panel = new JPanel();
+	
+	public ExampleFrame(){
+		this.setLayout(null);
+		panel.setBounds(0, 0, 500, 500);
+		
+		this.add(panel);
+	}
+}

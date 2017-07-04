@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE reports SYSTEM "standard.dtd">
+<reports>
+<report name="yusfyuds">
+
+
+
+
+
+<race>
+<line1>21</line1>
+<line2>132</line2>
+<variable/>
+<packageClass>sdfdsf</packageClass>
+<detail/>
+</race>
+<race>
+<line1>22</line1>
+<line2>212</line2>
+<variable/>
+<packageClass>wqeqw</packageClass>
+<detail/>
+</race>
+</report>
+<report name="sdsd">
+
+
+<race>
+<line1>223</line1>
+<line2>1232</line2>
+<variable/>
+<packageClass>sd</packageClass>
+<detail/>
+</race>
+<race>
+<line1>2</line1>
+<line2>222</line2>
+<variable/>
+<packageClass>sdfs</packageClass>
+<detail/>
+</race>
+</report>
+</reports>

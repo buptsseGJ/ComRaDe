@@ -1,0 +1,610 @@
+>>>>>start command [guava-21.0]mvn -f E:\log4j\apache-log4j-2.8.1-src\pom.xml test about guava-21.0 on 2016-06-28 00:59:20 <<<<<
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.frq: {{{
+    Concurrent write in thread T2129 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.access$002(FinalizableReferenceQueueTest.java:34)
+        at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:103)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T2129 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.weaklyReferenceQueue(FinalizableReferenceQueueTest.java:99)
+        at com.google.common.base.FinalizableReferenceQueueTest.testThatFinalizerStops(FinalizableReferenceQueueTest.java:76)
+        at junit.framework.TestCase.runTest(TestCase.java:168)
+        at junit.framework.TestCase.runBare(TestCase.java:134)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+        at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+        at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+        at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+    T1 is the main thread
+}}}
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.reference: {{{
+    Concurrent write in thread T2129 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:102)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T2129 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.weaklyReferenceQueue(FinalizableReferenceQueueTest.java:99)
+        at com.google.common.base.FinalizableReferenceQueueTest.testThatFinalizerStops(FinalizableReferenceQueueTest.java:76)
+        at junit.framework.TestCase.runTest(TestCase.java:168)
+        at junit.framework.TestCase.runBare(TestCase.java:134)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+        at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+        at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+        at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+    T1 is the main thread
+}}}
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.frq: {{{
+    Concurrent write in thread T2129 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.access$002(FinalizableReferenceQueueTest.java:34)
+        at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:103)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T2129 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.tearDown(FinalizableReferenceQueueTest.java:40)
+        at junit.framework.TestCase.runBare(TestCase.java:140)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+        at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+        at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+        at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+    T1 is the main thread
+}}}
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.frq: {{{
+    Concurrent write in thread T2129 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.access$002(FinalizableReferenceQueueTest.java:34)
+        at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:103)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T2129 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent write in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.weaklyReferenceQueue(FinalizableReferenceQueueTest.java:91)
+        at com.google.common.base.FinalizableReferenceQueueTest.testThatFinalizerStops(FinalizableReferenceQueueTest.java:76)
+        at junit.framework.TestCase.runTest(TestCase.java:168)
+        at junit.framework.TestCase.runBare(TestCase.java:134)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+        at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+        at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+        at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+    T1 is the main thread
+}}}
+
+Data race on field com.google.common.base.FinalizableReferenceQueueTest.frq: {{{
+    Concurrent write in thread T2129 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.access$002(FinalizableReferenceQueueTest.java:34)
+        at com.google.common.base.FinalizableReferenceQueueTest$2.finalizeReferent(FinalizableReferenceQueueTest.java:103)
+        at com.google.common.base.internal.Finalizer.cleanUp(Finalizer.java:159)
+        at com.google.common.base.internal.Finalizer.run(Finalizer.java:124)
+    T2129 is created by T1
+        at com.google.common.base.internal.Finalizer.startFinalizer(Finalizer.java:93)
+
+    Concurrent read in thread T1 (locks held: {})
+ ---->  at com.google.common.base.FinalizableReferenceQueueTest.weaklyReferenceQueue(FinalizableReferenceQueueTest.java:92)
+        at com.google.common.base.FinalizableReferenceQueueTest.testThatFinalizerStops(FinalizableReferenceQueueTest.java:76)
+        at junit.framework.TestCase.runTest(TestCase.java:168)
+        at junit.framework.TestCase.runBare(TestCase.java:134)
+        at junit.framework.TestResult$1.protect(TestResult.java:110)
+        at junit.framework.TestResult.runProtected(TestResult.java:128)
+        at junit.framework.TestResult.run(TestResult.java:113)
+        at junit.framework.TestCase.run(TestCase.java:124)
+        at junit.framework.TestSuite.runTest(TestSuite.java:243)
+        at junit.framework.TestSuite.run(TestSuite.java:238)
+        at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+        at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+        at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+        at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+        at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+    T1 is the main thread
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2154 (locks held: {})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordRead(LocalCache.java:2664)
+        at com.google.common.cache.LocalCache$Segment.waitForLoadingValue(LocalCache.java:2324)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2305)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2114)
+    T2154 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+
+    Concurrent write in thread T2152 (locks held: {Monitor@37591a7b, WriteLock@78a3f124})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordWrite(LocalCache.java:2699)
+        at com.google.common.cache.LocalCache$Segment.setValue(LocalCache.java:2182)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3293)
+        - locked WriteLock@78a3f124 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@37591a7b at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2109)
+    T2152 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2152 (locks held: {Monitor@37591a7b, WriteLock@78a3f124})
+ ---->  at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2748)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@78a3f124 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@37591a7b at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2109)
+    T2152 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+
+    Concurrent write in thread T2153 (locks held: {})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordRead(LocalCache.java:2664)
+        at com.google.common.cache.LocalCache$Segment.waitForLoadingValue(LocalCache.java:2324)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2305)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2111)
+    T2153 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent write in thread T2152 (locks held: {Monitor@37591a7b, WriteLock@78a3f124})
+ ---->  at com.google.common.cache.LocalCache$Segment.drainRecencyQueue(LocalCache.java:2711)
+        at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2740)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@78a3f124 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@37591a7b at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2109)
+    T2152 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+
+    Concurrent read in thread T2153 (locks held: {})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordRead(LocalCache.java:2664)
+        at com.google.common.cache.LocalCache$Segment.waitForLoadingValue(LocalCache.java:2324)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2305)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2111)
+    T2153 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2154 (locks held: {})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordRead(LocalCache.java:2664)
+        at com.google.common.cache.LocalCache$Segment.waitForLoadingValue(LocalCache.java:2324)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2305)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2114)
+    T2154 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+
+    Concurrent write in thread T2152 (locks held: {Monitor@37591a7b, WriteLock@78a3f124})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordWrite(LocalCache.java:2698)
+        at com.google.common.cache.LocalCache$Segment.setValue(LocalCache.java:2182)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3293)
+        - locked WriteLock@78a3f124 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@37591a7b at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2109)
+    T2152 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent write in thread T2153 (locks held: {})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordRead(LocalCache.java:2664)
+        at com.google.common.cache.LocalCache$Segment.waitForLoadingValue(LocalCache.java:2324)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2305)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2111)
+    T2153 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+
+    Concurrent read in thread T2154 (locks held: {})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordRead(LocalCache.java:2664)
+        at com.google.common.cache.LocalCache$Segment.waitForLoadingValue(LocalCache.java:2324)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2305)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2114)
+    T2154 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2152 (locks held: {Monitor@37591a7b, WriteLock@78a3f124})
+ ---->  at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2743)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@78a3f124 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@37591a7b at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2109)
+    T2152 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+
+    Concurrent write in thread T2153 (locks held: {})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordRead(LocalCache.java:2664)
+        at com.google.common.cache.LocalCache$Segment.waitForLoadingValue(LocalCache.java:2324)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2305)
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$28.run(CacheLoadingTest.java:2111)
+    T2153 is created by T1
+        at com.google.common.cache.CacheLoadingTest.doConcurrentGet(CacheLoadingTest.java:2123)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent write in thread T2193 (locks held: {WriteLock@446582b1})
+ ---->  at com.google.common.cache.LocalCache$Segment.drainRecencyQueue(LocalCache.java:2711)
+        at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2740)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2530)
+        - locked WriteLock@446582b1 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2503)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.refresh(LocalCache.java:5166)
+        at com.google.common.cache.CacheLoadingTest$31.run(CacheLoadingTest.java:2175)
+    T2193 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2178)
+
+    Concurrent read in thread T2192 (locks held: {WriteLock@331de41f})
+ ---->  at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2743)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2235)
+        - locked WriteLock@331de41f at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$30.run(CacheLoadingTest.java:2168)
+    T2192 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2171)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2193 (locks held: {WriteLock@446582b1})
+ ---->  at com.google.common.cache.LocalCache$Segment.drainRecencyQueue(LocalCache.java:2711)
+        at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2740)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@446582b1 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2439)
+        at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+        at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:902)
+        at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:636)
+        at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.addListener(AbstractFuture.java:100)
+        at com.google.common.cache.LocalCache$Segment.loadAsync(LocalCache.java:2434)
+        at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2508)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.refresh(LocalCache.java:5166)
+        at com.google.common.cache.CacheLoadingTest$31.run(CacheLoadingTest.java:2175)
+    T2193 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2178)
+
+    Concurrent write in thread T2192 (locks held: {Monitor@39e58f6f, WriteLock@331de41f})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordWrite(LocalCache.java:2698)
+        at com.google.common.cache.LocalCache$Segment.setValue(LocalCache.java:2182)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3293)
+        - locked WriteLock@331de41f at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@39e58f6f at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$30.run(CacheLoadingTest.java:2168)
+    T2192 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2171)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent write in thread T2192 (locks held: {WriteLock@331de41f})
+ ---->  at com.google.common.cache.LocalCache$Segment.drainRecencyQueue(LocalCache.java:2711)
+        at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2740)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2235)
+        - locked WriteLock@331de41f at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$30.run(CacheLoadingTest.java:2168)
+    T2192 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2171)
+
+    Concurrent read in thread T2193 (locks held: {WriteLock@446582b1})
+ ---->  at com.google.common.cache.LocalCache$Segment.drainRecencyQueue(LocalCache.java:2711)
+        at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2740)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2530)
+        - locked WriteLock@446582b1 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2503)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.refresh(LocalCache.java:5166)
+        at com.google.common.cache.CacheLoadingTest$31.run(CacheLoadingTest.java:2175)
+    T2193 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2178)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent write in thread T2193 (locks held: {WriteLock@446582b1})
+ ---->  at com.google.common.cache.LocalCache$Segment.drainRecencyQueue(LocalCache.java:2711)
+        at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2740)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2530)
+        - locked WriteLock@446582b1 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2503)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.refresh(LocalCache.java:5166)
+        at com.google.common.cache.CacheLoadingTest$31.run(CacheLoadingTest.java:2175)
+    T2193 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2178)
+
+    Concurrent read in thread T2192 (locks held: {WriteLock@331de41f})
+ ---->  at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2748)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2235)
+        - locked WriteLock@331de41f at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$30.run(CacheLoadingTest.java:2168)
+    T2192 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2171)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2193 (locks held: {WriteLock@446582b1})
+ ---->  at com.google.common.cache.LocalCache$Segment.drainRecencyQueue(LocalCache.java:2711)
+        at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2740)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@446582b1 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2439)
+        at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+        at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:902)
+        at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:636)
+        at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.addListener(AbstractFuture.java:100)
+        at com.google.common.cache.LocalCache$Segment.loadAsync(LocalCache.java:2434)
+        at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2508)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.refresh(LocalCache.java:5166)
+        at com.google.common.cache.CacheLoadingTest$31.run(CacheLoadingTest.java:2175)
+    T2193 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2178)
+
+    Concurrent write in thread T2192 (locks held: {Monitor@39e58f6f, WriteLock@331de41f})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordWrite(LocalCache.java:2699)
+        at com.google.common.cache.LocalCache$Segment.setValue(LocalCache.java:2182)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3293)
+        - locked WriteLock@331de41f at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@39e58f6f at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$30.run(CacheLoadingTest.java:2168)
+    T2192 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testAsMapDuringLoading(CacheLoadingTest.java:2171)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2240 (locks held: {WriteLock@40447707})
+ ---->  at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2743)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@40447707 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2439)
+        at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+        at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:902)
+        at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:636)
+        at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.addListener(AbstractFuture.java:100)
+        at com.google.common.cache.LocalCache$Segment.loadAsync(LocalCache.java:2434)
+        at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2508)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.refresh(LocalCache.java:5166)
+        at com.google.common.cache.CacheLoadingTest$37.run(CacheLoadingTest.java:2288)
+    T2240 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testInvalidateAndReloadDuringLoading(CacheLoadingTest.java:2291)
+
+    Concurrent write in thread T2239 (locks held: {Monitor@4bb2e680, WriteLock@4481242})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordWrite(LocalCache.java:2699)
+        at com.google.common.cache.LocalCache$Segment.setValue(LocalCache.java:2182)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3293)
+        - locked WriteLock@4481242 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@4bb2e680 at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$36.run(CacheLoadingTest.java:2281)
+    T2239 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testInvalidateAndReloadDuringLoading(CacheLoadingTest.java:2284)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2240 (locks held: {WriteLock@40447707})
+ ---->  at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2748)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@40447707 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2439)
+        at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+        at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:902)
+        at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:636)
+        at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.addListener(AbstractFuture.java:100)
+        at com.google.common.cache.LocalCache$Segment.loadAsync(LocalCache.java:2434)
+        at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2508)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.refresh(LocalCache.java:5166)
+        at com.google.common.cache.CacheLoadingTest$37.run(CacheLoadingTest.java:2288)
+    T2240 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testInvalidateAndReloadDuringLoading(CacheLoadingTest.java:2291)
+
+    Concurrent write in thread T2239 (locks held: {Monitor@4bb2e680, WriteLock@4481242})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordWrite(LocalCache.java:2699)
+        at com.google.common.cache.LocalCache$Segment.setValue(LocalCache.java:2182)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3293)
+        - locked WriteLock@4481242 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@4bb2e680 at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$36.run(CacheLoadingTest.java:2281)
+    T2239 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testInvalidateAndReloadDuringLoading(CacheLoadingTest.java:2284)
+}}}
+
+Data race on field com.google.common.cache.LocalCache$2.$state: {{{
+    Concurrent read in thread T2240 (locks held: {WriteLock@40447707})
+ ---->  at com.google.common.cache.LocalCache$Segment.expireEntries(LocalCache.java:2743)
+        at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3639)
+        at com.google.common.cache.LocalCache$Segment.preWriteCleanup(LocalCache.java:3619)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3263)
+        - locked WriteLock@40447707 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2439)
+        at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+        at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:902)
+        at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:636)
+        at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.addListener(AbstractFuture.java:100)
+        at com.google.common.cache.LocalCache$Segment.loadAsync(LocalCache.java:2434)
+        at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2508)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.refresh(LocalCache.java:5166)
+        at com.google.common.cache.CacheLoadingTest$37.run(CacheLoadingTest.java:2288)
+    T2240 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testInvalidateAndReloadDuringLoading(CacheLoadingTest.java:2291)
+
+    Concurrent write in thread T2239 (locks held: {Monitor@4bb2e680, WriteLock@4481242})
+ ---->  at com.google.common.cache.LocalCache$Segment.recordWrite(LocalCache.java:2698)
+        at com.google.common.cache.LocalCache$Segment.setValue(LocalCache.java:2182)
+        at com.google.common.cache.LocalCache$Segment.storeLoadedValue(LocalCache.java:3293)
+        - locked WriteLock@4481242 at java.util.concurrent.locks.ReentrantLock(ReentrantLock.java:n/a) 
+        at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2466)
+        at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2425)
+        at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+        - locked Monitor@4bb2e680 at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2297) 
+        at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147)
+        at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153)
+        at com.google.common.cache.CacheLoadingTest$36.run(CacheLoadingTest.java:2281)
+    T2239 is created by T1
+        at com.google.common.cache.CacheLoadingTest.testInvalidateAndReloadDuringLoading(CacheLoadingTest.java:2284)
+}}}
+
+Data race on field com.google.common.util.concurrent.AbstractFuture$Listener.next: {{{
+    Concurrent write in thread T2276 (locks held: {})
+ ---->  at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:627)
+        at com.google.common.util.concurrent.AbstractFutureTest$21.call(AbstractFutureTest.java:371)
+    T2276 is created by T1
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+
+    Concurrent read in thread T2295 (locks held: {})
+ ---->  at com.google.common.util.concurrent.AbstractFuture.clearListeners(AbstractFuture.java:889)
+        at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:791)
+        at com.google.common.util.concurrent.AbstractFuture.setFuture(AbstractFuture.java:713)
+        at com.google.common.util.concurrent.AbstractFutureTest$18.call(AbstractFutureTest.java:311)
+    T2295 is created by T1
+        at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:1028)
+}}}
+
+[total time:51900s]
+
+>>>>>end<<<<<

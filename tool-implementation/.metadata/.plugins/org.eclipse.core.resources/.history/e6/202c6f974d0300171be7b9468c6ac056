@@ -1,0 +1,43 @@
+package cn.edu.thu.platform.frame;
+
+import java.awt.Color;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class ExampleFrame extends JFrame {
+	private JTextArea jText= new JTextArea();
+	private JPanel panel = new JPanel();
+	private String example = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+			+ "<!DOCTYPE reports SYSTEM \"standard.dtd\">\n"
+			+ "<reports>\n"
+			+ "\t<report name=\"race1\">\n"
+			+ "\t\t<race>\n"
+			+ "\t\t\t<line1>12</line1>\n"
+			+ "\t\t\t<line2>13</line>\n"
+			+ "\t\t</race>\n"
+			+ "\t\t<race>\n"
+			+ "\t\t\t<line1>14</line1>\n"
+			+ "\t\t\t<line2>15</line2>\n"
+			+ "\t\t</race>\n"
+			+ "\t</report>\n"
+			+ "\t<report name=\"race2\">\n"
+			+ "\t\t<race>\n"
+			+ "\t\t\t<line1>10</line1>\n"
+			+ "\t\t\t<line2>19</line2>\n"
+			+ "\t\t</race>\n"
+			+ "\t</report>\n"
+			+ "</reports>";
+	public ExampleFrame(){
+		this.setLayout(null);
+		panel.setBounds(0, 0, 500, 500);
+		panel.setLayout(null);
+		panel.setBackground(Color.green);
+		JScrollPane jsp = new JScrollPane(jText);
+		jsp.setBounds(10, 10, 450, 430);		
+		panel.add(jsp);
+		this.add(panel);
+	}
+}

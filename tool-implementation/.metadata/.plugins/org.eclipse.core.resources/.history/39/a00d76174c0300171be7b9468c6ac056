@@ -1,0 +1,24 @@
+package cn.edu.thu.platform.frame;
+
+import java.awt.Color;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class ExampleFrame extends JFrame {
+	private JTextArea jText= new JTextArea();
+	private JPanel panel = new JPanel();
+	
+	public ExampleFrame(){
+		this.setLayout(null);
+		panel.setBounds(0, 0, 500, 500);
+		panel.setLayout(null);
+		panel.setBackground(Color.green);
+		JScrollPane jsp = new JScrollPane(jText);
+		jsp.setBounds(10, 10, 470, 470);		
+		panel.add(jsp);
+		this.add(panel);
+	}
+}

@@ -1,0 +1,6 @@
+package cn.edu.thu.platform.comparison;
+
+public class ComparisonResult {
+	public static String tool = "";
+	public static String result = "";
+}

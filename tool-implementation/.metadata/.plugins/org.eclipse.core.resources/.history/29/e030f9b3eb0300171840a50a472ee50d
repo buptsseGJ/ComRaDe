@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reports SYSTEM "standard.dtd">
+<reports>
+	<report name="testRace1">
+		<race>
+			<line1>41</line1>
+			<line2>47</line2>
+			<variable>x</variable>
+			<packageClass>testRace.TestRace1</packageClass>
+			<detail>
+				<![CDATA[
+					Race: <testRace.TestRace1$1: void run()>|$i0 = <testRace.TestRace1: int x>|41 - <testRace.TestRace1$2: void run()>|<testRace.TestRace1: int x> = $i1|47
+					Race: <testRace.TestRace1$1: void run()>|<testRace.TestRace1: int x> = $i1|41 - <testRace.TestRace1$2: void run()>|<testRace.TestRace1: int x> = $i1|47
+					Race: <testRace.TestRace1$2: void run()>|$i0 = <testRace.TestRace1: int x>|47 - <testRace.TestRace1$1: void run()>|<testRace.TestRace1: int x> = $i1|41
+				]]>	
+			</detail>
+		</race>
+	</report>
+	<report name="race2">
+
+	</report></reports>

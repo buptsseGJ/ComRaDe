@@ -1,0 +1,10 @@
+package cn.edu.thu.platform.frame;
+
+import javax.swing.JFrame;
+
+public class RoughResultFrame extends JFrame {
+	
+	public RoughResultFrame(){
+		
+	}
+}

@@ -1,0 +1,24 @@
+package cn.edu.thu.platform.frame;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class RoughResultFrame extends JFrame {
+	private JTextArea jText = new JTextArea();
+	private JButton btSaveResult = new JButton("另存报告");
+	private JPanel panel = new JPanel();
+	
+	public RoughResultFrame(){
+		this.setLayout(null);
+		panel.setLayout(null);
+		panel.setBounds(0, 0, 1500, 1000);
+		JScrollPane jsp = new JScrollPane(jText);
+		jsp.setBounds(10, 10, 1450, 950);
+		jText.setLineWrap(true);
+		panel.add(jsp);
+		this.add(panel);
+	}
+}
