@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT reports (report*)>
+<!ELEMENT report (race*)>
+<!ATTLIST report name ID #REQUIRED>
+<!ATTLIST report totalTime CDATA #REQUIRED>
+<!ELEMENT race (line1,line2)>
+<!ELEMENT line1 (#PCDATA)>
+<!ELEMENT line2 (#PCDATA)>

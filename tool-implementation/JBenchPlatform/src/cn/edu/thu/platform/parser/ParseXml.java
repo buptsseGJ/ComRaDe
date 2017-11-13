@@ -48,7 +48,35 @@ public class ParseXml {
 		builder.setErrorHandler(new MyErrorHandler());
 		try {
 			Document document = builder.parse(fileAbsolutePath);
-			System.out.println("ok,Parse correctly!");
+			System.out.println("Ok, parse correctly!");
+			return document;
+		} catch (SAXException | IOException e) {
+//			e.printStackTrace();
+		}
+		System.out.println("Error!");
+		return null;
+	}
+	
+	public Document validateResultXml(String fileAbsolutePath) {
+		validateXmlFilePath=fileAbsolutePath;
+		try {
+			factory.setValidating(true);
+			builder = factory.newDocumentBuilder();
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		}
+		builder.setEntityResolver(new EntityResolver(){
+            @Override
+			public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException
+            {
+                   String dtd_uri = System.getProperty("user.dir").replace('\\', '/')+"/file/comparison.dtd";
+                   return new InputSource(dtd_uri);
+            }
+		});
+		builder.setErrorHandler(new MyErrorHandler());
+		try {
+			Document document = builder.parse(fileAbsolutePath);
+			System.out.println("Ok, parse correctly!");
 			return document;
 		} catch (SAXException | IOException e) {
 //			e.printStackTrace();
@@ -178,7 +206,7 @@ public class ParseXml {
 			    StreamResult result = new StreamResult(curFile);
 			    transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			    transformer.transform(source, result);
-			    System.out.println("XML file updated successfully");
+			    System.out.println("XML file is updated successfully");
 			}else{
 		    	curFile.createNewFile();
 			}

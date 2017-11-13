@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE reports SYSTEM "comparison.dtd">
+<reports>
+	<report name="testRace1" totalTime="1.074">
+		<race>
+			<line1>41</line1>
+			<line2>47</line2>
+		</race>
+		<race>
+			<line1>41</line1>
+			<line2>47</line2>
+		</race>
+	</report>
+	<report name="testRace100" totalTime="1.074">
+		<race>
+			<line1>41</line1>
+			<line2>47</line2>
+		</race>
+		<race>
+			<line1>41</line1>
+			<line2>5</line2>
+		</race>
+	</report>
+</reports>

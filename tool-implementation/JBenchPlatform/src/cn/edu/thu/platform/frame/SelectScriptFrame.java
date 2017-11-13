@@ -31,10 +31,15 @@ import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.text.DefaultCaret;
+
+import org.w3c.dom.Document;
 
 import cn.edu.thu.platform.comparison.ComparisonResult;
 import cn.edu.thu.platform.entity.Reports;
+import cn.edu.thu.platform.parser.DomToEntity;
+import cn.edu.thu.platform.parser.ParseXml;
 import cn.edu.thu.platform.script.Script;
 import java.awt.Component;
 
@@ -42,12 +47,14 @@ import java.awt.Component;
  * 
  */
 public class SelectScriptFrame extends JFrame implements ChangeListener {
+	public static String os = "";
+	
 	public JProgressBar progress = new JProgressBar();
 	private JTextArea jText = new JTextArea();
 	private JScrollPane jsp;
 	private JButton runScript = new JButton("Run script file");
-	private JButton btCompare = new JButton("compare ");
-	private JButton btChooseResult = new JButton("Select comparison file");
+	private JButton btCompare = new JButton("Compare");
+	private JButton btChooseResult = new JButton("Comparison file");
 	private JButton btExample = new JButton("See Sample Files");
 	private JPanel anotherPanel = new JPanel();
 	private BufferedReader readStdout = null;
@@ -126,17 +133,17 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 		other.setBackground(new Color(245, 245, 245));
 		other.setFont(new Font("Century Gothic", Font.PLAIN, 20));
 		btCompare.setFont(new Font("Century Gothic", Font.PLAIN, 20));
-		btCompare.setBounds(267, 90, 155, 45);
+		btCompare.setBounds(100, 90, 200, 45);//compare button
 		anotherPanel.add(btCompare);
 		btExample.setVisible(false);
-		btExample.setFont(new Font("微软雅黑", Font.PLAIN, 20));
+		btExample.setFont(new Font("Century Gothic", Font.PLAIN, 20));
 		btExample.setBounds(522, 90, 167, 45);
 		btExample.setEnabled(false);
 		anotherPanel.add(btExample);
-		btChooseResult.setVisible(false);
-		btChooseResult.setFont(new Font("微软雅黑", Font.PLAIN, 20));
-		btChooseResult.setEnabled(false);
-		btChooseResult.setBounds(267, 90, 188, 45);
+		btChooseResult.setVisible(true);
+		btChooseResult.setFont(new Font("Century Gothic", Font.PLAIN, 20));
+		btChooseResult.setEnabled(true);
+		btChooseResult.setBounds(400, 90, 200, 45);
 		anotherPanel.add(btChooseResult);
 		cal.setBounds(31, 31, 138, 37);
 		rv.setBounds(200, 31, 155, 37);
@@ -162,6 +169,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 				ComparisonResult.tool = "CalFuzzer";
 				btCompare.setEnabled(true);
 				btExample.setEnabled(false);
+				btChooseResult.setEnabled(true);
 			}
 
 		});
@@ -171,6 +179,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 				ComparisonResult.tool = "Rv-Predict";
 				btCompare.setEnabled(true);
 				btExample.setEnabled(false);
+				btChooseResult.setEnabled(true);
 			}
 		});
 		date.addActionListener(new ActionListener() {
@@ -179,6 +188,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 				ComparisonResult.tool = "DATE";
 				btCompare.setEnabled(true);
 				btExample.setEnabled(false);
+				btChooseResult.setEnabled(true);
 			}
 
 		});
@@ -204,6 +214,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 		btCompare.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				Reports.flag = true;
 				RoughResultFrame rrf = new RoughResultFrame();
 				System.out.println("start to see the comparison results ...");
 				rrf.setSize(1500, 1000);
@@ -223,7 +234,8 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 				filePath = filePath.substring(0, filePath.indexOf("JBenchPlatfor")-1);
 				File rootFile = new File(filePath);
 				jfc.setCurrentDirectory(rootFile);
-				jfc.showDialog(new JLabel(), "select script ");
+				jfc.setDialogTitle("Select script file:");
+				jfc.showDialog(new JLabel(), null);
 				jfc.setBounds(750, 50, 100, 50);
 				File file = jfc.getSelectedFile();
 				if (file != null) {
@@ -239,6 +251,55 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 				}
 			}
 		});
+		
+		btChooseResult.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				Reports.flag = false;
+				JFileChooser jfc = new JFileChooser();
+				jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
+				String filePath = System.getProperty("user.dir").replace('\\', '/');
+				filePath = filePath.substring(0, filePath.indexOf("JBenchPlatfor")-1);
+				File rootFile = new File(filePath);
+				jfc.setCurrentDirectory(rootFile);
+				FileNameExtensionFilter filter = new FileNameExtensionFilter(
+			              "XML file(*.xml)", "xml");
+			    jfc.setFileFilter(filter);
+				jfc.setDialogTitle("Select result file:");
+				jfc.showDialog(new JLabel(),null);
+				jfc.setBounds(750, 50, 100, 50);
+				File file = jfc.getSelectedFile();
+				if (file != null) {
+					fileAbsolutePath = file.getAbsolutePath();
+					System.out.println("file path ：" + file.getAbsolutePath());
+					ParseXml parser = new ParseXml();
+					Document validationResult = parser.validateResultXml(fileAbsolutePath);
+					if (validationResult != null) {
+						textAreaInfo=textAreaInfo+"\nXml file is valid!\n";
+						textArea.setText(textAreaInfo);
+						DomToEntity convert = new DomToEntity();
+						textAreaInfo = convert.startDomForResultXml(validationResult,textAreaInfo,textArea);										
+
+						textAreaInfo=textAreaInfo+"\nBenchmarks read successfully.\n";
+						textArea.setText(textAreaInfo);
+						textArea.setCaretPosition(textArea.getText().length());
+						JOptionPane.showMessageDialog(getContentPane(), "Successfully read the result file!");
+						RoughResultFrame rrf = new RoughResultFrame();
+						System.out.println("start to see the comparison results ...");
+						rrf.setSize(1500, 1000);
+						rrf.setLocationRelativeTo(null);
+						rrf.setVisible(true);
+						rrf.setTitle("Data Race Detection Report");
+					} else {
+						System.out.println("Error");
+						textAreaInfo=textAreaInfo+"\n\nBenchmarks have problem!\n";
+						textArea.setText(textAreaInfo);
+						textArea.setCaretPosition(textArea.getText().length());
+					}
+				}
+			}			
+		});
 
 		// run test cases
 		runScript.addActionListener(new ActionListener() {
@@ -249,6 +310,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 
 				Reports.userNames.clear();
 				Reports.userReports.clear();
+				Reports.wrongNames.clear();
 
 				// refresh schedule progressing
 				new Thread() {
@@ -272,9 +334,18 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 							writer1 = new FileWriter(writePosition + "/result.txt", false);
 							for (int i = 0; i < Script.scripts.size(); i++) {
 								String temp = Script.scripts.get(i);
-								String tempFile = writePosition	+ "/tempFile.bat";
+								String tempFile = "";
 								FileWriter writer = new FileWriter(tempFile,false);
-								writer.write(deleteName(temp));
+								if (os.startsWith("win")){
+									tempFile = writePosition + "/tempFile.bat";
+									writer.write(deleteName(temp));
+								}else if(os.startsWith("linux")){
+									tempFile = writePosition + "/tempFile.sh";
+									writer.write("");
+								}else{
+																		
+								}								
+								
 								writer.close();
 								
 								// run a single command

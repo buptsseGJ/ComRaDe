@@ -69,8 +69,10 @@ public class RoughResultFrame extends JFrame {
 		scrollPane.setViewportView(panel);
 		panel.setLayout(null);
 		getContentPane().add(scrollPane);
-		MatchInterface match = Match.getMatch(ComparisonResult.tool);
-		match.matchFile();
+		if (Reports.flag == true){
+			MatchInterface match = Match.getMatch(ComparisonResult.tool);
+			match.matchFile();
+		}
 		getContentPane().setLayout(null);		
 		JScrollPane txtscrollPane = new JScrollPane();
 		txtpane.setFont(new Font("Microsoft YaHei UI Light", Font.PLAIN, 20));

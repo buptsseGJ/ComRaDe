@@ -19,6 +19,9 @@ public class Reports {
 	//store names of programs which are not in xml file
 	public static List<String> wrongNames = new ArrayList<String>();
 	
+	//true means use regular expression to compare, false use input file to compare 
+	public static boolean flag = true;
+	
 	public static void removeAllBenchmakrs() {
 		reports.clear();
 		programNames.clear();

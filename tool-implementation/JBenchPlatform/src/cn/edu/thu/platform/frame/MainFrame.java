@@ -31,6 +31,7 @@ import cn.edu.thu.platform.parser.ParseXml;
 import java.awt.Font;
 import java.awt.SystemColor;
 import javax.swing.border.TitledBorder;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.border.LineBorder;
 import javax.swing.SwingConstants;
 import java.awt.Cursor;
@@ -56,6 +57,9 @@ public class MainFrame extends JFrame {
 	public String textAreaInfo = "";
 
 	public MainFrame() {
+		String os = System.getProperty("os.name");  
+		SelectScriptFrame.os = os.toLowerCase();
+		System.out.println(os);
 		setResizable(false);
 		getContentPane().setFont(new Font("Century Gothic", Font.PLAIN, 22));
 		JPanel p1 = new ButtonPanel();
@@ -200,7 +204,11 @@ public class MainFrame extends JFrame {
 				jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
 				File rootFile = new File(System.getProperty("user.dir").replace('\\', '/')+"/file");
 				jfc.setCurrentDirectory(rootFile);
-				jfc.showDialog(new JLabel(), "Select");
+			    FileNameExtensionFilter filter = new FileNameExtensionFilter(
+			              "XML file(*.xml)", "xml");
+			    jfc.setFileFilter(filter);
+				jfc.setDialogTitle("Select dataset file:");
+				jfc.showDialog(new JLabel(), null);
 				file = jfc.getSelectedFile();
 				if (file != null) {
 					textAreaInfo="";
@@ -209,18 +217,18 @@ public class MainFrame extends JFrame {
 					ParseXml parser = new ParseXml();
 					Document validationResult = parser.validateXml(fileAbsolutePath);
 					if (validationResult != null) {
-						textAreaInfo=textAreaInfo+"\nxml file validation passed ！\n";
+						textAreaInfo=textAreaInfo+"\nXml file is valid!\n";
 						textArea.setText(textAreaInfo);
 
 						Reports.removeAllBenchmakrs();
 						DomToEntity convert = new DomToEntity();
 						textAreaInfo = convert.startDom(validationResult,textAreaInfo,textArea);										
 
-						textAreaInfo=textAreaInfo+"\nbenchmarks read success ！\n";
+						textAreaInfo=textAreaInfo+"\nBenchmarks read successfully.\n";
 						textArea.setText(textAreaInfo);
 						textArea.setCaretPosition(textArea.getText().length());
 
-						JOptionPane.showMessageDialog(getContentPane(), "Successfully read the benchmark !");
+						JOptionPane.showMessageDialog(getContentPane(), "Successfully read the benchmark!");
 						
 						manageSuites.setEnabled(true);
 						runProgram.setEnabled(true);
@@ -228,7 +236,7 @@ public class MainFrame extends JFrame {
 						
 					} else {
 						System.out.println("Error");
-						textAreaInfo=textAreaInfo+"\n\nbenchmarks have problem ！\n";
+						textAreaInfo=textAreaInfo+"\n\nBenchmarks have problem!\n";
 						textArea.setText(textAreaInfo);
 						textArea.setCaretPosition(textArea.getText().length());
 					}
