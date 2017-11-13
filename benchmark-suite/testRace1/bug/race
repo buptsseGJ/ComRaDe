@@ -1,6 +1,5 @@
 Race: <testRace.TestRace1$1: void run()>|$i0 = <testRace.TestRace1: int x>|41 - <testRace.TestRace1$2: void run()>|<testRace.TestRace1: int x> = $i1|47
-Race: <testRace.TestRace1$1: void run()>|<testRace.TestRace1: int x> = $i1|41 - <testRace.TestRace1$2: void run()>|<testRace.TestRace1: int x> = $i1|47
-Race: <testRace.TestRace1$2: void run()>|$i0 = <testRace.TestRace1: int x>|47 - <testRace.TestRace1$1: void run()>|<testRace.TestRace1: int x> = $i1|41
+
 Trace Size: 12
 Total #Threads: 3
 Total #SharedVariables: 1
@@ -11,11 +10,8 @@ Total #Synchronizations: 4
 Total #Branches: 0
 Total #Property Events: 0
 Total #Potential Violations: 3
-Total #Real Violations: 3
-Total Time: 423ms
+Total #Real Violations: 1
 
 real	0m8.438s
-
 user	0m7.656s
-
 sys	0m0.392s

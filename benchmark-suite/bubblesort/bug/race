@@ -1,9 +1,10 @@
 Race: <bubblesort.OneBubble: void run()>|$i6 = $r3[i3]|51 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r5[i0] = $i3|63
 Race: <bubblesort.OneBubble: void run()>|$i8 = $r4[$i7]|51 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r7[$i4] = i1|64
-Race: <bubblesort.OneBubble: void run()>|$i8 = $r4[$i7]|51 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r5[i0] = $i3|63
-Race: <bubblesort.OneBubble: void run()>|$i6 = $r3[i3]|51 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r7[$i4] = i1|64
 Race: <bubblesort.BubbleSortImpl: void PrintArray()>|$i5 = $r8[i3]|99 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r5[i0] = $i3|63
 Race: <bubblesort.BubbleSortImpl: void PrintArray()>|$i5 = $r8[i3]|99 - <bubblesort.OneBubble: void SwapConsecutives(int)>|$r7[$i4] = i1|64
+Race: OneBubble.java Reporter.java arr <63,126>
+Race: OneBubble.java Reporter.java arr <64,126>
+
 Trace Size: 13747
 Total #Threads: 26
 Total #SharedVariables: 25
@@ -15,7 +16,6 @@ Total #Branches: 6242
 Total #Property Events: 0
 Total #Potential Violations: 7
 Total #Real Violations: 6
-Total Time: 1877ms
 java.lang.RuntimeException
 	at bubblesort.Reporter.Report(Reporter.java:102)
 	at bubblesort.BubbleSort.main(BubbleSort.java:84)

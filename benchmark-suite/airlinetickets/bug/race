@@ -1,12 +1,11 @@
 Race: <airlinetickets.Airlinetickets: void run()>|$i0 = <airlinetickets.Airlinetickets: int Num_Of_Seats_Sold>|104 - <airlinetickets.Airlinetickets: void run()>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i1|104
 Race: <airlinetickets.Airlinetickets: void run()>|$i2 = <airlinetickets.Airlinetickets: int Num_Of_Seats_Sold>|106 - <airlinetickets.Airlinetickets: void run()>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i1|104
-Race: <airlinetickets.Airlinetickets: void run()>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i1|104 - <airlinetickets.Airlinetickets: void run()>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i1|104
 Race: <airlinetickets.Airlinetickets: void run()>|$i0 = <airlinetickets.Airlinetickets: int Num_Of_Seats_Sold>|104 - <airlinetickets.Airlinetickets: void go(java.lang.String)>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i12|62
 Race: <airlinetickets.Airlinetickets: void run()>|$i2 = <airlinetickets.Airlinetickets: int Num_Of_Seats_Sold>|106 - <airlinetickets.Airlinetickets: void go(java.lang.String)>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i12|62
-Race: <airlinetickets.Airlinetickets: void run()>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i1|104 - <airlinetickets.Airlinetickets: void go(java.lang.String)>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i12|62
-Race: <airlinetickets.Airlinetickets: void go(java.lang.String)>|$i11 = <airlinetickets.Airlinetickets: int Num_Of_Seats_Sold>|62 - <airlinetickets.Airlinetickets: void run()>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i1|104
 Race: <airlinetickets.Airlinetickets: void go(java.lang.String)>|$i13 = <airlinetickets.Airlinetickets: int Num_Of_Seats_Sold>|63 - <airlinetickets.Airlinetickets: void run()>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i1|104
 Race: <airlinetickets.Airlinetickets: void checkResult(java.lang.String,java.lang.String)>|$i0 = <airlinetickets.Airlinetickets: int Num_Of_Seats_Sold>|78 - <airlinetickets.Airlinetickets: void run()>|<airlinetickets.Airlinetickets: int Num_Of_Seats_Sold> = $i1|104
+Race: StopSales <107,107>
+
 Trace Size: 214
 Total #Threads: 11
 Total #SharedVariables: 3
@@ -17,8 +16,7 @@ Total #Synchronizations: 10
 Total #Branches: 77
 Total #Property Events: 0
 Total #Potential Violations: 9
-Total #Real Violations: 9
-Total Time: 520ms
+Total #Real Violations: 7
 java.lang.RuntimeException
 	at airlinetickets.Airlinetickets.checkResult(Airlinetickets.java:82)
 	at airlinetickets.Airlinetickets.go(Airlinetickets.java:72)

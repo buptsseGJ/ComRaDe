@@ -1,12 +1,7 @@
 Race: <benchmarks.sor.sor_first_row_even: void run()>|$f0 = $r5[i3]|212 - <benchmarks.sor.sor_first_row_odd: void run()>|$r25[i19] = $f23|166
 Race: <benchmarks.sor.sor_first_row_odd: void run()>|$f1 = $r7[i3]|147 - <benchmarks.sor.sor_first_row_even: void run()>|$r25[i19] = $f23|231
 Race: <benchmarks.EDU.oswego.cs.dl.util.concurrent.CyclicBarrier: int doBarrier(boolean,long)>|i11 = r0.<benchmarks.EDU.oswego.cs.dl.util.concurrent.CyclicBarrier: int resets_>|247 - <benchmarks.EDU.oswego.cs.dl.util.concurrent.CyclicBarrier: int doBarrier(boolean,long)>|r0.<benchmarks.EDU.oswego.cs.dl.util.concurrent.CyclicBarrier: int resets_> = $i8|229
-Race: <benchmarks.sor.sor_first_row_even: void run()>|$f1 = $r7[i3]|212 - <benchmarks.sor.sor_first_row_odd: void run()>|$r25[i19] = $f23|166
-Race: <benchmarks.sor.sor_first_row_odd: void run()>|$f0 = $r5[i3]|147 - <benchmarks.sor.sor_first_row_even: void run()>|$r25[i19] = $f23|231
-Race: <benchmarks.sor.sor_first_row_odd: void run()>|$f17 = $r29[i19]|166 - <benchmarks.sor.sor_first_row_even: void run()>|$r3[i3] = $f7|212
-Race: <benchmarks.sor.sor_first_row_even: void run()>|$f17 = $r29[i19]|231 - <benchmarks.sor.sor_first_row_odd: void run()>|$r3[i3] = $f7|147
-Race: <benchmarks.sor.sor_first_row_even: void run()>|$f16 = $r27[i19]|231 - <benchmarks.sor.sor_first_row_odd: void run()>|$r3[i3] = $f7|147
-Race: <benchmarks.sor.sor_first_row_odd: void run()>|$f16 = $r27[i19]|166 - <benchmarks.sor.sor_first_row_even: void run()>|$r3[i3] = $f7|212
+
 Trace Size: 21041
 Total #Threads: 11
 Total #SharedVariables: 62
@@ -17,8 +12,7 @@ Total #Synchronizations: 440
 Total #Branches: 9907
 Total #Property Events: 0
 Total #Potential Violations: 101
-Total #Real Violations: 9
-Total Time: 2535ms
+Total #Real Violations: 3
 
 real	0m17.343s
 user	0m14.652s

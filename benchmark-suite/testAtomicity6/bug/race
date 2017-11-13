@@ -1,6 +1,5 @@
 Race: <benchmarks.testcases.TestAtomicity6: void main(java.lang.String[])>|$i0 = <benchmarks.testcases.TestAtomicity6: int x>|30 - <benchmarks.testcases.TestAtomicity6$1: void run()>|<benchmarks.testcases.TestAtomicity6: int x> = $i1|20
-Race: <benchmarks.testcases.TestAtomicity6: void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity6: int x> = $i1|30 - <benchmarks.testcases.TestAtomicity6$1: void run()>|<benchmarks.testcases.TestAtomicity6: int x> = $i1|20
-Race: <benchmarks.testcases.TestAtomicity6$1: void run()>|$i0 = <benchmarks.testcases.TestAtomicity6: int x>|20 - <benchmarks.testcases.TestAtomicity6:void main(java.lang.String[])>|<benchmarks.testcases.TestAtomicity6: int x> = $i1|30
+
 Trace Size: 28
 Total #Threads: 2
 Total #SharedVariables: 1
@@ -12,7 +11,6 @@ Total #Branches: 6
 Total #Property Events: 0
 Total #Potential Violations: 3
 Total #Real Violations: 3
-Total Time: 887ms
 
 real	0m9.277s
 user	0m7.380s

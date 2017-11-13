@@ -6,6 +6,7 @@ Race: <critical.Section: void run()>|$r16.<critical.Critical: int turn> = 1|60 -
 Race: <critical.Section: void run()>|$r16.<critical.Critical: int turn> = 1|60 - <critical.Section: void run()>|$r15.<critical.Critical: int turn> = 1|54
 Race: <critical.Section: void run()>|$r28.<critical.Critical: int turn> = 0|64 - <critical.Section: void run()>|$r2.<critical.Critical: int turn> = 0|49
 Race: <critical.Section: void run()>|$r28.<critical.Critical: int turn> = 0|64 - <critical.Section: void run()>|$r15.<critical.Critical: int turn> = 1|54
+
 Trace Size: 38
 Total #Threads: 3
 Total #SharedVariables: 1
@@ -17,4 +18,3 @@ Total #Branches: 11
 Total #Property Events: 0
 Total #Potential Violations: 8
 Total #Real Violations: 8
-Total Time: 421ms
