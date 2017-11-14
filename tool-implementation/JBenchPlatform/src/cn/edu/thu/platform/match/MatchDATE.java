@@ -60,12 +60,13 @@ public class MatchDATE  implements MatchInterface{
 //						System.out.println("\n\n\n"+info+"\n");
 						String caseName = "";
 						//this pattern is used for finding test case name
-						String pattern = "((>>>>>start.*?about\\s+)(.*?)(on\\s+))(.*)";
+						String pattern = "((>>>>>start.*?about\\s+)(.*?)(on\\s+.*?<<<<<))(.*)";
 						Pattern namePattern = Pattern.compile(pattern);
 						Matcher nameMatch = namePattern.matcher(info);
 						if (nameMatch.find()) {
 							//it represents the name of test case
 							caseName = nameMatch.group(3).trim();
+							System.out.println("caseName"+caseName);
 							Set<Race> races = new HashSet<Race>();
 							//this pattern is used for extracting line number.
 							String pair = "(.*?Race Pair:\\s?.*?\\.java:\\s*)(\\d+?)(\\s+?.*?\\.java:\\s*)(\\d+)(\\s*?)(.*)";
