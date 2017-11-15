@@ -200,7 +200,8 @@ public class RoughResultFrame extends JFrame {
 	}
 
 	public void generateReport() {
-		String filePath = "../resultReport.csv";
+		String filePath = MainFrame.path + "resultReport.csv";
+		System.out.println("resultReport.csv: " + filePath);
 		try {
 			FileWriter writer = new FileWriter(filePath, true);
 			SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
