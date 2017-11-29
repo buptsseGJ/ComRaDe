@@ -229,7 +229,7 @@ public class SelectScriptFrame extends JFrame implements ChangeListener {
 			public void actionPerformed(ActionEvent e) {
 				JFileChooser jfc = new JFileChooser();
 				jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
-				String filePath = System.getProperty("user.dir").replace('\\', '/');
+				String filePath = MainFrame.path;
 				filePath = filePath.substring(0, filePath.indexOf("JBenchPlatfor")-1);
 				File rootFile = new File(filePath);
 				jfc.setCurrentDirectory(rootFile);

@@ -1,0 +1,35 @@
+[bubblesort]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/bubblesort/bin -tool=FT2 -noxml  bubblesort.BubbleSort
+[tsp]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/tsp/bin -tool=FT2 -noxml  benchmarks.tsp.Tsp /home/jiangao/github/JBench/benchmark-suite/tsp/src/tspfiles/map16c 5
+[testRace1]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace1/bin -tool=FT2 -noxml testRace.TestRace1
+[testRace3]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace3/bin -tool=FT2 -noxml testRace.TestRace3
+[testRace4]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace4/bin -tool=FT2 -noxml testRace.TestRace4
+[testRace6]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace6/bin -tool=FT2 -noxml testRace.TestRace6
+[testRace10]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace10/bin -tool=FT2 -noxml testRace.TestRace10
+[testRace11]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace11/bin -tool=FT2 -noxml testRace.TestRace11
+[testRace13]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace13/bin -tool=FT2 -noxml testRace.TestRace13
+[sor]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/sor/bin -tool=FT2 -noxml  benchmarks.sor.Sor 10 10
+[cyclicDemo]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/cyclicDemo/bin -tool=FT2 -noxml  benchmarks.testcases.CyclicDemo
+[JGFRayTracerBenchSizeA]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/JGFRayTracerBenchSizeA/bin -tool=FT2 -noxml  benchmarks.JGFRayTracerBenchSizeA 3
+[simpleExample]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/simpleExample/bin -tool=FT2 -noxml  benchmarks.SimpleExample
+[testAtomicity1]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity1/bin -tool=FT2 -noxml  benchmarks.testcases.TestAtomicity1
+[testAtomicity4]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity4/bin -tool=FT2 -noxml  benchmarks.testcases.TestAtomicity4
+[testAtomicity6]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity6/bin -tool=FT2 -noxml  benchmarks.testcases.TestAtomicity6
+[testAtomicity7]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity7/bin -tool=FT2 -noxml  benchmarks.testcases.TestAtomicity7
+[testAtomicity8]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity8/bin -tool=FT2 -noxml benchmarks.testcases.TestAtomicity8
+[testAtomicity9]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity9/bin -tool=FT2 -noxml  benchmarks.testcases.TestAtomicity9
+[testAtomicity11]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity11/bin -tool=FT2 -noxml  benchmarks.testcases.TestAtomicity11
+[testAtomicity12]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity12/bin -tool=FT2 -noxml benchmarks.testcases.TestAtomicity12
+[testAtomicity13]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity13/bin -tool=FT2 -noxml  benchmarks.testcases.TestAtomicity13
+[testAtomicity14]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testAtomicity14/bin -tool=FT2 -noxml benchmarks.testcases.TestAtomicity14
+[account]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/account/bin -tool=FT2 -noxml account.Account
+[airlinetickets]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/airlinetickets/bin -tool=FT2 -noxml  airlinetickets.Airlinetickets
+[boundedbuffer]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/boundedbuffer/bin -tool=FT2 -noxml  boundedbuffer.BoundedBuffer
+[bubblesort]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/bubblesort/bin -tool=FT2 -noxml  bubblesort.BubbleSort
+[bufwriter]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/bufwriter/bin  -tool=FT2 -noxml bufwriter.BufWriter
+[critical]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/critical/bin -tool=FT2 -noxml  critical.Critical
+[mergesort]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/mergesort/bin -tool=FT2 -noxml  mergesort.MergeSort
+[pingpong]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/pingpong/bin -tool=FT2 -noxml  pingpong.PingPong
+[Elevator]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/Elevator/bin -tool=FT2 -noxml  elevator.Simulator 10
+[animator]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/animator/bin -tool=FT2 -noxml  XtangoAnimation.XtangoAnimator
+[jpf_test_cases]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/jpf_test_cases/bin -tool=FT2 -noxml  benchmarks.jpf_test_cases.rax.START
+[testRace12]/home/jiangao/confu-master/date-script/confu -fuzz 3 -classpath=/home/jiangao/github/JBench/benchmark-suite/testRace12/bin -tool=FT2 -noxml testRace.TestRace12

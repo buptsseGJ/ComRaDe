@@ -1,9 +1,9 @@
 <entry>
-  <date> Sun Nov 13 21:44:31 CST 2016 </date> 
+  <date> Wed Nov 29 00:53:00 CST 2017 </date> 
   <mode> FAST </mode> 
   <timeout> NO </timeout> 
   <options>
-    <option><name> javaArgs </name>           <value> testRace.TestRace3  </value> </option>
+    <option><name> javaArgs </name>           <value> testRace.TestRace12  </value> </option>
     <option><name> noDecInline </name>        <value> false </value> </option>
     <option><name> quiet </name>              <value> false </value> </option>
     <option><name> logDepth </name>           <value> 100 </value> </option>
@@ -21,7 +21,7 @@
     <option><name> maxYikes </name>           <value> 5 </value>  </option>
     <option><name> help </name>               <value> false </value> </option>
     <option><name> toolpath </name>           <value> /home/jiangao/confu-master/classes/rr/simple:/home/jiangao/confu-master/classes/tools </value> </option>
-    <option><name> classpath </name>          <value> /home/jiangao/github/JBench/benchmark-suite/testRace3/bin </value> </option>
+    <option><name> classpath </name>          <value> /home/jiangao/github/JBench/benchmark-suite/testRace12/bin </value> </option>
     <option><name> tool </name>               <value> FT2 </value> </option>
     <option><name> tools </name>              <value> false </value> </option>
     <option><name> noxml </name>              <value> true </value> </option>
@@ -83,14 +83,14 @@
     <name> user.dir </name>            <value> /home/jiangao/github/JBench/tool-implementation </value> 
     <availableProcs> 4 </availableProcs> 
     <memCommitted> 982 </memCommitted> 
-    <memUsed> 72 </memUsed> 
+    <memUsed> 82 </memUsed> 
     <memTotal> 982 </memTotal> 
-    <compileTime> 1064 </compileTime> 
+    <compileTime> 503 </compileTime> 
     <gc> <name> PS Scavenge </name> <time> 0 </time> </gc>
     <gc> <name> PS MarkSweep </name> <time> 0 </time> </gc>
   </system>
-  <instrumented> testRace/TestRace3 testRace/TestRace3$1  </instrumented> 
-  <instrumentedNum> 2 </instrumentedNum> 
+  <instrumented> testRace/TestRace12 testRace/TestRace12$1 testRace/TestRace12$2  </instrumented> 
+  <instrumentedNum> 3 </instrumentedNum> 
   <skipped>  </skipped> 
   <skippedNum> 0 </skippedNum> 
   <sanityChecked>  </sanityChecked> 
@@ -134,34 +134,35 @@
 
     <counter><name> "ShadowLock: objects" </name>                        <value> 0 </value> </counter>
 
-    <counter><name> "ShadowThread: Count" </name>                        <value> 2 </value> </counter>
-    <counter><name> "ShadowThread: Max Live" </name>                     <value> 2 </value> </counter>
+    <counter><name> "ShadowThread: Count" </name>                        <value> 3 </value> </counter>
+    <counter><name> "ShadowThread: Max Live" </name>                     <value> 3 </value> </counter>
     <counter><name> "ShadowThread: getCurrentThread() calls" </name>     <value> 0 </value> </counter>
 
     <counter><name> "ShadowVolatile: objects" </name>                    <value> 0 </value> </counter>
 
-    <counter><name> "Time: Instrumenter" </name>                         <value> <total>9.00000</total> <count>2</count> <ave>4.50000</ave> </value> </counter>
+    <counter><name> "Time: Instrumenter" </name>                         <value> <total>30.0000</total> <count>3</count> <ave>10.0000</ave> </value> </counter>
   </counters>
   <yikes>
   </yikes>
   <tool>
     <name> tools.fasttrack.FastTrackTool </name> 
-    <thread> [tid=0    C=[(0:4) (1:3) (2:0) (3:0)]   E=(0:4)] </thread> 
     <thread> [tid=1    C=[(0:3) (1:3) (2:0) (3:0)]   E=(1:3)] </thread> 
+    <thread> [tid=0    C=[(0:5) (1:3) (2:3) (3:0)]   E=(0:5)] </thread> 
+    <thread> [tid=2    C=[(0:4) (1:0) (2:3) (3:0)]   E=(2:3)] </thread> 
   </tool>
   <tool>
     <name> Last </name> 
   </tool>
-  <threadCount> 2 </threadCount> 
-  <threadMaxActive> 2 </threadMaxActive> 
-  <errorTotal> 3 </errorTotal> 
+  <threadCount> 3 </threadCount> 
+  <threadMaxActive> 3 </threadMaxActive> 
+  <errorTotal> 10 </errorTotal> 
   <distinctErrorTotal> 1 </distinctErrorTotal> 
   <methods>
   </methods>
   <fields>
     <field>
-      <name> testRace/TestRace3.x_I </name> 
-      <error> <name> FastTrack </name> <count> 3 </count> </error>
+      <name> testRace/TestRace12.x_F </name> 
+      <error> <name> FastTrack </name> <count> 10 </count> </error>
     </field>
   </fields>
   <arrays>
@@ -171,11 +172,11 @@
   <fieldAccesses>
   </fieldAccesses>
   <errorCountPerErrorType>
-    <errorType> <name> FastTrack </name> <count> 3 </count> </errorType>
+    <errorType> <name> FastTrack </name> <count> 10 </count> </errorType>
   </errorCountPerErrorType>
   <warningsTotal> 0 </warningsTotal> 
   <yikesTotal> 0 </yikesTotal> 
   <failed> false </failed> 
   <failedReason>  </failedReason> 
-  <time> 192 </time> 
+  <time> 301 </time> 
 </entry>

@@ -210,10 +210,8 @@ public class MainFrame extends JFrame {
 				jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
 				File rootFile = new File(System.getProperty("user.dir").replace('\\', '/')+"/file");
 				System.out.println("rootFile:"+rootFile);
-				int index = rootFile.toString().indexOf("JBenchPlatform");
-				int length = "JBenchPlatform".length();
-				path = rootFile.toString().substring(0, index+length+1).replace('\\','/');
-				System.out.println("path:"+path);
+				//path = rootFile.toString().substring(0, index+length+1).replace('\\','/');
+				
 				jfc.setCurrentDirectory(rootFile);
 			    FileNameExtensionFilter filter = new FileNameExtensionFilter(
 			              "XML file(*.xml)", "xml");
@@ -226,6 +224,10 @@ public class MainFrame extends JFrame {
 					textArea.setText(textAreaInfo);
 					fileAbsolutePath = file.getAbsolutePath();
 					System.out.println("fileAbsolutePath:"+fileAbsolutePath);
+					int index = fileAbsolutePath.toString().indexOf("JBenchPlatform");
+					int length = "JBenchPlatform".length();
+					path = fileAbsolutePath.toString().substring(0, index+length+1).replace('\\','/');
+					System.out.println("path:"+path);
 					ParseXml parser = new ParseXml();
 					Document validationResult = parser.validateXml(fileAbsolutePath);
 					if (validationResult != null) {
