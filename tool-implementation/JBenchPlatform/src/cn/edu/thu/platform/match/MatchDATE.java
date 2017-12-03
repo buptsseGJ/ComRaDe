@@ -69,7 +69,8 @@ public class MatchDATE  implements MatchInterface{
 							System.out.println("caseName"+caseName);
 							Set<Race> races = new HashSet<Race>();
 							//this pattern is used for extracting line number.
-							String pair = "(.*?Race Pair:\\s?.*?\\.java:\\s*)(\\d+?)(\\s+?.*?\\.java:\\s*)(\\d+)(\\s*?)(.*)";
+							//String pair = "(.*?Race Pair:\\s?.*?\\.java:\\s*)(\\d+?)(\\s+?.*?\\.java:\\s*)(\\d+)(\\s*?)(.*)";
+							String pair = "(.*?Race Pair:\\s+?)(.+?)(\\.java)(:\\s*?)(\\d+?)(\\s+?---\\s+?)(.+?)(\\.java)(:\\s*?)(\\d+)(\\s*?)(.*)";
 							Pattern pairPattern = Pattern.compile(pair);
 							info = nameMatch.group(5);
 							Matcher pairMatch = pairPattern.matcher(info);
@@ -77,25 +78,31 @@ public class MatchDATE  implements MatchInterface{
 								//the first class name
 //								String str1 = pairMatch.group(2);
 								//the first line number
-								String num1 = pairMatch.group(2);
+								String class1 = pairMatch.group(2);
+								String num1 = pairMatch.group(5);
 								//the second class name
 //								String str2 = pairMatch.group(7);
 								//the second line number
-								String num2 = pairMatch.group(4);
+								String class2 = pairMatch.group(7);
+								String num2 = pairMatch.group(10);
 								
 								//Place the smaller line number in the first position 
 								int x1 = Integer.parseInt(num1.trim());
 								int x2 = Integer.parseInt(num2.trim());
 								System.out.println("line1 and line2:"+x1+"  "+x2);
+								System.out.println(class1+ "---" + class2);
+								String packageClass = "";
 								if(x1<x2) {
-									Race race = new Race(num1.trim(),num2.trim());
+									packageClass = class1 + ".java;" + class2 + ".java";
+									Race race = new Race(num1.trim(),num2.trim(),packageClass);
 									races.add(race);
 								}else {
-									Race race = new Race(num2.trim(),num1.trim());
+									packageClass = class2 + ".java;" + class1 + ".java";
+									Race race = new Race(num2.trim(),num1.trim(),packageClass);
 									races.add(race);			
 								}
 								//start to look for the next match of data race in the specified test case
-								pairMatch = pairPattern.matcher(pairMatch.group(6));
+								pairMatch = pairPattern.matcher(pairMatch.group(12));
 							}
 							if(!Reports.userNames.contains(caseName)){
 								Reports.userNames.add(caseName);

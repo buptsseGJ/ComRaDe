@@ -47,6 +47,12 @@ public class Race {
 		this.line1 = line1;
 		this.line2 = line2;
 	}
+	
+	public Race(String line1,String line2,String packageClass){
+		this.line1 = line1;
+		this.line2 = line2;
+		this.packageClass = packageClass;
+	}
 
 	public void setLine1(String line1) {
 		this.line1 = line1;

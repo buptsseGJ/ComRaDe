@@ -262,12 +262,12 @@ public class DomToEntity {
 									tempRace = new Race(line1, line2, variable, packageClass, detail, time,
 											variableType, codeStructure, methodSpan, sensitiveBranch, sensitiveLoop,
 											cause, commonUsage, "");
-									compareRace = new Race(line1, line2);
+									compareRace = new Race(line1, line2, packageClass);
 								} else {
 									tempRace = new Race(line2, line1, variable, packageClass, detail, time,
 											variableType, codeStructure, methodSpan, sensitiveBranch, sensitiveLoop,
 											cause, commonUsage, "");
-									compareRace = new Race(line2, line1);
+									compareRace = new Race(line2, line1,packageClass);
 								}
 								races.add(tempRace);
 								compareRaces.add(compareRace);

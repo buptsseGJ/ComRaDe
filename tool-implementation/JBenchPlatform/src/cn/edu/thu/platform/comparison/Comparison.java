@@ -16,7 +16,7 @@ public class Comparison {
 	public String compare(String programName,Report originalReport, Report newReport) {
 //		if(newReport != null && originalReport !=null){
 			Set<Race> originalRaces = originalReport.getCompareRaces();
-			Set<Race> newRaces = newReport.getCompareRaces();
+			Set<Race> newRaces = newReport.getCompareRaces();//用户的report
 			int originalLength = originalRaces.size();
 			int newlength = newRaces.size();
 			int rightMatch = 0;
