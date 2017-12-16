@@ -12172,7 +12172,7 @@ Data race on field org.apache.derby.client.am.LogicalConnection.physicalConnecti
 			<line1>82</line1>
 			<line2>82</line2>
 			<variable>rootLoader</variable>
-			<packageClass>;/;</packageClass>
+			<packageClass>Groovy3495.java;Groovy3495.java</packageClass>
 			<detail><![CDATA[ ]]></detail>
 			<runningTime>%%</runningTime>
 			<variableType>RT</variableType>
@@ -12958,8 +12958,29 @@ Data race on field java.util.ArrayList.$state: {{{
 			<line1>1170</line1>
 			<line2>365</line2>
 			<variable>eventsAfterWatchRemoval</variable>
-			<packageClass>;/;</packageClass>
-			<detail><![CDATA[ ]]></detail>
+			<packageClass>RemoveWatchesTest.java;RemoveWatchesTest.java</packageClass>
+			<detail><![CDATA[
+Data race on field java.util.ArrayList.$state: {{{
+    Concurrent write in thread T1146 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest$MyWatcher.process(RemoveWatchesTest.java:1170)
+        at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:524)
+        at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:499)
+    T1146 is created by T1
+        at org.apache.zookeeper.ClientCnxn.start(ClientCnxn.java:401)
+
+    Concurrent read in thread T1149 (locks held: {})
+ ---->  at org.apache.zookeeper.RemoveWatchesTest.testRemoveAllChildWatchers(RemoveWatchesTest.java:365)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.apache.zookeeper.JUnit4ZKTestRunner$LoggedInvokeMethod.evaluate(JUnit4ZKTestRunner.java:79)
+        at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+    T1149 is created by T1
+        at org.junit.internal.runners.statements.FailOnTimeout.evaluate(FailOnTimeout.java:125)
+
+}}} 			
+			 ]]></detail>
 			<runningTime>%%</runningTime>
 			<variableType>CT</variableType>
 			<codeStructure>bc-sb</codeStructure>
@@ -14213,8 +14234,28 @@ Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.el
 			<line1>489</line1>
 			<line2>166</line2>
 			<variable>electionAddr</variable>
-			<packageClass>;/;</packageClass>
-			<detail><![CDATA[ ]]></detail>
+			<packageClass>org.apache.zookeeper.server.quorum.QuorumCnxManager.java;org.apache.zookeeper.server.quorum.QuorumPeer.java</packageClass>
+			<detail><![CDATA[
+Data race on field org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.electionAddr: {{{
+    Concurrent read in thread T419 (locks held: {Monitor@7cf283e1, Monitor@4647881c})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:489)
+        - locked Monitor@4647881c at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:478)
+        - locked Monitor@7cf283e1 at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:n/a)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:421)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:486)
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:465)
+    T419 is created by T1
+        at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger.start(FastLeaderElection.java:520)
+
+    Concurrent write in thread T427 (locks held: {})
+ ---->  at org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer.recreateSocketAddresses(QuorumPeer.java:166)
+        at org.apache.zookeeper.server.quorum.QuorumPeer.recreateSocketAddresses(QuorumPeer.java:646)
+        at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:628)
+    T427 is created by T1
+        at org.apache.zookeeper.server.quorum.QuorumPeer.createElectionAlgorithm(QuorumPeer.java:946)
+
+}}} 
+			 ]]></detail>
 			<runningTime>%%</runningTime>
 			<variableType>RT</variableType>
 			<codeStructure>bs-bc</codeStructure>
