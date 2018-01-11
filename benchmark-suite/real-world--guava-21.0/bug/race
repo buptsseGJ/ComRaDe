@@ -215,3 +215,29 @@ Data race on field com.google.common.util.concurrent.TrustedListenableFutureTask
 
 }}} 
 
+
+com.google.common.util.concurrent.TrustedListenableFutureTask.java:68;com.google.common.util.concurrent.TrustedListenableFutureTask.java:73
+com.google.common.util.concurrent.AbstractTransformFuture.java:78;com.google.common.util.concurrent.AbstractTransformFuture.java:84
+com.google.common.util.concurrent.AbstractTransformFuture.java:84;com.google.common.util.concurrent.AbstractTransformFuture.java:192
+com.google.common.util.concurrent.AbstractTransformFuture.java:79;com.google.common.util.concurrent.AbstractTransformFuture.java:90
+com.google.common.util.concurrent.AbstractTransformFuture.java:78;com.google.common.util.concurrent.AbstractTransformFuture.java:89
+com.google.common.base.Stopwatch.java:161;com.google.common.base.Stopwatch.java:178
+com.google.common.cache.LocalCache.java:310;com.google.common.cache.LocalCache.java:1883
+com.google.common.base.Stopwatch.java:160;com.google.common.base.Stopwatch.java:178
+com.google.common.util.concurrent.ServiceManager.java:655;com.google.common.util.concurrent.ServiceManager.java:655
+com.google.common.util.concurrent.TrustedListenableFutureTask.java:68;com.google.common.util.concurrent.TrustedListenableFutureTask.java:90
+com.google.common.util.concurrent.Monitor.java:999;com.google.common.util.concurrent.Monitor.java:1058
+com.google.common.util.concurrent.AbstractCatchingFuture.java:87;com.google.common.util.concurrent.AbstractCatchingFuture.java:94
+com.google.common.cache.LocalCache.java:3815;com.google.common.cache.LocalCache.java:3820
+com.google.common.util.concurrent.Monitor.java:999;com.google.common.util.concurrent.Monitor.java:1057
+com.google.common.eventbus.StringCatcher.java:33;com.google.common.eventbus.StringCatcher.java:37
+com.google.common.util.concurrent.AbstractCatchingFuture.java:88;com.google.common.util.concurrent.AbstractCatchingFuture.java:104
+com.google.common.util.concurrent.Monitor.java:927;com.google.common.util.concurrent.Monitor.java:1054
+com.google.common.util.concurrent.AbstractTransformFuture.java:79;com.google.common.util.concurrent.AbstractTransformFuture.java:85
+com.google.common.util.concurrent.AbstractCatchingFuture.java:88;com.google.common.util.concurrent.AbstractCatchingFuture.java:95
+com.google.common.util.concurrent.AbstractTransformFuture.java:85;com.google.common.util.concurrent.AbstractTransformFuture.java:193
+com.google.common.util.concurrent.AbstractCatchingFuture.java:86;com.google.common.util.concurrent.AbstractCatchingFuture.java:102
+com.google.common.util.concurrent.AbstractCatchingFuture.java:86;com.google.common.util.concurrent.AbstractCatchingFuture.java:93
+com.google.common.base.Stopwatch.java:132;com.google.common.base.Stopwatch.java:160
+com.google.common.util.concurrent.AbstractCatchingFuture.java:87;com.google.common.util.concurrent.AbstractCatchingFuture.java:103
+
