@@ -7,3 +7,46 @@ The four aspects for the section VI in paper are variable type, code structure, 
 - method span: We divide the race locations into three categories: the same method of the same class, different methods of the same class, different methods of different classes.
 - cause: In term of synchronization operations, we can divide them into three categories: no synchronization, partial synchronization and incorrect synchronization.
 
+# The followings are the results for CalFuzzer:
+
+## variable Type
+![avatar](./results/CalFuzzer/variable-type.png)
+
+## code structure
+![avatar](./results/CalFuzzer/code-structure.png)
+
+## method span
+![avatar](./results/CalFuzzer/method-span.png)
+
+## cause
+![avatar](./results/CalFuzzer/cause.png)
+
+# The followings are the results for RV-Predict:
+
+## variable Type
+![avatar](./results/RV-Predict/variable-type.png)
+
+## code structure
+![avatar](./results/RV-Predict/code-structure.png)
+
+## method span
+![avatar](./results/RV-Predict/method-span.png)
+
+## cause
+![avatar](./results/RV-Predict/cause.png)
+
+
+The followings are the results for DATE:
+
+## variable Type
+![avatar](./results/DATE/variable-type.png)
+
+## code structure
+![avatar](./results/DATE/code-structure.png)
+
+## method span
+![avatar](./results/DATE/method-span.png)
+
+## cause
+![avatar](./results/DATE/cause.png)
+
